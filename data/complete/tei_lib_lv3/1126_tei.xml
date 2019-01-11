@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:eaj="http://www.example.org/ns/ejaTEI">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>三つの宝</title>
+        <author>芥川竜之介</author>
+
+        <respStmt>
+          <resp>Aozora Transcription</resp>
+          <name>j.utiyama</name>
+        </respStmt>
+        <respStmt>
+          <resp>Aozora Proofreading</resp>
+          <name>多羅尾伴内</name>
+        </respStmt>
+
+        <respStmt>
+          <resp when="2010-11-04">作成</resp>
+          <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+          <note>
+            <lb/>底本：「芥川龍之介全集5」ちくま文庫、筑摩書房
+            <lb/>1987（昭和62）年2月24日第1刷発行
+            <lb/>1995（平成7）年4月10日第6刷発行
+            <lb/>底本の親本：「筑摩全集類聚版芥川龍之介全集」筑摩書房
+            <lb/>1971（昭和46）年3月～11月刊行
+            <lb/>入力：j.utiyama
+            <lb/>校正：多羅尾伴内
+            <lb/>2004年1月5日作成
+            <lb/>2010年11月4日修正
+            <lb/>青空文庫作成ファイル：
+            <lb/>このファイルは、インターネットの図書館、<a href="http://www.aozora.gr.jp/">青空文庫（http://www.aozora.gr.jp/）</a>で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。</note>
+          </respStmt>
+          <respStmt>
+            <resp when="2019-01-01">TEI Encoding</resp>
+            <name>中村覚</name></respStmt>
+          </titleStmt>
+          <publicationStmt>
+            <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+            <date when="2019-01-11"> 2019年1月11日</date>
+            <availability>
+              <p> <ref target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0 1.0)
+                Public Domain Dedication</ref></p>
+              </availability>
+            </publicationStmt>
+            <sourceDesc>
+              <bibl>
+                <author>芥川龍之介</author>
+                <title>三つの宝</title>
+                <publisher>筑摩書房</publisher>「芥川龍之介全集5」ちくま文庫、 <date when="1987-02-24"
+                >1987（昭和62）年2月24日</date>第1刷発行 <date when="1995-04-10"
+                >1995（平成7）年4月10日</date>第6刷発行 </bibl>
+              </sourceDesc>
+            </fileDesc>
+            <revisionDesc>
+              <list>
+                <item>
+                  <date when="2010-11-04">2010年11月4日</date>修正 </item>
+                  <item> 入力<persName>j.utiyama</persName> 校正<persName>多羅尾伴内</persName>
+                  <date when="2004-01-05"> 2004年1月5日</date>作成 </item>
+                </list>
+              </revisionDesc>
+            </teiHeader>
+            <text>
+              <front>
+                <p>
+                  <listPerson>
+                    <person xml:id="第一の盗人">
+                      <persName>第一の盗人</persName>
+                      <occupation>盗人</occupation>
+                    </person>
+                    <person xml:id="第二の盗人">
+                      <persName>第二の盗人</persName>
+                      <occupation>盗人</occupation>
+                    </person>
+                    <person xml:id="第三の盗人">
+                      <persName>第三の盗人</persName>
+                      <occupation>盗人</occupation>
+                    </person>
+                    <person xml:id="王子">
+                      <persName>王子</persName>
+                      <occupation>王子</occupation>
+                    </person>
+                  </listPerson>
+                </p>
+              </front>
+              <body>
+                <div n="一" type="act">
+                  <head>一</head>
+                  <stage type="setting"
+                    >森の中。三人の盗人ぬすびとが宝を争っている。宝とは一飛びに千里飛ぶ長靴ながぐつ、着れば姿の隠れるマントル、鉄でもまっ二ぷたつに切れる剣けん――ただしいずれも見たところは、古道具らしい物ばかりである。</stage>
+                    <sp who="#第一の盗人">
+                      <speaker>第一の盗人</speaker>
+                      <p>そのマントルをこっちへよこせ。</p>
+                    </sp>
+                    <sp who="#第二の盗人">
+                      <speaker>第二の盗人</speaker>
+                      <p><span type="ruby"><span type="rb">余計</span><span type="rp">（</span><span
+                      type="rt">よけい</span><span type="rp"
+                      >）</span></span>な事を云うな。その剣こそこっちへよこせ。――おや、おれの長靴を盗んだな。</p>
+                    </sp>
+                    <sp who="#第三の盗人">
+                      <speaker>第三の盗人</speaker>
+                      <p>この長靴はおれの物じゃないか？　貴様こそおれの物を盗んだのだ。</p>
+                    </sp>
+                    <sp who="#第一の盗人">
+                      <speaker>第一の盗人</speaker>
+                      <p>よしよし、ではこのマントルはおれが貰って置こう。</p>
+                    </sp>
+                    <sp who="#第二の盗人">
+                      <speaker>第二の盗人</speaker>
+                      <p>こん<span type="ruby"><span type="rb">畜生</span><span type="rp">（</span><span
+                      type="rt">ちくしょう</span><span type="rp"
+                      >）</span></span>！　貴様なぞに渡してたまるものか。</p>
+                    </sp>
+                    <sp who="#第一の盗人">
+                      <speaker>第一の盗人</speaker>
+                      <p>よくもおれを<span type="ruby"><span type="rb">撲</span><span type="rp">（</span><span
+                      type="rt">なぐ</span><span type="rp"
+                      >）</span></span>ったな。――おや、またおれの剣も盗んだな？</p>
+                    </sp>
+                    <sp who="#第三の盗人">
+                      <speaker>第三の盗人</speaker>
+                      <p>何だ、このマントル泥坊め！</p>
+                    </sp>
+                    <p> 三人の者が<span type="ruby"><span type="rb">大喧嘩</span><span type="rp">（</span><span
+                    type="rt">おおげんか</span><span type="rp">）</span></span>になる。そこへ馬に<span
+                    type="ruby"><span type="rb">跨</span><span type="rp">（</span><span type="rt"
+                    >またが</span><span type="rp">）</span></span>った王子が一人、森の中の路を通りかかる。<lb/>
+                  </p>
+                  <sp who="#王子">
+                    <speaker>王子</speaker>
+                    <p>おいおい、お前たちは何をしているのだ？　（馬から下りる）</p>
+                  </sp>
+                  <sp who="#第一の盗人">
+                    <speaker>第一の盗人</speaker>
+                    <p>何、こいつが悪いのです。わたしの剣を盗んだ上、マントルさえよこせと云うものですから、――</p>
+                  </sp>
+                  <sp who="#第三の盗人">
+                    <speaker>第三の盗人</speaker>
+                    <p>いえ、そいつが悪いのです。マントルはわたしのを盗んだのです。</p>
+                  </sp>
+                  <sp who="#第二の盗人">
+                    <speaker>第二の盗人</speaker>
+                    <p>いえ、こいつ<span type="ruby"><span type="rb">等</span><span type="rp">（</span><span
+                    type="rt">ら</span><span type="rp"
+                    >）</span></span>は二人とも大泥坊です。これは皆わたしのものなのですから、――</p>
+                  </sp>
+                  <sp who="#第一の盗人">
+                    <speaker>第一の盗人</speaker>
+                    <p>嘘をつけ！</p>
+                  </sp>
+                  <sp who="#第二の盗人">
+                    <speaker>第二の盗人</speaker>
+                    <p>この<span type="ruby"><span type="rb">大法螺吹</span><span type="rp">（</span><span
+                    type="rt">おおぼらふ</span><span type="rp">）</span></span>きめ！</p>
+                  </sp>
+                  <p> 三人また喧嘩をしようとする。<lb/>
+                </p>
+                <sp who="#王子">
+                  <speaker>王子</speaker>
+                  <p>待て待て。たかが古いマントルや、穴のあいた長靴ぐらい、誰がとっても<span type="ruby"><span type="rb"
+                    >好</span><span type="rp">（</span><span type="rt">い</span><span
+                    type="rp">）</span></span>いじゃないか？</p>
+                  </sp>
+                  <sp who="#第二の盗人">
+                    <speaker>第二の盗人</speaker>
+                    <p>いえ、そうは行きません。このマントルは着たと思うと、姿の隠れるマントルなのです。</p>
+                  </sp>
+                  <sp who="#第一の盗人">
+                    <speaker>第一の盗人</speaker>
+                    <p>どんなまた鉄の<span type="ruby"><span type="rb">兜</span><span type="rp"
+                    >（</span><span type="rt">かぶと</span><span type="rp"
+                    >）</span></span>でも、この剣で切れば切れるのです。</p>
+                  </sp>
+                  <sp who="#第三の盗人">
+                    <speaker>第三の盗人</speaker>
+                    <p>この長靴もはきさえすれば、一飛びに千里飛べるのです。</p>
+                  </sp>
+                  <sp who="#王子">
+                    <speaker>王子</speaker>
+                    <p>なるほど、そう云う宝なら、喧嘩をするのももっともな話だ。が、それならば<span type="ruby"><span type="rb"
+                      >欲張</span><span type="rp">（</span><span type="rt">よくば</span><span
+                      type="rp">）</span></span>らずに、一つずつ分ければ<span type="ruby"><span
+                      type="rb">好</span><span type="rp">（</span><span type="rt"
+                      >い</span><span type="rp">）</span></span>いじゃないか？</p>
+                    </sp>
+                    <sp who="#第二の盗人">
+                      <speaker>第二の盗人</speaker>
+                      <p>そんな事をしてごらんなさい。わたしの首はいつ<span type="ruby"><span type="rb">何時</span><span
+                      type="rp">（</span><span type="rt">なんどき</span><span type="rp"
+                      >）</span></span>、あの剣に切られるかわかりはしません。</p>
+                    </sp>
+                    <sp who="#第一の盗人">
+                      <speaker>第一の盗人</speaker>
+                      <p>いえ、それよりも困るのは、あのマントルを着られれば、何を盗まれるか知れますまい。</p>
+                    </sp>
+                    <sp who="#第二の盗人">
+                      <speaker>第二の盗人</speaker>
+                      <p>いえ、何を盗んだ所が、あの長靴をはかなければ、思うようには逃げられない<span type="ruby"><span type="rb"
+                        >訣</span><span type="rp">（</span><span type="rt">わけ</span><span
+                        type="rp">）</span></span>です。</p>
+                      </sp>
+                      <sp who="#王子">
+                        <speaker>王子</speaker>
+                        <p>それもなるほど<span type="ruby"><span type="rb">一理窟</span><span type="rp"
+                        >（</span><span type="rt">ひとりくつ</span><span type="rp"
+                        >）</span></span>だな。では物は相談だが、わたしにみんな売ってくれないか？　そうすれば心配も入らないはずだから。</p>
+                      </sp>
+                      <sp who="#第一の盗人">
+                        <speaker>第一の盗人</speaker>
+                        <p>どうだい、この殿様に売ってしまうのは？</p>
+                      </sp>
+                      <sp who="#第三の盗人">
+                        <speaker>第三の盗人</speaker>
+                        <p>なるほど、それも<span type="ruby"><span type="rb">好</span><span type="rp"
+                        >（</span><span type="rt">い</span><span type="rp"
+                        >）</span></span>いかも知れない。</p>
+                      </sp>
+                      <sp who="#第二の盗人">
+                        <speaker>第二の盗人</speaker>
+                        <p>ただ値段次第だな。</p>
+                      </sp>
+                      <sp who="#王子">
+                        <speaker>王子</speaker>
+                        <p>値段は――そうだ。そのマントルの代りには、この赤いマントルをやろう、これには<span type="ruby"><span type="rb"
+                          >刺繍</span><span type="rp">（</span><span type="rt">ぬいとり</span><span
+                          type="rp">）</span></span>の<span type="ruby"><span type="rb"
+                          >縁</span><span type="rp">（</span><span type="rt">ふち</span><span
+                          type="rp">）</span></span>もついている。それからその長靴の代りには、この宝石のはいった靴をやろう。この<span
+                          type="ruby"><span type="rb">黄金細工</span><span type="rp">（</span><span
+                          type="rt">きんざいく</span><span type="rp">）</span></span>の<span
+                          type="ruby"><span type="rb">剣</span><span type="rp">（</span><span
+                          type="rt">けん</span><span type="rp"
+                          >）</span></span>をやれば、その剣をくれても損はあるまい。どうだ、この値段では？</p>
+                        </sp>
+                        <sp who="#第二の盗人">
+                          <speaker>第二の盗人</speaker>
+                          <p>わたしはこのマントルの代りに、そのマントルを頂きましょう。</p>
+                        </sp>
+                        <sp who="#第一の盗人">
+                          <speaker>第一の盗人と第三の盗人</speaker>
+                          <p>わたしたちも申し分はありません。</p>
+                        </sp>
+                        <sp who="#王子">
+                          <speaker>王子</speaker>
+                          <p>そうか。では取り<span type="ruby"><span type="rb">換</span><span type="rp"
+                          >（</span><span type="rt">か</span><span type="rp"
+                          >）</span></span>えて貰おう。</p>
+                        </sp>
+                        <p> 王子はマントル、剣、長靴等を取り換えた<span type="ruby"><span type="rb">後</span><span type="rp"
+                        >（</span><span type="rt">のち</span><span type="rp"
+                        >）</span></span>、また馬の上に<span type="ruby"><span type="rb">跨</span><span
+                        type="rp">（</span><span type="rt">またが</span><span type="rp"
+                        >）</span></span>りながら、森の中の路を行きかける。<lb/>
+                      </p>
+                      <sp who="#王子">
+                        <speaker>王子</speaker>
+                        <p>この先に宿屋はないか？</p>
+                      </sp>
+                      <sp who="#第一の盗人">
+                        <speaker>第一の盗人</speaker>
+                        <p>森の外へ出さえすれば「<span type="ruby"><span type="rb">黄金</span><span type="rp"
+                        >（</span><span type="rt">きん</span><span type="rp"
+                        >）</span></span>の<span type="ruby"><span type="rb">角笛</span><span
+                        type="rp">（</span><span type="rt">つのぶえ</span><span type="rp"
+                        >）</span></span>」という宿屋があります。では御大事にいらっしゃい。</p>
+                      </sp>
+                      <sp who="#王子">
+                        <speaker>王子</speaker>
+                        <p>そうか。ではさようなら。（去る）</p>
+                      </sp>
+                      <sp who="#第三の盗人">
+                        <speaker>第三の盗人</speaker>
+                        <p>うまい商売をしたな。おれはあの長靴が、こんな靴になろうとは思わなかった。見ろ。<span type="ruby"><span type="rb"
+                          >止</span><span type="rp">（</span><span type="rt">と</span><span
+                          type="rp">）</span></span>め<span type="ruby"><span type="rb"
+                          >金</span><span type="rp">（</span><span type="rt">がね</span><span
+                          type="rp">）</span></span>には<span type="ruby"><span type="rb"
+                          >金剛石</span><span type="rp">（</span><span type="rt"
+                          >ダイヤモンド</span><span type="rp">）</span></span>がついている。</p>
+                        </sp>
+                        <sp who="#第二の盗人">
+                          <speaker>第二の盗人</speaker>
+                          <p>おれのマントルも<span type="ruby"><span type="rb">立派</span><span type="rp"
+                          >（</span><span type="rt">りっぱ</span><span type="rp"
+                          >）</span></span>な物じゃないか？　これをこう着た所は、殿様のように見えるだろう。</p>
+                        </sp>
+                        <sp who="#第一の盗人">
+                          <speaker>第一の盗人</speaker>
+                          <p>この剣も大した物だぜ。何しろ<span type="ruby"><span type="rb">柄</span><span type="rp"
+                          >（</span><span type="rt">つか</span><span type="rp"
+                          >）</span></span>も<span type="ruby"><span type="rb">鞘</span><span
+                          type="rp">（</span><span type="rt">さや</span><span type="rp"
+                          >）</span></span>も<span type="ruby"><span type="rb">黄金</span><span
+                          type="rp">（</span><span type="rt">きん</span><span type="rp"
+                          >）</span></span>だからな。――しかしああやすやす<span type="ruby"><span type="rb"
+                          >欺</span><span type="rp">（</span><span type="rt">だま</span><span
+                          type="rp">）</span></span>されるとは、あの王子も<span type="ruby"><span
+                          type="rb">大莫迦</span><span type="rp">（</span><span type="rt"
+                          >おおばか</span><span type="rp">）</span></span>じゃないか？</p>
+                        </sp>
+                        <sp who="#第二の盗人">
+                          <speaker>第二の盗人</speaker>
+                          <p>しっ！　壁に耳あり、<span type="ruby"><span type="rb">徳利</span><span type="rp"
+                          >（</span><span type="rt">とくり</span><span type="rp"
+                          >）</span></span>にも口だ。まあ、どこかへ行って一杯やろう。</p>
+                        </sp>
+                        <p>三人の盗人は<span type="ruby"><span type="rb">嘲笑</span><span type="rp">（</span><span
+                        type="rt">あざわら</span><span type="rp"
+                        >）</span></span>いながら、王子とは反対の路へ行ってしまう。<lb/>
+                      </p>
+                    </div>
+                  </body>
+                </text>
+              </TEI>
