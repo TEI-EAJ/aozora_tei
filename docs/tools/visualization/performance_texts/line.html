@@ -2,6 +2,7 @@
 <head>
   <meta charset="UTF-8"/>
   <title>LINE風チャット画面 │ TEIで青空文庫</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel='stylesheet' href='style.css' type='text/css' media='all' />
 </head>
 <body>
@@ -10,7 +11,7 @@
   <div class="line__container">
     <!-- タイトル -->
     <div class="line__title">
-
+      
     </div>
 
     <!-- ▼会話エリア scrollを外すと高さ固定解除 -->
@@ -56,7 +57,7 @@ $(function(){
 
   var CETEIcean = new CETEI()
   CETEIcean.getHTML5(resourceUri, function(data) {
-    
+
     //タイトル
     $(".line__title").text($($(data).find("tei-title")[0]).text())
 

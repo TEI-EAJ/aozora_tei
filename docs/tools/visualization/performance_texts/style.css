@@ -2,12 +2,18 @@
 //LINE風チャット画面(会話方式)を記事に表示する方法
 /////////////////////////////////////////////////*/
 
+body {
+  margin : 0px;
+  background: #273246;
+}
+
 .line__container {
   padding:0;
   background: #7494c0;
   overflow: hidden;
-  max-width: 600px;
-  margin: 20px auto;
+  /*max-width: 600px;*/
+  max-width: 100%
+  /*margin: 20px auto;*/
   font-size: 80%;
 }
 
@@ -28,7 +34,8 @@
 }
 
 .line__container .scroll {
-  height:800px;
+  /*height:800px;*/
+  height: 90%;
   overflow-y: scroll;
 }
 
