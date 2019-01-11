@@ -20,3 +20,5 @@ http://www.tei-c.org/SIG/Libraries/teiinlibraries/4.0.0/bptl-driver.html
 - Level5. 学術編集版（≒校訂テクスト）や言語コーパス等、特定の用途に特化した深いマークアップ
 
 TEIで構造化したテクストはXMLとして色々扱うことができますので、対応ツールも少しずつ集めてご紹介します。
+
+詳しくは Wiki https://github.com/TEI-EAJ/aozora_tei/wiki をご覧ください。
