@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <script
+  src="//code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="./assets/js/main.js"></script>
+
+  <script>asset('./');</script>
+
+  <title>TEI Applications</title>
+
+</head>
+<body>
+
+  <script>header('./');</script>
+
+  <div class="container my-5">
+
+    <div class="card">
+      <div class="card-body">
+
+        <div id="TEI">
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <script>footer('./');</script>
+
+  <script type="text/javascript" language="javascript">
+
+  $(function(){
+
+    //パラメータの取得
+    var vars = getParam();
+    //XMLファイルのURL
+    var resourceUri = vars["resourceUri"]
+    resourceUri = decodeURIComponent(resourceUri)
+
+    var CETEIcean = new CETEI()
+    CETEIcean.getHTML5(resourceUri, function(data) {
+      document.getElementById("TEI").appendChild(data)
+    })
+
+    CETEIcean.addBehaviors({
+      handlers: {
+        "persName": function(el) {
+          var a = document.createElement("a")
+          a.setAttribute("href", "#")
+          a.innerHTML = el.innerHTML;
+          return a
+        }
+      }
+    })
+
+  });
+
+  function getParam(){
+    var vars = {};
+    var param = location.search.substring(1).split('&');
+    for(var i = 0; i < param.length; i++) {
+      var keySearch = param[i].search(/=/);
+      var key = '';
+      if(keySearch != -1) key = param[i].slice(0, keySearch);
+      var val = param[i].slice(param[i].indexOf('=', 0) + 1);
+      if(key != '') vars[key] = decodeURI(val);
+    }
+    return vars;
+  }
+
+</script>
+</body>
+</html>

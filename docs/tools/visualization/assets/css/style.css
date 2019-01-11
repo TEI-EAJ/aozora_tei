@@ -1,0 +1,8 @@
+body {
+  background-color: #eee;
+}
+
+table.table a {
+  margin: 0;
+  color: #007bff !important;
+}
