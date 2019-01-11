@@ -137,7 +137,7 @@
                         <said who="#老爺">「いいえ、乱心ではございませぬ。人を、信ずる事が出来ぬ、 というのです。このごろは、臣下の心をも、お疑いになり、
                               少しく派手な暮しをしている者には、人質ひとりずつ差し出すことを命じて居ります。
                               御命令を拒めば十字架にかけられて、殺されます。きょうは、六人殺されました。」</said> 聞いて、<persName
-                              corresp="#メロス">メロス</persName>は激怒した。 <said who="メロス"
+                              corresp="#メロス">メロス</persName>は激怒した。 <said who="#メロス"
                                           >「<span type="ruby"><span type="rb">呆</span><span type="rp">（</span><span type="rt">あき</span><span type="rp">）
                                     </span></span>れた<persName corresp="#ディオニス"
                               >王</persName>だ。生かして置けぬ。」</said>
