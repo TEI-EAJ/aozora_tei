@@ -1,7 +1,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8"/>
-  <title>LINE風チャット画面(会話方式)を記事に表示する方法 │ 3oWebCreate WEB小ネタと生活ライフハック</title>
+  <title>LINE風チャット画面 │ TEIで青空文庫</title>
   <link rel='stylesheet' href='style.css' type='text/css' media='all' />
 </head>
 <body>
@@ -10,7 +10,7 @@
   <div class="line__container">
     <!-- タイトル -->
     <div class="line__title">
-      
+
     </div>
 
     <!-- ▼会話エリア scrollを外すと高さ固定解除 -->
@@ -42,9 +42,6 @@ icon_map["王女"] = "https://1.bp.blogspot.com/-dQHPshzm_tY/WaOePIs3e9I/AAAAAAA
 icon_map["宿屋の主人"] = "https://3.bp.blogspot.com/-89ED7hk_-UQ/Wi4gIDiVXpI/AAAAAAABItw/sEue9RlJBqs4L4gFmBggSN9qBJ_DmtoPgCLcBGAs/s180-c/hair_usuge_middle.png"
 icon_map["第二の農夫"] = "https://2.bp.blogspot.com/-kMbdxwET8Go/Wn1VcZ9oGBI/AAAAAAABKCY/7dL-doSO7EgkxvT97_5W7VPiy0_lsPRAgCLcBGAs/s180-c/agura_kutsurogu3_ojisan.png"
 icon_map["第一の農夫"] = "https://2.bp.blogspot.com/-PyFAYWpdoFE/W_UF64ZLkBI/AAAAAAABQTs/QblG0MDt0AkGF5UZwhXxURI01rtUQOj0wCLcBGAs/s180-c/biyou_hige_busyohige.png"
-icon_map[""] = ""
-icon_map[""] = ""
-
 
 
 $(function(){
@@ -52,22 +49,20 @@ $(function(){
   //パラメータの取得
   var vars = getParam();
   //XMLファイルのURL
-  var resourceUri = vars["xml"] ? vars["xml"] : "https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/data/complete/tei_lib_lv3/1126_tei.xml"
-  resourceUri = decodeURIComponent(resourceUri)
+  var resourceUri = vars["xml"] ? decodeURIComponent(vars["xml"]) : "https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/data/complete/tei_lib_lv3/1126_tei.xml"
+
+  //発話者
+  var speaker = vars["speaker"] ? vars["speaker"] : "王子"
 
   var CETEIcean = new CETEI()
   CETEIcean.getHTML5(resourceUri, function(data) {
-
+    
+    //タイトル
     $(".line__title").text($($(data).find("tei-title")[0]).text())
-
-    //パラメータの取得
-    var vars = getParam();
-    //XMLファイルのURL
-    var speaker = vars["speaker"] ? vars["speaker"] : "王子"
 
     var count = 1
 
-    //属性whoの値がspeakerのタグ一覧
+    //spのタグ一覧
     var sp_list = $(data).find("tei-sp")
     for(var i = 0; i < sp_list.length; i++){
       var sp = sp_list[i]
@@ -76,6 +71,7 @@ $(function(){
         continue
       }
 
+      //who属性値の取得
       var name = $(sp).attr("who").split("#")[1]
 
       var text = $("<div>")
@@ -84,14 +80,14 @@ $(function(){
       var li = $("<li>")
       for(var j = 0; j < p_list.length; j++){
         var value = $(p_list[j]).text()
-        value = value.replace(/（(.*?)）/g, '')
+        value = value.replace(/（(.*?)）/g, '') //ルビの削除
         value = value.replace("――", "")
         value = value.replace("――", "")
         var p = $("<p>").append(value)
         text.append(p)
       }
 
-      var line = $('<div class="">')
+      var line = $('<div>')
       if(name == speaker){
         line.attr("class", "line__right")
 
