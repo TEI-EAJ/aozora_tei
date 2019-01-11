@@ -1,0 +1,146 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"  rel="Stylesheet" />
+<style>
+.item{font-size:20px;font-weight:bold}
+.stxt, .dtxt{color:blue;cursor:pointer; }
+.dtit{font-size:14px;font-weight:bold}
+.rubyText{font-size:8px;color:red}
+.prsName{color:blue;font-weight:bold;cursor:pointer}
+.said{color:brown;cursor:pointer}
+.author{font-size:18pt;font-weight:bold}
+p{padding:10}
+</style>
+<script src="jquery/jquery-3.2.0.min.js"></script>
+<script>
+$(function() {
+$('.file_input').change(function(){
+  for (var i = 0; i < this.files.length; ++i){
+//		      alert(this.files[i].type);
+    if (this.files[i].type == 'text/xml'){
+      var reader = new FileReader();
+      reader.onload = function(e){
+//         var rtxt =    $(e).text();
+         $('.resultb').append(e.target.result);
+          var xmldata = $.parseXML(e.target.result);
+          $(xmldata).find('titleStmt').each(function(){
+            $(this).find('title').each(function(){
+   	      $('.result').append('<h1>'+$(this).html()+'</h1>');
+            });
+            $(this).find('author').each(function(){
+   	      $('.result').append('<div class="author">'+$(this).html()+'</div>');
+            });
+          });
+          var pn = 0;		      
+          $(xmldata).find('body').each(function(){
+            $(this).find('p').each(function(){
+              var pText = $(this);
+	      $(pText).find('eaj\\:ruby, ruby').each(function(){
+		      var rb = $(this).children('eaj\\:rb').html();
+		      var rt = $(this).children('eaj\\:rt').html();
+		      var rbText = rb+'<span class="rubyText">'+rt+'</span>';
+		      $(this).replaceWith(rbText);
+              });
+	      $(pText).find('persName').each(function(){
+		      var prsId = $(this).attr("corresp");
+		      var dataRef = ' data-ref="'+prsId+'"';
+		      var dataNm = ' data-n="'+pn+'"';
+		      pn++;
+		      var prsName = $(this).html();
+		      var prsText = '<span class="prsName"'+dataRef+dataNm+'>'+prsName+'</span>';
+		      $(this).replaceWith(prsText);
+              });
+	      $(pText).find('said').each(function(){
+		      var who = $(this).attr("who");
+		      var talk = $(this).html();
+		      var saidText = '<p><span class="said" data-who="'+who+'">'+talk+'</span></p>';
+		      $(this).replaceWith(saidText);
+              });
+   	      $('.result').append('<p>'+$(pText).html()+'</p>');
+            });
+/*
+            $(xmldata).find('persName').each(function(){
+		if($(this).attr('corresp') == undefined){
+		      var name = $(this).text();
+                }
+		else{      
+		      var name = $(this).attr('corresp');
+                }
+   	      $('.result').append(name+'<br/>');
+            });
+*/
+         });
+      }
+     reader.readAsText(this.files[i], 'UTF-8');
+    }//    if (this.files[i].type == 'text/xml'){
+  }//  for (var i = 0; i < this.files.length; ++i){
+});//$('.file_input').change(function(){
+
+$("body").on("click",".prsName", function(){
+  var ref = $(this).attr("data-ref"); 
+  var pName = $(this);
+  var arRef = ref.split(" ");
+  var arSaid = [];
+  var arPrs = [];
+  
+  for(i=0;i<arRef.length;i++){
+   arSaid[i] = '.said[data-who~="'+arRef[i]+'"]'; 
+   arPrs[i] = '.prsName[data-ref~="'+arRef[i]+'"]'; 
+  }
+  var selSaid = arSaid.join(",");
+  var selPrs = arPrs.join(",");
+  $("#rightwinc1").html('');
+  $(selSaid).each(function(){
+   $("#rightwinc1").html($("#rightwinc1").html()+'<li>'+$(this).html()+'</li>');
+  });
+  if($("#rightwinc1").html() == ''){
+    $("#rightwinc1").html('発話なし');
+  }
+  $("#rightwinc2").html('');
+  var winc2 = [];
+  $(selPrs).each(function(){
+   var dpn = parseInt($(this).attr("data-n"));
+   winc2[dpn] = '<li>'+$(this).html()+'</li>';
+  });
+//  winc2.sort(function(a,b){
+//    if(a < b) return -1;
+//    if(a > b) return 1;
+//    return 0;
+//  });
+  var winc2Text = '';
+  for(i in winc2){
+   winc2Text += winc2[i];
+  }//  for(i in winc2){
+  $("#rightwinc2").html(winc2Text);
+});
+
+$("body").on("click",".prsName", function(){
+
+});
+
+});
+
+</script>
+</head><body>
+
+TEI/XMLファイルを選択してください。:<div style="padding:10px">
+<input class="file_input" type="file" multiple="" class="btn btn-default">
+<p><hr><p>
+<div id="leftwin" style="width:70%;display:inline-block;padding:20">
+<div class="result"></div>
+<div class="resultb" style="display:none"></div>
+ <div id="dia1" title="">
+  <div id="dia1c">
+  </div>
+ </div>
+</div>
+
+<div id="rightwinc" style="width:30%;top:100;right:0;height:80%;border:solid;position:fixed;padding:20px;overflow:auto">
+<h2>発話内容</h2>
+<ol id="rightwinc1"></ol>
+<h2>呼称</h2>
+<ol id="rightwinc2"></ol>
+</div>
+
+</body></html>
+
