@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="../assets/thirdparty/CETEI/css/CETEIcean.css">
+  <link rel="stylesheet" type="text/css" href="../assets/thirdparty/CETEI/css/style.css">
+
+
+  <script src="../assets/thirdparty/CETEI/js/CETEI.js"></script>
+
+  <title>TEI Applications</title>
+
+  <style>
+  tei-persname {
+    color:blue;
+  }
+
+  tei-placename {
+    color:green;
+  }
+
+  tei-said {
+    color:brown;
+  }
+
+  tei-sp tei-p {
+    color:brown;
+  }
+
+  tei-name {
+    color:blue;
+  }
+
+  p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  </style>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">TEI Applications</a>
+  </nav>
+
+
+  <div class="container my-5">
+    <p>References</p>
+    <ul>
+      <li>青空文庫の『走れメロス』をTEIで - digitalnagasakiのブログ, <a href="http://digitalnagasaki.hatenablog.com/entry/2017/08/01/035811">http://digitalnagasaki.hatenablog.com/entry/2017/08/01/035811</a></li>
+      <li>TEIC/CETEIcean: TEI in HTML5 Custom Elements, <a href="https://github.com/TEIC/CETEIcean">https://github.com/TEIC/CETEIcean</a></li>
+    </ul>
+  </div>
+
+  <div class="container-fluid my-5">
+    <div class="row">
+      <div class="col-md-7" style="height: 800px; overflow-y: scroll;">
+        <div class="card  mb-4">
+          <div class="card-body">
+            <div id="TEI">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5" style="height: 800px; overflow-y: scroll;">
+
+        <div class="card mb-4">
+          <h3 class="card-header">発話内容</h3>
+          <div class="card-body">
+            <ol id="said_list"></ol>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <h3 class="card-header">呼称</h3>
+          <div class="card-body">
+            <ol id="name_list"></ol>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" language="javascript">
+
+  $(function(){
+
+    //パラメータの取得
+    var vars = getParam();
+    //XMLファイルのURL
+    var resourceUri = vars["xml"] ? vars["xml"] : "https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/data/complete/tei_lib_lv3/1126_tei.xml"
+    resourceUri = decodeURIComponent(resourceUri)
+
+    var CETEIcean = new CETEI()
+    CETEIcean.getHTML5(resourceUri, function(data) {
+      document.getElementById("TEI").appendChild(data)
+    })
+
+    CETEIcean.addBehaviors({
+      handlers: {
+        "speaker": function(el) {
+          $(el).attr("onclick", "show(this)")
+        }
+      }
+    })
+  });
+
+  function show(data){
+
+    var said_list = $("#said_list")
+    said_list.empty()
+
+    var name_arr = []
+    var name_list = $("#name_list")
+    name_list.empty()
+
+    //speakerタグの値の取得
+    var speaker = $(data).parent().attr("who").split("#")[1]
+
+    //属性whoの値がspeakerのタグ一覧
+    var sp_list = $("[who='#" + speaker +"']")
+    for(var i = 0; i < sp_list.length; i++){
+      var sp = sp_list[i]
+
+      var p_list = $(sp).find("tei-p")
+      var li = $("<li>")
+      for(var j = 0; j < p_list.length; j++){
+        var p = $("<p>").append($(p_list[j]).html())
+        li.append(p)
+      }
+      said_list.append(li)
+
+      var name = $($(sp).find("tei-speaker")[0]).html()
+      if(name_arr.indexOf(name) == -1){
+        name_arr.push(name)
+        var li = $("<li>").append(name).clone()
+        name_list.append(li)
+      }
+
+    }
+  };
+
+
+  function getParam(){
+    var vars = {};
+    var param = location.search.substring(1).split('&');
+    for(var i = 0; i < param.length; i++) {
+      var keySearch = param[i].search(/=/);
+      var key = '';
+      if(keySearch != -1) key = param[i].slice(0, keySearch);
+      var val = param[i].slice(param[i].indexOf('=', 0) + 1);
+      if(key != '') vars[key] = decodeURI(val);
+    }
+    return vars;
+  }
+
+</script>
+</body>
+</html>

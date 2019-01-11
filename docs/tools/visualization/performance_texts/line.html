@@ -1,0 +1,151 @@
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/>
+  <title>LINE風チャット画面(会話方式)を記事に表示する方法 │ 3oWebCreate WEB小ネタと生活ライフハック</title>
+  <link rel='stylesheet' href='style.css' type='text/css' media='all' />
+</head>
+<body>
+
+  <!-- ▼LINE風ここから -->
+  <div class="line__container">
+    <!-- タイトル -->
+    <div class="line__title">
+      
+    </div>
+
+    <!-- ▼会話エリア scrollを外すと高さ固定解除 -->
+    <div class="line__contents scroll" id="main">
+
+    </div>
+    <!--　▲会話エリア ここまで -->
+  </div>
+  <!--　▲LINE風ここまで -->
+
+</body>
+
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+
+<script src="../assets/thirdparty/CETEI/js/CETEI.js"></script>
+
+<script type="text/javascript" language="javascript">
+
+var icon_map = {}
+icon_map["第一の盗人"] = "https://1.bp.blogspot.com/-x1TYmvuJ0fk/WtRy4O60tbI/AAAAAAABLiU/gkNqSBKD-tEmPOwkilATzE_ukevNfWcdQCLcBGAs/s180-c/dorobou_money_kasoutsuuka_coin.png"
+icon_map["第二の盗人"] = "http://4.bp.blogspot.com/-fZJOyp9YgVE/VaTecGZrx9I/AAAAAAAAvlU/xijx0sebcVU/s180-c/jiko_dorobou_window.png"
+icon_map["第三の盗人"] = "https://1.bp.blogspot.com/-23ye7Zu2zCw/V1z81BHbTeI/AAAAAAAA7Mk/bC2stOuNICozcNoaMo1jhPu4LDvNS_PaACLcB/s180-c/character_kaitou_dorobou.png"
+icon_map["王子"] = "https://3.bp.blogspot.com/-C57p_2yscjM/WaOeM1LuPzI/AAAAAAABGLA/woikMEJKIcYVxLgWbvsq660NcP3PiaMwACLcBGAs/s180-c/royal_prince.png"
+icon_map["黒ん坊の王"] = "https://3.bp.blogspot.com/-8YetE9SnMGE/Wc8f4VngjUI/AAAAAAABHI0/UhnriN66HAgou3Y_MFCQVkIq-pUq8awAACLcBGAs/s180-c/royal_king_gyokuza.png"
+icon_map["王女"] = "https://1.bp.blogspot.com/-dQHPshzm_tY/WaOePIs3e9I/AAAAAAABGLI/bvasBK5wZPIVPskCglfUp5itLsFfJJRGQCLcBGAs/s180-c/royal_princess.png"
+icon_map["宿屋の主人"] = "https://3.bp.blogspot.com/-89ED7hk_-UQ/Wi4gIDiVXpI/AAAAAAABItw/sEue9RlJBqs4L4gFmBggSN9qBJ_DmtoPgCLcBGAs/s180-c/hair_usuge_middle.png"
+icon_map["第二の農夫"] = "https://2.bp.blogspot.com/-kMbdxwET8Go/Wn1VcZ9oGBI/AAAAAAABKCY/7dL-doSO7EgkxvT97_5W7VPiy0_lsPRAgCLcBGAs/s180-c/agura_kutsurogu3_ojisan.png"
+icon_map["第一の農夫"] = "https://2.bp.blogspot.com/-PyFAYWpdoFE/W_UF64ZLkBI/AAAAAAABQTs/QblG0MDt0AkGF5UZwhXxURI01rtUQOj0wCLcBGAs/s180-c/biyou_hige_busyohige.png"
+icon_map[""] = ""
+icon_map[""] = ""
+
+
+
+$(function(){
+
+  //パラメータの取得
+  var vars = getParam();
+  //XMLファイルのURL
+  var resourceUri = vars["xml"] ? vars["xml"] : "https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/data/complete/tei_lib_lv3/1126_tei.xml"
+  resourceUri = decodeURIComponent(resourceUri)
+
+  var CETEIcean = new CETEI()
+  CETEIcean.getHTML5(resourceUri, function(data) {
+
+    $(".line__title").text($($(data).find("tei-title")[0]).text())
+
+    //パラメータの取得
+    var vars = getParam();
+    //XMLファイルのURL
+    var speaker = vars["speaker"] ? vars["speaker"] : "王子"
+
+    var count = 1
+
+    //属性whoの値がspeakerのタグ一覧
+    var sp_list = $(data).find("tei-sp")
+    for(var i = 0; i < sp_list.length; i++){
+      var sp = sp_list[i]
+
+      if($(sp).attr("who") == null){
+        continue
+      }
+
+      var name = $(sp).attr("who").split("#")[1]
+
+      var text = $("<div>")
+
+      var p_list = $(sp).find("tei-p")
+      var li = $("<li>")
+      for(var j = 0; j < p_list.length; j++){
+        var value = $(p_list[j]).text()
+        value = value.replace(/（(.*?)）/g, '')
+        value = value.replace("――", "")
+        value = value.replace("――", "")
+        var p = $("<p>").append(value)
+        text.append(p)
+      }
+
+      var line = $('<div class="">')
+      if(name == speaker){
+        line.attr("class", "line__right")
+
+        var dt = $('<div class="text">').append(text)
+        line.append(dt)
+
+        count += 1
+        var date = $('<span class="date">既読<br>0:'+('0' + count).slice(-2)+'</span>')
+        line.append(date)
+
+      } else {
+        line.attr("class", "line__left")
+
+        var figure = $("<figure>")
+        line.append(figure)
+
+        var img = $('<img>')
+        figure.append(img)
+        var url = "icon.png"
+        if(icon_map[name]){
+          url = icon_map[name]
+        }
+        img.attr("src", url)
+
+        var div = $('<div class="line__left-text">')
+        line.append(div)
+
+        var dn = $('<div class="name">').append(name)
+        div.append(dn)
+
+        var dt = $('<div class="text">').append(text)
+        div.append(dt)
+      }
+
+      $("#main").append(line)
+    }
+  })
+
+
+});
+
+function getParam(){
+  var vars = {};
+  var param = location.search.substring(1).split('&');
+  for(var i = 0; i < param.length; i++) {
+    var keySearch = param[i].search(/=/);
+    var key = '';
+    if(keySearch != -1) key = param[i].slice(0, keySearch);
+    var val = param[i].slice(param[i].indexOf('=', 0) + 1);
+    if(key != '') vars[key] = decodeURI(val);
+  }
+  return vars;
+}
+
+</script>
+
+</html>
