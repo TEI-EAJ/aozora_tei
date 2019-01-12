@@ -6,7 +6,7 @@ Welcome to the aozora_tei wiki!
 
 TEI P5 Guidelinesに準拠したタグをつけて構造化することを目指しますが、TEI P5ではどうしても足りないタグがある場合には対応を検討します。
 
-*青空文庫の入力・校正者と底本情報についてはTEI headerでの記述の仕方をそろえましょう*。詳しくは、既存のTEI化ファイルのヘッダをご覧ください。
+**青空文庫の入力・校正者と底本情報についてはTEI headerでの記述の仕方をそろえましょう**。詳しくは、既存のTEI化ファイルのヘッダをご覧ください。
 
 構造化の深度は Best Practice for TEI in Libraries の Level 2～5 で行います。
 http://www.tei-c.org/SIG/Libraries/teiinlibraries/4.0.0/bptl-driver.html
