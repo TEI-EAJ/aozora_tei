@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:eaj="http://www.example.org/ns/ejaTEI">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -25,7 +25,7 @@
             <lb/>このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。</note>
         </respStmt>
         <respStmt>
-          <resp when="2019-01-01">TEI Encoding</resp>
+          <resp when="2019-01-11">TEI Encoding</resp>
           <name>中村覚</name>
         </respStmt>
       </titleStmt>
@@ -310,10 +310,6 @@
         </p>
       </div>
 
-
-
-
-
       <div n="二" type="act">
         <head>二</head>
         <stage>「<span type="ruby"><span type="rb">黄金</span><span type="rp">（</span><span type="rt"
@@ -440,9 +436,9 @@
         <sp who="#王子">
           <speaker>王子</speaker>
           <stage>（<span type="ruby"><span type="rb">憐</span><span type="rp">（</span><span type="rt"
-            >あわれ</span><span type="rp">）</span></span>むように）</stage>
-          <p>お前には<span type="ruby"><span type="rb"
-                >嘘</span><span type="rp">（</span><span type="rt">うそ</span><span type="rp"
+                >あわれ</span><span type="rp">）</span></span>むように）</stage>
+          <p>お前には<span type="ruby"><span type="rb">嘘</span><span type="rp">（</span><span type="rt"
+                >うそ</span><span type="rp"
               >）</span></span>だと思われるかも知れない。よし、それならば飛んで見せる。入口の戸をあけて置いてくれ。<span type="ruby"><span
                 type="rb">好</span><span type="rp">（</span><span type="rt">い</span><span type="rp"
                 >）</span></span>いか。飛び上ったと思うと見えなくなるぞ。</p>
@@ -512,19 +508,18 @@
         </sp>
         <sp who="#王子">
           <speaker>王子</speaker>
-          <stage>（剣の<span type="ruby"><span type="rb">柄</span><span type="rp">（</span><span type="rt"
-            >つか</span><span type="rp">）</span></span>へ手をかける）</stage>
+          <stage>（剣の<span type="ruby"><span type="rb">柄</span><span type="rp">（</span><span
+                type="rt">つか</span><span type="rp">）</span></span>へ手をかける）</stage>
           <p>何だと？</p>
         </sp>
         <sp who="#第二の農夫">
           <speaker>第二の農夫</speaker>
           <stage>（尻ごみしながら）</stage>
           <p>いえ、何とも云いはしません。</p>
-          <stage>（独り<span type="ruby"><span type="rb">語</span><span type="rp"
-            >（</span><span type="rt">ごと</span><span type="rp">）</span></span>のように）</stage>
-          <p>剣だけは首くらい<span
-              type="ruby"><span type="rb">斬</span><span type="rp">（</span><span type="rt"
-                >き</span><span type="rp">）</span></span>れるかも知れない。</p>
+          <stage>（独り<span type="ruby"><span type="rb">語</span><span type="rp">（</span><span
+                type="rt">ごと</span><span type="rp">）</span></span>のように）</stage>
+          <p>剣だけは首くらい<span type="ruby"><span type="rb">斬</span><span type="rp">（</span><span
+                type="rt">き</span><span type="rp">）</span></span>れるかも知れない。</p>
         </sp>
         <sp who="#宿屋の主人">
           <speaker>主人</speaker>
@@ -582,8 +577,6 @@
         <lb/>
       </div>
 
-
-
       <div n="三" type="act">
         <head>三</head>
         <stage> 王城の庭。<span type="ruby"><span type="rb">薔薇</span><span type="rp">（</span><span
@@ -625,9 +618,8 @@
                 >しし</span><span type="rp">）</span></span>や<span type="ruby"><span type="rb"
                 >鰐</span><span type="rp">（</span><span type="rt">わに</span><span type="rp"
               >）</span></span>のいるアフリカへ、</p>
-          <stage>（そこの<span type="ruby"><span type="rb">芝</span><span type="rp"
-            >（</span><span type="rt">しば</span><span type="rp"
-              >）</span></span>の上に坐りながら）</stage>
+          <stage>（そこの<span type="ruby"><span type="rb">芝</span><span type="rp">（</span><span
+                type="rt">しば</span><span type="rp">）</span></span>の上に坐りながら）</stage>
           <p>わたしはいつまでもこの城にいたい。この薔薇の花の中に、噴水の音を聞いていたい。……<lb/>
           </p>
         </sp>
@@ -642,8 +634,8 @@
         </sp>
         <sp who="#王子">
           <speaker>王子</speaker>
-          <stage>（独り<span type="ruby"><span type="rb">語</span><span type="rp">（</span><span type="rt"
-            >ごと</span><span type="rp">）</span></span>のように）</stage>
+          <stage>（独り<span type="ruby"><span type="rb">語</span><span type="rp">（</span><span
+                type="rt">ごと</span><span type="rp">）</span></span>のように）</stage>
           <p>しまった！　声を出したのは悪かったのだ！</p>
         </sp>
         <sp who="#王女">
@@ -671,7 +663,7 @@
         <sp who="#王子">
           <speaker>王子</speaker>
           <stage>（<span type="ruby"><span type="rb">落胆</span><span type="rp">（</span><span type="rt"
-            >らくたん</span><span type="rp">）</span></span>したように）</stage>
+                >らくたん</span><span type="rp">）</span></span>したように）</stage>
           <p>わたしの姿は見えないはずなのですがね。</p>
         </sp>
         <sp who="#王女">
@@ -799,8 +791,8 @@
         </sp>
         <sp who="#黒ん坊の王">
           <speaker>王</speaker>
-          <stage>（わざと<span type="ruby"><span type="rb">叮嚀</span><span type="rp">（</span><span type="rt"
-            >ていねい</span><span type="rp">）</span></span>に）</stage>
+          <stage>（わざと<span type="ruby"><span type="rb">叮嚀</span><span type="rp">（</span><span
+                type="rt">ていねい</span><span type="rp">）</span></span>に）</stage>
           <p>わたしは三つの宝を持っています。あなたはそれを知っていますか？</p>
         </sp>
         <sp who="#王子">
@@ -810,10 +802,9 @@
         <sp who="#黒ん坊の王">
           <speaker>王</speaker>
           <stage>（<span type="ruby"><span type="rb">嘲笑</span><span type="rp">（</span><span type="rt"
-            >あざわら</span><span type="rp">）</span></span>う）</stage>
-          <p><span type="ruby"><span type="rb"
-                >生意気</span><span type="rp">（</span><span type="rt">なまいき</span><span type="rp"
-                >）</span></span>な！　わたしのマントルの力を見るが好い。</p>
+                >あざわら</span><span type="rp">）</span></span>う）</stage>
+          <p><span type="ruby"><span type="rb">生意気</span><span type="rp">（</span><span type="rt"
+                >なまいき</span><span type="rp">）</span></span>な！　わたしのマントルの力を見るが好い。</p>
           <stage>（マントルを着る。同時に消え失せる）</stage>
         </sp>
         <sp who="#王女">
@@ -828,14 +819,12 @@
         <sp who="#黒ん坊の王">
           <speaker>王</speaker>
           <stage>（突然また現われる。<span type="ruby"><span type="rb">忌々</span><span type="rp">（</span><span
-            type="rt">いまいま</span><span type="rp"
-              >）</span></span>しそうに）</stage>
+                type="rt">いまいま</span><span type="rp">）</span></span>しそうに）</stage>
           <p>そうです。あなた方のために出来ているようなものです。わたしには役にも何にもたたない。</p>
           <stage>（マントルを投げ捨てる）</stage>
           <p>しかしわたしは剣を持っている。</p>
-          <stage>（急に王子を<span type="ruby"><span type="rb">睨</span><span type="rp"
-            >（</span><span type="rt">にら</span><span type="rp"
-              >）</span></span>みながら）</stage>
+          <stage>（急に王子を<span type="ruby"><span type="rb">睨</span><span type="rp">（</span><span
+                type="rt">にら</span><span type="rp">）</span></span>みながら）</stage>
           <p>あなたはわたしの幸福を奪うものだ。さあ尋常に勝負をしよう。わたしの剣は鉄でも切れる。あなたの首位は何でもない。</p>
           <stage>（剣を抜く）</stage>
         </sp>
@@ -853,15 +842,14 @@
         <sp who="#王女">
           <speaker>王女</speaker>
           <stage>（<span type="ruby"><span type="rb">嘲</span><span type="rp">（</span><span type="rt"
-            >あざけ</span><span type="rp">）</span></span>るように）</stage>
+                >あざけ</span><span type="rp">）</span></span>るように）</stage>
           <p>まあ、この胸も突けないのですか？　鉄でも斬れるとおっしゃった癖に！</p>
         </sp>
         <sp who="#王子">
           <speaker>王子</speaker>
           <p>お待ちなさい。</p>
           <stage>（王女を押し<span type="ruby"><span type="rb">止</span><span type="rp">（</span><span
-            type="rt">とど</span><span type="rp"
-              >）</span></span>めながら）</stage>
+                type="rt">とど</span><span type="rp">）</span></span>めながら）</stage>
           <p>王の云う事はもっともです。王の敵はわたしですから、尋常に勝負をしなければなりません。</p>
           <stage>（王に）</stage>
           <p>さあ、すぐに勝負をしよう。</p>
@@ -963,26 +951,24 @@
         <sp who="#王女">
           <speaker>王女</speaker>
           <stage>（黒ん坊の王の胸に、<span type="ruby"><span type="rb">薔薇</span><span type="rp">（</span><span
-            type="rt">ばら</span><span type="rp"
-              >）</span></span>の花をさしてやりながら）</stage>
-          <p>わたしはあなたにすまない事をしました。あなたがこんな<span type="ruby"><span
-                type="rb">優</span><span type="rp">（</span><span type="rt">やさ</span><span type="rp"
-                >）</span></span>しい方だとは、夢にも知らずにいたのです。どうかかんにんして下さい。ほんとうにわたしはすまない事をしました。</p>
+                type="rt">ばら</span><span type="rp">）</span></span>の花をさしてやりながら）</stage>
+          <p>わたしはあなたにすまない事をしました。あなたがこんな<span type="ruby"><span type="rb">優</span><span type="rp"
+                >（</span><span type="rt">やさ</span><span type="rp"
+            >）</span></span>しい方だとは、夢にも知らずにいたのです。どうかかんにんして下さい。ほんとうにわたしはすまない事をしました。</p>
           <stage>（王の胸にすがりながら、子供のように泣き始める）</stage>
         </sp>
         <sp who="#黒ん坊の王">
           <speaker>王</speaker>
-          <stage>（王女の<span type="ruby"><span type="rb">髪</span><span type="rp">（</span><span type="rt"
-            >かみ</span><span type="rp">）</span></span>を<span type="ruby"><span type="rb"
-              >撫</span><span type="rp">（</span><span type="rt">な</span><span type="rp"
-                >）</span></span>でながら）</stage>
-          <p><span type="ruby"><span type="rb">有難</span><span type="rp"
-                >（</span><span type="rt">ありがと</span><span type="rp"
-              >）</span></span>う。よくそう云ってくれました。わたしも<span type="ruby"><span type="rb">悪魔</span><span
-                type="rp">（</span><span type="rt">あくま</span><span type="rp"
-              >）</span></span>ではありません。悪魔も同様な黒ん坊の王は<span type="ruby"><span type="rb">御伽噺</span><span
-                type="rp">（</span><span type="rt">おとぎばなし</span><span type="rp"
-            >）</span></span>にあるだけです。</p>
+          <stage>（王女の<span type="ruby"><span type="rb">髪</span><span type="rp">（</span><span
+                type="rt">かみ</span><span type="rp">）</span></span>を<span type="ruby"><span type="rb"
+                >撫</span><span type="rp">（</span><span type="rt">な</span><span type="rp"
+              >）</span></span>でながら）</stage>
+          <p><span type="ruby"><span type="rb">有難</span><span type="rp">（</span><span type="rt"
+                >ありがと</span><span type="rp">）</span></span>う。よくそう云ってくれました。わたしも<span type="ruby"
+                ><span type="rb">悪魔</span><span type="rp">（</span><span type="rt">あくま</span><span
+                type="rp">）</span></span>ではありません。悪魔も同様な黒ん坊の王は<span type="ruby"><span type="rb"
+                >御伽噺</span><span type="rp">（</span><span type="rt">おとぎばなし</span><span type="rp"
+                >）</span></span>にあるだけです。</p>
           <stage>（王子に）</stage>
           <p>そうじゃありませんか？</p>
         </sp>
@@ -1005,7 +991,7 @@
     </body>
     <back>
       <div type="note">
-        <p><date when="1922-11">（大正十一年十二月）</date></p>
+        <p><date when="1922-12">（大正十一年十二月）</date></p>
       </div>
     </back>
   </text>
