@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel='stylesheet' href='assets/css/style.css' type='text/css' media='all' />
   <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
-  <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
 </head>
 
 <body>
@@ -44,7 +42,7 @@
       </div>
 
     </div>
-
+    
   </div>
 
   <!-- ▼LINE風ここから -->
@@ -78,7 +76,7 @@ icon_map["黒ん坊の王"] = "https://3.bp.blogspot.com/-8YetE9SnMGE/Wc8f4VngjU
 icon_map["王女"] = "https://1.bp.blogspot.com/-dQHPshzm_tY/WaOePIs3e9I/AAAAAAABGLI/bvasBK5wZPIVPskCglfUp5itLsFfJJRGQCLcBGAs/s180-c/royal_princess.png"
 icon_map["宿屋の主人"] = "https://3.bp.blogspot.com/-89ED7hk_-UQ/Wi4gIDiVXpI/AAAAAAABItw/sEue9RlJBqs4L4gFmBggSN9qBJ_DmtoPgCLcBGAs/s180-c/hair_usuge_middle.png"
 icon_map["第二の農夫"] = "https://2.bp.blogspot.com/-kMbdxwET8Go/Wn1VcZ9oGBI/AAAAAAABKCY/7dL-doSO7EgkxvT97_5W7VPiy0_lsPRAgCLcBGAs/s180-c/agura_kutsurogu3_ojisan.png"
-//icon_map["第一の農夫"] = "https://2.bp.blogspot.com/-PyFAYWpdoFE/W_UF64ZLkBI/AAAAAAABQTs/QblG0MDt0AkGF5UZwhXxURI01rtUQOj0wCLcBGAs/s180-c/biyou_hige_busyohige.png"
+icon_map["第一の農夫"] = "https://2.bp.blogspot.com/-PyFAYWpdoFE/W_UF64ZLkBI/AAAAAAABQTs/QblG0MDt0AkGF5UZwhXxURI01rtUQOj0wCLcBGAs/s180-c/biyou_hige_busyohige.png"
 
 //パラメータの取得
 var vars = getParam();
@@ -127,6 +125,7 @@ function file_input(){
   }
 }
 
+//xmlの表示処理
 function showxml(data){
 
   $("#line").show()
