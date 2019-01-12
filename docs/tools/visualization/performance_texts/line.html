@@ -11,7 +11,7 @@
   <div class="line__container">
     <!-- タイトル -->
     <div class="line__title">
-      
+
     </div>
 
     <!-- ▼会話エリア scrollを外すと高さ固定解除 -->
@@ -58,8 +58,13 @@ $(function(){
   var CETEIcean = new CETEI()
   CETEIcean.getHTML5(resourceUri, function(data) {
 
+    console.log(data)
+
+    var title = $($(data).find("tei-title")[0]).text()
+    var author = $($(data).find("tei-author")[0]).text()
+    
     //タイトル
-    $(".line__title").text($($(data).find("tei-title")[0]).text())
+    $(".line__title").text(author+" "+title+" - 青空文庫")
 
     var count = 1
 
