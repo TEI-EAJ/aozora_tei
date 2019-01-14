@@ -138,6 +138,21 @@ function showxml(data){
   //タイトル
   $(".line__title").text(author+" "+title)
 
+  var speakers = []
+
+  var person_list = $(data).find("tei-person")
+  for(var i = 0; i < person_list.length; i++){
+    var person = $(person_list[i]).attr("id")
+    speakers.push(person)
+  }
+
+  var subject_speaker;
+  if(speakers.indexOf(speaker) != -1){
+    subject_speaker = speaker
+  } else {
+    subject_speaker = speakers[0]
+  }
+
   var count = 1
 
   //spのタグ一覧
@@ -166,7 +181,7 @@ function showxml(data){
     }
 
     var line = $('<div>')
-    if(name == speaker){
+    if(name == subject_speaker){
       line.attr("class", "line__right")
 
       var dt = $('<div class="text">').append(text)
