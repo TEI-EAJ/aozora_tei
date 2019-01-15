@@ -138,14 +138,18 @@ function showxml(data){
   //タイトル
   $(".line__title").text(author+" "+title)
 
+  //発話者の一覧を取得
   var speakers = []
-
-  var person_list = $(data).find("tei-person")
-  for(var i = 0; i < person_list.length; i++){
-    var person = $(person_list[i]).attr("id")
-    speakers.push(person)
+  var target_tags = ["tei-person", "tei-persName"]
+  for(var j = 0; j < target_tags.length; j++){
+    var person_list = $(data).find(target_tags[j])
+    for(var i = 0; i < person_list.length; i++){
+      var person = $(person_list[i]).attr("id")
+      speakers.push(person)
+    }
   }
 
+  //メインの発話者を取得
   var subject_speaker;
   if(speakers.indexOf(speaker) != -1){
     subject_speaker = speaker
