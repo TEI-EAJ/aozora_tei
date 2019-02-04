@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+            <fileDesc>
+                  <titleStmt>
+                        <title>かたい大きな手</title>
+                        <author>小川未明</author>
+                        <respStmt>
+                              <resp>Aozora Transcription</resp>
+                              <name>特定非営利活動法人はるかぜ</name>
+                        </respStmt>
+                        <respStmt>
+                              <resp>Aozora Proofreading</resp>
+                              <name>酒井裕二</name>
+                        </respStmt>
+                        <respStmt>
+                              <resp when="2019-01-29">2019年1月29日作成</resp>
+                              <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+                              <note>
+                                    <lb/>底本：「定本小川未明童話全集　14」講談社 <lb/>　　　1977（昭和52）年12月10日第1刷発行
+                                    <lb/>　　　1983（昭和58）年1月19日第5刷発行 <lb/>底本の親本：「みどり色の時計」新子供社
+                                    <lb/>　　　1950（昭和25）年4月 <lb/>初出：「銀河」 <lb/>　　　1948（昭和23）年7月
+                                          <lb/>※表題は底本では、「かたい<span type="ruby"><span type="rb"
+                                                >大</span><span type="rp">（</span><span type="rt"
+                                                >おお</span><span type="rp">）</span></span>きな<span
+                                          type="ruby"><span type="rb">手</span><span type="rp"
+                                                >（</span><span type="rt">て</span><span type="rp"
+                                                >）</span></span>」となっています。 <lb/>入力：特定非営利活動法人はるかぜ
+                                    <lb/>校正：酒井裕二 <lb/>2019年1月29日作成 <lb/>青空文庫作成ファイル：
+                                    <lb/>このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。
+                              </note>
+                        </respStmt>
+                        <respStmt>
+                              <resp when="2019-02-04">TEI Encoding</resp>
+                              <name>Kazuhiro Okada</name>
+                        </respStmt>
+
+                  </titleStmt>
+                  <publicationStmt>
+                        <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+                        <date when="2019-01-11"> 2019年1月11日</date>
+                        <availability>
+                              <p>
+                                    <ref target="https://creativecommons.org/publicdomain/zero/1.0/"
+                                          >CC0 1.0 Universal (CC0 1.0) Public Domain
+                                          Dedication</ref></p>
+                        </availability>
+                  </publicationStmt>
+                  <sourceDesc>
+                        <bibl>
+                              <author>太宰治</author>
+                              <title>走れメロス</title>
+                              <publisher>筑摩書房</publisher>「太宰治全集3」ちくま文庫、 <date when="1988-10-25"
+                                    >1988（昭和63）年10月25日</date>初版発行 <date when="1998-06-15"
+                                    >1998（平成10）年6月15日</date>第2刷 </bibl>
+                  </sourceDesc>
+            </fileDesc>
+            <revisionDesc>
+                  <list>
+                        <item>
+                              <date when="2011-01-17">2011年1月17日</date>修正 </item>
+                        <item> 入力<persName>金川一之</persName> 校正<persName>高橋美奈子</persName>
+                              <date when="2000-12-04"> 2000年12月4日</date>作成 </item>
+                  </list>
+            </revisionDesc>
+      </teiHeader>
+      <text>
+            <front>
+                  <p>
+                        <listPerson>
+                              <person xml:id="メロス">
+                                    <persName>メロス</persName>
+                                    <occupation>牧人</occupation>
+                              </person>
+                              <person xml:id="ディオニス">
+                                    <persName>ディオニス</persName>
+                                    <occupation>王</occupation>
+                              </person>
+                              <person xml:id="セリヌンティウス">
+                                    <persName>セリヌンティウス</persName>
+                                    <occupation>石工</occupation>
+                              </person>
+                        </listPerson>
+                  </p>
+            </front>
+            <body>
+                  <p>
+                        <span type="ruby"><span type="rb">遠</span><span type="rp">（</span><span
+                                    type="rt">とお</span><span type="rp">）</span></span>く、いなかから、<span
+                              type="ruby"><span type="rb">出</span><span type="rp">（</span><span
+                                    type="rt">で</span><span type="rp"
+                              >）</span></span>ていらした、おじいさんがめずらしいので、<span type="ruby"><span type="rb"
+                                    >勇吉</span><span type="rp">（</span><span type="rt"
+                                    >ゆうきち</span><span type="rp"
+                              >）</span></span>は、そのそばをはなれませんでした。おじいさんの<span type="ruby"><span
+                                    type="rb">着物</span><span type="rp">（</span><span type="rt"
+                                    >きもの</span><span type="rp">）</span></span>には、<span type="ruby"
+                                    ><span type="rb">北</span><span type="rp">（</span><span type="rt"
+                                    >きた</span><span type="rp">）</span></span>の<span type="ruby"
+                                    ><span type="rb">国</span><span type="rp">（</span><span type="rt"
+                                    >くに</span><span type="rp">）</span></span>の<span type="ruby"
+                                    ><span type="rb">生活</span><span type="rp">（</span><span
+                                    type="rt">せいかつ</span><span type="rp"
+                              >）</span></span>が、しみこんでいるように<span type="ruby"><span type="rb"
+                                    >感</span><span type="rp">（</span><span type="rt">かん</span><span
+                                    type="rp">）</span></span>じられました。それは<span type="ruby"><span
+                                    type="rb">畑</span><span type="rp">（</span><span type="rt"
+                                    >はたけ</span><span type="rp">）</span></span>の<span type="ruby"
+                                    ><span type="rb">枯</span><span type="rp">（</span><span type="rt"
+                                    >か</span><span type="rp">）</span></span>れ<span type="ruby"><span
+                                    type="rb">草</span><span type="rp">（</span><span type="rt"
+                                    >くさ</span><span type="rp">）</span></span>をぬくもらし、また<span
+                              type="ruby"><span type="rb">町</span><span type="rp">（</span><span
+                                    type="rt">まち</span><span type="rp">）</span></span>へつづく、さびしい<span
+                              type="ruby"><span type="rb">道</span><span type="rp">（</span><span
+                                    type="rt">みち</span><span type="rp">）</span></span>を<span
+                              type="ruby"><span type="rb">照</span><span type="rp">（</span><span
+                                    type="rt">て</span><span type="rp">）</span></span>らした、<span
+                              type="ruby"><span type="rb">太陽</span><span type="rp">（</span><span
+                                    type="rt">たいよう</span><span type="rp"
+                              >）</span></span>のにおいであると<span type="ruby"><span type="rb"
+                                    >思</span><span type="rp">（</span><span type="rt">おも</span><span
+                                    type="rp">）</span></span>うと、かぎりなくなつかしかったのです。</p>
+                  <p> 「こちらは、いつも、こんなにいいお<span type="ruby"><span type="rb">天気</span><span type="rp"
+                                    >（</span><span type="rt">てんき</span><span type="rp"
+                              >）</span></span>なのか。」と、おじいさんは、<span type="ruby"><span type="rb"
+                                    >聞</span><span type="rp">（</span><span type="rt">き</span><span
+                                    type="rp">）</span></span>かれました。</p>
+                  <p> 「はい、このごろは、<span type="ruby"><span type="rb">毎日</span><span type="rp"
+                                    >（</span><span type="rt">まいにち</span><span type="rp"
+                              >）</span></span>こんなです。」と、おかあさんが、<span type="ruby"><span type="rb"
+                                    >答</span><span type="rp">（</span><span type="rt">こた</span><span
+                                    type="rp">）</span></span>えました。</p>
+                  <p> 「あたたかなところで、くらす<span type="ruby"><span type="rb">人</span><span type="rp"
+                                    >（</span><span type="rt">ひと</span><span type="rp"
+                              >）</span></span>は、うらやましい。」</p>
+                  <p> 　おじいさんは、<span type="ruby"><span type="rb">庭</span><span type="rp"
+                                    >（</span><span type="rt">にわ</span><span type="rp"
+                              >）</span></span>のかなたへ、はてしなくひろがる<span type="ruby"><span type="rb"
+                                    >空</span><span type="rp">（</span><span type="rt">そら</span><span
+                                    type="rp">）</span></span>を<span type="ruby"><span type="rb"
+                                    >見</span><span type="rp">（</span><span type="rt">み</span><span
+                                    type="rp">）</span></span>ました。<span type="ruby"><span type="rb"
+                                    >風</span><span type="rp">（</span><span type="rt">かぜ</span><span
+                                    type="rp">）</span></span>のない、おだやかな<span type="ruby"><span
+                                    type="rb">日</span><span type="rp">（</span><span type="rt"
+                                    >ひ</span><span type="rp">）</span></span>で、<span type="ruby"
+                                    ><span type="rb">空</span><span type="rp">（</span><span type="rt"
+                                    >そら</span><span type="rp">）</span></span>がむらさきばんでいました。</p>
+                  <p> 「おかあさん、さっき、<span type="ruby"><span type="rb">金魚</span><span type="rp"
+                                    >（</span><span type="rt">きんぎょ</span><span type="rp"
+                              >）</span></span><span type="ruby"><span type="rb">売</span><span
+                                    type="rp">（</span><span type="rt">う</span><span type="rp"
+                                    >）</span></span>りがきた。」</p>
+                  <p> 「そうかい、<span type="ruby"><span type="rb">戦争中</span><span type="rp"
+                                    >（</span><span type="rt">せんそうちゅう</span><span type="rp"
+                              >）</span></span>は、<span type="ruby"><span type="rb">金魚</span><span
+                                    type="rp">（</span><span type="rt">きんぎょ</span><span type="rp"
+                                    >）</span></span><span type="ruby"><span type="rb">売</span><span
+                                    type="rp">（</span><span type="rt">う</span><span type="rp"
+                                    >）</span></span>りもこなかったね。」</p>
+                  <p> 「<span type="ruby"><span type="rb">故郷</span><span type="rp">（</span><span
+                                    type="rt">くに</span><span type="rp"
+                              >）</span></span>は、まだこんなわけにはいかない。」と、おじいさんは、なにか<span type="ruby"><span
+                                    type="rb">考</span><span type="rp">（</span><span type="rt"
+                                    >かんが</span><span type="rp">）</span></span>えていられました。</p>
+                  <p> 「もうすこし、<span type="ruby"><span type="rb">近</span><span type="rp">（</span><span
+                                    type="rt">ちか</span><span type="rp"
+                        >）</span></span>ければ、ときどきいらっしゃれるんですが。」</p>
+                  <p> 「こちらへくると、もう、<span type="ruby"><span type="rb">帰</span><span type="rp"
+                                    >（</span><span type="rt">かえ</span><span type="rp"
+                              >）</span></span>りたくなくなる。」と、おじいさんは<span type="ruby"><span type="rb"
+                                    >笑</span><span type="rp">（</span><span type="rt">わら</span><span
+                                    type="rp">）</span></span>われました。</p>
+                  <p> 　<span type="ruby"><span type="rb">勇吉</span><span type="rp">（</span><span
+                                    type="rt">ゆうきち</span><span type="rp"
+                              >）</span></span>は、おじいさんの<span type="ruby"><span type="rb"
+                                    >顔</span><span type="rp">（</span><span type="rt">かお</span><span
+                                    type="rp">）</span></span>を<span type="ruby"><span type="rb"
+                                    >見</span><span type="rp">（</span><span type="rt">み</span><span
+                                    type="rp">）</span></span>て、</p>
+                  <p> 「おじいさん、いなかと、こっちとどちらがいいの。」と、<span type="ruby"><span type="rb">聞</span><span
+                                    type="rp">（</span><span type="rt">き</span><span type="rp"
+                                    >）</span></span>きました。</p>
+                  <p> 「それは、こっちがいいさ。<span type="ruby"><span type="rb">半日</span><span type="rp"
+                                    >（</span><span type="rt">はんにち</span><span type="rp"
+                              >）</span></span><span type="ruby"><span type="rb">汽車</span><span
+                                    type="rp">（</span><span type="rt">きしゃ</span><span type="rp"
+                                    >）</span></span>に<span type="ruby"><span type="rb">乗</span><span
+                                    type="rp">（</span><span type="rt">の</span><span type="rp"
+                                    >）</span></span>れば、こうも<span type="ruby"><span type="rb"
+                                    >気候</span><span type="rp">（</span><span type="rt"
+                                    >きこう</span><span type="rp">）</span></span>が、ちがうものかとおどろくよ。」</p>
+                  <p> 「そんなら、おじいさん、こっちへ<span type="ruby"><span type="rb">越</span><span type="rp"
+                                    >（</span><span type="rt">こ</span><span type="rp"
+                        >）</span></span>していらっしゃい。」</p>
+                  <p> 「もうちっと、<span type="ruby"><span type="rb">年</span><span type="rp">（</span><span
+                                    type="rt">とし</span><span type="rp">）</span></span>でも<span
+                              type="ruby"><span type="rb">若</span><span type="rp">（</span><span
+                                    type="rt">わか</span><span type="rp">）</span></span>ければ。」</p>
+                  <p> 「お<span type="ruby"><span type="rb">年</span><span type="rp">（</span><span
+                                    type="rt">とし</span><span type="rp"
+                        >）</span></span>よりですから、なおのこと、そうしてくださればいいんですが。」と、おかあさんがいいました。</p>
+                  <p> 「ねえ、おじいさん、そうなさいよ。」と、<span type="ruby"><span type="rb">勇吉</span><span type="rp"
+                                    >（</span><span type="rt">ゆうきち</span><span type="rp"
+                              >）</span></span>は、おじいさんのからだにすがりつきました。</p>
+                  <p> 「まあ、よく<span type="ruby"><span type="rb">考</span><span type="rp">（</span><span
+                                    type="rt">かんが</span><span type="rp"
+                              >）</span></span>えてみてから。」と、おじいさんは、しわのよった、<span type="ruby"><span
+                                    type="rb">大</span><span type="rp">（</span><span type="rt"
+                                    >おお</span><span type="rp">）</span></span>きな<span type="ruby"
+                                    ><span type="rb">手</span><span type="rp">（</span><span type="rt"
+                                    >て</span><span type="rp">）</span></span>で、<span type="ruby"
+                                    ><span type="rb">勇吉</span><span type="rp">（</span><span
+                                    type="rt">ゆうきち</span><span type="rp">）</span></span>のいがぐり<span
+                              type="ruby"><span type="rb">頭</span><span type="rp">（</span><span
+                                    type="rt">あたま</span><span type="rp"
+                        >）</span></span>を、くるくるとなでられました。</p>
+                  <p> 「おじいさん、お<span type="ruby"><span type="rb">湯</span><span type="rp"
+                                    >（</span><span type="rt">ゆ</span><span type="rp"
+                              >）</span></span>へいらっしゃいませんか。<span type="ruby"><span type="rb"
+                                    >勇</span><span type="rp">（</span><span type="rt">ゆう</span><span
+                                    type="rp">）</span></span>ちゃん、おともをなさい。」と、このとき、おかあさんが、<span
+                              type="ruby"><span type="rb">台所</span><span type="rp">（</span><span
+                                    type="rt">だいどころ</span><span type="rp">）</span></span>から、<span
+                              type="ruby"><span type="rb">出</span><span type="rp">（</span><span
+                                    type="rt">で</span><span type="rp">）</span></span>てきて、いいました。</p>
+                  <p> 　こう<span type="ruby"><span type="rb">聞</span><span type="rp">（</span><span
+                                    type="rt">き</span><span type="rp"
+                              >）</span></span>くと、おじいさんも、その<span type="ruby"><span type="rb"
+                                    >気</span><span type="rp">（</span><span type="rt">き</span><span
+                                    type="rp">）</span></span>になられたのでしょう。</p>
+                  <p> 「そうしようか、どれ、はおりを<span type="ruby"><span type="rb">出</span><span type="rp"
+                                    >（</span><span type="rt">だ</span><span type="rp"
+                        >）</span></span>しておくれ。」</p>
+                  <p> 　<span type="ruby"><span type="rb">立</span><span type="rp">（</span><span
+                                    type="rt">た</span><span type="rp"
+                        >）</span></span>ちあがって、みなりをなおしました。</p>
+                  <p> 「おはおりなんか、きていらっしゃらないほうがいいですよ。」</p>
+                  <p> 「<span type="ruby"><span type="rb">晩</span><span type="rp">（</span><span
+                                    type="rt">ばん</span><span type="rp">）</span></span>がたになると、<span
+                              type="ruby"><span type="rb">冷</span><span type="rp">（</span><span
+                                    type="rt">ひ</span><span type="rp">）</span></span>えはしないか。」</p>
+                  <p> 「そうですか。」</p>
+                  <p> 　やがて、おじいさんと、<span type="ruby"><span type="rb">勇吉</span><span type="rp"
+                                    >（</span><span type="rt">ゆうきち</span><span type="rp"
+                              >）</span></span>の<span type="ruby"><span type="rb">二人</span><span
+                                    type="rp">（</span><span type="rt">ふたり</span><span type="rp"
+                                    >）</span></span>は、<span type="ruby"><span type="rb"
+                                    >家</span><span type="rp">（</span><span type="rt">いえ</span><span
+                                    type="rp">）</span></span>を<span type="ruby"><span type="rb"
+                                    >出</span><span type="rp">（</span><span type="rt">で</span><span
+                                    type="rp">）</span></span>ました。おじいさんは、はおりをきて、<span type="ruby"
+                                    ><span type="rb">白</span><span type="rp">（</span><span type="rt"
+                                    >しろ</span><span type="rp">）</span></span>たびをはかれました。<span
+                              type="ruby"><span type="rb">途中</span><span type="rp">（</span><span
+                                    type="rt">とちゅう</span><span type="rp">）</span></span>、<span
+                              type="ruby"><span type="rb">近所</span><span type="rp">（</span><span
+                                    type="rt">きんじょ</span><span type="rp">）</span></span>の<span
+                              type="ruby"><span type="rb">人々</span><span type="rp">（</span><span
+                                    type="rt">ひとびと</span><span type="rp"
+                              >）</span></span>が、そのうしろすがたを<span type="ruby"><span type="rb"
+                                    >見送</span><span type="rp">（</span><span type="rt"
+                                    >みおく</span><span type="rp">）</span></span>っていました。いなかからの、お<span
+                              type="ruby"><span type="rb">客</span><span type="rp">（</span><span
+                                    type="rt">きゃく</span><span type="rp">）</span></span>さんだろうと<span
+                              type="ruby"><span type="rb">思</span><span type="rp">（</span><span
+                                    type="rt">おも</span><span type="rp">）</span></span>って、<span
+                              type="ruby"><span type="rb">見</span><span type="rp">（</span><span
+                                    type="rt">み</span><span type="rp">）</span></span>るにちがいないと、<span
+                              type="ruby"><span type="rb">勇吉</span><span type="rp">（</span><span
+                                    type="rt">ゆうきち</span><span type="rp">）</span></span>はなんとなく<span
+                              type="ruby"><span type="rb">気</span><span type="rp">（</span><span
+                                    type="rt">き</span><span type="rp"
+                        >）</span></span>はずかしかったのでした。</p>
+                  <p> 　<span type="ruby"><span type="rb">道</span><span type="rp">（</span><span
+                                    type="rt">みち</span><span type="rp">）</span></span>の<span
+                              type="ruby"><span type="rb">両</span><span type="rp">（</span><span
+                                    type="rt">りょう</span><span type="rp">）</span></span>がわに、<span
+                              type="ruby"><span type="rb">家</span><span type="rp">（</span><span
+                                    type="rt">いえ</span><span type="rp">）</span></span>が<span
+                              type="ruby"><span type="rb">建</span><span type="rp">（</span><span
+                                    type="rt">た</span><span type="rp"
+                              >）</span></span>っていました。それらの<span type="ruby"><span type="rb"
+                                    >中</span><span type="rp">（</span><span type="rt">なか</span><span
+                                    type="rp">）</span></span>には、<span type="ruby"><span type="rb"
+                                    >店屋</span><span type="rp">（</span><span type="rt"
+                                    >みせや</span><span type="rp"
+                              >）</span></span>がまじっていました。そして、ところどころあるあき<span type="ruby"><span
+                                    type="rb">地</span><span type="rp">（</span><span type="rt"
+                                    >ち</span><span type="rp">）</span></span>は<span type="ruby"><span
+                                    type="rb">畑</span><span type="rp">（</span><span type="rt"
+                                    >はたけ</span><span type="rp">）</span></span>となって、<span type="ruby"
+                                    ><span type="rb">麦</span><span type="rp">（</span><span type="rt"
+                                    >むぎ</span><span type="rp">）</span></span>や、ねぎが、<span type="ruby"
+                                    ><span type="rb">青々</span><span type="rp">（</span><span
+                                    type="rt">あおあお</span><span type="rp"
+                              >）</span></span>としげっていました。おじいさんは、<span type="ruby"><span type="rb"
+                                    >立</span><span type="rp">（</span><span type="rt">た</span><span
+                                    type="rp">）</span></span>ちどまって、それを<span type="ruby"><span
+                                    type="rb">見</span><span type="rp">（</span><span type="rt"
+                                    >み</span><span type="rp">）</span></span>ながら、なにか<span type="ruby"
+                                    ><span type="rb">感心</span><span type="rp">（</span><span
+                                    type="rt">かんしん</span><span type="rp">）</span></span>したように<span
+                              type="ruby"><span type="rb">口</span><span type="rp">（</span><span
+                                    type="rt">くち</span><span type="rp">）</span></span>の<span
+                              type="ruby"><span type="rb">中</span><span type="rp">（</span><span
+                                    type="rt">なか</span><span type="rp"
+                              >）</span></span>で、ひとりごとをしていました。それから、すこし<span type="ruby"><span
+                                    type="rb">歩</span><span type="rp">（</span><span type="rt"
+                                    >ある</span><span type="rp">）</span></span>くと、また<span type="ruby"
+                                    ><span type="rb">立</span><span type="rp">（</span><span type="rt"
+                                    >た</span><span type="rp">）</span></span>ちどまって、たもとをいじっていました。<span
+                              type="ruby"><span type="rb">勇吉</span><span type="rp">（</span><span
+                                    type="rt">ゆうきち</span><span type="rp"
+                        >）</span></span>には、あまり、そのようすが、おかしかったので、</p>
+                  <p> 「どうしたの、なにか<span type="ruby"><span type="rb">落</span><span type="rp"
+                                    >（</span><span type="rt">お</span><span type="rp"
+                              >）</span></span>としたんですか。」と、そばへいって<span type="ruby"><span type="rb"
+                                    >聞</span><span type="rp">（</span><span type="rt">き</span><span
+                                    type="rp">）</span></span>きました。</p>
+                  <p> 「<span type="ruby"><span type="rb">湯銭</span><span type="rp">（</span><span
+                                    type="rt">ゆせん</span><span type="rp"
+                        >）</span></span>をなくすと、たいへんだからな。」と、おじいさんは、いいました。</p>
+                  <p> 「なあんだ、そんなことなの。」</p>
+                  <p> 　<span type="ruby"><span type="rb">勇吉</span><span type="rp">（</span><span
+                                    type="rt">ゆうきち</span><span type="rp">）</span></span>は、<span
+                              type="ruby"><span type="rb">口</span><span type="rp">（</span><span
+                                    type="rt">くち</span><span type="rp">）</span></span>まで<span
+                              type="ruby"><span type="rb">出</span><span type="rp">（</span><span
+                                    type="rt">で</span><span type="rp"
+                              >）</span></span>たことばをのみこんで、やはり、おじいさんは、いなかものだな、と<span type="ruby"><span
+                                    type="rb">思</span><span type="rp">（</span><span type="rt"
+                                    >おも</span><span type="rp">）</span></span>いました。</p>
+                  <p> 「おじいさん、お<span type="ruby"><span type="rb">金</span><span type="rp"
+                                    >（</span><span type="rt">かね</span><span type="rp"
+                              >）</span></span>を<span type="ruby"><span type="rb">落</span><span
+                                    type="rp">（</span><span type="rt">お</span><span type="rp"
+                                    >）</span></span>としたって、<span type="ruby"><span type="rb"
+                                    >入</span><span type="rp">（</span><span type="rt">い</span><span
+                                    type="rp">）</span></span>れてくれるよ。」</p>
+                  <p> 「なんで、<span type="ruby"><span type="rb">湯銭</span><span type="rp">（</span><span
+                                    type="rt">ゆせん</span><span type="rp"
+                        >）</span></span>なしに、はいれるものか。」</p>
+                  <p> 　おじいさんは、まじめになって、いいました。</p>
+                  <p> 「わけをいえば、かしてくれるだろう。」</p>
+                  <p> 「ばかっ。」と、おじいさんは、きゅうにむずかしい<span type="ruby"><span type="rb">顔</span><span
+                                    type="rp">（</span><span type="rt">かお</span><span type="rp"
+                                    >）</span></span>をして、おこりました。なにも、しかられる<span type="ruby"><span
+                                    type="rb">理由</span><span type="rp">（</span><span type="rt"
+                                    >りゆう</span><span type="rp">）</span></span>は、ないと<span type="ruby"
+                                    ><span type="rb">思</span><span type="rp">（</span><span type="rt"
+                                    >おも</span><span type="rp">）</span></span>ったけれど、それきり、<span
+                              type="ruby"><span type="rb">勇吉</span><span type="rp">（</span><span
+                                    type="rt">ゆうきち</span><span type="rp"
+                        >）</span></span>は、だまってしまいました。</p>
+                  <p> 　<span type="ruby"><span type="rb">二人</span><span type="rp">（</span><span
+                                    type="rt">ふたり</span><span type="rp">）</span></span>は、<span
+                              type="ruby"><span type="rb">西日</span><span type="rp">（</span><span
+                                    type="rt">にしび</span><span type="rp"
+                              >）</span></span>のさす、かわいて、<span type="ruby"><span type="rb"
+                                    >白</span><span type="rp">（</span><span type="rt">しろ</span><span
+                                    type="rp">）</span></span>くなった<span type="ruby"><span type="rb"
+                                    >往来</span><span type="rp">（</span><span type="rt"
+                                    >おうらい</span><span type="rp">）</span></span>をいきました。ほどなく、あちらの<span
+                              type="ruby"><span type="rb">水色</span><span type="rp">（</span><span
+                                    type="rt">みずいろ</span><span type="rp">）</span></span>の<span
+                              type="ruby"><span type="rb">空</span><span type="rp">（</span><span
+                                    type="rt">そら</span><span type="rp">）</span></span>へ、えんとつから、<span
+                              type="ruby"><span type="rb">黒</span><span type="rp">（</span><span
+                                    type="rt">くろ</span><span type="rp">）</span></span>い<span
+                              type="ruby"><span type="rb">煙</span><span type="rp">（</span><span
+                                    type="rt">けむり</span><span type="rp"
+                              >）</span></span>が、もくら、もくらと、のぼるのが<span type="ruby"><span type="rb"
+                                    >見</span><span type="rp">（</span><span type="rt">み</span><span
+                                    type="rp">）</span></span>えました。</p>
+                  <p> 「おじいさん、まだ、お<span type="ruby"><span type="rb">湯屋</span><span type="rp"
+                                    >（</span><span type="rt">ゆや</span><span type="rp"
+                              >）</span></span>は、あいていませんよ。」と、<span type="ruby"><span type="rb"
+                                    >勇吉</span><span type="rp">（</span><span type="rt"
+                                    >ゆうきち</span><span type="rp">）</span></span>は、<span type="ruby"
+                                    ><span type="rb">立</span><span type="rp">（</span><span type="rt"
+                                    >た</span><span type="rp">）</span></span>ちどまりました。</p>
+                  <p> 「どうしてか。」</p>
+                  <p> 　おじいさんもいっしょに<span type="ruby"><span type="rb">立</span><span type="rp"
+                                    >（</span><span type="rt">た</span><span type="rp"
+                              >）</span></span>ちどまって、そちらを<span type="ruby"><span type="rb"
+                                    >見</span><span type="rp">（</span><span type="rt">み</span><span
+                                    type="rp">）</span></span>たが、とつぜん、</p>
+                  <p> 「あれは、なにか。」と、さもびっくりしたような、<span type="ruby"><span type="rb">顔</span><span
+                                    type="rp">（</span><span type="rt">かお</span><span type="rp"
+                                    >）</span></span>をしました。<span type="ruby"><span type="rb"
+                                    >道</span><span type="rp">（</span><span type="rt">みち</span><span
+                                    type="rp">）</span></span>の<span type="ruby"><span type="rb"
+                                    >上</span><span type="rp">（</span><span type="rt">うえ</span><span
+                                    type="rp">）</span></span>に、<span type="ruby"><span type="rb"
+                                    >手</span><span type="rp">（</span><span type="rt">て</span><span
+                                    type="rp">）</span></span>ぬぐいをかぶった、ひげつらの<span type="ruby"><span
+                                    type="rb">男</span><span type="rp">（</span><span type="rt"
+                                    >おとこ</span><span type="rp">）</span></span>と、<span type="ruby"
+                                    ><span type="rb">大</span><span type="rp">（</span><span type="rt"
+                                    >おお</span><span type="rp">）</span></span>きな<span type="ruby"
+                                    ><span type="rb">洗面器</span><span type="rp">（</span><span
+                                    type="rt">せんめんき</span><span type="rp"
+                              >）</span></span>をかかえたものと、かたちんばのげたをはいた<span type="ruby"><span type="rb"
+                                    >子</span><span type="rp">（</span><span type="rt">こ</span><span
+                                    type="rp">）</span></span>どもなど、ひとりとして、まんぞくのふうをしない、<span
+                              type="ruby"><span type="rb">人</span><span type="rp">（</span><span
+                                    type="rt">ひと</span><span type="rp">）</span></span>たちが<span
+                              type="ruby"><span type="rb">集</span><span type="rp">（</span><span
+                                    type="rt">あつ</span><span type="rp"
+                              >）</span></span>まっていました。それはちょうど、ルンペンどもが、<span type="ruby"><span
+                                    type="rb">通行人</span><span type="rp">（</span><span type="rt"
+                                    >つうこうにん</span><span type="rp">）</span></span>を<span type="ruby"
+                                    ><span type="rb">待</span><span type="rp">（</span><span type="rt"
+                                    >ま</span><span type="rp">）</span></span>ちぶせしているようにも<span
+                              type="ruby"><span type="rb">見</span><span type="rp">（</span><span
+                                    type="rt">み</span><span type="rp"
+                        >）</span></span>えるからです。おじいさんが、おどろくのも、むりはありませんでした。</p>
+                  <p> 「なんでもないんだよ。<span type="ruby"><span type="rb">戸</span><span type="rp"
+                                    >（</span><span type="rt">と</span><span type="rp"
+                              >）</span></span>のあくのを<span type="ruby"><span type="rb">待</span><span
+                                    type="rp">（</span><span type="rt">ま</span><span type="rp"
+                                    >）</span></span>っているのだ。」と、<span type="ruby"><span type="rb"
+                                    >勇吉</span><span type="rp">（</span><span type="rt"
+                                    >ゆうきち</span><span type="rp">）</span></span>は、<span type="ruby"
+                                    ><span type="rb">説明</span><span type="rp">（</span><span
+                                    type="rt">せつめい</span><span type="rp"
+                        >）</span></span>しました。しかし、おじいさんには、どうしても、のみこめませんでした。</p>
+                  <p> 「<span type="ruby"><span type="rb">勇</span><span type="rp">（</span><span
+                                    type="rt">ゆう</span><span type="rp">）</span></span>ぼうや、<span
+                              type="ruby"><span type="rb">帰</span><span type="rp">（</span><span
+                                    type="rt">かえ</span><span type="rp"
+                        >）</span></span>ろう。おまえは、あとでおかあさんといっしょにおいで。」</p>
+                  <p> 　こういって、おじいさんは、いまきた<span type="ruby"><span type="rb">道</span><span type="rp"
+                                    >（</span><span type="rt">みち</span><span type="rp"
+                              >）</span></span>をもどりかけました。<span type="ruby"><span type="rb"
+                                    >勇吉</span><span type="rp">（</span><span type="rt"
+                                    >ゆうきち</span><span type="rp">）</span></span>も、しかたなく、その<span
+                              type="ruby"><span type="rb">後</span><span type="rp">（</span><span
+                                    type="rt">あと</span><span type="rp">）</span></span>からしたがいました。</p>
+                  <p> 　<span type="ruby"><span type="rb">夜</span><span type="rp">（</span><span
+                                    type="rt">よる</span><span type="rp">）</span></span>になると、<span
+                              type="ruby"><span type="rb">家</span><span type="rp">（</span><span
+                                    type="rt">いえ</span><span type="rp">）</span></span>じゅうのものが、<span
+                              type="ruby"><span type="rb">火鉢</span><span type="rp">（</span><span
+                                    type="rt">ひばち</span><span type="rp"
+                              >）</span></span>のまわりへよって、たのしく<span type="ruby"><span type="rb"
+                                    >話</span><span type="rp">（</span><span type="rt">はなし</span><span
+                                    type="rp">）</span></span>をしました。</p>
+                  <p> 「おじいさんが、こうして、いつも<span type="ruby"><span type="rb">家</span><span type="rp"
+                                    >（</span><span type="rt">いえ</span><span type="rp"
+                              >）</span></span>にいられると、にぎやかで、いいんだがなあ。」と、おとうさんが、しみじみと、いわれました。</p>
+                  <p> 「ほんとうに、そうですよ。」と、おかあさんも、いいました。</p>
+                  <p> 　こう、みんなが、いっても、おじいさんは、そうするとは、いわずに、ただ、<span type="ruby"><span type="rb"
+                                    >笑</span><span type="rp">（</span><span type="rt">わら</span><span
+                                    type="rp">）</span></span>っていられました。</p>
+                  <p> 　その<span type="ruby"><span type="rb">話</span><span type="rp">（</span><span
+                                    type="rt">はなし</span><span type="rp"
+                              >）</span></span>のきれたころ、おじいさんは、<span type="ruby"><span type="rb"
+                                    >思</span><span type="rp">（</span><span type="rt">おも</span><span
+                                    type="rp">）</span></span>いだしたように、さっき<span type="ruby"><span
+                                    type="rb">湯屋</span><span type="rp">（</span><span type="rt"
+                                    >ゆや</span><span type="rp">）</span></span>の<span type="ruby"
+                                    ><span type="rb">前</span><span type="rp">（</span><span type="rt"
+                                    >まえ</span><span type="rp">）</span></span>に、ものすごい<span
+                              type="ruby"><span type="rb">人</span><span type="rp">（</span><span
+                                    type="rt">ひと</span><span type="rp">）</span></span>たちが<span
+                              type="ruby"><span type="rb">立</span><span type="rp">（</span><span
+                                    type="rt">た</span><span type="rp">）</span></span>っていた<span
+                              type="ruby"><span type="rb">話</span><span type="rp">（</span><span
+                                    type="rt">はなし</span><span type="rp"
+                              >）</span></span>をなさると、みんなが、<span type="ruby"><span type="rb"
+                                    >笑</span><span type="rp">（</span><span type="rt">わら</span><span
+                                    type="rp">）</span></span>いだしました。</p>
+                  <p> 「そうでしょうな、はじめて、ごらんになっては。」と、おとうさんは、うなずきました。</p>
+                  <p> 「おじいさん、このごろは、<span type="ruby"><span type="rb">風儀</span><span type="rp"
+                                    >（</span><span type="rt">ふうぎ</span><span type="rp"
+                              >）</span></span>がわるくなりまして、<span type="ruby"><span type="rb"
+                                    >着物</span><span type="rp">（</span><span type="rt"
+                                    >きもの</span><span type="rp"
+                              >）</span></span>や、げたや、せっけんまで、とられるので、だれも、いいふうなどして、お<span type="ruby"
+                                    ><span type="rb">湯</span><span type="rp">（</span><span type="rt"
+                                    >ゆ</span><span type="rp"
+                              >）</span></span>へいくものは、ございません。」と、おかあさんは、わけを<span type="ruby"><span
+                                    type="rb">話</span><span type="rp">（</span><span type="rt"
+                                    >はな</span><span type="rp">）</span></span>しました。</p>
+                  <p> 「その<span type="ruby"><span type="rb">話</span><span type="rp">（</span><span
+                                    type="rt">はなし</span><span type="rp">）</span></span>を、<span
+                              type="ruby"><span type="rb">勇</span><span type="rp">（</span><span
+                                    type="rt">ゆう</span><span type="rp">）</span></span>ぼうからも<span
+                              type="ruby"><span type="rb">聞</span><span type="rp">（</span><span
+                                    type="rt">き</span><span type="rp"
+                              >）</span></span>いたが、なにしろ、おどろいた。」と、おじいさんも、<span type="ruby"><span
+                                    type="rb">大</span><span type="rp">（</span><span type="rt"
+                                    >おお</span><span type="rp">）</span></span>きな<span type="ruby"
+                                    ><span type="rb">声</span><span type="rp">（</span><span type="rt"
+                                    >こえ</span><span type="rp">）</span></span>で、<span type="ruby"
+                                    ><span type="rb">笑</span><span type="rp">（</span><span type="rt"
+                                    >わら</span><span type="rp">）</span></span>われました。</p>
+                  <p> 「<span type="ruby"><span type="rb">夏時分</span><span type="rp">（</span><span
+                                    type="rt">なつじぶん</span><span type="rp">）</span></span>は、<span
+                              type="ruby"><span type="rb">自分</span><span type="rp">（</span><span
+                                    type="rt">じぶん</span><span type="rp">）</span></span>の<span
+                              type="ruby"><span type="rb">家</span><span type="rp">（</span><span
+                                    type="rt">いえ</span><span type="rp"
+                              >）</span></span>から、はだかになって、さるまた一つで、いく<span type="ruby"><span type="rb"
+                                    >人</span><span type="rp">（</span><span type="rt">ひと</span><span
+                                    type="rp">）</span></span>も、あります。」</p>
+                  <p> 「そんなに、<span type="ruby"><span type="rb">気</span><span type="rp">（</span><span
+                                    type="rt">き</span><span type="rp">）</span></span>をつかうのでは、<span
+                              type="ruby"><span type="rb">湯</span><span type="rp">（</span><span
+                                    type="rt">ゆ</span><span type="rp"
+                        >）</span></span>にも、らくらくはいれまいが。」</p>
+                  <p> 「そうなんです。それに、こみあいますし、まったく、<span type="ruby"><span type="rb">湯</span><span
+                                    type="rp">（</span><span type="rt">ゆ</span><span type="rp"
+                                    >）</span></span>にいくのもらくではありません。おじいさん、いなかはどんなですか。」と、おとうさんが、<span
+                              type="ruby"><span type="rb">聞</span><span type="rp">（</span><span
+                                    type="rt">き</span><span type="rp">）</span></span>きました。</p>
+                  <p> 「いなかは、まだそんなでない。<span type="ruby"><span type="rb">昔</span><span type="rp"
+                                    >（</span><span type="rt">むかし</span><span type="rp"
+                              >）</span></span>とちがい、だいぶ<span type="ruby"><span type="rb"
+                                    >暮</span><span type="rp">（</span><span type="rt">く</span><span
+                                    type="rp">）</span></span>らしむきが、きゅうくつにはなったが、<span type="ruby"
+                                    ><span type="rb">湯</span><span type="rp">（</span><span type="rt"
+                                    >ゆ</span><span type="rp">）</span></span>へいって、<span type="ruby"
+                                    ><span type="rb">着物</span><span type="rp">（</span><span
+                                    type="rt">きもの</span><span type="rp"
+                              >）</span></span>をぬすまれたということは<span type="ruby"><span type="rb"
+                                    >聞</span><span type="rp">（</span><span type="rt">き</span><span
+                                    type="rp">）</span></span>かない。<span type="ruby"><span type="rb"
+                                    >村</span><span type="rp">（</span><span type="rt">むら</span><span
+                                    type="rp">）</span></span>でも、よくよく<span type="ruby"><span
+                                    type="rb">困</span><span type="rp">（</span><span type="rt"
+                                    >こま</span><span type="rp">）</span></span>ったものには、<span
+                              type="ruby"><span type="rb">自分</span><span type="rp">（</span><span
+                                    type="rt">じぶん</span><span type="rp">）</span></span>たちのものを、<span
+                              type="ruby"><span type="rb">分</span><span type="rp">（</span><span
+                                    type="rt">わ</span><span type="rp">）</span></span>けてやるぐらいの<span
+                              type="ruby"><span type="rb">義理</span><span type="rp">（</span><span
+                                    type="rt">ぎり</span><span type="rp">）</span></span>や、<span
+                              type="ruby"><span type="rb">人情</span><span type="rp">（</span><span
+                                    type="rt">にんじょう</span><span type="rp">）</span></span>が<span
+                              type="ruby"><span type="rb">残</span><span type="rp">（</span><span
+                                    type="rt">のこ</span><span type="rp"
+                              >）</span></span>っているからな。」と、おじいさんは、<span type="ruby"><span type="rb"
+                                    >答</span><span type="rp">（</span><span type="rt">こた</span><span
+                                    type="rp">）</span></span>えました。</p>
+                  <p> 　<span type="ruby"><span type="rb">子</span><span type="rp">（</span><span
+                                    type="rt">こ</span><span type="rp">）</span></span>どもながら、<span
+                              type="ruby"><span type="rb">勇吉</span><span type="rp">（</span><span
+                                    type="rt">ゆうきち</span><span type="rp">）</span></span>は、この<span
+                              type="ruby"><span type="rb">話</span><span type="rp">（</span><span
+                                    type="rt">はなし</span><span type="rp">）</span></span>に、<span
+                              type="ruby"><span type="rb">感心</span><span type="rp">（</span><span
+                                    type="rt">かんしん</span><span type="rp">）</span></span>しました。</p>
+                  <p> 「ねえ、おかあさん、おあしを<span type="ruby"><span type="rb">忘</span><span type="rp"
+                                    >（</span><span type="rt">わす</span><span type="rp"
+                              >）</span></span>れていっても、お<span type="ruby"><span type="rb"
+                                    >湯</span><span type="rp">（</span><span type="rt">ゆ</span><span
+                                    type="rp">）</span></span>に<span type="ruby"><span type="rb"
+                                    >入</span><span type="rp">（</span><span type="rt">い</span><span
+                                    type="rp">）</span></span>れてくれますね。」と、<span type="ruby"><span
+                                    type="rb">勇吉</span><span type="rp">（</span><span type="rt"
+                                    >ゆうきち</span><span type="rp">）</span></span>が、<span type="ruby"
+                                    ><span type="rb">口</span><span type="rp">（</span><span type="rt"
+                                    >くち</span><span type="rp">）</span></span>をだしました。</p>
+                  <p> 「さあ、このごろは、どうですか。」</p>
+                  <p> 「なんで、<span type="ruby"><span type="rb">入</span><span type="rp">（</span><span
+                                    type="rt">い</span><span type="rp"
+                              >）</span></span>れるものか。」と、おじいさんは、<span type="ruby"><span type="rb"
+                                    >反対</span><span type="rp">（</span><span type="rt"
+                                    >はんたい</span><span type="rp">）</span></span>しました。</p>
+                  <p> 「それで、おじいさんは、お<span type="ruby"><span type="rb">金</span><span type="rp"
+                                    >（</span><span type="rt">かね</span><span type="rp"
+                              >）</span></span>を<span type="ruby"><span type="rb">落</span><span
+                                    type="rp">（</span><span type="rt">お</span><span type="rp"
+                                    >）</span></span>としたら、たいへんと<span type="ruby"><span type="rb"
+                                    >思</span><span type="rp">（</span><span type="rt">おも</span><span
+                                    type="rp">）</span></span>って、たもとをにぎったり、おさえたりしたの。」</p>
+                  <p> 　<span type="ruby"><span type="rb">勇吉</span><span type="rp">（</span><span
+                                    type="rt">ゆうきち</span><span type="rp"
+                              >）</span></span>は、さっきのことを<span type="ruby"><span type="rb"
+                                    >思</span><span type="rp">（</span><span type="rt">おも</span><span
+                                    type="rp">）</span></span>うと、おかしかったのでした。おじいさんが<span type="ruby"
+                                    ><span type="rb">子</span><span type="rp">（</span><span type="rt"
+                                    >こ</span><span type="rp"
+                        >）</span></span>どものようなまねをした、そのときのことがわかるように、</p>
+                  <p> 「は、は、は。」と、おとうさんまで<span type="ruby"><span type="rb">笑</span><span type="rp"
+                                    >（</span><span type="rt">わら</span><span type="rp"
+                              >）</span></span>いました。</p>
+                  <p> 「よく<span type="ruby"><span type="rb">知</span><span type="rp">（</span><span
+                                    type="rt">し</span><span type="rp">）</span></span>った<span
+                              type="ruby"><span type="rb">人</span><span type="rp">（</span><span
+                                    type="rt">ひと</span><span type="rp">）</span></span>なら、<span
+                              type="ruby"><span type="rb">入</span><span type="rp">（</span><span
+                                    type="rt">い</span><span type="rp"
+                              >）</span></span>れるかもしれませんけれど、お<span type="ruby"><span type="rb"
+                                    >湯</span><span type="rp">（</span><span type="rt">ゆ</span><span
+                                    type="rp">）</span></span>などへ、おあしを<span type="ruby"><span
+                                    type="rb">持</span><span type="rp">（</span><span type="rt"
+                                    >も</span><span type="rp">）</span></span>たずに、いく<span type="ruby"
+                                    ><span type="rb">人</span><span type="rp">（</span><span type="rt"
+                                    >ひと</span><span type="rp"
+                              >）</span></span>はありません。」と、おかあさんは、おじいさんの<span type="ruby"><span
+                                    type="rb">意見</span><span type="rp">（</span><span type="rt"
+                                    >いけん</span><span type="rp">）</span></span>に、<span type="ruby"
+                                    ><span type="rb">賛成</span><span type="rp">（</span><span
+                                    type="rt">さんせい</span><span type="rp">）</span></span>でした。</p>
+                  <p> 　おじいさんは、なにか、ほかのことを<span type="ruby"><span type="rb">考</span><span type="rp"
+                                    >（</span><span type="rt">かんが</span><span type="rp"
+                              >）</span></span>えていたとみえて、</p>
+                  <p> 「いなかに、じっとしていれば、<span type="ruby"><span type="rb">心配</span><span type="rp"
+                                    >（</span><span type="rt">しんぱい</span><span type="rp"
+                              >）</span></span>なしだが、<span type="ruby"><span type="rb">一足</span><span
+                                    type="rp">（</span><span type="rt">ひとあし</span><span type="rp"
+                                    >）</span></span><span type="ruby"><span type="rb">旅</span><span
+                                    type="rp">（</span><span type="rt">たび</span><span type="rp"
+                                    >）</span></span>へ<span type="ruby"><span type="rb">出</span><span
+                                    type="rp">（</span><span type="rt">で</span><span type="rp"
+                                    >）</span></span>れば、<span type="ruby"><span type="rb"
+                                    >金</span><span type="rp">（</span><span type="rt">かね</span><span
+                                    type="rp">）</span></span>よりたよりになるものはない。<span type="ruby"><span
+                                    type="rb">万事</span><span type="rp">（</span><span type="rt"
+                                    >ばんじ</span><span type="rp">）</span></span>が<span type="ruby"
+                                    ><span type="rb">金</span><span type="rp">（</span><span type="rt"
+                                    >かね</span><span type="rp">）</span></span>の<span type="ruby"
+                                    ><span type="rb">世</span><span type="rp">（</span><span type="rt"
+                                    >よ</span><span type="rp">）</span></span>の<span type="ruby"><span
+                                    type="rb">中</span><span type="rp">（</span><span type="rt"
+                                    >なか</span><span type="rp">）</span></span>だけ、<span type="ruby"
+                                    ><span type="rb">金</span><span type="rp">（</span><span type="rt"
+                                    >かね</span><span type="rp">）</span></span>のありがたみもわかるが、また、<span
+                              type="ruby"><span type="rb">金</span><span type="rp">（</span><span
+                                    type="rt">かね</span><span type="rp"
+                              >）</span></span>がおそろしくもなる。<span type="ruby"><span type="rb"
+                                    >金</span><span type="rp">（</span><span type="rt">かね</span><span
+                                    type="rp">）</span></span>がなくても、<span type="ruby"><span type="rb"
+                                    >安心</span><span type="rp">（</span><span type="rt"
+                                    >あんしん</span><span type="rp">）</span></span>して、<span type="ruby"
+                                    ><span type="rb">暮</span><span type="rp">（</span><span type="rt"
+                                    >く</span><span type="rp">）</span></span>らせるみちはないかと<span
+                              type="ruby"><span type="rb">思</span><span type="rp">（</span><span
+                                    type="rt">おも</span><span type="rp"
+                              >）</span></span>うよ。」と、おじいさんは、<span type="ruby"><span type="rb"
+                                    >嘆息</span><span type="rp">（</span><span type="rt"
+                                    >たんそく</span><span type="rp">）</span></span>しました。</p>
+                  <p> 「まったく、おじいさんの、おっしゃるとおりです。<span type="ruby"><span type="rb">金</span><span
+                                    type="rp">（</span><span type="rt">かね</span><span type="rp"
+                                    >）</span></span>が、あるために、<span type="ruby"><span type="rb"
+                                    >貧乏人</span><span type="rp">（</span><span type="rt"
+                                    >びんぼうにん</span><span type="rp">）</span></span>をつくり、また、<span
+                              type="ruby"><span type="rb">貧乏</span><span type="rp">（</span><span
+                                    type="rt">びんぼう</span><span type="rp">）</span></span>が、<span
+                              type="ruby"><span type="rb">人間</span><span type="rp">（</span><span
+                                    type="rt">にんげん</span><span type="rp">）</span></span>を<span
+                              type="ruby"><span type="rb">卑屈</span><span type="rp">（</span><span
+                                    type="rt">ひくつ</span><span type="rp"
+                        >）</span></span>にするのです。」と、おとうさんがいいました。</p>
+                  <p> 「お<span type="ruby"><span type="rb">金</span><span type="rp">（</span><span
+                                    type="rt">かね</span><span type="rp">）</span></span>なんか、<span
+                              type="ruby"><span type="rb">世</span><span type="rp">（</span><span
+                                    type="rt">よ</span><span type="rp">）</span></span>の<span
+                              type="ruby"><span type="rb">中</span><span type="rp">（</span><span
+                                    type="rt">なか</span><span type="rp"
+                              >）</span></span>から、なくしてしまえばいいんだね。」と、<span type="ruby"><span type="rb"
+                                    >勇吉</span><span type="rp">（</span><span type="rt"
+                                    >ゆうきち</span><span type="rp">）</span></span>がいいました。</p>
+                  <p> 「まだ、おまえには、そんなことわかりません。だまって、<span type="ruby"><span type="rb">聞</span><span
+                                    type="rp">（</span><span type="rt">き</span><span type="rp"
+                                    >）</span></span>いていらっしゃい。」と、おかあさんは、<span type="ruby"><span
+                                    type="rb">勇吉</span><span type="rp">（</span><span type="rt"
+                                    >ゆうきち</span><span type="rp">）</span></span>をしかりました。</p>
+                  <p> 「そうだ、<span type="ruby"><span type="rb">馬</span><span type="rp">（</span><span
+                                    type="rt">うま</span><span type="rp">）</span></span>も<span
+                              type="ruby"><span type="rb">牛</span><span type="rp">（</span><span
+                                    type="rt">うし</span><span type="rp">）</span></span>も、にわとりも、<span
+                              type="ruby"><span type="rb">私</span><span type="rp">（</span><span
+                                    type="rt">わたし</span><span type="rp">）</span></span>を<span
+                              type="ruby"><span type="rb">待</span><span type="rp">（</span><span
+                                    type="rt">ま</span><span type="rp">）</span></span>っている。<span
+                              type="ruby"><span type="rb">早</span><span type="rp">（</span><span
+                                    type="rt">はや</span><span type="rp">）</span></span>く<span
+                              type="ruby"><span type="rb">帰</span><span type="rp">（</span><span
+                                    type="rt">かえ</span><span type="rp">）</span></span>らなければ。」</p>
+                  <p> 　こうおじいさんは、ひとりごとをしてから、<span type="ruby"><span type="rb">話</span><span type="rp"
+                                    >（</span><span type="rt">はなし</span><span type="rp"
+                              >）</span></span>は、またお<span type="ruby"><span type="rb">金</span><span
+                                    type="rp">（</span><span type="rt">かね</span><span type="rp"
+                                    >）</span></span>のことにもどりました。</p>
+                  <p> 「わしが、はじめて、<span type="ruby"><span type="rb">東京</span><span type="rp"
+                                    >（</span><span type="rt">とうきょう</span><span type="rp"
+                              >）</span></span>へきたとき、<span type="ruby"><span type="rb">夜</span><span
+                                    type="rp">（</span><span type="rt">よる</span><span type="rp"
+                                    >）</span></span>おそく<span type="ruby"><span type="rb"
+                                    >電車</span><span type="rp">（</span><span type="rt"
+                                    >でんしゃ</span><span type="rp">）</span></span>に<span type="ruby"
+                                    ><span type="rb">乗</span><span type="rp">（</span><span type="rt"
+                                    >の</span><span type="rp">）</span></span>ったことがある。<span
+                              type="ruby"><span type="rb">雨</span><span type="rp">（</span><span
+                                    type="rt">あめ</span><span type="rp">）</span></span>の<span
+                              type="ruby"><span type="rb">降</span><span type="rp">（</span><span
+                                    type="rt">ふ</span><span type="rp">）</span></span>る<span
+                              type="ruby"><span type="rb">暗</span><span type="rp">（</span><span
+                                    type="rt">くら</span><span type="rp">）</span></span>い<span
+                              type="ruby"><span type="rb">晩</span><span type="rp">（</span><span
+                                    type="rt">ばん</span><span type="rp">）</span></span>で、その<span
+                              type="ruby"><span type="rb">車</span><span type="rp">（</span><span
+                                    type="rt">くるま</span><span type="rp">）</span></span>には、あまり<span
+                              type="ruby"><span type="rb">人</span><span type="rp">（</span><span
+                                    type="rt">ひと</span><span type="rp">）</span></span>が<span
+                              type="ruby"><span type="rb">乗</span><span type="rp">（</span><span
+                                    type="rt">の</span><span type="rp"
+                              >）</span></span>っていなかった。そのうち、<span type="ruby"><span type="rb"
+                                    >車掌</span><span type="rp">（</span><span type="rt"
+                                    >しゃしょう</span><span type="rp">）</span></span>が、<span type="ruby"
+                                    ><span type="rb">切符</span><span type="rp">（</span><span
+                                    type="rt">きっぷ</span><span type="rp">）</span></span>を<span
+                              type="ruby"><span type="rb">切</span><span type="rp">（</span><span
+                                    type="rt">き</span><span type="rp">）</span></span>りにきて、<span
+                              type="ruby"><span type="rb">一人</span><span type="rp">（</span><span
+                                    type="rt">ひとり</span><span type="rp">）</span></span>の<span
+                              type="ruby"><span type="rb">男</span><span type="rp">（</span><span
+                                    type="rt">おとこ</span><span type="rp">）</span></span>の<span
+                              type="ruby"><span type="rb">前</span><span type="rp">（</span><span
+                                    type="rt">まえ</span><span type="rp"
+                              >）</span></span>で、なにかあらあらしくいっていたが、その<span type="ruby"><span type="rb"
+                                    >男</span><span type="rp">（</span><span type="rt">おとこ</span><span
+                                    type="rp">）</span></span>を、<span type="ruby"><span type="rb"
+                                    >途中</span><span type="rp">（</span><span type="rt"
+                                    >とちゅう</span><span type="rp"
+                              >）</span></span>からおろしてしまった。みすぼらしいふうをして、かさも<span type="ruby"><span
+                                    type="rb">持</span><span type="rp">（</span><span type="rt"
+                                    >も</span><span type="rp">）</span></span>っていなかったが、<span
+                              type="ruby"><span type="rb">聞</span><span type="rp">（</span><span
+                                    type="rt">き</span><span type="rp">）</span></span>いてみると、一<span
+                              type="ruby"><span type="rb">銭</span><span type="rp">（</span><span
+                                    type="rt">せん</span><span type="rp">）</span></span><span
+                              type="ruby"><span type="rb">不足</span><span type="rp">（</span><span
+                                    type="rt">ふそく</span><span type="rp"
+                        >）</span></span>のためというのだった。もっとも、あのころだけれど。」</p>
+                  <p> 　ふけると、さすがに<span type="ruby"><span type="rb">冷</span><span type="rp"
+                                    >（</span><span type="rt">ひ</span><span type="rp"
+                              >）</span></span>えて、おじいさんが、くしゃみをなさったので<span type="ruby"><span type="rb"
+                                    >話</span><span type="rp">（</span><span type="rt">はなし</span><span
+                                    type="rp">）</span></span>を<span type="ruby"><span type="rb"
+                                    >打</span><span type="rp">（</span><span type="rt">う</span><span
+                                    type="rp">）</span></span>ち<span type="ruby"><span type="rb"
+                                    >切</span><span type="rp">（</span><span type="rt">き</span><span
+                                    type="rp">）</span></span>って、みんなも、<span type="ruby"><span
+                                    type="rb">寝</span><span type="rp">（</span><span type="rt"
+                                    >ね</span><span type="rp"
+                              >）</span></span>ることにしました。いつになく、おそくまで、<span type="ruby"><span type="rb"
+                                    >起</span><span type="rp">（</span><span type="rt">お</span><span
+                                    type="rp">）</span></span>きていた、<span type="ruby"><span type="rb"
+                                    >勇吉</span><span type="rp">（</span><span type="rt"
+                                    >ゆうきち</span><span type="rp">）</span></span>が、</p>
+                  <p> 「おじいさんは、やっぱり、いなかのほうが、いいんでしょう。」というと、</p>
+                  <p> 「<span type="ruby"><span type="rb">勇</span><span type="rp">（</span><span
+                                    type="rt">ゆう</span><span type="rp"
+                              >）</span></span>ぼうは、いなかへきて、おじいさんの<span type="ruby"><span type="rb"
+                                    >家</span><span type="rp">（</span><span type="rt">いえ</span><span
+                                    type="rp">）</span></span>の<span type="ruby"><span type="rb"
+                                    >子</span><span type="rp">（</span><span type="rt">こ</span><span
+                                    type="rp">）</span></span>にならんか。」と、しわのよった、かたい、<span type="ruby"
+                                    ><span type="rb">大</span><span type="rp">（</span><span type="rt"
+                                    >おお</span><span type="rp">）</span></span>きな<span type="ruby"
+                                    ><span type="rb">手</span><span type="rp">（</span><span type="rt"
+                                    >て</span><span type="rp">）</span></span>で、<span type="ruby"
+                                    ><span type="rb">頭</span><span type="rp">（</span><span type="rt"
+                                    >あたま</span><span type="rp">）</span></span>をなでられました。</p>
+                  <p> 　<span type="ruby"><span type="rb">勇吉</span><span type="rp">（</span><span
+                                    type="rt">ゆうきち</span><span type="rp">）</span></span>は、かつて、<span
+                              type="ruby"><span type="rb">知</span><span type="rp">（</span><span
+                                    type="rt">し</span><span type="rp"
+                              >）</span></span>らなかった、あたたかな、<span type="ruby"><span type="rb"
+                                    >強</span><span type="rp">（</span><span type="rt">つよ</span><span
+                                    type="rp">）</span></span>い<span type="ruby"><span type="rb"
+                                    >力</span><span type="rp">（</span><span type="rt">ちから</span><span
+                                    type="rp">）</span></span>を<span type="ruby"><span type="rb"
+                                    >感</span><span type="rp">（</span><span type="rt">かん</span><span
+                                    type="rp">）</span></span>じました。それがいつまでも、<span type="ruby"><span
+                                    type="rb">頭</span><span type="rp">（</span><span type="rt"
+                                    >あたま</span><span type="rp">）</span></span>に<span type="ruby"
+                                    ><span type="rb">残</span><span type="rp">（</span><span type="rt"
+                                    >のこ</span><span type="rp">）</span></span>ったのでした。</p>
+            </body>
+      </text>
+</TEI>
