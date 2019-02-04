@@ -48,21 +48,13 @@
                   </publicationStmt>
                   <sourceDesc>
                         <bibl>
-                              <author>太宰治</author>
-                              <title>走れメロス</title>
-                              <publisher>筑摩書房</publisher>「太宰治全集3」ちくま文庫、 <date when="1988-10-25"
-                                    >1988（昭和63）年10月25日</date>初版発行 <date when="1998-06-15"
-                                    >1998（平成10）年6月15日</date>第2刷 </bibl>
+                              <author>小川未明</author>
+                              <title>かたい大きな手</title>
+                              <publisher>講談社</publisher>「定本小川未明童話全集　14」、 <date when="1977-12-10"
+                                    >1977（昭和52）年12月10日</date>第1刷発行 <date when="1983-01-19"
+                                          >1983（昭和58）年1月19日</date>第5刷発行 </bibl>
                   </sourceDesc>
             </fileDesc>
-            <revisionDesc>
-                  <list>
-                        <item>
-                              <date when="2011-01-17">2011年1月17日</date>修正 </item>
-                        <item> 入力<persName>金川一之</persName> 校正<persName>高橋美奈子</persName>
-                              <date when="2000-12-04"> 2000年12月4日</date>作成 </item>
-                  </list>
-            </revisionDesc>
       </teiHeader>
       <text>
             <front>
