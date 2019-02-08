@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <!-- aaa -->
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title/>
+        <author/>
+        <respStmt>
+          <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+        <availability>
+          <p>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0
+              1.0) Public Domain Dedication</ref></p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl/>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body/>
+  </text>
+</TEI>
