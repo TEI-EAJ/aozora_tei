@@ -1,0 +1,465 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>カーライル博物館</title>
+        <author>夏目漱石</author>
+        <respStmt>
+          <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+          <resp when="2000-08-31">作成</resp>
+          <note>
+            <lb/> 底本：「夏目漱石全集2」ちくま文庫、筑摩書房 <lb/> 　　　1987（昭和62）年10月27日第1刷発行<lb/>
+            底本の親本：「筑摩全集類聚版夏目漱石全集」筑摩書房<lb/> 　　　1971（昭和46）年4月〜1972（昭和47）年1月<lb/> 入力：柴田卓治<lb/> 校正：LUNA CAT<lb/>
+            <date when="2000-08-31">2000年8月31日</date>公開<lb/>
+            <date when="2004-02-26">2004年2月26日</date>修正<lb/> 青空文庫作成ファイル：<lb/>
+            このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。</note>
+        </respStmt>
+        <respStmt>
+          <resp>Aozora Transcription</resp>
+          <name>柴田卓治</name>
+        </respStmt>
+        <respStmt>
+          <resp>Aozora Proofreading</resp>
+          <name>LUNA CAT</name>
+        </respStmt>
+        <respStmt>
+          <resp when="2019-02-18">TEI Encoding</resp>
+          <name>Satoru Nakamura</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+        <availability>
+          <p>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0
+              1.0) Public Domain Dedication</ref></p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl><title>カーライル博物館</title><author>夏目漱石</author>
+          <publisher>筑摩書房</publisher>「夏目漱石全集2」ちくま文庫、 <date when="1987-10-27"
+            >1987（昭和62）年10月27日</date>第1刷発行</bibl>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p> 　公園の片隅に通りがかりの人を相手に演説をしている者がある。向うから来た<span type="ruby">釜形<span type="rp">（</span><span
+            type="rt">かまがた</span>）</span>の<span type="ruby">尖（<span type="rt">とが</span><span
+            type="rp">）</span></span>った帽子を<span type="ruby">被<span type="rp">（</span><span type="rt"
+            >か</span>）</span>ずいて古ぼけた<span type="ruby">外套（<span type="rt">がいとう</span><span type="rp"
+            >）</span></span>を<span type="ruby">猫背<span type="rp">（</span><span type="rt"
+          >ねこぜ</span>）</span>に着た<span type="ruby">爺（<span type="rt">じい</span><span type="rp"
+            >）</span></span>さんがそこへ歩みを<span type="ruby">佇<span type="rp">（</span><span type="rt"
+            >とど</span><span type="rp">）</span></span>めて演説者を見る。演説者はぴたりと演説をやめてつかつかとこの<span type="ruby"
+            ><span type="rb">村夫子</span>（<span type="rt">そんぷうし</span><span type="rp"
+          >）</span></span>のたたずめる前に出て来る。二人の視線がひたと行き当る。演説者は濁りたる<span type="ruby"><span type="rb"
+            >田舎調子</span>（<span type="rt">いなかぢょうし</span><span type="rp"
+          >）</span></span>にて御前はカーライルじゃないかと問う。いかにもわしはカーライルじゃと村夫子が答える。チェルシーの<span type="ruby"><span
+            type="rb">哲人</span>（<span type="rt">セージ</span><span type="rp">）</span></span>と人が<span
+          type="ruby">言囃<span type="rp">（</span><span type="rt">いいはや</span><span type="rp"
+          >）</span></span>すのは御前の事かと問う。なるほど世間ではわしの事をチェルシーの<span type="ruby"><span type="rb"
+            >哲人</span>（<span type="rt">セージ</span><span type="rp"
+          >）</span></span>と云うようじゃ。セージと云うは鳥の名だに、人間のセージとは珍らしいなと演説者はからからと笑う。村夫子はなるほど猫も<span type="ruby"
+            >杓子（<span type="rt">しゃくし</span><span type="rp">）</span></span>も同じ人間じゃのにことさらに<span
+          type="ruby">哲人<span type="rp">（</span><span type="rt">セージ</span>）</span>などと<span
+          type="ruby">異名（<span type="rt">いみょう</span>）</span>をつけるのは、あれは鳥じゃと<span type="ruby"><span
+            type="rb">渾名</span>（<span type="rt">あだな</span><span type="rp"
+          >）</span></span>すると同じようなものだのう。人間はやはり当り前の人間で<span type="ruby"><span type="rb"
+            >善</span>（<span type="rt">よ</span><span type="rp"
+        >）</span></span>かりそうなものだのに。と答えてこれもからからと笑う。</p>
+      <p> 　余は晩餐前に公園を散歩するたびに<span type="ruby">川縁（<span type="rt">かわべり</span>）</span>の<span
+          type="ruby"><span type="rb">椅子</span>（<span type="rt">いす</span><span type="rp"
+          >）</span></span>に腰を卸して向側を<span type="ruby">眺<span type="rp">（</span><span type="rt"
+            >なが</span>）</span>める。<span type="ruby">倫敦（<span type="rt">ロンドン</span><span type="rp"
+            >）</span></span>に固有なる濃霧はことに岸辺に多い。余が桜の杖に<span type="ruby"><span type="rb">頤</span>（<span
+            type="rt">あご</span><span type="rp">）</span></span>を<span type="ruby">支（<span type="rt"
+            >ささ</span>）</span>えて真正面を見ていると、<span type="ruby"><span type="rb">遥</span>（<span type="rt"
+            >はる</span><span type="rp">）</span></span>かに対岸の<span type="ruby">往来<span type="rp"
+            >（</span><span type="rt">おうらい</span>）</span>を<span type="ruby">這（<span type="rt"
+            >は</span><span type="rp">）</span></span>い廻る霧の影は次第に濃くなって五階<span type="ruby">立<span
+            type="rp">（</span><span type="rt">だて</span><span type="rp"
+          >）</span></span>の町続きの下からぜんぜんこの<span type="ruby">揺曳<span type="rp">（</span><span type="rt"
+            >たなび</span>）</span>くものの<span type="ruby">裏（<span type="rt">うち</span><span type="rp"
+            >）</span></span>に薄れ去って来る。しまいには遠き未来の世を眼前に引き<span type="ruby"><span type="rb"
+            >出</span>（<span type="rt">いだ</span><span type="rp">）</span></span>したるように<span
+          type="ruby">窈然<span type="rp">（</span><span type="rt">ようぜん</span>）</span>たる空の<span
+          type="ruby">中（<span type="rt">うち</span><span type="rp">）</span></span>にとりとめのつかぬ<span
+          type="ruby">鳶色<span type="rp">（</span><span type="rt">とびいろ</span><span type="rp"
+          >）</span></span>の影が残る。その時この鳶色の奥にぽたりぽたりと鈍き光りが<span type="ruby"><span type="rb"
+            >滴</span>（<span type="rt">したた</span><span type="rp">）</span></span>るように見え初める。三層四層五層<span
+          type="ruby">共<span type="rp">（</span><span type="rt">とも</span>）</span>に<span type="ruby"
+            >瓦斯（<span type="rt">ガス</span><span type="rp"
+          >）</span></span>を点じたのである。余は桜の杖をついて下宿の方へ帰る。帰る時必ずカーライルと演説使いの話しを思いだす。かの<span type="ruby"
+            >溟濛（<span type="rt">めいもう</span>）</span>たる瓦斯の霧に混ずる所が往時この<span type="ruby"><span type="rb"
+            >村夫子</span>（<span type="rt">そんぷうし</span><span type="rp"
+        >）</span></span>の住んでおったチェルシーなのである。</p>
+      <p> 　カーライルはおらぬ。演説者も死んだであろう。しかしチェルシーは以前のごとく存在している。<span type="ruby"><span type="rb"
+            >否</span>（<span type="rt">いな</span><span type="rp">）</span></span>彼の多年住み古した家屋敷さえ今なお<span
+          type="ruby">儼然<span type="rp">（</span><span type="rt">げんぜん</span><span type="rp"
+          >）</span></span>と保存せられてある。千七百八年チェイン・ロウが出来てより以来幾多の主人を迎え幾多の主人を送ったかは知らぬがとにかく<span type="ruby"
+            >今日（<span type="rt">こんにち</span><span type="rp"
+          >）</span></span>まで昔のままで残っている。カーライルの歿後は有志家の<span type="ruby"><span type="rb"
+            >発起</span>（<span type="rt">ほっき</span><span type="rp"
+          >）</span></span>で彼の生前使用したる器物調度図書典籍を<span type="ruby">蒐<span type="rp">（</span><span
+            type="rt">あつ</span>）</span>めてこれを各室に<span type="ruby">按排（<span type="rt"
+          >あんばい</span>）</span>し<span type="ruby"><span type="rb">好事</span>（<span type="rt"
+            >こうず</span><span type="rp">）</span></span>のものにはいつでも<span type="ruby">縦覧<span type="rp"
+            >（</span><span type="rt">じゅうらん</span>）</span>せしむる<span type="ruby">便宜（<span type="rt"
+            >べんぎ</span>）</span>さえ<span type="ruby"><span type="rb">謀</span>（<span type="rt"
+            >はか</span><span type="rp">）</span></span>られた。</p>
+      <p> 　文学者でチェルシーに縁故のあるものを<span type="ruby">挙（<span type="rt">あ</span>）</span>げると<span
+          type="ruby"><span type="rb">昔</span>（<span type="rt">むか</span><span type="rp"
+          >）</span></span>しはトマス・モア、<span type="ruby">下<span type="rp">（</span><span type="rt"
+            >くだ</span><span type="rp"
+          >）</span></span>ってスモレット、なお下ってカーライルと同時代にはリ・ハントなどがもっとも著名である。ハントの家はカーライルの<span type="ruby"
+            >直（<span type="rt">じき</span><span type="rp">）</span></span>近傍で、現にカーライルがこの<span
+          type="ruby">家<span type="rp">（</span><span type="rt">いえ</span><span type="rp"
+          >）</span></span>に引き移った晩尋ねて来たという事がカーライルの記録に書いてある。またハントがカーライルの細君にシェレーの<span type="ruby"
+            >塑像（<span type="rt">そぞう</span><span type="rp"
+          >）</span></span>を贈ったという事も知れている。このほかにエリオットのおった家とロセッチの住んだ<span type="ruby"><span type="rb"
+            >邸</span>（<span type="rt">やしき</span><span type="rp">）</span></span>がすぐ<span type="ruby"
+            >傍<span type="rp">（</span><span type="rt">そば</span><span type="rp"
+          >）</span></span>の川端に向いた通りにある。しかしこれらは皆すでに<span type="ruby">代<span type="rp">（</span><span
+            type="rt">だい</span>）</span>がかわって現に人が<span type="ruby">這入（<span type="rt"
+          >はい</span>）</span>っているから見物は出来ぬ。ただカーライルの<span type="ruby"><span type="rb">旧廬</span>（<span
+            type="rt">きゅうろ</span><span type="rp">）</span></span>のみは六ペンスを払えば<span type="ruby">何人<span
+            type="rp">（</span><span type="rt">なんびと</span>）</span>でもまた<span type="ruby">何時（<span
+            type="rt">なんどき</span><span type="rp">）</span></span>でも随意に観覧が出来る。</p>
+      <p> 　チェイン・ローは<span type="ruby">河岸端（<span type="rt"
+          >かしっぱた</span>）</span>の往来を南に折れる小路でカーライルの家はその右側の中頃に<span type="ruby">在（<span type="rt"
+            >あ</span><span type="rp">）</span></span>る。番地は二十四番地だ。</p>
+      <p> 　毎日のように川を<span type="ruby">隔（<span type="rt">へだ</span>）</span>てて霧の中にチェルシーを<span
+          type="ruby"><span type="rb">眺</span>（<span type="rt">なが</span><span type="rp"
+          >）</span></span>めた余はある朝ついに橋を渡ってその有名なる<span type="ruby">庵<span type="rp">（</span><span
+            type="rt">いお</span>）</span>りを<span type="ruby">叩（<span type="rt">たた</span><span
+            type="rp">）</span></span>いた。</p>
+      <p> 　庵りというと<span type="ruby">物寂（<span type="rt">ものさ</span>）</span>びた感じがある。少なくとも<span
+          type="ruby"><span type="rb">瀟洒</span>（<span type="rt">しょうしゃ</span><span type="rp"
+          >）</span></span>とか風流とかいう念と<span type="ruby">伴<span type="rp">（</span><span type="rt"
+            >ともな</span>）</span>う。しかしカーライルの<span type="ruby">庵（<span type="rt"
+          >いおり</span>）</span>はそんな<span type="ruby"><span type="rb">脂</span>（<span type="rt"
+            >やに</span><span type="rp">）</span></span>っこい<span type="ruby">華奢<span type="rp"
+            >（</span><span type="rt">きゃしゃ</span>）</span>なものではない。<span type="ruby">往来（<span type="rt"
+            >おうらい</span>）</span>から<span type="ruby"><span type="rb">直</span>（<span type="rt"
+            >ただ</span><span type="rp">）</span></span>ちに戸が<span type="ruby">敲<span type="rp"
+            >（</span><span type="rt">たた</span>）</span>けるほどの<span type="ruby">道傍（<span type="rt"
+            >みちばた</span><span type="rp">）</span></span>に建てられた四階<span type="ruby">造<span type="rp"
+            >（</span><span type="rt">づくり</span><span type="rp">）</span></span>の真四角な家である。</p>
+      <p> 　出張った所も引き込んだ所もないのべつに<span type="ruby">真直<span type="rp">（</span><span type="rt"
+            >まっすぐ</span><span type="rp"
+        >）</span></span>に立っている。まるで大製造場の煙突の根本を切ってきてこれに天井を張って窓をつけたように見える。</p>
+      <p> 　これが彼が北の<span type="ruby">田舎（<span type="rt">いなか</span>）</span>から始めて<span type="ruby"
+            ><span type="rb">倫敦</span>（<span type="rt">ロンドン</span><span type="rp"
+          >）</span></span>へ出て来て探しに探し抜いて<span type="ruby">漸々<span type="rp">（</span><span type="rt"
+            >ようよう</span>）</span>の事で探し<span type="ruby">宛（<span type="rt">あ</span><span type="rp"
+            >）</span></span>てた家である。彼は西を探し南を探しハンプステッドの北まで探してついに<span type="ruby"><span type="rb"
+            >恰好</span>（<span type="rt">かっこう</span><span type="rp"
+          >）</span></span>の家を探し出す事が出来ず、最後にチェイン・ローへ来てこの家を見てもまだすぐに<span type="ruby"><span type="rb"
+            >取</span>（<span type="rt">とり</span><span type="rp"
+          >）</span></span>きめるほどの勇気はなかったのである。四千万の<span type="ruby">愚物<span type="rp">（</span><span
+            type="rt">ぐぶつ</span>）</span>と天下を<span type="ruby">罵（<span type="rt"
+          >ののし</span>）</span>った彼も<span type="ruby"><span type="rb">住家</span>（<span type="rt"
+            >すみか</span><span type="rp"
+          >）</span></span>には閉口したと見えて、その愚物の中に当然勘定せらるべき妻君へ向けて委細を報知してその意向を確めた。細君の答に「御申越の<span
+          type="ruby">借家（<span type="rt">しゃくや</span>）</span>は二軒共不都合もなき様<span type="ruby"><span
+            type="rb">被存</span>（<span type="rt">ぞんぜられ</span><span type="rp"
+          >）</span></span>候えば私倫敦へ<span type="ruby">上<span type="rp">（</span><span type="rt"
+            >のぼ</span>）</span>り<span type="ruby">候迄（<span type="rt">そろまで</span><span type="rp"
+            >）</span></span>双方共御明け<span type="ruby">置願度<span type="rp">（</span><span type="rt"
+            >おきねがいたく</span>）</span><span type="ruby">若（<span type="rt">も</span><span type="rp"
+            >）</span></span>し又それ迄に取極め<span type="ruby">候<span type="rp">（</span><span type="rt"
+            >そろ</span>）</span>必要相生じ<span type="ruby">候節（<span type="rt"
+          >そろせつ</span>）</span>は御一存にて<span type="ruby"><span type="rb">如何</span>（<span type="rt"
+            >いかが</span><span type="rp">）</span></span>とも御取計らい<span type="ruby">被下度候<span type="rp"
+            >（</span><span type="rt">くだされたくそろ</span><span type="rp"
+          >）</span></span>とあった。カーライルは書物の上でこそ自分<span type="ruby">独<span type="rp">（</span><span
+            type="rt">ひと</span><span type="rp"
+          >）</span></span>りわかったような事をいうが、家をきめるには細君の助けに依らなくては駄目と覚悟をしたものと見えて、夫人の上京するまで手を<span
+          type="ruby">束（<span type="rt">つか</span><span type="rp">）</span></span>ねて待っていた。<span
+          type="ruby">四五日<span type="rp">（</span><span type="rt">しごんち</span><span type="rp"
+          >）</span></span>すると夫人が来る。そこで今度は二人してまた東西南北を<span type="ruby">馳<span type="rp">（</span><span
+            type="rt">か</span>）</span>け廻った揚句の<span type="ruby">果（<span type="rt">はて</span><span
+            type="rp">）</span></span>やはりチェイン・ローが<span type="ruby">善<span type="rp">（</span><span
+            type="rt">い</span>）</span>いという事になった。<span type="ruby">両人（<span type="rt">ふたり</span><span
+            type="rp">）</span></span>がここに引き越したのは千八百三十四年の六月十日で、引越の途中に下女の持っていたカナリヤが<span type="ruby"
+            ><span type="rb">籠</span>（<span type="rt">かご</span><span type="rp"
+          >）</span></span>の中で<span type="ruby">囀<span type="rp">（</span><span type="rt"
+            >さえず</span><span type="rp">）</span></span>ったという事まで知れている。夫人がこの<span type="ruby">家<span
+            type="rp">（</span><span type="rt">いえ</span>）</span>を<span type="ruby">撰（<span type="rt"
+            >えら</span><span type="rp">）</span></span>んだのは<span type="ruby">大<span type="rp"
+            >（</span><span type="rt">おおい</span><span type="rp"
+          >）</span></span>に気に入ったものかほかに相当なのがなくてやむをえなんだのか、いずれにもせよこの煙突のごとく四角な家は年に三百五十円の家賃をもってこの新世帯の夫婦を迎えたのである。カーライルはこのクロムウェルのごときフレデリック大王のごときまた製造場の煙突のごとき家の中でクロムウェルを著わしフレデリック大王を著わしディスレリーの<span
+          type="ruby">周旋（<span type="rt">しゅうせん</span>）</span>にかかる年給を<span type="ruby"><span
+            type="rb">擯</span>（<span type="rt">しりぞ</span><span type="rp"
+        >）</span></span>けて四角四面に暮したのである。</p>
+      <p> 　余は今この四角な家の石階の上に立って鬼の面のノッカーをコツコツと<span type="ruby">敲<span type="rp">（</span><span
+            type="rt">たた</span>）</span>く。しばらくすると内から五十<span type="ruby">恰好（<span type="rt"
+            >かっこう</span>）</span>の肥った婆さんが出て来て<span type="ruby"><span type="rb">御這入</span>（<span
+            type="rt">おはい</span><span type="rp"
+          >）</span></span>りと云う。最初から見物人と思っているらしい。婆さんはやがて名簿のようなものを出して御名前をと云う。余は倫敦滞留中四たびこの家に入り四たびこの名簿に余が名を記録した覚えがある。この時は実に余の名の<span
+          type="ruby">記入（<span type="rt">きにゅう</span>）</span><span type="ruby"><span type="rb"
+            >初</span>（<span type="rt">はじめ</span><span type="rp"
+          >）</span></span>であった。なるべく丁寧に書くつもりであったが例に<span type="ruby">因<span type="rp">（</span><span
+            type="rt">よ</span><span type="rp"
+          >）</span></span>ってはなはだ見苦しい字が出来上った。前の方を繰りひろげて見ると日本人の姓名は一人もない。して見ると日本人でここへ来たのは余が始めてだなと下らぬ事が嬉しく感ぜられる。婆さんがこちらへと云うから左手の戸をあけて町に向いた部屋に這入る。これは昔し客間であったそうだ。色々なものが並べてある。壁に<span
+          type="ruby">画（<span type="rt">え</span><span type="rp"
+          >）</span></span>やら写真やらがある。大概はカーライル夫婦の肖像のようだ。<span type="ruby"><span type="rb"
+            >後</span>（<span type="rt">うし</span><span type="rp"
+          >）</span></span>ろの部屋にカーライルの意匠に成ったという書棚がある。それに書物が沢山詰まっている。むずかしい本がある。下らぬ本がある。古びた本がある。読めそうもない本がある。そのほかにカーライルの八十の誕生日の記念のために<span
+          type="ruby">鋳（<span type="rt">い</span><span type="rp">）</span></span>たという<span type="ruby"
+            >銀牌<span type="rp">（</span><span type="rt">ぎんぱい</span>）</span>と<span type="ruby"
+            >銅牌（<span type="rt">どうはい</span><span type="rp">）</span></span>がある。<span type="ruby"
+            >金牌<span type="rp">（</span><span type="rt">きんぱい</span>）</span>は一つもなかったようだ。すべての<span
+          type="ruby">牌（<span type="rt">はい</span><span type="rp"
+          >）</span></span>と名のつくものがむやみにかちかちしていつまでも平気に残っているのを、もろうた者の煙のごとき寿命と対照して考えると妙な感じがする。それから二階へ上る。ここにまた大きな本棚があって本が例のごとくいっぱい詰まっている。やはり読めそうもない本、聞いた事のなさそうな本、入りそうもない本が多い。勘定をしたら百三十五部あった。この部屋も一時は客間になっておったそうだ。ビスマークがカーライルに送った手紙と<span
+          type="ruby">普露西（<span type="rt">プロシア</span>）</span>の勲章がある。フレデリック大王伝の御蔭と見える。細君の用いた<span
+          type="ruby">寝台（<span type="rt">ねだい</span>）</span>がある。すこぶる不器用な<span type="ruby"><span
+            type="rb">飾</span>（<span type="rt">かざ</span><span type="rp">）</span></span>り<span
+          type="ruby">気（<span type="rt">け</span>）</span>のないものである。</p>
+      <p> 　案内者はいずれの国でも同じものと見える。<span type="ruby">先<span type="rp">（</span><span type="rt"
+            >さ</span><span type="rp"
+          >）</span></span>っきから婆さんは室内の絵画器具について一々説明を与える。五十年間案内者を専門に修業したものでもあるまいが非常に熟練したものである。何年何月何日にどうしたこうしたとあたかも口から<span
+          type="ruby">出（<span type="rt">で</span><span type="rp">）</span></span><span type="ruby"
+            >任<span type="rp">（</span><span type="rt">まか</span>）</span>せに<span type="ruby">喋舌（<span
+            type="rt">しゃべ</span><span type="rp">）</span></span>っているようである。しかもその<span type="ruby"
+            >流暢<span type="rp">（</span><span type="rt">りゅうちょう</span><span type="rp"
+          >）</span></span>な弁舌に抑揚があり<span type="ruby">節奏<span type="rp">（</span><span type="rt"
+            >せっそう</span><span type="rp"
+          >）</span></span>がある。調子が面白いからその方ばかり聴いていると何を言っているのか分らなくなる。始めのうちは聞き返したり問い返したりして見たがしまいには面倒になったから御前は御前で勝手に口上を述べなさい、わしはわしで自由に見物するからという態度をとった。婆さんは人が聞こうが聞くまいが口上だけは必ず述べますという風で別段<span
+          type="ruby">厭（<span type="rt">あ</span><span type="rp">）</span></span>きた<span type="ruby"
+            >景色<span type="rp">（</span><span type="rt">けしき</span>）</span>もなく<span type="ruby"
+            >怠（<span type="rt">おこた</span><span type="rp">）</span></span>る様子もなく何年何月何日をやっている。</p>
+      <p> 　余は東側の窓から首を出してちょっと近所を見渡した。眼の下に十坪ほどの庭がある。右も左もまた向うも石の<span type="ruby"><span type="rb"
+            >高塀</span>（<span type="rt">たかかべ</span><span type="rp"
+          >）</span></span>で仕切られてその形はやはり四角である。四角はどこまでもこの家の附属物かと思う。カーライルの顔は決して四角ではなかった。彼はむしろ<span
+          type="ruby">懸崖（<span type="rt">けんがい</span>）</span>の中途が陥落して草原の上に伏しかかったような<span type="ruby"
+            ><span type="rb">容貌</span>（<span type="rt">ようぼう</span><span type="rp"
+          >）</span></span>であった。細君は上出来の<span type="ruby">辣韮<span type="rp">（</span><span type="rt"
+            >らっきょう</span><span type="rp">）</span></span>のように見受けらるる。今余の案内をしている婆さんはあんぱんのごとく<span
+          type="ruby"><span type="rb">丸</span>（<span type="rt">ま</span><span type="rp"
+          >）</span></span>るい。余が婆さんの顔を見てなるほど丸いなと思うとき婆さんはまた何年何月何日を<span type="ruby"><span type="rb"
+            >誦</span>（<span type="rt">じゅ</span><span type="rp">）</span></span>し出した。余は再び窓から首を出した。</p>
+      <p> 　カーライル云う。裏の窓より見渡せば見ゆるものは茂る葉の木株、<span type="ruby">碧<span type="rp">（</span><span type="rt"
+            >みど</span>）</span>りなる野原、及びその間に<span type="ruby">点綴（<span type="rt"
+          >てんてつ</span>）</span>する<span type="ruby"><span type="rb">勾配</span>（<span type="rt"
+            >こうばい</span><span type="rp">）</span></span>の急なる赤き屋根のみ。西風の吹くこの頃の<span type="ruby">眺<span
+            type="rp">（</span><span type="rt">なが</span><span type="rp"
+        >）</span></span>めはいと晴れやかに心地よし。</p>
+      <p> 　余は茂る葉を見ようと思い、青き野を<span type="ruby">眺（<span type="rt"
+          >なが</span>）</span>めようと思うて実は裏の窓から首を出したのである。首はすでに二<span type="ruby">返（<span type="rt"
+            >へん</span><span type="rp">）</span></span>ばかり出したが青いものも何にも見えぬ。右に家が見える。<span type="ruby"
+            ><span type="rb">左</span>（<span type="rt">ひだ</span><span type="rp"
+          >）</span></span>りに家が見える。<span type="ruby">向<span type="rp">（</span><span type="rt"
+            >むこう</span>）</span>にも家が見える。その上には<span type="ruby">鉛色（<span type="rt"
+          >なまりいろ</span>）</span>の空が一面に胃病やみのように<span type="ruby"><span type="rb">不精無精</span>（<span
+            type="rt">ふしょうぶしょう</span><span type="rp"
+          >）</span></span>に垂れかかっているのみである。余は首を縮めて窓より中へ引き込めた。案内者はまだ何年何月何日の続きを朗らかに<span type="ruby"
+            >読誦（<span type="rt">どくじゅ</span>）</span>している。</p>
+      <p> 　カーライルまた云う<span type="ruby">倫敦（<span type="rt">ロンドン</span>）</span>の<span type="ruby"><span
+            type="rb">方</span>（<span type="rt">かた</span><span type="rp"
+          >）</span></span>を見れば眼に入るものはウェストミンスター・アベーとセント・ポールズの高塔の<span type="ruby"><span type="rb"
+            >頂</span>（<span type="rt">いただ</span><span type="rp">）</span></span>きのみ。その他<span
+          type="ruby">幻<span type="rp">（</span><span type="rt">まぼろし</span>）</span>のごとき<span
+          type="ruby">殿宇（<span type="rt">でんう</span><span type="rp">）</span></span>は<span type="ruby"
+            >煤<span type="rp">（</span><span type="rt">すす</span>）</span>を含む雲の影の去るに任せて隠見す。</p>
+      <p> 「倫敦の方」とはすでに時代後れの話である。<span type="ruby">今日<span type="rp">（</span><span type="rt"
+            >こんにち</span><span type="rp">）</span></span>チェルシーに来て倫敦の方を見るのは家の<span type="ruby">中<span
+            type="rp">（</span><span type="rt">うち</span>）</span>に坐って家の<span type="ruby">方（<span
+            type="rt">かた</span><span type="rp">）</span></span>を見ると同じ<span type="ruby">理窟<span
+            type="rp">（</span><span type="rt">りくつ</span><span type="rp"
+          >）</span></span>で、自分の眼で自分の<span type="ruby">見当<span type="rp">（</span><span type="rt"
+            >けんとう</span><span type="rp">）</span></span>を眺めると云うのと大した差違はない。しかしカーライルは<span type="ruby"
+            >自<span type="rp">（</span><span type="rt">みずか</span><span type="rp"
+          >）</span></span>ら倫敦に住んでいるとは思わなかったのである。彼は<span type="ruby">田舎<span type="rp">（</span><span
+            type="rt">いなか</span><span type="rp">）</span></span>に閑居して都の中央にある<span type="ruby"
+            >大伽藍<span type="rp">（</span><span type="rt">だいがらん</span>）</span>を<span type="ruby"
+            >遥（<span type="rt">はる</span><span type="rp">）</span></span>かに眺めたつもりであった。余は<span
+          type="ruby">三度<span type="rp">（</span><span type="rt">みた</span><span type="rp"
+          >）</span></span>び首を出した。そして彼のいわゆる「倫敦の方」へと視線を延ばした。しかしウェストミンスターも見えぬ、セント・ポールズも見えぬ。数万の家、数十万の人、数百万の物音は余と堂宇との間に立ちつつある、<span
+          type="ruby">漾（<span type="rt">ただよ</span><span type="rp"
+          >）</span></span>いつつある、動きつつある。千八百三十四年のチェルシーと今日のチェルシーとはまるで別物である。余はまた首を引き込めた。婆さんは<span
+          type="ruby">黙然（<span type="rt">もくねん</span>）</span>として余の背後に<span type="ruby"><span
+            type="rb">佇立</span>（<span type="rt">ちょりつ</span><span type="rp">）</span></span>している。</p>
+      <p> 　三階に<span type="ruby">上（<span type="rt">あが</span>）</span>る。部屋の隅を見ると冷やかにカーライルの<span
+          type="ruby"><span type="rb">寝台</span>（<span type="rt">ねだい</span><span type="rp"
+          >）</span></span>が<span type="ruby">横（<span type="rt">よこた</span>）</span>わっている。青き<span
+          type="ruby"><span type="rb">戸帳</span>（<span type="rt">とばり</span><span type="rp"
+          >）</span></span>が物静かに垂れて<span type="ruby">空<span type="rp">（</span><span type="rt"
+            >むな</span>）</span>しき<span type="ruby">臥床（<span type="rt">ふしど</span><span type="rp"
+            >）</span></span>の<span type="ruby">裡<span type="rp">（</span><span type="rt"
+          >うち</span>）</span>は<span type="ruby">寂然（<span type="rt">せきぜん</span><span type="rp"
+            >）</span></span>として薄暗い。木は何の木か知らぬが<span type="ruby"><span type="rb">細工</span>（<span
+            type="rt">さいく</span><span type="rp"
+          >）</span></span>はただ無器用で素朴であるというほかに何らの特色もない。その上に身を横えた人の身の上も思い合わさるる。<span type="ruby"><span
+            type="rb">傍</span>（<span type="rt">かたわ</span><span type="rp"
+          >）</span></span>らには彼が平生使用した<span type="ruby">風呂桶<span type="rp">（</span><span type="rt"
+            >ふろおけ</span>）</span>が<span type="ruby">九鼎（<span type="rt">きゅうてい</span><span type="rp"
+            >）</span></span>のごとく尊げに置かれてある。</p>
+      <p> 　風呂桶とはいうもののバケツの大きいものに過ぎぬ。彼がこの<span type="ruby">大鍋<span type="rp">（</span><span type="rt"
+            >おおなべ</span>）</span>の中で倫敦の<span type="ruby">煤（<span type="rt">すす</span><span type="rp"
+            >）</span></span>を洗い落したかと思うとますますその人となりが<span type="ruby"><span type="rb">偲</span>（<span
+            type="rt">しの</span><span type="rp">）</span></span>ばるる。ふと首を上げると壁の上に彼が<span type="ruby"
+            >往生<span type="rp">（</span><span type="rt">おうじょう</span><span type="rp"
+          >）</span></span>した時に取ったという<span type="ruby">漆喰<span type="rp">（</span><span type="rt"
+            >しっくい</span>）</span><span type="ruby">製（<span type="rt">せい</span><span type="rp"
+            >）</span></span>の<span type="ruby">面型<span type="rp">（</span><span type="rt"
+          >マスク</span>）</span>がある。この顔だなと思う。この<span type="ruby">炬燵（<span type="rt"
+          >こたつ</span>）</span><span type="ruby"><span type="rb">櫓</span>（<span type="rt"
+            >やぐら</span><span type="rp">）</span></span>ぐらいの高さの風呂に<span type="ruby">入<span type="rp"
+            >（</span><span type="rt">はい</span><span type="rp"
+          >）</span></span>ってこの質素な寝台の上に寝て四十年間やかましい<span type="ruby">小言<span type="rp">（</span><span
+            type="rt">こごと</span><span type="rp">）</span></span>を吐き続けに吐いた顔はこれだなと思う。婆さんの<span
+          type="ruby">淀<span type="rp">（</span><span type="rt">よど</span><span type="rp"
+          >）</span></span>みなき口上が電話口で横浜の人の挨拶を聞くように聞える。</p>
+      <p> 　<span type="ruby">宜（<span type="rt">よろ</span>）</span>しければ上りましょうと婆さんがいう。余はすでに倫敦の<span
+          type="ruby">塵（<span type="rt">ちり</span><span type="rp">）</span></span>と音を<span type="ruby"
+            >遥<span type="rp">（</span><span type="rt">はる</span>）</span>かの下界に残して五重の塔の<span
+          type="ruby">天辺（<span type="rt">てっぺん</span><span type="rp"
+        >）</span></span>に独坐するような気分がしているのに耳の元で「上りましょう」という催促を受けたから、まだ上があるのかなと不思議に思った。さあ上ろうと同意する。上れば上るほど怪しい心持が起りそうであるから。</p>
+      <p> 　四階へ来た時は<span type="ruby">縹渺（<span type="rt">ひょうびょう</span><span type="rp"
+          >）</span></span>として何事とも知らず嬉しかった。嬉しいというよりはどことなく妙であった。ここは屋根裏である。天井を見ると左右は低く中央が高く馬の<span
+          type="ruby">鬣（<span type="rt">たてがみ</span>）</span>のごとき<span type="ruby"><span type="rb"
+            >形</span>（<span type="rt">かた</span><span type="rp">）</span></span>ちをしてその一番高い<span
+          type="ruby">背筋<span type="rp">（</span><span type="rt">せすじ</span>）</span>を通して<span
+          type="ruby">硝子（<span type="rt">ガラス</span><span type="rp"
+          >）</span></span>張りの明り取りが着いている。このアチックに<span type="ruby"><span type="rb">洩</span>（<span
+            type="rt">も</span><span type="rp">）</span></span>れて来る光線は皆頭の上から<span type="ruby">真直<span
+            type="rp">（</span><span type="rt">まっすぐ</span>）</span>に<span type="ruby">這入（<span
+            type="rt">はい</span><span type="rp"
+          >）</span></span>る。そうしてその頭の上は硝子一枚を隔てて全世界に通ずる大空である。眼に<span type="ruby"><span type="rb"
+            >遮</span>（<span type="rt">さえぎ</span><span type="rp">）</span></span>るものは<span type="ruby"
+            >微塵<span type="rp">（</span><span type="rt">みじん</span><span type="rp"
+          >）</span></span>もない。カーライルは自分の経営でこの<span type="ruby">室<span type="rp">（</span><span
+            type="rt">しつ</span><span type="rp">）</span></span>を作った。作ってこれを書斎とした。書斎としてここに<span
+          type="ruby">立<span type="rp">（</span><span type="rt">たて</span>）</span><span type="ruby"
+            >籠（<span type="rt">こも</span><span type="rp"
+          >）</span></span>った。立籠って見て始めてわが計画の非なる事を悟った。夏は暑くておりにくく、冬は寒くておりにくい。案内者は朗読的にここまで述べて余を<span
+          type="ruby">顧（<span type="rt">かえ</span><span type="rp">）</span></span>りみた。<span
+          type="ruby">真丸<span type="rp">（</span><span type="rt">まんまる</span><span type="rp"
+          >）</span></span>な顔の底に笑の影が見える。余は無言のままうなずく。</p>
+      <p> 　カーライルは何のためにこの天に近き一室の経営に苦心したか。彼は彼の文章の示すごとく電光的の人であった。彼の<span type="ruby"><span type="rb"
+            >癇癖</span>（<span type="rt">かんぺき</span><span type="rp">）</span></span>は彼の身辺を<span
+          type="ruby">囲繞<span type="rp">（</span><span type="rt">いにょう</span><span type="rp"
+          >）</span></span>して無遠慮に起る音響を無心に聞き流して著作に<span type="ruby">耽<span type="rp">（</span><span
+            type="rt">ふけ</span><span type="rp">）</span></span>るの余裕を与えなかったと見える。<span type="ruby"
+            >洋琴<span type="rp">（</span><span type="rt">ピアノ</span>）</span>の声、犬の声、鶏の声、<span
+          type="ruby">鸚鵡（<span type="rt">おうむ</span>）</span>の声、いっさいの声はことごとく彼の鋭敏なる神経を刺激して<span
+          type="ruby">懊悩（<span type="rt">おうのう</span><span type="rp">）</span></span>やむ<span
+          type="ruby">能<span type="rp">（</span><span type="rt">あた</span>）</span>わざらしめたる<span
+          type="ruby">極（<span type="rt">きょく</span><span type="rp"
+        >）</span></span>ついに彼をして天に最も近く人にもっとも遠ざかれる住居をこの四階の天井裏に求めしめたのである。</p>
+      <p> 　彼のエイトキン夫人に与えたる<span type="ruby">書翰（<span type="rt">しょかん</span>）</span>にいう「此<span
+          type="ruby"><span type="rb">夏中</span>（<span type="rt">なつじゅう</span><span type="rp"
+          >）</span></span>は開け放ちたる窓より聞ゆる物音に悩まされ<span type="ruby">候事<span type="rp">（</span><span
+            type="rt">そろこと</span>）</span><span type="ruby">一方（<span type="rt"
+          >ひとかた</span>）</span>ならず色々修繕も試み候えども<span type="ruby"><span type="rb">寸毫</span>（<span
+            type="rt">すんごう</span><span type="rp">）</span></span>も<span type="ruby">利目無之<span
+            type="rp">（</span><span type="rt">ききめこれなく</span>）</span><span type="ruby">夫（<span
+            type="rt">それ</span><span type="rp">）</span></span>より<span type="ruby">篤<span type="rp"
+            >（</span><span type="rt">とく</span><span type="rp"
+          >）</span></span>と熟考の末家の真上に二十尺四方の部屋を建築致す事に取極め申<span type="ruby"><span type="rb"
+            >候</span>（<span type="rt">そろ</span><span type="rp"
+          >）</span></span>是は壁を二重に致し光線は天井より取り風通しは一種の工夫をもって<span type="ruby"><span type="rb"
+            >差支</span>（<span type="rt">さしつかえ</span><span type="rp"
+          >）</span></span>なき様致す仕掛に候えば出来上り<span type="ruby">候<span type="rp">（</span><span type="rt"
+            >そろ</span>）</span>上は<span type="ruby">仮令（<span type="rt">たとい</span><span type="rp"
+            >）</span></span>天下の鶏共一時に<span type="ruby">鬨<span type="rp">（</span><span type="rt"
+            >とき</span>）</span>の声を揚げ<span type="ruby">候（<span type="rt">そろ</span><span type="rp"
+            >）</span></span>とも閉口<span type="ruby">仕<span type="rp">（</span><span type="rt"
+            >つかまつ</span>）</span>らざる<span type="ruby">積（<span type="rt">つもり</span><span type="rp"
+            >）</span></span>に御座<span type="ruby">候<span type="rp">（</span><span type="rt"
+          >そろ</span>）</span>」</p>
+      <p> 　かくのごとく予期せられたる書斎は二千円の費用にてまずまず思い通りに落成を告げて予期通りの功果を奏したがこれと同時に思い掛けなき障害がまたも主人公の<span
+          type="ruby">耳辺（<span type="rt">じへん</span>）</span>に起った。なるほど<span type="ruby"><span
+            type="rb">洋琴</span>（<span type="rt">ピアノ</span><span type="rp">）</span></span>の<span
+          type="ruby">音（<span type="rt">ね</span><span type="rp"
+          >）</span></span>もやみ、犬の声もやみ、鶏の声、鸚鵡の声も案のごとく聞えなくなったが下層にいるときは考だに及ばなかった寺の鐘、汽車の<span type="ruby"
+            >笛（<span type="rt">ふえ</span><span type="rp">）</span></span>さては何とも知れず遠きより<span
+          type="ruby">来<span type="rp">（</span><span type="rt">きた</span>）</span>る下界の声が<span
+          type="ruby">呪（<span type="rt">のろい</span>）</span>のごとく彼を追いかけて旧のごとくに彼の神経を苦しめた。</p>
+      <p> 　声。英国においてカーライルを苦しめたる声は<span type="ruby">独逸<span type="rp">（</span><span type="rt"
+            >ドイツ</span><span type="rp">）</span></span>においてショペンハウアを苦しめたる声である。ショペンハウア云う。「カントは活力論を<span
+          type="ruby"><span type="rb">著</span>（<span type="rt">あらわ</span><span type="rp"
+          >）</span></span>せり、余は<span type="ruby">反<span type="rp">（</span><span type="rt"
+          >かえ</span>）</span>って活力を<span type="ruby">弔（<span type="rt">とむら</span><span type="rp"
+            >）</span></span>う文を草せんとす。物を打つ音、物を<span type="ruby"><span type="rb">敲</span>（<span
+            type="rt">たた</span><span type="rp">）</span></span>く音、物の<span type="ruby">転<span
+            type="rp">（</span><span type="rt">ころ</span><span type="rp"
+          >）</span></span>がる音は皆活力の濫用にして余はこれがために日々苦痛を受くればなり。音響を聞きて何らの感をも起さざる多数の人<span type="ruby"
+            >我説（<span type="rt">わがせつ</span><span type="rp">）</span></span>をきかば笑うべし。されど世に<span
+          type="ruby">理窟<span type="rp">（</span><span type="rt">りくつ</span><span type="rp"
+          >）</span></span>をも感ぜず思想をも感ぜず<span type="ruby">詩歌<span type="rp">（</span><span type="rt"
+            >しいか</span><span type="rp">）</span></span>をも感ぜず美術をも感ぜざるものあらば、そは正にこの<span type="ruby"
+            >輩<span type="rp">（</span><span type="rt">やから</span><span type="rp"
+          >）</span></span>なる事を忘るるなかれ。彼らの頭脳の組織は<span type="ruby">麁<span change="gaiji"
+            facs="../../../gaiji/2-80/2-80-55.png" rend="gaiji" rendition="img"
+            source="※(「けものへん＋廣」、第4水準2-80-55)"/>（<span type="rt">そこう</span>）</span>にして<span
+          type="ruby"><span type="rb">覚</span>（<span type="rt">さと</span><span type="rp"
+          >）</span></span>り鈍き事その源因たるは疑うべからず」カーライルとショペンハウアとは実は十九世紀の<span type="ruby"><span type="rb"
+            >好一対</span>（<span type="rt">こういっつい</span><span type="rp"
+          >）</span></span>である。余がかくのごとく回想しつつあった時に例の婆さんがどうです下りましょうかと<span type="ruby"><span type="rb"
+            >促</span>（<span type="rt">うな</span><span type="rp">）</span></span>がす。</p>
+      <p> 　一層を<span type="ruby">下（<span type="rt">くだ</span>）</span>るごとに下界に近づくような心持ちがする。<span
+          type="ruby"><span type="rb">冥想</span>（<span type="rt">めいそう</span><span type="rp"
+          >）</span></span>の皮が<span type="ruby">剥<span type="rp">（</span><span type="rt"
+            >は</span><span type="rp">）</span></span>げるごとく感ぜらるる。階段を降り切って最下の欄干に<span type="ruby"
+            >倚<span type="rp">（</span><span type="rt">よ</span>）</span>って通りを<span type="ruby">眺（<span
+            type="rt">なが</span><span type="rp">）</span></span>めた時にはついに依然たる一個の俗人となり<span type="ruby"
+            ><span type="rb">了</span>（<span type="rt">おわ</span><span type="rp"
+          >）</span></span>ってしまった。案内者は平気な顔をして<span type="ruby">厨<span type="rp">（</span><span
+            type="rt">くりや</span><span type="rp">）</span></span>を御覧なさいという。厨は<span type="ruby">往来<span
+            type="rp">（</span><span type="rt">おうらい</span><span type="rp"
+          >）</span></span>よりも下にある。今余が立ちつつある所よりまた五六段の階を下らねばならぬ。これは今案内をしている婆さんの<span type="ruby"><span
+            type="rb">住居</span>（<span type="rt">すまい</span><span type="rp"
+          >）</span></span>になっている。隅に大きな<span type="ruby">竈<span type="rp">（</span><span type="rt"
+            >かまど</span><span type="rp"
+          >）</span></span>がある。婆さんは例の朗読調をもって「千八百四十四年十月十二日有名なる詩人テニソンが初めてカーライルを訪問した時彼ら両人はこの竈の前に対坐して互に<span
+          type="ruby">煙草（<span type="rt">たばこ</span>）</span>を<span type="ruby"><span type="rb"
+            >燻</span>（<span type="rt">くゆ</span><span type="rp">）</span></span>らすのみにて二時間の間<span
+          type="ruby">一言<span type="rp">（</span><span type="rt">ひとこと</span>）</span>も<span
+          type="ruby">交（<span type="rt">まじ</span><span type="rp"
+          >）</span></span>えなかったのであります」という。天上に<span type="ruby"><span type="rb">在</span>（<span
+            type="rt">あ</span><span type="rp">）</span></span>って音響を<span type="ruby">厭<span type="rp"
+            >（</span><span type="rt">いと</span><span type="rp"
+        >）</span></span>いたる彼は地下に入っても沈黙を愛したるものか。</p>
+      <p> 　最後に勝手口から庭に案内される。例の四角な平地を見廻して見ると木らしい木、草らしい草は少しも見えぬ。婆さんの話しによると昔は桜もあった、<span type="ruby"
+            >葡萄（<span type="rt">ぶどう</span><span type="rp">）</span></span>もあった。<span type="ruby"
+            >胡桃<span type="rp">（</span><span type="rt">くるみ</span><span type="rp"
+          >）</span></span>もあったそうだ。カーライルの細君はある年二十五銭ばかりの胡桃を得たそうだ。婆さん云う「庭の東南の隅を去る五尺余の地下にはカーライルの愛犬ニロが葬むられております。ニロは千八百六十年二月一日に死にました。墓標も当時は存しておりましたが惜しいかなその後取払われました」と中々<span
+          type="ruby">精（<span type="rt">くわ</span><span type="rp">）</span></span>しい。</p>
+      <p> 　カーライルが<span type="ruby">麦藁帽（<span type="rt">むぎわらぼう</span>）</span>を<span type="ruby"><span
+            type="rb">阿弥陀</span>（<span type="rt">あみだ</span><span type="rp">）</span></span>に<span
+          type="ruby">被（<span type="rt">かぶ</span>）</span>って寝巻姿のまま<span type="ruby"><span type="rb"
+            >啣</span>（<span type="rt">くわ</span><span type="rp">）</span></span>え<span type="ruby"
+            >煙管<span type="rp">（</span><span type="rt">ぎせる</span>）</span>で<span type="ruby">逍遥（<span
+            type="rt">しょうよう</span><span type="rp">）</span></span>したのはこの庭園である。夏の<span type="ruby"
+            >最中<span type="rp">（</span><span type="rt">もなか</span><span type="rp"
+          >）</span></span>には蔭深き敷石の上にささやかなる<span type="ruby">天幕<span type="rp">（</span><span
+            type="rt">テント</span><span type="rp"
+          >）</span></span>を張りその下に机をさえ出して余念もなく述作に従事したのはこの庭園である。星<span type="ruby"><span type="rb"
+            >明</span>（<span type="rt">あきら</span><span type="rp">）</span></span>かなる<span type="ruby"
+            >夜（<span type="rt">よ</span>）</span>最後の一ぷくをのみ終りたる後、彼が空を仰いで「<span type="ruby">嗚呼（<span
+            type="rt">ああ</span>）</span>余が最後に<span type="ruby"><span type="rb">汝</span>（<span
+            type="rt">なんじ</span><span type="rp">）</span></span>を見るの時は瞬刻の<span type="ruby">後<span
+            type="rp">（</span><span type="rt">のち</span><span type="rp"
+          >）</span></span>ならん。全能の神が造れる無辺大の劇場、眼に<span type="ruby">入<span type="rp">（</span><span
+            type="rt">い</span>）</span>る無限、手に<span type="ruby">触（<span type="rt">ふ</span><span
+            type="rp">）</span></span>るる無限、これもまた我が眉目を<span type="ruby">掠<span type="rp">（</span><span
+            type="rt">かす</span><span type="rp"
+          >）</span></span>めて去らん。しかして余はついにそを見るを得ざらん。わが力を致せるや虚ならず、知らんと欲するや切なり。しかもわが知識はただかくのごとく<span
+          type="ruby">微（<span type="rt">び</span><span type="rp">）</span></span>なり」と叫んだのもこの庭園である。</p>
+      <p> 　余は婆さんの労に<span type="ruby">酬（<span type="rt">むく</span>）</span>ゆるために婆さんの<span type="ruby"
+            ><span type="rb">掌</span>（<span type="rt">てのひら</span><span type="rp"
+          >）</span></span>の上に<span type="ruby">一片<span type="rp">（</span><span type="rt"
+          >いっぺん</span>）</span>の銀貨を<span type="ruby">載（<span type="rt">の</span><span type="rp"
+            >）</span></span>せた。ありがとうと云う声さえも朗読的であった。一時間の後<span type="ruby"><span type="rb"
+            >倫敦</span>（<span type="rt">ロンドン</span><span type="rp">）</span></span>の<span type="ruby"
+            >塵（<span type="rt">ちり</span>）</span>と<span type="ruby"><span type="rb">煤</span>（<span
+            type="rt">すす</span><span type="rp">）</span></span>と車馬の音とテームス河とはカーライルの家を別世界のごとく遠き<span
+          type="ruby"><span type="rb">方</span>（<span type="rt">かた</span><span type="rp"
+          >）</span></span>へと<span type="ruby">隔（<span type="rt">へだ</span>）</span>てた。</p>
+    </body>
+  </text>
+</TEI>
