@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>デンマルク国の話: 信仰と樹木とをもって国を救いし話</title>
+        <author>内村鑑三</author>
+
+        <respStmt>
+          <resp>Aozora Transcription</resp>
+          <name>ゆうき</name>
+        </respStmt>
+        <respStmt>
+          <resp>Aozora Proofreading</resp>
+          <name>吉田亜津美</name>
+        </respStmt>
+
+        <respStmt>
+          <resp when="2011-11-28">作成</resp>
+          <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+          <name>
+            <note>
+              <lb/> 底本：「後世への最大遺物　デンマルク国の話」岩波文庫、岩波書店 　<lb/>　　1946（昭和21）年10月10日第1刷発行
+              　　<lb/>　1976（昭和51）年3月16日第30刷改版発行 　　<lb/>　1994（平成6）年8月6日 第64刷発行 <lb/>
+              底本の親本：「内村鑑三全集　第一四巻」岩波書店 　<lb/>　　1932（昭和7）年11月 <lb/> 初出：「聖書之研究　第一三六号」
+              <lb/>　　　1911（明治44）年 <lb/> ※この講演は、1911（明治44）年10月22日、東京柏木の今井館にて行われた。 <lb/> 入力：ゆうき <lb/>
+              校正：吉田亜津美 <lb/> 2000年1月7日公開 <lb/> 2011年6月10日修正 <lb/> 青空文庫作成ファイル： <lb/>
+              このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。
+            </note>
+          </name>
+        </respStmt>
+        <respStmt>
+          <resp when="2019-02-04">TEI Encoding</resp>
+          <name>宮川 創（So Miyagawa）</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+        <date when="2019-01-11"> 2019年1月11日</date>
+        <availability>
+          <p>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0
+              1.0) Public Domain Dedication</ref></p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>内村鑑三</author>
+          <title>デンマルク国の話: 信仰と樹木とをもって国を救いし話</title>
+          <publisher>岩波書店</publisher>
+          <date when="1946-10-10">1946（昭和21）年10月10日</date>第1刷発行 </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <list>
+        <item>
+          <date when="2000-01-07">2000年01月07日</date>公開 </item>
+        <item> 入力<persName>ゆうき</persName> 校正<persName>吉田亜津美</persName>
+          <date when="2011-06-10"> 2011年06月10日</date>作成 </item>
+      </list>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="textype">
+        <p><quote>
+            <span type="ruby">
+              <span type="rb">曠野</span>
+              <span type="rp">（</span>
+              <span type="rt">あれの</span>
+              <span type="rp">）</span>
+            </span> と <span type="ruby">
+              <span type="rb">湿潤</span>
+              <span type="rp">（</span>
+              <span type="rt">うるおい</span>
+              <span type="rp">）</span>
+            </span> なき地とは楽しみ、<lb/>
+            <span type="ruby"><span type="rb">沙漠</span><span type="rp">（</span><span type="rt"
+                >さばく</span><span type="rp">）</span></span>は<span type="ruby"><span type="rb"
+                >歓</span><span type="rp">（</span><span type="rt">よろこ</span><span type="rp"
+              >）</span></span>びて<span type="ruby"><span type="rb">番紅</span><span type="rp"
+                >（</span><span type="rt">さふらん</span><span type="rp">）</span></span>のごとくに<span
+              type="ruby"><span type="rb">咲</span><span type="rp">（</span><span type="rt"
+                >はなさ</span><span type="rp">）</span></span>かん、<lb/>
+            <span type="ruby"><span type="rb">盛</span><span type="rp">（</span><span type="rt"
+                >さかん</span><span type="rp">）</span></span>に<span type="ruby"><span type="rb"
+                >咲</span><span type="rp">（</span><span type="rt">はなさ</span><span type="rp"
+              >）</span></span>きて歓ばん、<lb/> 喜びかつ歌わん、<lb/> カルメルとシャロンの<span type="ruby"><span type="rb"
+                >美</span><span type="rp">（</span><span type="rt">うるわ</span><span type="rp"
+              >）</span></span>しきとはこれに授けられん、<lb/> 彼らはエホバの<span type="ruby"><span type="rb"
+                >栄</span><span type="rp">（</span><span type="rt">さかえ</span><span type="rp"
+              >）</span></span>を見ん、<lb/> 我らの神の<span type="ruby"><span type="rb">美</span><span
+                type="rp">（</span><span type="rt">うる</span><span type="rp">）</span></span>わしきを<span
+              type="ruby"><span type="rb">視</span><span type="rp">（</span><span type="rt"
+                >み</span><span type="rp">）</span></span>ん。<lb/></quote>
+          　　　　　　　（イザヤ書三五章一—二節）<lb/></p>
+        <lb/>
+        <lb/>
+        <p> 　今日は少しこの世のことについてお話しいたそうと<span type="ruby"><span type="rb">欲</span><span type="rp"
+              >（</span><span type="rt">おも</span><span type="rp">）</span></span>います。<lb/>
+          　デンマークは欧州北部の一小邦であります。その面積は朝鮮と台湾とを除いた日本帝国の十分の一でありまして、わが北海道の半分に当り、九州の一島に当らない国であります。その人口は二百五十万でありまして、日本の二十分の一であります。実に取るに足りないような小国でありますが、しかしこの国について多くの面白い話があります。<lb/></p>
+
+        <p>今、単に経済上より観察を下しまして、この小国のけっして<span type="ruby"><span type="rb">侮</span><span type="rp"
+              >（</span><span type="rt">あなど</span><span type="rp"
+            >）</span></span>るべからざる国であることがわかります。この国の面積と人口とはとてもわが日本国に及びませんが、しかし富の程度にいたりましてははるかに日本以上であります。その一例を<span
+            type="ruby"><span type="rb">挙</span><span type="rp">（</span><span type="rt"
+              >あ</span><span type="rp"
+          >）</span></span>げますれば日本国の二十分の一の人口を有するデンマーク国は日本の二分の一の外国貿易をもつのであります。すなわちデンマーク人一人の外国貿易の高は日本人一人の十倍に当るのであります。もってその富の程度がわかります。ある人のいいまするに、デンマーク人はたぶん世界のなかでもっとも富んだる民であるだろうとのことであります。すなわちデンマーク人一人の有する富はドイツ人または英国人または米国人一人の有する富よりも多いのであります。実に驚くべきことではありませんか。<lb/></p>
+
+        <p>しからばデンマーク人はどうしてこの富を得たかと問いまするに、それは彼らが国外に多くの領地をもっているからではありません、彼らはもちろん広きグリーンランドをもちます。しかし北氷洋の氷のなかにあるこの領土の経済上ほとんど何の価値もないことは<span
+            type="ruby"><span type="rb">何人</span><span type="rp">（</span><span type="rt"
+              >なんびと</span><span type="rp"
+            >）</span></span>も知っております。彼らはまたその面積においてはデンマーク本土に二倍するアイスランドをもちます。しかしその名を聞いてその国の<span
+            type="ruby"><span type="rb">富饒</span><span type="rp">（</span><span type="rt"
+              >ふにょう</span><span type="rp">）</span></span>の土地でないことはすぐにわかります。ほかにわずかに<span type="ruby"
+              ><span type="rb">鳥毛</span><span type="rp">（</span><span type="rt">とりのけ</span><span
+              type="rp"
+            >）</span></span>を産するファロー島があります。またやや富饒なる西インド中のサンクロア、サントーマス、サンユーアンの三島があります。これ確かに富の<span
+            type="ruby"><span type="rb">源</span><span type="rp">（</span><span type="rt"
+              >みなもと</span><span type="rp">）</span></span>でありますが、しかし経済上収支相償うこと<span type="ruby"><span
+              type="rb">尠</span><span type="rp">（</span><span type="rt">すくな</span><span type="rp"
+              >）</span></span>きがゆえに、かつてはこれを米国に売却せんとの計画もあったくらいであります。ゆえにデンマークの富源といいまして、別に本国以外にあるのでありません。人口一人に対し世界第一の富を彼らに供せしその富源はわが九州大のデンマーク本国においてあるのであります。<lb/></p>
+
+        <p>しかるにこのデンマーク本国がけっして富饒の地と称すべきではないのであります。国に一鉱山あるでなく、大港湾の万国の船舶を<span type="ruby"><span
+              type="rb">惹</span><span type="rp">（</span><span type="rt">ひ</span><span type="rp"
+              >）</span></span>くものがあるのではありません。デンマークの富は主としてその土地にあるのであります、その牧場とその家畜と、その<span
+            type="ruby"><span type="rb">樅</span><span type="rp">（</span><span type="rt"
+              >もみ</span><span type="rp">）</span></span>と<span type="ruby"><span type="rb"
+              >白樺</span><span type="rp">（</span><span type="rt">しらかば</span><span type="rp"
+            >）</span></span>との森林と、その沿海の漁業とにおいてあるのであります。ことにその誇りとするところはその乳産であります、そのバターとチーズとであります。デンマークは実に牛乳をもって立つ国であるということができます。トーヴァルセンを出して世界の彫刻術に一新紀元を<span
+            type="ruby"><span type="rb">劃</span><span type="rp">（</span><span type="rt"
+              >かく</span><span type="rp">）</span></span>し、アンデルセンを出して近世お<span type="ruby"><span
+              type="rb">伽話</span><span type="rp">（</span><span type="rt">とぎばなし</span><span type="rp"
+              >）</span></span>の元祖たらしめ、キェルケゴールを出して無教会主義のキリスト教を世界に<span type="ruby"><span type="rb"
+              >唱</span><span type="rp">（</span><span type="rt">とな</span><span type="rp"
+            >）</span></span>えしめしデンマークは、実に柔和なる<span type="ruby"><span type="rb">牝牛</span><span
+              type="rp">（</span><span type="rt">めうし</span><span type="rp"
+          >）</span></span>の産をもって立つ小にして静かなる国であります。<lb/></p>
+
+        <p>しかるに今を去る四十年前のデンマークはもっとも憐れなる国でありました。一八六四年にドイツ、オーストリアの二強国の圧迫するところとなり、その要求を<span type="ruby"
+              ><span type="rb">拒</span><span type="rp">（</span><span type="rt">こば</span><span
+              type="rp">）</span></span>みし結果、ついに開戦の不幸を見、デンマーク人は善く戦いましたが、しかし弱はもって強に勝つ<span type="ruby"
+              ><span type="rb">能</span><span type="rp">（</span><span type="rt">あた</span><span
+              type="rp">）</span></span>はず<note>［＃「<span type="ruby"><span type="rb">能</span><span
+                type="rp">（</span><span type="rt">あた</span><span type="rp"
+            >）</span></span>はず」はママ］</note>、デッペルの一戦に北軍敗れてふたたび<span type="ruby"><span type="rb"
+              >起</span><span type="rp">（</span><span type="rt">た</span><span type="rp"
+            >）</span></span>つ能わざるにいたりました。デンマークは和を乞いました、しかして敗北の<span type="ruby"><span type="rb"
+              >賠償</span><span type="rp">（</span><span type="rt">ばいしょう</span><span type="rp"
+            >）</span></span>としてドイツ、オーストリアの二国に南部最良の二州シュレスウィヒとホルスタインを割譲しました。戦争はここに終りを告げました。しかしデンマークはこれがために窮困の極に達しました。もとより多くもない領土、しかもその最良の部分を持ち去られたのであります。いかにして国運を<span
+            type="ruby"><span type="rb">恢復</span><span type="rp">（</span><span type="rt"
+              >かいふく</span><span type="rp">）</span></span>せんか、いかにして敗戦の大損害を<span type="ruby"><span
+              type="rb">償</span><span type="rp">（</span><span type="rt">つぐな</span><span type="rp"
+              >）</span></span>わんか、これこの時にあたりデンマークの愛国者がその<span type="ruby"><span type="rb"
+              >脳漿</span><span type="rp">（</span><span type="rt">のうしょう</span><span type="rp"
+            >）</span></span>を<span type="ruby"><span type="rb">絞</span><span type="rp">（</span><span
+              type="rt">しぼ</span><span type="rp">）</span></span>って考えし問題でありました。国は小さく、民は<span
+            type="ruby"><span type="rb">尠</span><span type="rp">（</span><span type="rt"
+              >すくな</span><span type="rp">）</span></span>く、しかして残りし土地に荒漠多しという<span type="ruby"><span
+              type="rb">状態</span><span type="rp">（</span><span type="rt">ありさま</span><span type="rp"
+              >）</span></span>でありました。国民の精力はかかるときに<span type="ruby"><span type="rb">試</span><span
+              type="rp">（</span><span type="rt">た</span><span type="rp"
+            >）</span></span>めさるるのであります。戦いは敗れ、国は<span type="ruby"><span type="rb">削</span><span
+              type="rp">（</span><span type="rt">けず</span><span type="rp"
+            >）</span></span>られ、国民の意気鎖沈しなにごとにも手のつかざるときに、かかるときに国民の真の<span type="ruby"><span type="rb"
+              >価値</span><span type="rp">（</span><span type="rt">ねうち</span><span type="rp"
+            >）</span></span>は判明するのであります。戦勝国の戦後の経営はどんなつまらない政治家にもできます、国威宣揚にともなう事業の発展はどんなつまらない実業家にもできます、難いのは戦敗国の戦後の経営であります、国運衰退のときにおける事業の発展であります。<hi
+            rend="white_circle"
+            >戦いに敗れて精神に敗れない民が真に偉大なる民であります</hi>、宗教といい信仰といい、国運隆盛のときにはなんの必要もないものであります。しかしながら国に<span
+            type="ruby"><span type="rb">幽暗</span><span type="rp">（</span><span type="rt"
+              >くらき</span><span type="rp">）</span></span>の<span type="ruby"><span type="rb"
+              >臨</span><span type="rp">（</span><span type="rt">のぞ</span><span type="rp"
+            >）</span></span>みしときに精神の光が必要になるのであります。国の<span type="ruby"><span type="rb">興</span><span
+              type="rp">（</span><span type="rt">おこ</span><span type="rp">）</span></span>ると<span
+            type="ruby"><span type="rb">亡</span><span type="rp">（</span><span type="rt"
+              >ほろ</span><span type="rp"
+            >）</span></span>ぶるとはこのときに定まるのであります。どんな国にもときには暗黒が臨みます。そのとき、これに打ち勝つことのできる民が、その民が永久に栄ゆるのであります。あたかも<span
+            type="ruby"><span type="rb">疾病</span><span type="rp">（</span><span type="rt"
+              >やまい</span><span type="rp">）</span></span>の襲うところとなりて人の健康がわかると同然であります。<span type="ruby"
+              ><span type="rb">平常</span><span type="rp">（</span><span type="rt">ふだん</span><span
+              type="rp">）</span></span>のときには弱い人も強い人と違いません。<span type="ruby"><span type="rb"
+              >疾病</span><span type="rp">（</span><span type="rt">やまい</span><span type="rp"
+            >）</span></span>に<span type="ruby"><span type="rb">罹</span><span type="rp">（</span><span
+              type="rt">かか</span><span type="rp">）</span></span>って弱い人は<span type="ruby"><span
+              type="rb">斃</span><span type="rp">（</span><span type="rt">たお</span><span type="rp"
+              >）</span></span>れて強い人は<span type="ruby"><span type="rb">存</span><span type="rp"
+              >（</span><span type="rt">のこ</span><span type="rp"
+            >）</span></span>るのであります。そのごとく真に強い国は国難に遭遇して亡びないのであります。その兵は敗れ、その財は<span type="ruby"><span
+              type="rb">尽</span><span type="rp">（</span><span type="rt">つ</span><span type="rp"
+              >）</span></span>きてそのときなお起るの精力を蓄うるものであります。これはまことに国民の試練の時であります。このときに亡びないで、彼らは運命のいかんにかかわらず、永久に亡びないのであります。<lb/></p>
+
+        <p>越王<span type="ruby"><span type="rb">勾践</span><span type="rp">（</span><span type="rt"
+              >こうせん</span><span type="rp"
+            >）</span></span>呉を破りて帰るではありません、デンマーク人は戦いに敗れて家に還ってきました。還りきたれば国は荒れ、財は尽き、見るものとして悲憤失望の種ならざるはなしでありました。「今やデンマークにとり悪しき日なり」と彼らは相互に対していいました。この<span
+            type="ruby"><span type="rb">挨拶</span><span type="rp">（</span><span type="rt"
+              >あいさつ</span><span type="rp">）</span></span>に対して「<span type="ruby"><span type="rb"
+              >否</span><span type="rp">（</span><span type="rt">いな</span><span type="rp"
+            >）</span></span>」と答えうる者は彼らのなかに一人もありませんでした。しかるにここに彼らのなかに一人の工兵士官がありました。彼の名をダルガス（Enrico
+          Mylius
+            Dalgas）といいまして、フランス種のデンマーク人でありました。彼の祖先は有名なるユグノー党の一人でありまして、彼らは一六八五年信仰自由のゆえをもって故国フランスを<span
+            type="ruby"><span type="rb">逐</span><span type="rp">（</span><span type="rt"
+              >お</span><span type="rp"
+            >）</span></span>われ、あるいは英国に、あるいはオランダに、あるいはプロイセンに、またあるいはデンマークに逃れ<span type="ruby"><span
+              type="rb">来</span><span type="rp">（</span><span type="rt">きた</span><span type="rp"
+              >）</span></span>りし者でありました。ユグノー党の人はいたるところに自由と熱信と勤勉とを運びました。英国においてはエリザベス女王のもとにその今や世界に冠たる製造業を起しました。その他、オランダにおいて、ドイツにおいて、多くの有利的事業は彼らによって起されました。<span
+            type="ruby"><span type="rb">旧</span><span type="rp">（</span><span type="rt"
+              >ふる</span><span type="rp"
+            >）</span></span>き宗教を維持せんとするの結果、フランス国が失いし多くのもののなかに、かの国にとり最大の損失と称すべきものはユグノー党の外国脱出でありました。しかして十九世紀の末に当って彼らはいまだなおその祖先の精神を失わなかったのであります。ダルガス、<span
+            type="ruby"><span type="rb">齢</span><span type="rp">（</span><span type="rt"
+              >とし</span><span type="rp">）</span></span>は今三十六歳、工兵士官として戦争に臨み、橋を架し、道路を築き、<span
+            type="ruby"><span type="rb">溝</span><span type="rp">（</span><span type="rt"
+              >みぞ</span><span type="rp">）</span></span>を掘るの際、彼は<span type="ruby"><span type="rb"
+              >細</span><span type="rp">（</span><span type="rt">こま</span><span type="rp"
+            >）</span></span>かに彼の故国の地質を研究しました。しかして戦争いまだ終らざるに彼はすでに彼の胸中に故国<span type="ruby"><span
+              type="rb">恢復</span><span type="rp">（</span><span type="rt">かいふく</span><span type="rp"
+              >）</span></span>の策を蓄えました。すなわちデンマーク国の欧州大陸に<span type="ruby"><span type="rb"
+              >連</span><span type="rp">（</span><span type="rt">つら</span><span type="rp"
+            >）</span></span>なる部分にして、その領土の大部分を占むるユトランド（Jutland）の荒漠を化してこれを<span type="ruby"><span
+              type="rb">沃饒</span><span type="rp">（</span><span type="rt">よくにょう</span><span type="rp"
+              >）</span></span>の地となさんとの大計画を、彼はすでに彼の胸中に蓄えました。ゆえに戦い敗れて彼の同僚が絶望に圧せられてその故国に帰り<span
+            type="ruby"><span type="rb">来</span><span type="rp">（</span><span type="rt"
+              >きた</span><span type="rp">）</span></span>りしときに、ダルガス一人はその<span type="ruby"><span
+              type="rb">面</span><span type="rp">（</span><span type="rt">おも</span><span type="rp"
+              >）</span></span>に<span type="ruby"><span type="rb">微笑</span><span type="rp"
+              >（</span><span type="rt">えみ</span><span type="rp">）</span></span>を<span type="ruby"
+              ><span type="rb">湛</span><span type="rp">（</span><span type="rt">たた</span><span
+              type="rp">）</span></span>えその<span type="ruby"><span type="rb">首</span><span type="rp"
+              >（</span><span type="rt">こうべ</span><span type="rp">）</span></span>に希望の春を<span
+            type="ruby"><span type="rb">戴</span><span type="rp">（</span><span type="rt"
+              >いただ</span><span type="rp"
+            >）</span></span>きました。「今やデンマークにとり悪しき日なり」と彼の同僚はいいました。「まことにしかり」とダルガスは答えました。「しかしながらわれらは外に失いしところのものを内において取り返すを<span
+            type="ruby"><span type="rb">得</span><span type="rp">（</span><span type="rt"
+              >う</span><span type="rp">）</span></span>べし、君らと余との生存中にわれらはユトランドの曠野を化して<span type="ruby"
+              ><span type="rb">薔薇</span><span type="rp">（</span><span type="rt">バラ</span><span
+              type="rp"
+            >）</span></span>の花咲くところとなすを得べし」と彼は続いて答えました。この工兵士官に預言者イザヤの精神がありました。彼の血管に流るるユグノー党の血はこの時にあたって彼をして平和の天使たらしめました。他人の失望するときに彼は失望しませんでした。彼は彼の国人が剣をもって失ったものを<span
+            type="ruby"><span type="rb">鋤</span><span type="rp">（</span><span type="rt"
+              >すき</span><span type="rp">）</span></span>をもって取り返さんとしました。今や敵国に対して<span type="ruby"
+              ><span type="rb">復讐戦</span><span type="rp">（</span><span type="rt">ふくしゅうせん</span><span
+              type="rp">）</span></span>を計画するにあらず、<span type="ruby"><span type="rb">鋤</span><span
+              type="rp">（</span><span type="rt">すき</span><span type="rp">）</span></span>と<span
+            type="ruby"><span type="rb">鍬</span><span type="rp">（</span><span type="rt"
+              >くわ</span><span type="rp"
+          >）</span></span>とをもって残る領土の曠漠と闘い、これを田園と化して敵に奪われしものを補わんとしました。まことにクリスチャンらしき計画ではありませんか。真正の平和主義者はかかる計画に出でなければなりません。<lb/></p>
+
+        <p>しかしダルガスはただに預言者ではありませんでした。彼は単に<span type="ruby"><span type="rb">夢想家</span><span type="rp"
+              >（</span><span type="rt">ゆめみるもの</span><span type="rp"
+            >）</span></span>ではありませんでした。工兵士官なる彼は、土木学者でありしと同時に、また地質学者であり植物学者でありました。彼はかのごとくにして詩人でありしと同時にまた実際家でありました。彼は理想を実現するの<span
+            type="ruby"><span type="rb">術</span><span type="rp">（</span><span type="rt"
+              >すべ</span><span type="rp"
+          >）</span></span>を知っておりました。かかる軍人をわれわれはときどき欧米の軍人のなかに見るのであります。軍人といえば人を殺すの術にのみ長じている者であるとの思想は外国においては一般に行われておらないのであります。<lb/></p>
+
+        <p>ユトランドはデンマークの半分以上であります。しかしてその三分の一以上が不毛の地であったのであります。面積一万五千平方マイルのデンマークにとりましては三千平方マイルの曠野は過大の廃物であります。これを化して良田沃野となして、外に失いしところのものを内にありて<span
+            type="ruby"><span type="rb">償</span><span type="rp">（</span><span type="rt"
+              >つぐな</span><span type="rp"
+            >）</span></span>わんとするのがそれがダルガスの夢であったのであります。しかしてこの夢を実現するにあたってダルガスの<span type="ruby"><span
+              type="rb">執</span><span type="rp">（</span><span type="rt">と</span><span type="rp"
+              >）</span></span>るべき武器はただ二つでありました。その第一は水でありました。その第二は<span type="ruby"><span type="rb"
+              >樹</span><span type="rp">（</span><span type="rt">き</span><span type="rp"
+            >）</span></span>でありました。荒地に水を<span type="ruby"><span type="rb">漑</span><span type="rp"
+              >（</span><span type="rt">そそ</span><span type="rp"
+            >）</span></span>ぐを得、これに樹を植えて植林の実を挙ぐるを得ば、それで<span type="ruby"><span type="rb"
+              >事</span><span type="rp">（</span><span type="rt">こと</span><span type="rp"
+            >）</span></span>は成るのであります。<span type="ruby"><span type="rb">事</span><span type="rp"
+              >（</span><span type="rt">こと</span><span type="rp"
+            >）</span></span>はいたって簡単でありました。しかし簡単ではあるが容易ではありませんでした。世に<span type="ruby"><span type="rb"
+              >御</span><span type="rp">（</span><span type="rt">ぎょ</span><span type="rp"
+            >）</span></span>し難いものとて人間の作った沙漠のごときはありません。もしユトランドの荒地がサハラの沙漠のごときものでありましたならば問題ははるかに容易であったのであります。天然の沙漠は水をさえこれに<span
+            type="ruby"><span type="rb">灑</span><span type="rp">（</span><span type="rt"
+              >そそ</span><span type="rp">）</span></span>ぐを得ばそれでじきに<span type="ruby"><span type="rb"
+              >沃土</span><span type="rp">（</span><span type="rt">よきつち</span><span type="rp"
+            >）</span></span>となるのであります。しかし人間の無謀と怠慢とになりし沙漠はこれを恢復するにもっとも難いものであります。しかしてユトランドの荒地はこの種の荒地であったのであります。今より八百年前の昔にはそこに繁茂せる良き林がありました。しかして<span
+            type="ruby"><span type="rb">降</span><span type="rp">（</span><span type="rt"
+              >くだ</span><span type="rp"
+            >）</span></span>って今より二百年前まではところどころに樫の林を見ることができました。しかるに文明の進むと同時に人の欲心はますます増進し、彼らは土地より取るに<span
+            type="ruby"><span type="rb">急</span><span type="rp">（</span><span type="rt"
+              >きゅう</span><span type="rp">）</span></span>にしてこれに<span type="ruby"><span type="rb"
+              >酬</span><span type="rp">（</span><span type="rt">むく</span><span type="rp"
+            >）</span></span>ゆるに<span type="ruby"><span type="rb">緩</span><span type="rp"
+              >（</span><span type="rt">かん</span><span type="rp"
+            >）</span></span>でありましたゆえに、地は時を追うてますます瘠せ衰え、ついに四十年前の憐むべき<span type="ruby"><span type="rb"
+              >状態</span><span type="rp">（</span><span type="rt">ありさま</span><span type="rp"
+            >）</span></span>に立ちいたったのであります。しかし人間の強欲をもってするも地は永久に殺すことのできるものではありません。神と天然とが示すある適当の方法をもってしますれば、この最悪の状態においてある土地をも<span
+            type="ruby"><span type="rb">元始</span><span type="rp">（</span><span type="rt"
+              >はじめ</span><span type="rp"
+          >）</span></span>の沃饒に返すことができます。まことに詩人シラーのいいしがごとく、天然には永久の希望あり、壊敗はこれをただ人のあいだにおいてのみ見るのであります。<lb/></p>
+
+        <p>まず溝を<span type="ruby"><span type="rb">穿</span><span type="rp">（</span><span type="rt"
+              >うが</span><span type="rp">）</span></span>ちて水を注ぎ、ヒースと称する荒野の植物を駆逐し、これに代うるに<span
+            type="ruby"><span type="rb">馬鈴薯</span><span type="rp">（</span><span type="rt"
+              >じゃがたらいも</span><span type="rp">）</span></span>ならびに<span type="ruby"><span type="rb"
+              >牧草</span><span type="rp">（</span><span type="rt">ぼくそう</span><span type="rp"
+            >）</span></span>をもってするのであります。このことはさほどの困難ではありませんでした。しかし難中の難事は荒地に樹を植ゆることでありました、このことについてダルガスは非常の苦心をもって研究しました。植物界広しといえどもユトランドの荒地に適しそこに成育してレバノンの栄えを<span
+            type="ruby"><span type="rb">呈</span><span type="rp">（</span><span type="rt"
+              >あら</span><span type="rp"
+            >）</span></span>わす樹はあるやなしやと彼は研究に研究を重ねました。しかして彼の心に思い当りましたのはノルウェー産の<span type="ruby"><span
+              type="rb">樅</span><span type="rp">（</span><span type="rt">もみ</span><span type="rp"
+              >）</span></span>でありました、これはユトランドの荒地に成育すべき樹であることはわかりました。しかしながら実際これを<span type="ruby"
+              ><span type="rb">試験</span><span type="rp">（</span><span type="rt">ため</span><span
+              type="rp">）</span></span>してみますると、思うとおりには行きません。樅は<span type="ruby"><span type="rb"
+              >生</span><span type="rp">（</span><span type="rt">は</span><span type="rp"
+            >）</span></span>えは<span type="ruby"><span type="rb">生</span><span type="rp"
+              >（</span><span type="rt">は</span><span type="rp"
+            >）</span></span>えまするが数年ならずして枯れてしまいます。ユトランドの荒地は今やこの<span type="ruby"><span type="rb"
+              >強梗</span><span type="rp">（</span><span type="rt">きょうこう</span><span type="rp"
+            >）</span></span>なる樹木をさえ養うに足るの養分を<span type="ruby"><span type="rb">存</span><span
+              type="rp">（</span><span type="rt">のこ</span><span type="rp"
+          >）</span></span>しませんでした。<lb/></p>
+
+        <p>しかしダルガスの熱心はこれがために<span type="ruby"><span type="rb">挫</span><span type="rp">（</span><span
+              type="rt">くじ</span><span type="rp"
+            >）</span></span>けませんでした。彼は天然はまた彼にこの難問題をも解決してくれることと確信しました。ゆえに彼はさらに研究を続けました。しかして彼の<span
+            type="ruby"><span type="rb">頭脳</span><span type="rp">（</span><span type="rt"
+              >あたま</span><span type="rp">）</span></span>にフト浮び出ましたことはアルプス産の<span type="ruby"><span
+              type="rb">小樅</span><span type="rp">（</span><span type="rt">こもみ</span><span type="rp"
+              >）</span></span>でありました。もしこれを移植したらばいかんと彼は思いました。しかしてこれを取り<span type="ruby"><span
+              type="rb">来</span><span type="rp">（</span><span type="rt">きた</span><span type="rp"
+              >）</span></span>りてノルウェー産の樅のあいだに植えましたときに、奇なるかな、両種の樅は相いならんで生長し、年を経るも枯れなかったのであります。ここにおいて大問題は<span
+            type="ruby"><span type="rb">釈</span><span type="rp">（</span><span type="rt"
+              >と</span><span type="rp"
+          >）</span></span>けました。ユトランドの荒野に始めて緑の野を見ることができました。緑は希望の色であります。ダルガスの希望、デンマークの希望、その民二百五十万の希望は実際に現われました。<lb/></p>
+
+        <p>しかし問題はいまだ<span type="ruby"><span type="rb">全</span><span type="rp">（</span><span
+              type="rt">まった</span><span type="rp">）</span></span>く釈けませんでした。緑の<hi rend="white_circle"
+            >野</hi>はできましたが、緑の<hi rend="white_circle"
+            >林</hi>はできませんでした。ユトランドの荒地より建築用の木材をも伐り得んとのダルガスの野心的欲望は事実となりて現われませんでした。<span type="ruby"
+              ><span type="rb">樅</span><span type="rp">（</span><span type="rt">もみ</span><span
+              type="rp">）</span></span>はある程度まで成長して、それで成長を止めました、その<span type="ruby"><span type="rb"
+              >枯死</span><span type="rp">（</span><span type="rt">かれること</span><span type="rp"
+            >）</span></span>はアルプス産の<span type="ruby"><span type="rb">小樅</span><span type="rp"
+              >（</span><span type="rt">こもみ</span><span type="rp">）</span></span>の<span type="ruby"
+              ><span type="rb">併植</span><span type="rp">（</span><span type="rt">へいしょく</span><span
+              type="rp">）</span></span>をもって<span type="ruby"><span type="rb">防</span><span type="rp"
+              >（</span><span type="rt">ふせ</span><span type="rp"
+            >）</span></span>ぎ得ましたけれども、その永久の成長はこれによって<span type="ruby"><span type="rb">成就</span><span
+              type="rp">（</span><span type="rt">とげ</span><span type="rp"
+            >）</span></span>られませんでした。「ダルガスよ、汝の預言せし材木を与えよ」といいてデンマークの農夫らは彼に迫りました。あたかもエジプトより<span
+            type="ruby"><span type="rb">遁</span><span type="rp">（</span><span type="rt"
+              >のが</span><span type="rp"
+            >）</span></span>れ出でしイスラエルの民が一部の失敗のゆえをもってモーセを責めたと同然でありました。しかし神はモーセの<span type="ruby"
+              ><span type="rb">祈願</span><span type="rp">（</span><span type="rt">ねがい</span><span
+              type="rp">）</span></span>を聴きたまいしがごとくにダルガスの心の叫びをも聴きたまいました。黙示は今度は彼に<span type="ruby"
+              ><span type="rb">臨</span><span type="rp">（</span><span type="rt">のぞ</span><span
+              type="rp">）</span></span>まずして彼の子に臨みました、彼の長男をフレデリック・ダルガスといいました。彼は父の<span type="ruby"
+              ><span type="rb">質</span><span type="rp">（</span><span type="rt">たち</span><span
+              type="rp">）</span></span>を受けて善き植物学者でありました。彼は<span type="ruby"><span type="rb"
+              >樅</span><span type="rp">（</span><span type="rt">もみ</span><span type="rp"
+            >）</span></span>の成長について大なる発見をなしました。<lb/></p>
+
+        <p>若きダルガスはいいました、大樅がある程度以上に成長しないのは小樅をいつまでも大樅のそばに<span type="ruby"><span type="rb"
+              >生</span><span type="rp">（</span><span type="rt">はや</span><span type="rp"
+            >）</span></span>しておくからである。もしある時期に達して小樅を<span type="ruby"><span type="rb">斫</span><span
+              type="rp">（</span><span type="rt">き</span><span type="rp"
+            >）</span></span>り払ってしまうならば大樅は<span type="ruby"><span type="rb">独</span><span type="rp"
+              >（</span><span type="rt">ひと</span><span type="rp"
+            >）</span></span>り土地を占領してその成長を続けるであろうと。しかして若きダルガスのこの言を実際に<span type="ruby"><span
+              type="rb">試</span><span type="rp">（</span><span type="rt">ため</span><span type="rp"
+              >）</span></span>してみましたところが実にそのとおりでありました。小樅はある程度まで大樅の成長を<span type="ruby"><span
+              type="rb">促</span><span type="rp">（</span><span type="rt">うなが</span><span type="rp"
+              >）</span></span>すの<span type="ruby"><span type="rb">能力</span><span type="rp"
+              >（</span><span type="rt">ちから</span><span type="rp"
+            >）</span></span>を持っております。しかしその程度に達すればかえってこれを妨ぐるものである、との<span type="ruby"><span type="rb"
+              >奇態</span><span type="rp">（</span><span type="rt">きたい</span><span type="rp"
+            >）</span></span>なる植物学上の事実が、ダルガス父子によって発見せられたのであります。しかもこの発見はデンマーク国の開発にとりては実に絶大なる発見でありました、これによってユトランドの荒地<span
+            type="ruby"><span type="rb">挽回</span><span type="rp">（</span><span type="rt"
+              >ばんかい</span><span type="rp">）</span></span>の難問題は解釈されたのであります。これよりして各地に<span type="ruby"
+              ><span type="rb">鬱蒼</span><span type="rp">（</span><span type="rt">うっそう</span><span
+              type="rp"
+            >）</span></span>たる樅の林を見るにいたりました。一八六〇年においてはユトランドの山林はわずかに十五万七千エーカーに過ぎませんでしたが、四十七年後の一九〇七年にいたりましては四十七万六千エーカーの多きに達しました。しかしこれなお全州面積の七分二厘に過ぎません。さらにダルガスの方法に<span
+            type="ruby"><span type="rb">循</span><span type="rp">（</span><span type="rt"
+              >したが</span><span type="rp"
+            >）</span></span>い植林を継続いたしますならば数十年の後にはかの地に数百万エーカーの緑林を見るにいたるのでありましょう。実に多望と<span
+            type="ruby"><span type="rb">謂</span><span type="rp">（</span><span type="rt"
+              >いい</span><span type="rp">）</span></span>つべしであります。<lb/></p>
+
+        <p>しかし植林の効果は単に木材の収穫に<span type="ruby"><span type="rb">止</span><span type="rp">（</span><span
+              type="rt">とど</span><span type="rp">）</span></span>まりません。第一にその善き感化を<span type="ruby"
+              ><span type="rb">蒙</span><span type="rp">（</span><span type="rt">こうむ</span><span
+              type="rp">）</span></span>りたるものはユトランドの気候でありました。樹木のなき土地は熱しやすくして<span type="ruby"><span
+              type="rb">冷</span><span type="rp">（</span><span type="rt">さ</span><span type="rp"
+              >）</span></span>めやすくあります。ゆえにダルガスの植林以前においてはユトランドの夏は昼は非常に暑くして、夜はときに霜を見ました。四六時中に熱帯の暑気と初冬の霜を見ることでありますれば、植生は<span
+            type="ruby"><span type="rb">堪</span><span type="rp">（</span><span type="rt"
+              >たま</span><span type="rp">）</span></span>ったものでありません。その時にあたってユトランドの農夫が収穫成功の希望をもって<span
+            type="ruby"><span type="rb">種</span><span type="rp">（</span><span type="rt"
+              >う</span><span type="rp"
+            >）</span></span>ゆるを得し植物は馬鈴薯、黒麦、その他少数のものに過ぎませんでした。しかし植林成功後のかの地の農業は一変しました。夏期の降霜はまったく<span
+            type="ruby"><span type="rb">止</span><span type="rp">（</span><span type="rt"
+              >や</span><span type="rp"
+            >）</span></span>みました。今や小麦なり、砂糖大根なり、北欧産の穀類または野菜にして、成熟せざるものなきにいたりました。ユトランドは<span
+            type="ruby"><span type="rb">大樅</span><span type="rp">（</span><span type="rt"
+              >おおもみ</span><span type="rp"
+          >）</span></span>の林の繁茂のゆえをもって良き田園と化しました。木材を与えられし上に善き気候を与えられました、植ゆべきはまことに樹であります。<lb/></p>
+
+        <p>しかし植林の善き感化はこれに<span type="ruby"><span type="rb">止</span><span type="rp">（</span><span
+              type="rt">とど</span><span type="rp">）</span></span>まりませんでした。樹木の繁茂は海岸より吹き送らるる<span
+            type="ruby"><span type="rb">砂塵</span><span type="rp">（</span><span type="rt"
+              >すなほこり</span><span type="rp">）</span></span>の荒廃を<span type="ruby"><span type="rb"
+              >止</span><span type="rp">（</span><span type="rt">と</span><span type="rp"
+            >）</span></span>めました。北海沿岸特有の<span type="ruby"><span type="rb">砂丘</span><span type="rp"
+              >（</span><span type="rt">すなやま</span><span type="rp"
+            >）</span></span>は海岸近くに喰い止められました、<span type="ruby"><span type="rb">樅</span><span
+              type="rp">（</span><span type="rt">もみ</span><span type="rp"
+            >）</span></span>は根を地に張りて襲いくる<span type="ruby"><span type="rb">砂塵</span><span type="rp"
+              >（</span><span type="rt">すなほこり</span><span type="rp"
+          >）</span></span>に対していいました、<lb/></p>
+
+        <p><quote> ここまでは<span type="ruby"><span type="rb">来</span><span type="rp">（</span><span
+                type="rt">きた</span><span type="rp">）</span></span>るを<span type="ruby"><span
+                type="rb">得</span><span type="rp">（</span><span type="rt">う</span><span type="rp"
+                >）</span></span>べし<lb/>しかしここを越ゆべからず<lb/>
+          </quote> と（ヨブ記三八章一一節）。北海に<span type="ruby"><span type="rb">浜</span><span type="rp"
+              >（</span><span type="rt">ひん</span><span type="rp"
+            >）</span></span>する国にとりては敵国の艦隊よりも恐るべき<span type="ruby"><span type="rb">砂丘</span><span
+              type="rp">（</span><span type="rt">すなやま</span><span type="rp"
+          >）</span></span>は、戦闘艦ならずして緑の樅の林をもって、ここにみごとに撃退されたのであります。<lb/></p>
+
+        <p>霜は消え砂は去り、その上に第三に洪水の害は除かれたのであります。これいずこの国においても植林の結果としてじきに現わるるものであります。もちろん海抜六百尺をもって最高点となすユトランドにおいてはわが<span
+            type="ruby"><span type="rb">邦</span><span type="rp">（</span><span type="rt"
+              >くに</span><span type="rp">）</span></span>のごとき<span type="ruby"><span type="rb"
+              >山国</span><span type="rp">（</span><span type="rt">やまぐに</span><span type="rp"
+            >）</span></span>におけるごとく洪水の害を見ることはありません。しかしその比較的に少きこの害すらダルガスの事業によって除かれたのであります。<lb/></p>
+
+        <p>かくのごとくにしてユトランドの全州は一変しました。<span type="ruby"><span type="rb">廃</span><span type="rp"
+              >（</span><span type="rt">すた</span><span type="rp">）</span></span>りし<span type="ruby"
+              ><span type="rb">市邑</span><span type="rp">（</span><span type="rt">しゆう</span><span
+              type="rp">）</span></span>はふたたび起りました。新たに町村は設けられました。地価は非常に<span type="ruby"><span
+              type="rb">騰貴</span><span type="rp">（</span><span type="rt">とうき</span><span type="rp"
+              >）</span></span>しました、あるところにおいては四十年前の百五十倍に達しました。道路と鉄道とは<span type="ruby"><span
+              type="rb">縦横</span><span type="rp">（</span><span type="rt">たてよこ</span><span type="rp"
+              >）</span></span>に築かれました。わが四国全島にさらに一千方マイルを加えたるユトランドは復活しました、戦争によって失いしシュレスウィヒとホルスタインとは今日すでに<span
+            type="ruby"><span type="rb">償</span><span type="rp">（</span><span type="rt"
+              >つぐな</span><span type="rp">）</span></span>われてなお余りあるとのことであります。<lb/></p>
+
+        <p>しかし木材よりも、野菜よりも、穀類よりも、畜類よりも、さらに貴きものは国民の精神であります。デンマーク人の精神はダルガス植林成功の結果としてここに一変したのであります。失望せる彼らはここに希望を恢復しました、彼らは国を<span
+            type="ruby"><span type="rb">削</span><span type="rp">（</span><span type="rt"
+              >けず</span><span type="rp"
+            >）</span></span>られてさらに新たに良き国を得たのであります。しかも他人の国を奪ったのではありません。己れの国を改造したのであります。自由宗教より来る熱誠と忍耐と、これに加うるに<span
+            type="ruby"><span type="rb">大樅</span><span type="rp">（</span><span type="rt"
+              >おおもみ</span><span type="rp">）</span></span>、<span type="ruby"><span type="rb"
+              >小樅</span><span type="rp">（</span><span type="rt">こもみ</span><span type="rp"
+            >）</span></span>の不思議なる<span type="ruby"><span type="rb">能力</span><span type="rp"
+              >（</span><span type="rt">ちから</span><span type="rp">）</span></span>とによりて、彼らの荒れたる国を<span
+            type="ruby"><span type="rb">挽回</span><span type="rp">（</span><span type="rt"
+              >ばんかい</span><span type="rp">）</span></span>したのであります。<lb/></p>
+
+        <p>ダルガスの他の事業について私は今ここに語るの時をもちません。彼はいかにして<span type="ruby"><span type="rb">砂地</span><span
+              type="rp">（</span><span type="rt">すなじ</span><span type="rp"
+            >）</span></span>を田園に化せしか、いかにして沼地の水を<span type="ruby"><span type="rb">排</span><span
+              type="rp">（</span><span type="rt">はら</span><span type="rp"
+            >）</span></span>いしか、いかにして<span type="ruby"><span type="rb">磽地</span><span type="rp"
+              >（</span><span type="rt">いしじ</span><span type="rp">）</span></span>を<span type="ruby"
+              ><span type="rb">拓</span><span type="rp">（</span><span type="rt">ひら</span><span
+              type="rp">）</span></span>いて果園を作りしか、これ植林に劣らぬ面白き<span type="ruby"><span type="rb"
+              >物語</span><span type="rp">（</span><span type="rt">ものがたり</span><span type="rp"
+            >）</span></span>であります。これらの問題に興味を有せらるる諸君はじかに私についてお尋ねを願います。<lb/></p>
+
+        <p>　＊　　　　　　＊　　　　　　＊　　　　　　＊<lb/></p>
+
+        <p>今、ここにお話しいたしましたデンマークの話は、私どもに何を教えますか。<lb/></p>
+
+        <p>第一に戦敗かならずしも不幸にあらざることを教えます。国は戦争に負けても亡びません。実に戦争に勝って亡びた国は歴史上けっして<span type="ruby"><span
+              type="rb">尠</span><span type="rp">（</span><span type="rt">すくな</span><span type="rp"
+              >）</span></span>くないのであります。国の興亡は戦争の勝敗によりません、その民の平素の修養によります。善き宗教、善き道徳、善き精神ありて国は戦争に負けても衰えません。<span
+            type="ruby"><span type="rb">否</span><span type="rp">（</span><span type="rt"
+              >いな</span><span type="rp">）</span></span>、その正反対が事実であります。<span type="ruby"><span
+              type="rb">牢固</span><span type="rp">（</span><span type="rt">ろうこ</span><span type="rp"
+              >）</span></span>たる精神ありて戦敗はかえって善き刺激となりて不幸の民を興します。デンマークは実にその善き実例であります。<lb/></p>
+
+
+        <p>第二は天然の無限的生産力を示します。富は大陸にもあります、<span type="ruby"><span type="rb">島嶼</span><span type="rp"
+              >（</span><span type="rt">とうしょ</span><span type="rp"
+            >）</span></span>にもあります。沃野にもあります、沙漠にもあります。大陸の<span type="ruby"><span type="rb"
+              >主</span><span type="rp">（</span><span type="rt">ぬし</span><span type="rp"
+            >）</span></span>かならずしも富者ではありません。小島の所有者かならずしも貧者ではありません。善くこれを開発すれば小島も能く大陸に<span
+            type="ruby"><span type="rb">勝</span><span type="rp">（</span><span type="rt"
+              >ま</span><span type="rp">）</span></span>さるの産を産するのであります。ゆえに国の小なるはけっして<span type="ruby"
+              ><span type="rb">歎</span><span type="rp">（</span><span type="rt">なげ</span><span
+              type="rp"
+            >）</span></span>くに足りません。これに対して国の大なるはけっして誇るに足りません。富は有利化されたるエネルギー（力）であります。しかしてエネルギーは太陽の光線にもあります。海の<span
+            type="ruby"><span type="rb">波濤</span><span type="rp">（</span><span type="rt"
+              >なみ</span><span type="rp"
+            >）</span></span>にもあります。吹く風にもあります。噴火する火山にもあります。もしこれを利用するを得ますればこれらはみなことごとく富源であります。かならずしも英国のごとく世界の陸面六分の一の持ち主となるの必要はありません。デンマークで足ります。<span
+            type="ruby"><span type="rb">然</span><span type="rp">（</span><span type="rt"
+              >しか</span><span type="rp">）</span></span>り、それよりも小なる国で足ります。<span type="ruby"><span
+              type="rb">外</span><span type="rp">（</span><span type="rt">そと</span><span type="rp"
+              >）</span></span>に<span type="ruby"><span type="rb">拡</span><span type="rp"
+              >（</span><span type="rt">ひろ</span><span type="rp">）</span></span>がらんとするよりは<span
+            type="ruby"><span type="rb">内</span><span type="rp">（</span><span type="rt"
+              >うち</span><span type="rp">）</span></span>を開発すべきであります。<lb/></p>
+
+        <p>第三に信仰の実力を示します。国の実力は軍隊ではありません、軍艦ではありません。はたまた金ではありません、銀ではありません、<hi rend="sesame_dot"
+            >信仰であります</hi>。このことにかんしましてはマハン大佐もいまだ真理を語りません、アダム・スミス、Ｊ・Ｓ・ミルもいまだ真理を語りません。このことにかんして真理を語ったものはやはり<span
+            type="ruby"><span type="rb">旧</span><span type="rp">（</span><span type="rt"
+              >ふる</span><span type="rp">）</span></span>い『聖書』であります。<lb/></p>
+
+        <p><quote> もし<span type="ruby"><span type="rb">芥種</span><span type="rp">（</span><span
+                type="rt">からしだね</span><span type="rp"
+              >）</span></span>のごとき信仰あらば、この山に移りてここよりかしこに移れと<span type="ruby"><span type="rb"
+                >命</span><span type="rp">（</span><span type="rt">い</span><span type="rp"
+              >）</span></span>うとも、かならず移らん、また汝らに<span type="ruby"><span type="rb">能</span><span
+                type="rp">（</span><span type="rt">あた</span><span type="rp"
+            >）</span></span>わざることなかるべし<lb/>
+          </quote> とイエスはいいたまいました（マタイ伝一七章二〇節）。また<lb/>
+          <quote> おおよそ神によりて生まるる者は世に勝つ、われらをして世に勝たしむるものはわれらの信なり<lb/>
+          </quote> と聖ヨハネはいいました（ヨハネ第一書五章四節）。世に勝つの力、地を征服する力はやはり信仰であります。ユグノー党の信仰はその一人をもって<span
+            type="ruby"><span type="rb">鋤</span><span type="rp">（</span><span type="rt"
+              >すき</span><span type="rp">）</span></span>と<span type="ruby"><span type="rb"
+              >樅樹</span><span type="rp">（</span><span type="rt">もみのき</span><span type="rp"
+            >）</span></span>とをもってデンマーク国を救いました。よしまたダルガス一人に信仰がありましてもデンマーク人全体に信仰がありませんでしたならば、彼の事業も無効に終ったのであります。この人あり、この民あり、フランスより輸入されたる自由信仰あり、デンマーク自生の自由信仰ありて、この偉業が成ったのであります。宗教、信仰、経済に関係なしと<span
+            type="ruby"><span type="rb">唱</span><span type="rp">（</span><span type="rt"
+              >とな</span><span type="rp">）</span></span>うる者は誰でありますか。宗教は詩人と愚人とに<span type="ruby"><span
+              type="rb">佳</span><span type="rp">（</span><span type="rt">よ</span><span type="rp"
+              >）</span></span>くして実際家と智者に要なしなどと唱うる人は、歴史も哲学も経済も何にも知らない人であります。国にもしかかる「愚かなる智者」のみありて、ダルガスのごとき「<span
+            type="ruby"><span type="rb">智</span><span type="rp">（</span><span type="rt"
+              >さと</span><span type="rp"
+            >）</span></span>き愚人」がおりませんならば、不幸一歩を誤りて戦敗の非運に遭いまするならば、その国はそのときたちまちにして亡びてしまうのであります。<hi
+            rend="white_circle">国家の大危険にして信仰を嘲り</hi>、<hi rend="white_circle"
+            >これを無用視するがごときことはありません</hi>。私が今日ここにお話しいたしましたデンマークとダルガスとにかんする事柄は大いに<span type="ruby"><span
+              type="rb">軽佻浮薄</span><span type="rp">（</span><span type="rt">けいちょうふはく</span><span
+              type="rp">）</span></span>の経世家を<span type="ruby"><span type="rb">警</span><span
+              type="rp">（</span><span type="rt">いまし</span><span type="rp"
+          >）</span></span>むべきであります。<lb/></p>
+      </div>
+    </body>
+  </text>
+</TEI>
