@@ -17,7 +17,13 @@
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="https://github.com/TEI-EAJ/aozora_tei">TEI-EAJ / aozora_tei</a>
+        <a class="nav-link" href="https://observablehq.com/@nakamura196/untitled">Category</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="https://github.com/TEI-EAJ/aozora_tei/wiki">Wiki</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="https://github.com/TEI-EAJ/aozora_tei">Github</a>
       </li>
     </ul>
   </div>
@@ -70,12 +76,13 @@ $(function(){
 
 function sparql(id, url){
 
-  var query = " SELECT DISTINCT ?title ?creator_uri ?name ?authorID ";
+  var query = " SELECT DISTINCT ?title ?creator_uri ?name ?authorID ?subject ";
   query += " WHERE { ";
   query += " ?s <http://purl.org/net/aozora/titleID> ?o . "
   query += " filter (?o = '"+id+"'^^xsd:int)  ";
   query += " ?s dcterms:title [rdf:value ?title] . "
   query += " ?s dcterms:creator ?creator_uri .  "
+  query += " ?s <http://purl.org/dc/elements/1.1/subject> ?subject .  "
   query += " ?creator_uri foaf:name ?name .  "
   query += " ?creator_uri <http://purl.org/net/aozora/authorID> ?authorID .  "
   query += " } ";
@@ -111,7 +118,7 @@ function sparql(id, url){
 
       var a = $('<a class="list-group-item list-group-item-action">')
       $("#p"+authorID).append(a)
-      a.append(obj.title.value)
+      a.append(obj.title.value+" [ "+obj.subject.value+" ] ")
       a.attr("href", url)
     }
   })
