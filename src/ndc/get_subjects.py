@@ -28,17 +28,23 @@ for item in data["items"]:
 
         subjects = obj["subject"]["value"].split(" ")
         for subject in subjects:
-            if subject not in map:
-                map[subject] = 0
 
-            map[subject] = map[subject] + 1
-
-            subject = subject.replace("K", "")
+            if subject == "NDC":
+                continue
 
             if subject not in map:
                 map[subject] = 0
 
             map[subject] = map[subject] + 1
+
+            if "K" in subject:
+
+                subject = subject.replace("K", "")
+
+                if subject not in map:
+                    map[subject] = 0
+
+                map[subject] = map[subject] + 1
 
 fw = open("data/subjects.json", 'w')
 json.dump(map, fw, ensure_ascii=False, indent=4, sort_keys=True, separators=(',', ': '))
