@@ -33,5 +33,12 @@ for item in data["items"]:
 
             map[subject] = map[subject] + 1
 
+            subject = subject.replace("K", "")
+
+            if subject not in map:
+                map[subject] = 0
+
+            map[subject] = map[subject] + 1
+
 fw = open("data/subjects.json", 'w')
 json.dump(map, fw, ensure_ascii=False, indent=4, sort_keys=True, separators=(',', ': '))
