@@ -1,0 +1,142 @@
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title></title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Progress status</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://observablehq.com/@nakamura196/untitled">Category</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="https://github.com/TEI-EAJ/aozora_tei/wiki">Wiki</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="https://github.com/TEI-EAJ/aozora_tei">Github</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+
+  <div class="container my-5" id="main">
+    <h3 id="lv" class="mb-5"></h3>
+  </div>
+
+  <hr/>
+
+  <footer class="container my-5">
+
+    <p>Powered by 青空文庫 Linked Open Data and <a href="https://dydra.com/ut-digital-archives/aozora">Dydra</a>.</p>
+    <p>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.ja"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">青空文庫 Linked Open Data</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://mdlab.slis.tsukuba.ac.jp/" property="cc:attributionName" rel="cc:attributionURL">杉本・永森研究室</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.ja">Creative Commons 表示 - 非営利 3.0 非移植 License</a>.<br><a xmlns:dct="http://purl.org/dc/terms/" href="http://www.aozora.gr.jp/" rel="dct:source">http://www.aozora.gr.jp/</a>にある作品に基づいている。
+    </p>
+  </footer>
+
+</body>
+
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+
+var endpoint = "https://dydra.com/ut-digital-archives/aozora/sparql";
+var authors = [];
+
+$(function(){
+
+  var vars = getParam();
+
+  var lv = vars["lv"] ? vars["lv"] : 3
+  var status = vars["status"] ? vars["status"] : "complete"
+
+  $("#lv").append("Level "+lv+"   "+status)
+
+  $.getJSON("https://api.github.com/search/code?q=in:file+extension:xml+path:data/"+status+"/tei_lib_lv"+lv+"+repo:TEI-EAJ/aozora_tei" , function(data) {
+    var items = data.items
+
+    for(var i = 0; i < items.length; i++){
+      var item = items[i]
+      var id = item.name.split("_")[0]
+      sparql(id, item["html_url"])
+    }
+  });
+});
+
+function sparql(id, url){
+
+  var query = " SELECT DISTINCT ?title ?creator_uri ?name ?authorID ?subject ";
+  query += " WHERE { ";
+  query += " ?s <http://purl.org/net/aozora/titleID> ?o . "
+  query += " filter (?o = '"+id+"'^^xsd:int)  ";
+  query += " ?s dcterms:title [rdf:value ?title] . "
+  query += " ?s dcterms:creator ?creator_uri .  "
+  query += " ?s <http://purl.org/dc/elements/1.1/subject> ?subject .  "
+  query += " ?creator_uri foaf:name ?name .  "
+  query += " ?creator_uri <http://purl.org/net/aozora/authorID> ?authorID .  "
+  query += " } ";
+
+  $.ajax({
+    url: endpoint,
+    type:'GET',
+    data:{
+      query : query,
+      format : "json"
+    }
+  })
+  .then(function(data){
+    var result = data.results.bindings;
+
+    if(result.length > 0){
+
+      var obj = result[0]
+
+      var authorID = obj.authorID.value
+
+      if(authors.indexOf(authorID) == -1){
+        authors.push(authorID)
+
+        var list_group = $('<div class="list-group mb-5">')
+        $("#main").append(list_group)
+        list_group.attr("id", "p"+authorID)
+
+        var a = $('<a href="'+obj["creator_uri"].value+'" class="list-group-item list-group-item-action active">')
+        list_group.append(a)
+        a.append(obj.name.value)
+      }
+
+      var a = $('<a class="list-group-item list-group-item-action">')
+      $("#p"+authorID).append(a)
+      a.append(obj.title.value+" [ "+obj.subject.value+" ] ")
+      a.attr("href", url)
+    }
+  })
+}
+
+function getParam(){
+  var vars = {};
+  var param = location.search.substring(1).split('&');
+  for(var i = 0; i < param.length; i++) {
+    var keySearch = param[i].search(/=/);
+    var key = '';
+    if(keySearch != -1) key = param[i].slice(0, keySearch);
+    var val = param[i].slice(param[i].indexOf('=', 0) + 1);
+    if(key != '') vars[key] = decodeURI(val);
+  }
+  return vars;
+}
+
+</script>
+</html>

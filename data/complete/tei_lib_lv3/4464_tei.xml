@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>秋田街道</title>
+            <author>宮沢賢治</author>         
+         
+            <respStmt>
+               <resp when="2019-03-04">TEI Encoding</resp>
+               <name>神谷信武</name>
+            </respStmt>
+            <respStmt>
+               <resp when="2003-01-10">作成</resp>
+               <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+               <note>
+                  <lb/>底本：「新修宮沢賢治全集　第十四巻」筑摩書房 <lb/>1980（昭和55）年5月15日初版第1刷発行 <lb/>1983（昭和58）年1月20日初版第4刷発行
+                  <lb/>底本の親本：「筑摩全集類聚版芥川龍之介全集」筑摩書房 <lb/>1971（昭和46）年3月～11月刊行 <lb/>入力：林　幸雄 <lb/>校正：mayu
+                  <lb/>2003年1月10日作成 <lb/>2010年11月4日修正 <lb/>青空文庫作成ファイル：
+                  <lb/>このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。
+                  <lb />※本作品中には、身体的・精神的資質、職業、地域、階層、民族などに関する不適切な表現が見られます。しかし、作品の時代背景と価値、加えて、作者の抱えた限界を読者自身が認識することの意義を考慮し、底本のままとしました。（青空文庫）</note>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+            <date when="2019-01-11"> 2019年3月4日</date>
+            <availability>
+               <p>
+                  <ref target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0
+                     1.0) Public Domain Dedication</ref></p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author>宮沢賢治</author>
+               <title>秋田街道</title>
+               <publisher>筑摩書房</publisher>「「新修宮沢賢治全集　第十四巻」、 <date when="1980-05-15"
+                  >1980（昭和55）年5月15日</date>初版第1刷発行 <date when="1983-01-20">1983（昭和58）年1月20日</date>初版第4刷発行
+               </bibl>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p><lb />
+            　どれもみんな肥料や薪炭をやりとりするさびしい家だ。街道のところどころにちらばって黒い小さいさびしい家だ。それももうみな戸を閉めた。<lb />
+            　おれはかなしく来た方をふりかへる。<span type="ruby"> <span type="rb"> 盛岡</span> <span type="rp"> （</span> <span type="rt"> もりをか</span> <span type="rp"> ）</span> </span> の電燈は<span type="ruby"> <span type="rb"> 微</span> <span type="rp"> （</span> <span type="rt"> かす</span> <span type="rp"> ）</span> </span> かにゆらいでねむさうにならび<span type="ruby"> <span type="rb"> 只</span> <span type="rp"> （</span> <span type="rt"> ただ</span> <span type="rp"> ）</span> </span> 公園のアーク燈だけ高い<span type="ruby"> <span type="rb"> 処</span> <span type="rp"> （</span> <span type="rt"> ところ</span> <span type="rp"> ）</span> </span> でそらぞらしい<span type="ruby"> <span type="rb"> 気焔</span> <span type="rp"> （</span> <span type="rt"> きえん</span> <span type="rp"> ）</span> </span> の波を上げてゐる。どうせ<span type="ruby"> <span type="rb"> 今頃</span> <span type="rp"> （</span> <span type="rt"> いまごろ</span> <span type="rp"> ）</span> </span> は無鉄砲な羽虫が沢山集ってぶっつかったりよろけたりしてゐるのだ。<lb /></p><p>
+            <lb />
+            　私はふと空いっぱいの灰色はがねに大きな床屋のだんだら棒、あのオランダ伝来の<span type="ruby"> <span type="rb"> 葱</span> <span type="rp"> （</span> <span type="rt"> ねぎ</span> <span type="rp"> ）</span> </span> の<span type="ruby"> <span type="rb"> 蕾</span> <span type="rp"> （</span> <span type="rt"> つぼみ</span> <span type="rp"> ）</span> </span> の形をした店飾りを見る。これも随分たよりないことだ。<lb /></p><p>
+            <lb />
+            　道が小さな橋にかゝる。<span type="ruby"> <span type="rb"> 螢</span> <span type="rp"> （</span> <span type="rt"> ほたる</span> <span type="rp"> ）</span> </span> がプイと飛んで行く。<span type="ruby"> <span type="rb"> 誰</span> <span type="rp"> （</span> <span type="rt"> たれ</span> <span type="rp"> ）</span> </span> かがうしろで手をあげて大きくためいきをついた。それも間違ひかわからない。とにかくそらが少し明るくなった。夜明けにはまだ途方もないしきっと雲が薄くなって月の光が<span type="ruby"> <span type="rb"> 透</span> <span type="rp"> （</span> <span type="rt"> とほ</span> <span type="rp"> ）</span> </span> って来るのだ。<lb /></p><p>
+            <lb />
+            　向ふの方は小岩井農場だ。<lb />
+            　四っ角山にみんなぺたぺた一緒に座る。<lb />
+             　月見草が幻よりは少し明るくその辺一面浮んで咲いてゐる。マッチがパッとすられ<span type="ruby"> <span type="rb"> 莨</span> <span type="rp"> （</span> <span type="rt"> たばこ</span> <span type="rp"> ）</span> </span> の青いけむりがほのかにながれる。<lb />
+             　右手に山がまっくろにうかび出した。その山に何の鳥だか沢山とまって<span type="ruby"> <span type="rb"> 睡</span> <span type="rp"> （</span> <span type="rt"> ねむ</span> <span type="rp"> ）</span> </span> ってゐるらしい。<lb /></p><p>
+            <lb />
+            　並木は松になりみんなは何かを<span type="ruby"> <span type="rb"> 云</span> <span type="rp"> （</span> <span type="rt"> い</span> <span type="rp"> ）</span> </span> ひ争ふ。そんならお前さんはこゝらでいきなり頭を<span type="ruby"> <span type="rb"> 撲</span> <span type="rp"> （</span> <span type="rt"> なぐ</span> <span type="rp"> ）</span> </span> りつけられて殺されてもいゝな。誰かが云ふ。それはいゝ。いゝと思ふ。睡さうに誰かが答へる。<lb /></p><p>
+            <lb />
+            　道が悪いので野原を歩く。野原の中の黒い<span type="ruby"> <span type="rb"> 水潦</span> <span type="rp"> （</span> <span type="rt"> みづたまり</span> <span type="rp"> ）</span> </span> に何べんもみんな踏み込んだ。けれどもやがて月が頭の上に出て月見草の花がほのかな夢をたゞよはしフィーマスの土の水たまりにも<span type="ruby"> <span type="rb"> 象牙</span> <span type="rp"> （</span> <span type="rt"> ざうげ</span> <span type="rp"> ）</span> </span> 細工の紫がかった月がうつりどこかで小さな羽虫がふるふ。<lb /></p><p>
+            <lb />
+            　けれども今は崇高な月光のなかに何かよそよそしいものが漂ひはじめた。その成分こそはたしかによあけの白光らしい。<lb /></p><p>
+            <lb />
+            　東がまばゆく白くなった。月は少しく興さめて緑の松の<span type="ruby"> <span type="rb"> 梢</span> <span type="rp"> （</span> <span type="rt"> こずゑ</span> <span type="rp"> ）</span> </span> に高くかかる。<lb /></p><p>
+            <lb />
+            　みんなは七つ森の<span type="ruby"> <span type="rb"> 機嫌</span> <span type="rp"> （</span> <span type="rt"> きげん</span> <span type="rp"> ）</span> </span> の悪い暁の脚まで来た。道が<span type="ruby"> <span type="rb"> 俄</span> <span type="rp"> （</span> <span type="rt"> には</span> <span type="rp"> ）</span> </span> かに青々と曲る。その曲り角におれはまた空にうかぶ<span type="ruby"> <span type="rb"> 巨</span> <span type="rp"> （</span> <span type="rt"> おほ</span> <span type="rp"> ）</span> </span> きな<span type="ruby"> <span type="rb"> 草穂</span> <span type="rp"> （</span> <span type="rt"> くさぼ</span> <span type="rp"> ）</span> </span> を見るのだ。カアキイ色の一人の兵隊がいきなり向ふにあらはれて青い茂みの中にこゞむ。さうだ。あそこに<span type="ruby"> <span type="rb"> 湧水</span> <span type="rp"> （</span> <span type="rt"> わきみづ</span> <span type="rp"> ）</span> </span> があるのだ。<lb /></p><p>
+            <lb />
+            　雲が光って山山に垂れ冷たい奇麗な朝になった。長い長い<span type="ruby"> <span type="rb"> 雫石</span> <span type="rp"> （</span> <span type="rt"> しづくいし</span> <span type="rp"> ）</span> </span> の宿に来た。犬が沢山<span type="ruby"> <span type="rb"> 吠</span> <span type="rp"> （</span> <span type="rt"> ほ</span> <span type="rp"> ）</span> </span> え出した。けれどもみんなお互に争ってゐるのらしい。<lb /></p><p>
+            <lb />
+            　<span type="ruby"> <span type="rb"> 葛根田</span> <span type="rp"> （</span> <span type="rt"> かっこんだ</span> <span type="rp"> ）</span> </span> 川の河原におりて行く。すぎなに露が一ぱいに置き美しくひらめいてゐる。新鮮な朝のすぎなに。<lb /></p><p>
+            <lb />
+            　いつかみんな<span type="ruby"> <span type="rb"> 睡</span> <span type="rp"> （</span> <span type="rt"> ねむ</span> <span type="rp"> ）</span> </span> ってゐたのだ。河本さんだけ起きてゐる。冷たい水を<span type="ruby"> <span type="rb"> 渉</span> <span type="rp"> （</span> <span type="rt"> わた</span> <span type="rp"> ）</span> </span> ってゐる。変に青く堅さうなからだをはだかになって体操をやってゐる。<lb /></p><p>
+            <lb />
+            　睡ってゐる人の<span type="ruby"> <span type="rb"> 枕</span> <span type="rp"> （</span> <span type="rt"> まくら</span> <span type="rp"> ）</span> </span> もとに大きな石をどしりどしりと投げつける。安山岩の柱状節理、安山岩の板状節理。水に落ちてはつめたい波を立てうつろな音をあげ、目を覚ました、目を覚ました。低い銀の雲の下で<span type="ruby"> <span type="rb"> 愕</span> <span type="rp"> （</span> <span type="rt"> おどろ</span> <span type="rp"> ）</span> </span> いてよろよろしてゐる。それから怒ってゐる。今度はにがわらひをしてゐる。銀色の雲の下。<lb /></p><p>
+            <lb />
+            　帰りみち、ひでり雨が降りまたかゞやかに<span type="ruby"> <span type="rb"> 霽</span> <span type="rp"> （</span> <span type="rt"> は</span> <span type="rp"> ）</span> </span> れる。そのかゞやく雲の原<lb />
+            <l>
+               今日こそ飛んであの雲を踏め。
+            </l></p><p>
+            <lb />
+            　けれどもいつか私は道に置きすてられた荷馬車の上に<span type="ruby"> <span type="rb"> 洋傘</span> <span type="rp"> （</span> <span type="rt"> かうもりがさ</span> <span type="rp"> ）</span> </span> を開いて立ってゐるのだ。<lb />
+            　ひどい怒鳴り声がする。たしかに荷馬車の持ち主だ。怒りたけって走って来る。そのほっペたが腐って黒いすもものやう、いまにも穴が明きさうだ。<span type="ruby"> <span type="rb"> 癩病</span> <span type="rp"> （</span> <span type="rt"> らいびゃう</span> <span type="rp"> ）</span> </span> にちがひない。さびしいことだ。<lb /></p><p>
+            <lb />
+            　<span type="ruby"> <span type="rb"> 虹</span> <span type="rp"> （</span> <span type="rt"> にじ</span> <span type="rp"> ）</span> </span> がたってゐる。虹の脚にも月見草が咲き又こゝらにもそのバタの花。一つぶ二つぶひでりあめがきらめき、去年の堅い<span type="ruby"> <span type="rb"> 褐色</span> <span type="rp"> （</span> <span type="rt"> かっしょく</span> <span type="rp"> ）</span> </span> のすがれに落ちる。<lb />
+            　すっかり晴れて暑くなった。<span type="ruby"> <span type="rb"> 雫石</span> <span type="rp"> （</span> <span type="rt"> しづくいし</span> <span type="rp"> ）</span> </span> 川の<span type="ruby"> <span type="rb"> 石垣</span> <span type="rp"> （</span> <span type="rt"> いしがき</span> <span type="rp"> ）</span> </span> は<span type="ruby"> <span type="rb"> 烈</span> <span type="rp"> （</span> <span type="rt"> はげ</span> <span type="rp"> ）</span> </span> しい草のいきれの中にぐらりぐらりとゆらいでゐる。その中でうとうとする。<lb />
+            　遠くの<span type="ruby"> <span type="rb"> 楊</span> <span type="rp"> （</span> <span type="rt"> やなぎ</span> <span type="rp"> ）</span> </span> の中の白雲でくわ<note>［＃「わ」は小書き］</note>くこうが<span type="ruby"> <span type="rb"> 啼</span> <span type="rp"> （</span> <span type="rt"> な</span> <span type="rp"> ）</span> </span> いた。<lb />
+            「あの鳥はゆふべ一晩なき通しだな。」<lb />
+            「うんうん鳴いてゐた。」<span type="ruby"> <span type="rb"> 誰</span> <span type="rp"> （</span> <span type="rt"> たれ</span> <span type="rp"> ）</span> </span> かが云ってゐる。<lb /></p><p></p>
+      </body>
+  </text>
+</TEI>
