@@ -3,7 +3,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <title></title>
+  <title>Progress status</title>
 </head>
 
 <body>
@@ -11,26 +11,32 @@
     <a class="navbar-brand" href="#">Progress status</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="https://observablehq.com/@nakamura196/untitled">Category</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="https://github.com/TEI-EAJ/aozora_tei/wiki">Wiki</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="https://github.com/TEI-EAJ/aozora_tei">Github</a>
-      </li>
-    </ul>
-  </div>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://observablehq.com/@nakamura196/untitled">Category</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="snorql">Snorql</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://github.com/TEI-EAJ/aozora_tei/wiki">Wiki</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://github.com/TEI-EAJ/aozora_tei">Github</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <div class="container my-5" id="main">
     <h3 id="lv" class="mb-5"></h3>
+    <div class="text-center" id="loading">
+      <img src="assets/images/loading.gif" class="img-fluid"/>
+    </div>
   </div>
 
   <hr/>
@@ -123,6 +129,9 @@ function sparql(id, url){
       a.attr("href", url)
     }
   })
+  .always(function() {
+    $("#loading").empty()
+  });
 }
 
 function getParam(){

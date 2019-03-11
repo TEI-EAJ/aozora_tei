@@ -1,0 +1,230 @@
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preload" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"></noscript>
+
+  <link rel="preload" href="https://cdn.datatables.net/select/1.2.7/css/select.dataTables.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <title>Search</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="./search.html">Search</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="http://yozora.main.jp/" target="_blank">青空文庫・分野別リスト</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://tei-eaj.github.io/auto_aozora_tei/html/" target="_blank">HTML to TEI</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://github.com/TEI-EAJ/aozora_tei/wiki">Wiki</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://github.com/TEI-EAJ/aozora_tei">Github</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container my-5" id="main">
+    <form class="mb-5">
+      <div class="form-group row">
+        <label class="col-sm-1 col-form-label">Title</label>
+        <div class="col-sm-11">
+          <input type="text" class="form-control" name="title" id="title" placeholder="ex. 三つの宝"/>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-1 col-form-label">Author</label>
+        <div class="col-sm-11">
+          <input type="text" class="form-control" name="author" id="author" placeholder="ex. 芥川"/>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-1 col-form-label">NDC</label>
+        <div class="col-sm-11">
+          <input type="text" class="form-control" name="id" id="id" placeholder="ex. 911"/>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-1 col-form-label"></label>
+        <div class="col-sm-11">
+          <button class="btn btn-primary" type="subimit"><i class="fas fa-search"></i> Search</button>
+        </div>
+      </div>
+
+    </form>
+
+    <table class="table" id="table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Title</th>
+          <th>Author</th>
+          <th># or Words</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <div class="text-center" id="loading">
+      <img src="assets/images/loading.gif" class="img-fluid"/>
+    </div>
+
+  </div>
+
+  <hr/>
+
+  <footer class="container my-5">
+
+    <p>Powered by 青空文庫 Linked Open Data, <a href="https://dydra.com/ut-digital-archives/aozora">Dydra</a> and <a href="snorql">Snorql</a>.</p>
+    <p>
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.ja"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png"></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">青空文庫 Linked Open Data</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://mdlab.slis.tsukuba.ac.jp/" property="cc:attributionName" rel="cc:attributionURL">杉本・永森研究室</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.ja">Creative Commons 表示 - 非営利 3.0 非移植 License</a>.<br><a xmlns:dct="http://purl.org/dc/terms/" href="http://www.aozora.gr.jp/" rel="dct:source">http://www.aozora.gr.jp/</a>にある作品に基づいている。
+    </p>
+  </footer>
+
+</body>
+
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script
+src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+<script>
+
+var endpoint = "https://dydra.com/ut-digital-archives/aozora/sparql";
+var authors = [];
+
+$(function(){
+
+  var vars = getParam();
+
+  var id = vars["id"]
+  var title = vars["title"]
+  var author = vars["author"]
+
+  var query = " PREFIX dcterms: <http://purl.org/dc/terms/> "
+  query += " PREFIX dcndl: <http://ndl.go.jp/dcndl/terms/> "
+  query += " SELECT DISTINCT ?s ?title ?name ?o WHERE { "
+  query += " ?s dcterms:extent ?o . "
+  query += " ?s dcterms:title [rdf:value ?title] . "
+  if(title){
+    query += " filter regex(?title, \""+title+"\") . "
+    $("#title").val(title)
+  }
+  query += " ?s dcterms:creator ?creator_uri .  "
+  query += " ?s dcterms:type ?subject .  "
+  if(id){
+    query += " filter regex (?subject, \""+id+"\") . "
+    $("#id").val(id)
+  }
+
+  query += " ?creator_uri foaf:name ?name .  "
+  if(author){
+    query += " filter regex(?name, \""+author+"\") . "
+    $("#author").val(author)
+  }
+  query += " } "
+  query += " order by ?o ";
+  query += " limit 1000 ";
+
+  $.ajax({
+    url: endpoint,
+    type:'GET',
+    data:{
+      query : query,
+      format : "json"
+    }
+  })
+  .then(function(data){
+    var result = data.results.bindings;
+
+    for(var i = 0; i < result.length; i++){
+
+      var obj = result[i]
+
+      var tr = $("<tr>")
+      $("#tbody").append(tr)
+
+      var td = $("<td>")
+      tr.append(td)
+
+      td = $("<td>")
+      tr.append(td)
+
+      var a = $("<a>")
+      td.append(a)
+      a.attr("href", obj.s.value)
+      a.attr("target", "_blank")
+      a.append(obj.title.value)
+
+      td = $("<td>")
+      tr.append(td)
+      td.append(obj.name.value)
+
+      td = $("<td>")
+      tr.append(td)
+      td.append(obj.o.value)
+    }
+
+    // DataTable
+    var table = $('#table').DataTable({
+      //fixedColumns: true
+      order: [ [ 3, "asc" ] ],
+      "pageLength" : 50,
+    });
+
+    // Apply the search
+    table.columns().every( function () {
+      var that = this;
+
+      $( 'input', this.header() ).on( 'keyup change', function () {
+        if ( that.search() !== this.value ) {
+          that
+          .search( this.value )
+          .draw();
+        }
+      } );
+    } );
+
+    table.on( 'order.dt search.dt', function () {
+      table.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+        cell.innerHTML = i+1;
+      } );
+    } ).draw();
+  })
+  .always(function() {
+    $("#loading").empty()
+  });
+});
+
+function getParam(){
+  var vars = {};
+  var param = location.search.substring(1).split('&');
+  for(var i = 0; i < param.length; i++) {
+    var keySearch = param[i].search(/=/);
+    var key = '';
+    if(keySearch != -1) key = param[i].slice(0, keySearch);
+    var val = param[i].slice(param[i].indexOf('=', 0) + 1);
+    if(key != '') vars[key] = decodeURI(val);
+  }
+  return vars;
+}
+
+</script>
+</html>
