@@ -96,6 +96,7 @@ function sparql(id, url){
 
   $.ajax({
     url: endpoint,
+    async: false,
     type:'GET',
     data:{
       query : query,
