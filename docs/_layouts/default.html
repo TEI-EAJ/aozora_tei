@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta property="og:site_name" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}"/>
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta name="description" content="{{ site.description }}">
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:locale" content="ja_JP" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="{{ site.image }}" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="image_src" content="{{ site.image }}">
+  <link rel="image_src" href="{{ site.image }}" />
+  <link rel="apple-touch-icon" type="image/png" href="https://tei-eaj.github.io/aozora_tei/assets/images/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="https://tei-eaj.github.io/aozora_tei/assets/images/icon-192x192.png">
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+  .pagetop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+  }
+  .pagetop a {
+    display: block;
+    background-color: #ccc;
+    text-align: center;
+    color: #222;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 5px 10px;
+    filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+  }
+  .pagetop a:hover {
+    display: block;
+    background-color: #b2d1fb;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    padding:5px 10px;
+    filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+  }
+  </style>
+
+</head>
+<body id="page-top" class="bg-light">
+
+  {% include nav.html %}
+
+  <script
+  src="//code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"></script>
+
+  {{ content }}
+
+  <p class="pagetop"><a href="#wrap">▲</a></p>
+
+  <!--Footer-->
+  <footer class="text-center bg-secondary mt-5">
+
+    <!--Copyright-->
+    <div class="py-5" style="color : white;">
+      TEI-C東アジア/日本語分科会
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+  <script>
+  $(document).ready(function() {
+    var pagetop = $('.pagetop');
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        pagetop.fadeIn();
+      } else {
+        pagetop.fadeOut();
+      }
+    });
+    pagetop.click(function () {
+      $('body, html').animate({ scrollTop: 0 }, 500);
+      return false;
+    });
+  });
+  </script>
+
+</body>
+</html>
