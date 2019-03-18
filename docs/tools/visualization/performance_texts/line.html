@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <html lang="ja">
 <head>
   <meta charset="UTF-8"/>
@@ -176,8 +180,8 @@ function showxml(data){
     var p_list = $(sp).find("tei-p")
     var li = $("<li>")
     for(var j = 0; j < p_list.length; j++){
-      var value = $(p_list[j]).text()
-      value = value.replace(/（(.*?)）/g, '') //ルビの削除
+      var value = $(p_list[j]).html()
+      value = value.replace(/<tei-span type="ruby" data-origname="span"><tei-span type="rb" data-origname="span">(.*?)<\/tei-span>(.*?)<\/tei-span><\/tei-span>/g, '$1')
       value = value.replace("――", "")
       value = value.replace("――", "")
       var p = $("<p>").append(value)

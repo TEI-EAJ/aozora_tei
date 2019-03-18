@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -220,7 +224,8 @@
       }
       said_list.append(li)
 
-      var name = $($(sp).find("tei-speaker")[0]).html()
+      var name = $($(sp).find("tei-speaker")[0]).html().trim()
+
       if(name_arr.indexOf(name) == -1){
         name_arr.push(name)
         var li = $("<li>").append(name).clone()
