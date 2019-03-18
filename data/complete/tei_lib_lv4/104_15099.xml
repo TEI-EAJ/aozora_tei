@@ -13,7 +13,6 @@
               <lb/> 底本：「芥川龍之介作品集第三巻」昭和出版社 <lb/> 　　　1965（昭和40）年12月20日発行<lb/> 入力：j.utiyama<lb/> 校正：かとうかおり<lb/>
               <date when="1999-01-26">1999年1月26日</date>公開<lb/>
               <date when="2004-03-06">2004年3月6日</date>修正<lb/> 青空文庫作成ファイル：<lb/>
-              このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。
             </note>
           </resp>
         </respStmt>
@@ -47,55 +46,55 @@
     <front>
       <p>
         <listPerson>
-          <person xml:id="KAPITAN">
+          <person xml:id="古伊万里の茶碗に描かれたる甲比丹">
             <persName>古伊万里の茶碗に描かれたる甲比丹</persName>
             <occupation>上級役人兼絵画</occupation>
           </person>
-          <person xml:id="DUTCHMAN">
+          <person xml:id="蘭人">
             <persName>蘭人</persName>
             <occupation>オランダ人</occupation>
           </person>
-          <person xml:id="PARROT">
+          <person xml:id="唐皮の花の間に止まれる鸚鵡">
             <persName>唐皮の花の間に止まれる鸚鵡</persName>
             <occupation>鳥</occupation>
           </person>
-          <person xml:id="PADRE">
+          <person xml:id="伴天連">
             <persName>伴天連</persName>
             <occupation>神父</occupation>
           </person>
-          <person xml:id="TANEGA_ISLAND">
+          <person xml:id="種が島">
             <persName>種が島</persName>
             <occupation>島嶼</occupation>
           </person>
-          <person xml:id="JESUS">
+          <person xml:id="牙彫の基督">
             <persName>牙彫の基督</persName>
             <occupation>大工兼宗教指導者兼メシア兼彫像</occupation>
           </person>
-          <person xml:id="MARIA">
+          <person xml:id="麻利耶観音">
             <persName>麻利耶観音</persName>
             <occupation>主婦兼生神女兼観音菩薩兼彫像</occupation>
           </person>
-          <person xml:id="DUTCHWOMAN">
+          <person xml:id="阿蘭陀の女">
             <persName>阿蘭陀の女</persName>
             <occupation>オランダ人</occupation>
           </person>
-          <person xml:id="NAMBAN_PEOPLE">
+          <person xml:id="長崎画の英吉利人や法朗西人や露西亜人等">
             <persName>長崎画の英吉利人、法朗西人、露西亜人等</persName>
             <occupation>南蛮人達兼絵画</occupation>
           </person>
-          <person xml:id="NAMBAN_WOMAN">
+          <person xml:id="南蛮女">
             <persName>南蛮女</persName>
             <occupation>南蛮人</occupation>
           </person>
-          <person xml:id="OWNER">
+          <person xml:id="主人">
             <persName>主人</persName>
             <occupation>戸主</occupation>
           </person>
-          <person xml:id="GUEST">
+          <person xml:id="客の一人">
             <persName>客の一人</persName>
             <occupation>客人</occupation>
           </person>
-          <person xml:id="ANOTHER_GUEST">
+          <person xml:id="客の他の一人">
             <persName>客の他の一人</persName>
             <occupation>客人</occupation>
           </person>
@@ -123,7 +122,7 @@
               ><span type="rb">筆</span><span type="rp">（</span><span type="rt">ひつ</span><span
               type="rp">）</span></span>の蘭人、突然悲しげに歎息す。<lb/>
         </stage>
-        <sp who="#KAPITAN">
+        <sp who="#古伊万里の茶碗に描かれたる甲比丹">
           <speaker><span type="ruby"><span type="rb">古伊万里</span><span type="rp">（</span><span
                 type="rt">こいまり</span><span type="rp">）</span></span>の茶碗に<span type="ruby"><span
                 type="rb">描</span><span type="rp">（</span><span type="rt">ゑが</span><span type="rp"
@@ -131,20 +130,20 @@
                 >（</span><span type="rt">かぴたん</span><span type="rp">）</span></span></speaker>
           <p>（蘭人を顧みつつ）どうしたね？　顔の色も大へん悪いやうだが――</p>
         </sp>
-        <sp who="#DUTCHMAN">
+        <sp who="#蘭人">
           <speaker>蘭人</speaker>
           <p> いえ、<span type="ruby"><span type="rb">何</span><span type="rp">（</span><span type="rt"
                 >なん</span><span type="rp">）</span></span>でもありませんよ。唯ちつと<span type="ruby"><span
                 type="rb">頭痛</span><span type="rp">（</span><span type="rt">づつう</span><span type="rp"
                 >）</span></span>がするものですから――</p>
         </sp>
-        <sp who="#KAPITAN">
+        <sp who="#古伊万里の茶碗に描かれたる甲比丹">
           <speaker><span type="ruby"><span type="rb">甲比丹</span><span type="rp">（</span><span
                 type="rt">かぴたん</span><span type="rp">）</span></span></speaker>
 
           <p>今日は妙に蒸暑いからね。</p>
         </sp>
-        <sp who="#PARROT">
+        <sp who="#唐皮の花の間に止まれる鸚鵡">
           <speaker><span type="ruby"><span type="rb">唐皮</span><span type="rp">（</span><span
                 type="rt">からかは</span><span type="rp">）</span></span>の花の<span type="ruby"><span
                 type="rb">間</span><span type="rp">（</span><span type="rt">あひだ</span><span type="rp"
@@ -155,52 +154,52 @@
                 type="rb"><span type="rb"/>謔</span><span type="rp">（</span><span type="rt"
                 >うそ</span><span type="rp">）</span></span>ですよ。甲比丹！　あの人のは頭痛ではないのです。　</p>
         </sp>
-        <sp who="#KAPITAN">
+        <sp who="#古伊万里の茶碗に描かれたる甲比丹">
           <speaker>
             <span type="ruby"><span type="rb">甲比丹</span><span type="rp">（</span><span type="rt"
                 >かぴたん</span><span type="rp">）</span></span>
           </speaker>
           <p>頭痛ではないと云ふと？</p>
         </sp>
-        <sp who="#PARROT">
+        <sp who="#唐皮の花の間に止まれる鸚鵡">
           <speaker> 　<span type="ruby"><span type="rb">鸚鵡</span><span type="rp">（</span><span
                 type="rt">あうむ</span><span type="rp">）</span></span></speaker>
           <p>恋愛ですよ。</p>
         </sp>
-        <sp who="#DUTCHMAN">
+        <sp who="#蘭人">
           <speaker> 蘭人</speaker>
           <p>（鸚鵡を<span type="ruby"><span type="rb">嘛</span><span type="rp">（</span><span type="rt"
                 >おど</span><span type="rp">）</span></span>しつつ）<span type="ruby"><span type="rb"
                 >余計</span><span type="rp">（</span><span type="rt">よけい</span><span type="rp"
               >）</span></span>な事を云ふな！ </p>
         </sp>
-        <sp who="#KAPITAN">
+        <sp who="#古伊万里の茶碗に描かれたる甲比丹">
           <speaker>甲比丹</speaker>
 
           <p>（蘭人に）まあ黙つてゐ給へ。（鸚鵡に）さうして誰に惚れてゐるのだい？</p>
         </sp>
-        <sp who="#PARROT">
+        <sp who="#唐皮の花の間に止まれる鸚鵡">
           <speaker>鸚鵡</speaker>
           <p>あの女ですよ。ほら、あの<span type="ruby"><span type="rb">阿蘭陀出来</span><span type="rp">（</span><span
                 type="rt">オランダでき</span><span type="rp">）</span></span>の皿の中にある。――</p>
 
         </sp>
-        <sp who="#KAPITAN">
+        <sp who="#古伊万里の茶碗に描かれたる甲比丹">
           <speaker>甲比丹</speaker>
           <p><span type="ruby"><span type="rb">何時</span><span type="rp">（</span><span type="rt"
                 >いつ</span><span type="rp">）</span></span>も扇を持つてゐる女か？<lb/></p>
         </sp>
-        <sp who="#PARROT">
+        <sp who="#唐皮の花の間に止まれる鸚鵡">
           <speaker>鸚鵡</speaker>
           <p>ええ、あれです。あの女は顔こそ綺麗ですが、中々<span type="ruby"><span type="rb">気位</span><span type="rp"
                 >（</span><span type="rt">きぐらゐ</span><span type="rp">）</span></span>が高いものですからね。<lb/>
           </p>
         </sp>
-        <sp who="#DUTCHMAN">
+        <sp who="#蘭人">
           <speaker>蘭人</speaker>
           <p>（再び鸚鵡を嚇しつつ）こら、失礼な事を云ふな！</p>
         </sp>
-        <sp who="#KAPITAN">
+        <sp who="#古伊万里の茶碗に描かれたる甲比丹">
           <speaker>甲比丹</speaker>
           <p>さうか？　それは気の毒だな。（<span type="ruby"><span type="rb">金象嵌</span><span type="rp"
                 >（</span><span type="rt">きんざうがん</span><span type="rp">）</span></span>の<span
@@ -209,7 +208,7 @@
                 >伴天連</span><span type="rp">（</span><span type="rt">ばてれん</span><span type="rp"
                 >）</span></span>に）どうしたものでせう？　パアドレ！</p>
         </sp>
-        <sp who="#PADRE">
+        <sp who="#伴天連">
           <speaker><span type="ruby"><span type="rb">伴天連</span><span type="rp">（</span><span
                 type="rt">ばてれん</span><span type="rp">）</span></span></speaker>
           <p>さあ、婚礼はわたしがさせても<span type="ruby"><span type="rb">好</span><span type="rp">（</span><span
@@ -219,7 +218,7 @@
                 type="rp">（</span><span type="rt">わうへい</span><span type="rp"
             >）</span></span>なのは評判だからね。</p>
         </sp>
-        <sp who="#DUTCHMAN">
+        <sp who="#蘭人">
           <speaker>蘭人</speaker>
           <p>どうかもう御心配なさらずに下さい。（やけ気味に）いざとなればあの<span type="ruby"><span type="rb">種</span><span
                 type="rp">（</span><span type="rt">たね</span><span type="rp">）</span></span>が<span
@@ -228,7 +227,7 @@
                 >射抜</span><span type="rp">（</span><span type="rt">いぬ</span><span type="rp"
               >）</span></span>いて貰ひますから。</p>
         </sp>
-        <sp who="#TANEGA_ISLAND">
+        <sp who="#種が島">
           <speaker>種が島</speaker>
           <p>（残念さうに）<span type="ruby"><span type="rb">駄目</span><span type="rp">（</span><span
                 type="rt">だめ</span><span type="rp">）</span></span>だよ。僕は<span type="ruby"><span
@@ -237,7 +236,7 @@
                 type="rp">（</span><span type="rt">にほんたう</span><span type="rp"
             >）</span></span>にでも頼み給へ。</p>
         </sp>
-        <sp who="#JESUS">
+        <sp who="#牙彫の基督">
           <speaker> 　<span type="ruby"><span type="rb">牙彫</span><span type="rp">（</span><span
                 type="rt">げぼり</span><span type="rp">）</span></span>の<span type="ruby"><span
                 type="rb">基督</span><span type="rp">（</span><span type="rt">キリスト</span><span
@@ -253,61 +252,61 @@
                 >母様</span><span type="rp">（</span><span type="rt">かあさま</span><span type="rp"
                 >）</span></span>！　どうかしてやる訳には参りませんか？</p>
         </sp>
-        <sp who="#MARIA">
+        <sp who="#麻利耶観音">
           <speaker><span type="ruby"><span type="rb">麻利耶</span><span type="rp">（</span><span
                 type="rt">マリヤ</span><span type="rp">）</span></span>観音</speaker>
           <p>さうだね。ではわたしが頼んで見て上げようか？</p>
         </sp>
-        <sp who="#PADRE">
+        <sp who="#伴天連">
           <speaker>伴天連</speaker>
           <p>さう願へれば仕合せでございます。</p>
         </sp>
-        <sp who="#KAPITAN">
+        <sp who="#古伊万里の茶碗に描かれたる甲比丹">
           <speaker>甲比丹</speaker>
           <p>どうか御尽力を願ひたいと存じますが、――（蘭人に）君からもおん母に御頼みし給へ。</p>
         </sp>
-        <sp who="#DUTCHMAN">
+        <sp who="#蘭人">
           <speaker>蘭人</speaker>
           <p>（恥しげに）<span type="ruby"><span type="rb">何分</span><span type="rp">（</span><span
                 type="rt">なにぶん</span><span type="rp">）</span></span>よろしく御願ひ申します。</p>
         </sp>
-        <sp who="#PARROT">
+        <sp who="#唐皮の花の間に止まれる鸚鵡">
           <speaker>鸚鵡</speaker>
           <p><span type="ruby"><span type="rb">御恵</span><span type="rp">（</span><span type="rt"
                 >おめぐみ</span><span type="rp">）</span></span>深い<span type="ruby"><span type="rb"
                 >麻利耶</span><span type="rp">（</span><span type="rt">マリヤ</span><span type="rp"
                 >）</span></span>様！　わたしからもひとへに御願ひ致します。</p>
         </sp>
-        <sp who="#MARIA">
+        <sp who="#麻利耶観音">
           <speaker>麻利耶観音</speaker>
           <p>（<span type="ruby"><span type="rb">阿蘭陀</span><span type="rp">（</span><span type="rt"
                 >オランダ</span><span type="rp">）</span></span>の皿に<span type="ruby"><span type="rb"
                 >描</span><span type="rp">（</span><span type="rt">ゑが</span><span type="rp"
               >）</span></span>かれたる女に）あなた！</p>
         </sp>
-        <sp who="#DUTCHWOMAN">
+        <sp who="#阿蘭陀の女">
           <speaker><span type="ruby"><span type="rb">阿蘭陀</span><span type="rp">（</span><span
                 type="rt">オランダ</span><span type="rp">）</span></span>の女</speaker>
           <p>何か御用ですか？</p>
         </sp>
-        <sp who="#MARIA">
+        <sp who="#麻利耶観音">
           <speaker>麻利耶観音</speaker>
           <p>はい、実はこの若い<span type="ruby"><span type="rb">方</span><span type="rp">（</span><span
                 type="rt">かた</span><span type="rp">）</span></span>があなたを御慕ひ申してゐるのださうですが、――</p>
         </sp>
-        <sp who="#DUTCHWOMAN">
+        <sp who="#阿蘭陀の女">
           <speaker>阿蘭陀の女</speaker>
           <p>まあ<span type="ruby"><span type="rb">嫌</span><span type="rp">（</span><span type="rt"
                 >いや</span><span type="rp">）</span></span>です事。わたしはあの<span type="ruby"><span type="rb"
                 >方</span><span type="rp">（</span><span type="rt">かた</span><span type="rp"
               >）</span></span>は大嫌ひでございます。</p>
         </sp>
-        <sp who="#MARIA">
+        <sp who="#麻利耶観音">
           <speaker>麻利耶観音</speaker>
           <p>それでも体さへ<span type="ruby"><span type="rb">窶</span><span type="rp">（</span><span
                 type="rt">やつ</span><span type="rp">）</span></span>れる程、思ひ悩んでゐるやうですから、――</p>
         </sp>
-        <sp who="#DUTCHWOMAN">
+        <sp who="#阿蘭陀の女">
           <speaker>阿蘭陀の女</speaker>
           <p> それはあの方の<span type="ruby"><span type="rb">御勝手</span><span type="rp">（</span><span
                 type="rt">ごかつて</span><span type="rp">）</span></span>ではありませんか？　一体わたしは日本出来や支那出来の<span
@@ -315,7 +314,7 @@
                 >かた</span><span type="rp">）</span></span>は虫が好かないのです。</p>
         </sp>
 
-        <sp who="#MARIA">
+        <sp who="#麻利耶観音">
           <speaker><span type="ruby"><span type="rb">麻利耶</span><span type="rp">（</span><span
                 type="rt">マリヤ</span><span type="rp">）</span></span><span type="ruby"><span type="rb"
                 >観音</span><span type="rp"/></span><span rend="notes"
@@ -327,7 +326,7 @@
               >）</span></span>さうだと思つてやつて下さい。 　</p>
         </sp>
 
-        <sp who="#DUTCHWOMAN">
+        <sp who="#阿蘭陀の女">
           <speaker><span type="ruby"><span type="rb">阿蘭陀</span><span type="rp">（</span><span
                 type="rt">オランダ</span><span type="rp">）</span></span>の女</speaker>
           <p>（腹立たしげに）<span type="ruby"><span type="rb">余計</span><span type="rp">（</span><span
@@ -354,7 +353,7 @@
               type="ruby"><span type="rb">拵</span><span type="rp">（</span><span type="rt"
                 >こしら</span><span type="rp">）</span></span>へた、黒ん坊よりも気味の悪い人です。<lb/></p>
         </sp>
-        <sp who="#DUTCHMAN">
+        <sp who="#蘭人">
           <speaker>蘭人</speaker>
           <p>ああ、何と云ふ<span type="ruby"><span type="rb">情</span><span type="rp">（</span><span
                 type="rt">なさけ</span><span type="rp">）</span></span>ない言葉だ！（<span type="ruby"><span
@@ -363,7 +362,7 @@
         </sp>
 
 
-        <sp who="#DUTCHWOMAN">
+        <sp who="#阿蘭陀の女">
           <speaker>阿蘭陀の女</speaker>
           <p>（なほ怒の静まらざる如く）それがわたしを慕つてゐる、――よくまあそんな事が云はれたものです。おまけにあの方の一家一族――<span type="ruby"><span
                 type="rb">長崎画</span><span type="rp">（</span><span type="rt">ながさきゑ</span><span
@@ -371,7 +370,7 @@
                 type="rp">（</span><span type="rt">こうまうじん</span><span type="rp"
             >）</span></span>も皆同じ事ではありませんか？　あたしはあの人たちの顔を見てさへ胸が悪くなつて来る位です。</p>
         </sp>
-        <sp who="#NAMBAN_PEOPLE">
+        <sp who="#長崎画の英吉利人、法朗西人、露西亜人等">
 
           <speaker><span type="ruby"><span type="rb">長崎画</span><span type="rp">（</span><span
                 type="rt">ながさきゑ</span><span type="rp">）</span></span>の<span type="ruby"><span
@@ -385,11 +384,11 @@
           <p>（驚きし如く）おお！　おお！</p>
         </sp>
 
-        <sp who="#MARIA">
+        <sp who="#麻利耶観音">
           <speaker>麻利耶観音</speaker>
           <p>ではどうしてもあの方とは仲好く出来ないと云ふのですか？</p>
         </sp>
-        <sp who="#DUTCHWOMAN">
+        <sp who="#阿蘭陀の女">
           <speaker>阿蘭陀の女</speaker>
           <p> 　当り前です。わたしはもう<span type="ruby"><span type="rb">今日</span><span type="rp">（</span><span
                 type="rt">けふ</span><span type="rp">）</span></span>限り、あなたとも御つきあひは<span type="ruby"
@@ -411,18 +410,18 @@
                 type="rb">利</span><span type="rp">（</span><span type="rt">き</span><span type="rp"
                 >）</span></span>いて貰ひますまい。あの人たちとわたしとは生れも育ちも違ふのですから、――</p>
         </sp>
-        <sp who="#MARIA">
+        <sp who="#麻利耶観音">
           <speaker>麻利耶観音</speaker>
           <p> 　（蘭人に）聞いてゐたらうね？　わたしの言葉さへ通らないのだから、<span type="ruby"><span type="rb">所詮</span><span
                 type="rp">（</span><span type="rt">しよせん</span><span type="rp"
             >）</span></span>お前の願ひはかなはないよ。</p>
         </sp>
-        <sp who="#DUTCHMAN">
+        <sp who="#蘭人">
           <speaker>蘭人</speaker>
           <p> （<span type="ruby"><span type="rb">涕泣</span><span type="rp">（</span><span type="rt"
                 >ていきふ</span><span type="rp">）</span></span>しつつ）はい、もう仕方はございません。</p>
         </sp>
-        <sp who="#KAPITAN">
+        <sp who="#古伊万里の茶碗に描かれたる甲比丹">
           <speaker><span type="ruby"><span type="rb">甲比丹</span><span type="rp">（</span><span
                 type="rt">かぷたん</span><span type="rp">）</span></span></speaker>
           <p> 　男らしくあきらめるさ。（<span type="ruby"><span type="rb">亀山焼</span><span type="rp">（</span><span
@@ -430,7 +429,7 @@
                 type="rb">南蛮女</span><span type="rp">（</span><span type="rt">なんばんをんな</span><span
                 type="rp">）</span></span>に）しかし憎い女だね。</p>
         </sp>
-        <sp who="#NAMBAN_WOMAN">
+        <sp who="#南蛮女">
           <speaker><span type="ruby"><span type="rb">南蛮女</span><span type="rp">（</span><span
                 type="rt">なんばんをんな</span><span type="rp">）</span></span></speaker>
           <p> 　ほんたうに高慢な人です事。――ようございますよ。これからはわたしがあの女の代りにこの<span type="ruby"><span type="rb"
@@ -439,29 +438,29 @@
         </sp>
 
 
-        <sp who="#PADRE">
+        <sp who="#伴天連">
           <speaker><span type="ruby"><span type="rb">伴天連</span><span type="rp">（</span><span
                 type="rt">ばてれん</span><span type="rp">）</span></span></speaker>
           <p>お前さんは<span type="ruby"><span type="rb">何時</span><span type="rp">（</span><span type="rt"
                 >いつ</span><span type="rp">）</span></span>もやさしい人だ。</p>
         </sp>
-        <sp who="#JESUS">
+        <sp who="#牙彫の基督">
           <speaker><span type="ruby"><span type="rb">基督</span><span type="rp">（</span><span
                 type="rt">キリスト</span><span type="rp">）</span></span></speaker>
           <p> 静かに！　静かに！　誰か人間が来たやうだから、――</p>
         </sp>
-        <sp who="#PARROT">
+        <sp who="#唐皮の花の間に止まれる鸚鵡">
           <speaker><span type="ruby"><span type="rb">鸚鵡</span><span type="rp">（</span><span
                 type="rt">あうむ</span><span type="rp">）</span></span></speaker>
           <p> しつ！　しつ！</p>
         </sp>
         <stage type="setting">この家の主人、数人の客と共に戸棚の外に立つ。</stage>
-        <sp who="OWNER">
+        <sp who="主人">
           <speaker>主人</speaker>
           <p>これがわたしのコレクションです。</p>
         </sp>
 
-        <sp who="#GUEST">
+        <sp who="#客の一人">
           <speaker>客の<span type="ruby"><span type="rb">一人</span><span type="rp">（</span><span
                 type="rt">ひとり</span><span type="rp">）</span></span></speaker>
           <p>
@@ -473,7 +472,7 @@
         </sp>
 
 
-        <sp who="#OWNER">
+        <sp who="#主人">
           <speaker>主人</speaker>
           <p>
             <span type="ruby"><span type="rb">其処</span><span type="rp">（</span><span type="rt"
@@ -481,7 +480,7 @@
         </sp>
 
 
-        <sp who="#GUEST">
+        <sp who="#客の一人">
           <speaker>客の一人</speaker>
           <p> 　南蛮女ですね。<span type="ruby"><span type="rb">阿蘭陀</span><span type="rp">（</span><span
                 type="rt">オランダ</span><span type="rp">）</span></span>出来の皿の女より、<span type="ruby"><span
@@ -489,60 +488,60 @@
                 >）</span></span>美人ではありませんか？</p>
         </sp>
 
-        <sp who="#OWNER">
+        <sp who="#主人">
           <speaker>主人</speaker>
           <p> これですか？（阿蘭陀の女のゐる皿を取り出す）おや、何か濡れてゐるが、――</p>
         </sp>
-        <sp who="#GUEST">
+        <sp who="#客の一人">
           <speaker>客の一人</speaker>
           <p> 　まさか阿蘭陀の女が泣いたと云ふ訳でもありますまい。</p>
         </sp>
-        <sp who="#ANOTHER_GUEST">
+        <sp who="#客の他の一人">
           <speaker>客の他の一人</speaker>
           <p> いや、<span type="ruby"><span type="rb">悪口</span><span type="rp">（</span><span type="rt"
                 >わるぐち</span><span type="rp">）</span></span>を云はれたから、<span type="ruby"><span type="rb"
                 >口惜</span><span type="rp">（</span><span type="rt">くや</span><span type="rp"
               >）</span></span>し泣きに泣いたのかも知れません。（笑ふ）</p>
         </sp>
-        <sp who="#GUEST">
+        <sp who="#客の一人">
           <speaker>客の一人</speaker>
           <p> 一体日本出来の南蛮物には西洋出来の物にない、独得な味がありますね。</p>
         </sp>
-        <sp who="#OWNER">
+        <sp who="#主人">
           <speaker>主人</speaker>
           <p>
             <span type="ruby"><span type="rb">其処</span><span type="rp">（</span><span type="rt"
                 >そこ</span><span type="rp">）</span></span>が日本なのでせう。</p>
         </sp>
-        <sp who="#GUEST">
+        <sp who="#客の一人">
           <speaker>客の一人</speaker>
           <p>さうです。其処から<span type="ruby"><span type="rb">今日</span><span type="rp">（</span><span
                 type="rt">こんにち</span><span type="rp"
             >）</span></span>の文明も生れて来た。将来はもつと偉大なものが生れるでせう。</p>
         </sp>
-        <sp who="#ANOTHER_GUEST">
+        <sp who="#客の他の一人">
           <speaker>客の他の<span type="ruby"><span type="rb">一人</span><span type="rp">（</span><span
                 type="rt">ひとり</span><span type="rp">）</span></span></speaker>
           <p> この蘭人や南蛮女も亦以て<span type="ruby"><span type="rb">瞑</span><span type="rp">（</span><span
                 type="rt">めい</span><span type="rp">）</span></span>すべしですか。――おや！</p>
         </sp>
-        <sp who="#OWNER">
+        <sp who="#主人">
           <speaker>主人</speaker>
           <p>どうしたのですか？</p>
         </sp>
-        <sp who="#ANOTHER_GUEST">
+        <sp who="#客の他の一人">
           <speaker>客の他の一人</speaker>
           <p> 　何だかあの<span type="ruby"><span type="rb">基督</span><span type="rp">（</span><span
                 type="rt">キリスト</span><span type="rp">）</span></span>が笑つたやうな気がしたのです。</p>
         </sp>
-        <sp who="#GUEST">
+        <sp who="#客の一人">
           <speaker>客の一人</speaker>
           <p>わたしは<span type="ruby"><span type="rb">麻利耶</span><span type="rp">（</span><span type="rt"
                 >マリヤ</span><span type="rp">）</span></span><span type="ruby"><span type="rb"
                 >観音</span><span type="rp">（</span><span type="rt">くわんのん</span><span type="rp"
                 >）</span></span>が笑つたやうに見えた。</p>
         </sp>
-        <sp who="#OWNER">
+        <sp who="#主人">
           <speaker>主人</speaker>
           <p> 気のせゐでせう。</p>
         </sp>
