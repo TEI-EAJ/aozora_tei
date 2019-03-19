@@ -36,11 +36,18 @@ layout: default
     </div>
   </nav>
 
-  <div class="container my-5" id="main">
+  <div class="container my-5">
     <h3 id="lv" class="mb-5"></h3>
     <div class="text-center" id="loading">
-      <img src="assets/images/loading.gif" class="img-fluid"/>
+      <img src="assets/images/loading.gif" class="img-fluid mb-5"/>
     </div>
+    <div id="main">
+    </div>
+
+    <div class="list-group mb-5" id="unknown">
+      <a href="#" class="list-group-item list-group-item-action active">Unknown</a>
+    </div>
+
   </div>
 
   <hr/>
@@ -62,95 +69,100 @@ crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script>
 
-var endpoint = "https://dydra.com/ut-digital-archives/aozora/sparql";
-var authors = [];
+  var endpoint = "https://dydra.com/ut-digital-archives/aozora/sparql";
+  var authors = [];
 
-$(function(){
+  $(function(){
 
-  var vars = getParam();
+    var vars = getParam();
 
-  var lv = vars["lv"] ? vars["lv"] : 3
-  var status = vars["status"] ? vars["status"] : "complete"
+    var lv = vars["lv"] ? vars["lv"] : 3
+    var status = vars["status"] ? vars["status"] : "complete"
 
-  $("#lv").append("Level "+lv+"   "+status)
+    $("#lv").append("Level "+lv+"   "+status)
 
-  $.getJSON("https://api.github.com/search/code?q=in:file+extension:xml+path:data/"+status+"/tei_lib_lv"+lv+"+repo:TEI-EAJ/aozora_tei" , function(data) {
-    var items = data.items
+    $.getJSON("https://api.github.com/search/code?q=in:file+extension:xml+path:data/"+status+"/tei_lib_lv"+lv+"+repo:TEI-EAJ/aozora_tei" , function(data) {
+      var items = data.items
 
-    for(var i = 0; i < items.length; i++){
-      var item = items[i]
-      var id = item.name.split("_")[0]
-      sparql(id, item["html_url"])
-    }
-  });
-});
-
-function sparql(id, url){
-
-  var query = " SELECT DISTINCT ?title ?creator_uri ?name ?authorID ?subject ";
-  query += " WHERE { ";
-  query += " ?s <http://purl.org/net/aozora/titleID> ?o . "
-  query += " filter (?o = '"+id+"'^^xsd:int)  ";
-  query += " ?s dcterms:title [rdf:value ?title] . "
-  query += " ?s dcterms:creator ?creator_uri .  "
-  query += " ?s <http://purl.org/dc/elements/1.1/subject> ?subject .  "
-  query += " ?creator_uri foaf:name ?name .  "
-  query += " ?creator_uri <http://purl.org/net/aozora/authorID> ?authorID .  "
-  query += " } ";
-
-  $.ajax({
-    url: endpoint,
-    async: false,
-    type:'GET',
-    data:{
-      query : query,
-      format : "json"
-    }
-  })
-  .then(function(data){
-    var result = data.results.bindings;
-
-    if(result.length > 0){
-
-      var obj = result[0]
-
-      var authorID = obj.authorID.value
-
-      if(authors.indexOf(authorID) == -1){
-        authors.push(authorID)
-
-        var list_group = $('<div class="list-group mb-5">')
-        $("#main").append(list_group)
-        list_group.attr("id", "p"+authorID)
-
-        var a = $('<a href="'+obj["creator_uri"].value+'" class="list-group-item list-group-item-action active">')
-        list_group.append(a)
-        a.append(obj.name.value)
+      for(var i = 0; i < items.length; i++){
+        var item = items[i]
+        var id = item.name.split("_")[0]
+        sparql(id, item["html_url"])
       }
-
-      var a = $('<a class="list-group-item list-group-item-action">')
-      $("#p"+authorID).append(a)
-      a.append(obj.title.value+" [ "+obj.subject.value+" ] ")
-      a.attr("href", url)
-    }
-  })
-  .always(function() {
-    $("#loading").empty()
+    });
   });
-}
 
-function getParam(){
-  var vars = {};
-  var param = location.search.substring(1).split('&');
-  for(var i = 0; i < param.length; i++) {
-    var keySearch = param[i].search(/=/);
-    var key = '';
-    if(keySearch != -1) key = param[i].slice(0, keySearch);
-    var val = param[i].slice(param[i].indexOf('=', 0) + 1);
-    if(key != '') vars[key] = decodeURI(val);
-  }
-  return vars;
-}
+  function sparql(id, url){
 
-</script>
-</html>
+    var query = " SELECT DISTINCT ?title ?creator_uri ?name ?authorID ?subject ";
+    query += " WHERE { ";
+    query += " ?s <http://purl.org/net/aozora/titleID> ?o . "
+    query += " filter (?o = '"+id+"'^^xsd:int)  ";
+    query += " ?s dcterms:title [rdf:value ?title] . "
+    query += " ?s dcterms:creator ?creator_uri .  "
+    query += " ?s <http://purl.org/dc/elements/1.1/subject> ?subject .  "
+    query += " ?creator_uri foaf:name ?name .  "
+    query += " ?creator_uri <http://purl.org/net/aozora/authorID> ?authorID .  "
+    query += " } ";
+
+    $.ajax({
+      url: endpoint,
+      //async: false,
+      type:'GET',
+      data:{
+        query : query,
+        format : "json"
+      }
+    })
+    .then(function(data){
+      var result = data.results.bindings;
+
+      if(result.length > 0){
+
+        var obj = result[0]
+
+        var authorID = obj.authorID.value
+
+        if(authors.indexOf(authorID) == -1){
+          authors.push(authorID)
+
+          var list_group = $('<div class="list-group mb-5">')
+            $("#main").append(list_group)
+            list_group.attr("id", "p"+authorID)
+
+            var a = $('<a href="'+obj["creator_uri"].value+'" class="list-group-item list-group-item-action active">')
+              list_group.append(a)
+              a.append(obj.name.value)
+            }
+
+            var a = $('<a class="list-group-item list-group-item-action">')
+              $("#p"+authorID).append(a)
+              a.append(obj.title.value+" [ "+obj.subject.value+" ] ")
+              a.attr("href", url)
+            } else {
+              var a = $('<a class="list-group-item list-group-item-action">')
+                $("#unknown").append(a)
+                a.append(id)
+                a.attr("href", url)
+              }
+            })
+            .always(function() {
+              $("#loading").empty()
+            });
+          }
+
+          function getParam(){
+            var vars = {};
+            var param = location.search.substring(1).split('&');
+            for(var i = 0; i < param.length; i++) {
+              var keySearch = param[i].search(/=/);
+              var key = '';
+              if(keySearch != -1) key = param[i].slice(0, keySearch);
+              var val = param[i].slice(param[i].indexOf('=', 0) + 1);
+              if(key != '') vars[key] = decodeURI(val);
+            }
+            return vars;
+          }
+
+        </script>
+        </html>
