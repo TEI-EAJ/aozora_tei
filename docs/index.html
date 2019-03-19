@@ -2,6 +2,17 @@
 layout: default
 ---
 
+<style>
+.filter {
+  background: #000;
+}
+
+.filter-img {
+  display: block;
+  opacity: .6;
+}
+</style>
+
 <div class="bd-example">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -10,14 +21,14 @@ layout: default
       <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/images/0003.png" class="d-block w-100" alt="...">
+      <div class="filter carousel-item active">
+        <img src="assets/images/0003.png" class="d-block w-100 filter-img" alt="...">
       </div>
-      <div class="carousel-item">
-        <img src="assets/images/0002.png" class="d-block w-100" alt="...">
+      <div class="filter carousel-item">
+        <img src="assets/images/0002.png" class="d-block w-100 filter-img" alt="...">
       </div>
-      <div class="carousel-item">
-        <img src="assets/images/0001.png" class="d-block w-100" alt="...">
+      <div class="filter carousel-item">
+        <img src="assets/images/0001.png" class="d-block w-100 filter-img" alt="...">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
