@@ -49,7 +49,7 @@
               <occupation>子供 無邪気な晴れ晴れしい抑揚のある声の児</occupation>
             </person>
             <person xml:id="B">
-            <persName>B</persName>
+              <persName>Ｂ</persName>
               <occupation>子供 実用的な平坦な動かない調子で話す児</occupation>
             </person>
             <person xml:id="C">
@@ -65,94 +65,94 @@
         <stage type="setting"  >場所 小高い丘の上、四辺のからっと見はらせる所（講堂の段の上を丘に仮定</stage>
         <stage type="setting"  >時 小夏の夕暮に近い午後</stage>
 <p>
-Ｂ、Ｃが丘の中程の木の切り<span type="ruby"><span type="rb">株</span><span type="rp">（</span><span type="rt">かぶ</span><span type="rp">）</span></span>に並んで腰をかけて、編物をして居る。<lb />
- Ｂ子は赤い毛糸。<lb />
-Ｃ子は青い毛糸。<lb />
+  <persName corresp="#B">Ｂ</persName>、<persName corresp="#C">Ｃ</persName>が丘の中程の木の切り<span type="ruby"><span type="rb">株</span><span type="rp">（</span><span type="rt">かぶ</span><span type="rp">）</span></span>に並んで腰をかけて、編物をして居る。<lb />
+  <persName corresp="#B">Ｂ子</persName>は赤い毛糸。<lb />
+  <persName corresp="#C">Ｃ子</persName>は青い毛糸。<lb />
 編棒を動かしながら二人は気が落ついて居るらしい口調で話して居る。<lb />
 </p>
-        <sp who="#B"><speaker>Ｂ</speaker><p>ねえＣちゃん、今日は私一度もＡちゃんに会わないのよ。</p>
+        <sp who="#B"><speaker>Ｂ</speaker><p>ねえ<persName corresp="#C">Ｃちゃん</persName>、今日は私一度も<persName corresp="#A">Ａちゃん</persName>に会わないのよ。</p>
   <p>どうしたんでしょう。</p></sp>
 <sp who="#C"><speaker>Ｃ</speaker><p>ほんとにねえ。</p>
 <p>若しかひょっとしたら病気なんじゃあないの？</p></sp>
 <sp who="#B"><speaker>Ｂ</speaker><p>そうねえ。</p></sp>
 <p>
-Ｂは何か思い出すらしく考えて居る。<lb />
+  <persName corresp="#B">Ｂ</persName>は何か思い出すらしく考えて居る。<lb />
 やがて思いついたらしく、膝を叩いて嬉しそうに笑いながら、<lb />
 </p>
- <sp who="#B"><speaker>Ｂ</speaker><p>Ｃちゃん、私共はまあ、馬鹿な心配をしちゃったわ。</p>
-<p>ほら、貴方おぼえてない？</p>
+        <sp who="#B"><speaker>Ｂ</speaker><p><persName corresp="#C">Ｃちゃん</persName>、私共はまあ、馬鹿な心配をしちゃったわ。</p>
+          <p>ほら、<persName corresp="#C">貴方</persName>おぼえてない？</p>
 <p>こないだこの<span type="ruby"><span type="rb">次</span><span type="rp">（</span><span type="rt">つぎ</span><span type="rp">）</span></span>のお祭りの日に町の叔母さんのところへおよばれだって云ってたじゃないの。</p>
 <p>今日はそれで行ったのよ、ね？</p>
 <p>そうじゃあなくって。</p></sp>
 <sp who="#C"><speaker>Ｃ</speaker><p>そう云えばそうねえ、ほんとに。</p>
-<p>私もうすっかり忘れて居たわ。</p>
+  <p><persName corresp="#C">私</persName>もうすっかり忘れて居たわ。</p>
 <p>じゃあ、もうじき此処を通るでしょうね。</p>
 <p>少しお家へ帰るのをおそくして一緒に行きたいわ。</p>
- <p>貴方、そうしなくって？</p></sp>
+  <p><persName corresp="#B">貴方</persName>、そうしなくって？</p></sp>
  <sp who="#B"><speaker>Ｂ</speaker><p>ええ、ええ、ほんとにそれがいいわ。</p>
 <p>もう少し待ってて見ましょうね。</p>
 <p>きっとお土産を<span type="ruby"><span type="rb">沢山</span><span type="rp">（</span><span type="rt">どっさり</span><span type="rp">）</span></span>抱えて来るに違いないわ。</p></sp>
-<sp who="#C"><speaker>Ｃ</speaker><p>私町のお話をききたいわ。</p>
+        <sp who="#C"><speaker>Ｃ</speaker><p><persName corresp="#C">私</persName>町のお話をききたいわ。</p>
 <p>可愛い児が沢山居るんだってねえ。</p>
 <p>大きなお家がならんでるんだってねえ。</p>
-<p>まあほんとに私が行って見たらどんなだろう。</p></sp>
+          <p>まあほんとに<persName corresp="#C">私</persName>が行って見たらどんなだろう。</p></sp>
 <p>
-Ｃは手を止めて向うの方をながめる。<lb />
+  <persName corresp="#C">Ｃ</persName>は手を止めて向うの方をながめる。<lb />
 沢山の家並やかすかなどよめきに想像をたくましくして居るらしい様子。<lb />
 </p>
-<sp who="#B"><speaker>Ｂ</speaker><p>私これを明日迄にしあげなけりゃ。</p></sp>
+        <sp who="#B"><speaker>Ｂ</speaker><p><persName corresp="#B">私</persName>これを明日迄にしあげなけりゃ。</p></sp>
 <p>
-Ｂはうつむいて、せっせっと編みつづける。<lb />
-Ａが旅人と一緒に丘のだらだら坂をあがって来る。（手に花の入ったかごを持つ）<lb />
-（檀に上る段々をだらだら坂のつもり）Ｃが見つける。<lb />
+  <persName corresp="#B">Ｂ</persName>はうつむいて、せっせっと編みつづける。<lb />
+  <persName corresp="#A">Ａ</persName>が旅人と一緒に丘のだらだら坂をあがって来る。（手に花の入ったかごを持つ）<lb />
+  （檀に上る段々をだらだら坂のつもり）<persName corresp="#C">Ｃ</persName>が見つける。<lb />
 </p>
-        <sp who="#C"><speaker>Ｃ</speaker><p>ああ、Ｂちゃん、Ｂちゃん、</p>
-<p>Ａちゃんが来た事よ。</p>
+        <sp who="#C"><speaker>Ｃ</speaker><p>ああ、<persName corresp="#B">Ｂちゃん</persName>、<persName corresp="#B">Ｂちゃん</persName>、</p>
+          <p><persName corresp="#A">Ａちゃん</persName>が来た事よ。</p>
           <stage>（のびあがる）</stage></sp>
         <sp who="#B"><speaker>Ｂ</speaker><p>まあほんとにねえ</p>
-          <p>あれ、誰だかよその人をつれて来てる事よ。</p></sp>
+          <p>あれ、誰だか<persName corresp="#旅人">よその人</persName>をつれて来てる事よ。</p></sp>
 <p>
-旅人が二人に近づく。<lb />
+  <persName corresp="#旅人">旅人</persName>が二人に近づく。<lb />
 二人は少しはにかんだ様にかたまる。<lb />
 </p>
- <sp who="#A"><speaker>Ａ</speaker><stage>（気軽に旅人からかけぬけて二人のそばにより）</stage><p>この「おじさん」とね、あの樺のとこから一緒に来たのよ。</p>
-<p>今夜私の御家へとめて頂戴って。</p>
+        <sp who="#A"><speaker>Ａ</speaker><stage>（気軽に<persName corresp="#旅人">旅人</persName>からかけぬけて二人のそばにより）</stage><p>この「<persName corresp="#旅人">おじさん</persName>」とね、あの樺のとこから一緒に来たのよ。</p>
+          <p>今夜<persName corresp="#A">私</persName>の御家へとめて頂戴って。</p>
 <p>そいでね、御馳走してあげるから私達にお話して頂戴ってお約束したのよ。</p>
- <p>ねえ、おじさん。</p></sp>
+          <p>ねえ、<persName corresp="#旅人">おじさん</persName>。</p></sp>
         <sp who="#B"><speaker>Ｂ</speaker><p>まあそう。</p>
 <p>そりゃあ、ほんとに面白いわ。</p>
 <p>さあ聞かせてちょうだいな。</p></sp>
 <p>
-Ａ、Ｂは旅人の傍にすり寄る。<lb />
-Ｃ子は旅人を観察する様な顔をして少しはなれて立って居る。<lb />
+  <persName corresp="#A">Ａ</persName>、<persName corresp="#B">Ｂ</persName>は<persName corresp="#旅人">旅人</persName>の傍にすり寄る。<lb />
+  <persName corresp="#C">Ｃ子</persName>は旅人を観察する様な顔をして少しはなれて立って居る。<lb />
 たちあがった拍子に落ちた青い毛糸の玉がころがって居る。<lb />
 </p>
 <sp who="#旅人"><speaker>旅</speaker><p>なかなか抜目のないお子達だ。</p>
 <p>おじぎだけでは許されそうもないからお話をしてあげずばなるまいかな。</p>
  <p>やれやれと。</p></sp>
 <p>
-  旅人はさっきまでＢ、Ｃが掛けて居た木の切り株に腰を下す。<lb />
-Ａ、Ｂは<span type="ruby"><span type="rb">後</span><span type="rp">（</span><span type="rt">あと</span><span type="rp">）</span></span>について、旅人をはさんで向い合った様にしゃがみ、<lb />
-Ｃは糸玉の落ちたのを気づきそれを片手にひろいあげて旅人の後の方に近く立つ。<lb />
+  <persName corresp="#旅人">旅人</persName>はさっきまで<persName corresp="#B">Ｂ</persName>、<persName corresp="#C">Ｃ</persName>が掛けて居た木の切り株に腰を下す。<lb />
+  <persName corresp="#A">Ａ</persName>、<persName corresp="#B">Ｂ</persName>は<span type="ruby"><span type="rb">後</span><span type="rp">（</span><span type="rt">あと</span><span type="rp">）</span></span>について、<persName corresp="#旅人">旅人</persName>をはさんで向い合った様にしゃがみ、<lb />
+  <persName corresp="#C">Ｃ</persName>は糸玉の落ちたのを気づきそれを片手にひろいあげて  <persName corresp="#旅人">旅人</persName>の後の方に近く立つ。<lb />
 </p>
-        <sp who="#旅人"><speaker>旅</speaker><p>私はね、あの彼方に遠く遠く見えて居る青い山のかげで生れたんですよ。</p>
-<p>お天気のいい朝<span type="ruby"><span type="rb">鸛</span><span type="rp">（</span><span type="rt">こう</span><span type="rp">）</span></span>の鳥が小さい私をオパール色の宮殿から母さんの膝につれて来たんです。</p>
-<p>それからあったかい日光と、よい空気と、甘いお乳で、やきたてのお菓子の様に育って、手足がたくましく真直になった時、私は跳る様にして、今日まで続いて居る長い旅をはじめたんです。けれど……</p></sp>
-        <sp who="#A"><speaker>Ａ</speaker><p>あなたたった一人で？</p>
+        <sp who="#旅人"><speaker>旅</speaker><p><persName corresp="#旅人">私</persName>はね、あの彼方に遠く遠く見えて居る青い山のかげで生れたんですよ。</p>
+          <p>お天気のいい朝<span type="ruby"><span type="rb">鸛</span><span type="rp">（</span><span type="rt">こう</span><span type="rp">）</span></span>の鳥が小さい<persName corresp="#旅人">私</persName>をオパール色の宮殿から母さんの膝につれて来たんです。</p>
+          <p>それからあったかい日光と、よい空気と、甘いお乳で、やきたてのお菓子の様に育って、手足がたくましく真直になった時、<persName corresp="#旅人">私</persName>は跳る様にして、今日まで続いて居る長い旅をはじめたんです。けれど……</p></sp>
+        <sp who="#A"><speaker>Ａ</speaker><p><persName corresp="#旅人">あなた</persName>たった一人で？</p>
 <p>お母様といっしょじゃあなく？</p></sp>
         <sp who="#旅人"><speaker>旅</speaker><p>ええたった一人で。</p>
 <p>勿論始めは友達もあったんですけれどね。</p>
 <p>あんまり長い間の事でしょう、</p>
-<p>それに行く方も違って居るんで今では私の影坊師が私のお<span type="ruby"><span type="rb">伴</span><span type="rp">（</span><span type="rt">とも</span><span type="rp">）</span></span>なんですよ。</p></sp>
+          <p>それに行く方も違って居るんで今では<persName corresp="#旅人">私</persName>の影坊師が<persName corresp="#旅人">私</persName>のお<span type="ruby"><span type="rb">伴</span><span type="rp">（</span><span type="rt">とも</span><span type="rp">）</span></span>なんですよ。</p></sp>
         <sp who="#B"><speaker>Ｂ</speaker><p>淋しかないの？</p>
 <p>たった一人で旅なんかするときっと困る事だらけなんだろうのに……</p></sp>
-        <sp who="#C"><speaker>Ｃ</speaker><p>私はたった一人だとは思わないわ。</p>
+        <sp who="#C"><speaker>Ｃ</speaker><p><persName corresp="#C">私</persName>はたった一人だとは思わないわ。</p>
 <p>お母様のおっしゃった事、</p>
 <p>お父様のおっしゃった事、</p>
 <p>神様のおっしゃる事はいつでも一緒に歩いてるんですもの。</p></sp>
         <sp who="#旅人"><speaker>旅</speaker><p>ほんとにね。</p>
 <p>自分一人は又世界中の人でなけりゃあいけません。</p>
-<p>それから私は毎日毎日一生懸命に歩いてるんですよ。</p>
+          <p>それから<persName corresp="#旅人">私</persName>は毎日毎日一生懸命に歩いてるんですよ。</p>
 <p>お月様のいい時には、貴方方のねていらっしゃる夜でも森をこして行きました。</p></sp>
         <sp who="#B"><speaker>Ｂ</speaker><p>提灯もなくって？</p>
 <p>案内者もつれずに？</p></sp>
@@ -171,20 +171,20 @@
 <p>それは斯う云う事なんです。</p>
 <p>あなた方がお母様に寝部屋につれて行っていただいて冬は暖い、夏は涼しいお床にお入んなさる時に私共は、外の夜露の下りる木の下にねる事がある事です。</p>
           <p>びっくりなさるでしょう？</p></sp>
-        <sp who="#B"><speaker>B</speaker><p>まあ、外でねるの。</p>
+        <sp who="#B"><speaker>Ｂ</speaker><p>まあ、外でねるの。</p>
 <p>そりゃあいけないわ、</p>
 <p>夜は風を引き易いって云うのに。</p>
 <p>もうするのおやめなさいね、</p>
 <p>叱られるわ。</p></sp>
-        <sp who="#A"><speaker>Ａ</speaker><p>私何だか気味が悪いわそんな事、</p>
+        <sp who="#A"><speaker>Ａ</speaker><p><persName corresp="#A">私</persName>何だか気味が悪いわそんな事、</p>
 <p>何にも出なくって。</p>
 <p>若し出たらどうなさるの、お母様はいらっしゃらないし。</p></sp>
-        <sp who="#C"><speaker>Ｃ</speaker><p>立派な手足があるわねえ、おじさん。</p></sp>
-        <sp who="#旅人"><speaker>旅</speaker><p>そうそう、私はこれから段々みがきのかかった手足でまだどの位の日数を歩いたら行きつくか分らない、行かなければならないところへまで毎日毎日歩かなければならないんですよ。</p>
-<p>今日までのうちに私はどっさりいろいろのものを見ました。</p>
+        <sp who="#C"><speaker>Ｃ</speaker><p>立派な手足があるわねえ、<persName corresp="#旅人">おじさん</persName>。</p></sp>
+        <sp who="#旅人"><speaker>旅</speaker><p>そうそう、<persName corresp="#旅人">私</persName>はこれから段々みがきのかかった手足でまだどの位の日数を歩いたら行きつくか分らない、行かなければならないところへまで毎日毎日歩かなければならないんですよ。</p>
+          <p>今日までのうちに<persName corresp="#旅人">私</persName>はどっさりいろいろのものを見ました。</p>
 <p>森の木の枝に自慢の角を引っかけて玉にうたれた鹿だの、孔雀の羽根で恥をかいた可哀そうな鳥だの、片目をたのみすぎた罪のない驢馬だのねえ。</p></sp>
         <sp who="#B"><speaker>Ｂ</speaker><p>まあそんなに？</p>
-<p>私にはそんな事考えられないわ。</p></sp>
+          <p><persName corresp="#B">私</persName>にはそんな事考えられないわ。</p></sp>
         <sp who="#A"><speaker>Ａ</speaker><p>そんな旅はいつまで<span type="ruby"><span type="rb">続</span><span type="rp">（</span><span type="rt">つづ</span><span type="rp">）</span></span>くの。</p>
 <p>来年まで？</p>
 <p>さ来年まで？</p></sp>
@@ -196,17 +196,17 @@
 <p>あんなに向うが暗くなって来ましたよ。</p>
 <p>さあ、帰りましょう。</p></sp>
 <p>
-Ｃはじいっと何か考えて居る様に口を利かずに遠くを見て居る。<lb />
+  <persName corresp="#C">Ｃ</persName>はじいっと何か考えて居る様に口を利かずに遠くを見て居る。<lb />
 </p>
-        <sp who="#A"><speaker>Ａ</speaker><p>あら、Ｃちゃん、どうしたの。もう行くのよ、お話がすんだのよ。</p></sp>
+        <sp who="#A"><speaker>Ａ</speaker><p>あら、 <persName corresp="#C">Ｃ</persName>ちゃん、どうしたの。もう行くのよ、お話がすんだのよ。</p></sp>
         <sp who="#C"><speaker>Ｃ</speaker><p>ええ、知って居るのよ。</p>
-<p>何だか大変、私には重いお話の様に思えるわ。</p>
+          <p>何だか大変、<persName corresp="#C">私</persName>には重いお話の様に思えるわ。</p>
 <p>行きましょう。</p></sp>
         <sp who="#B"><speaker>Ｂ</speaker><p>ほんとに面白かった。行きましょう、さ。</p></sp>
-        <sp who="#A"><speaker>Ａ</speaker><p>有難うおじさん。</p>
-<p>私きっと美味しいパンとチイズをあげるわ。</p></sp>
+        <sp who="#A"><speaker>Ａ</speaker><p>有難う<persName corresp="#旅人">おじさん</persName>。</p>
+          <p><persName corresp="#A">私</persName>きっと美味しいパンとチイズをあげるわ。</p></sp>
 <p>
-旅人を中にはさんで三人の子供は歩き出す。<lb />
+  <persName corresp="#旅人">旅人</persName>を中にはさんで三人の子供は歩き出す。<lb />
 そして順番にやわらかく、民謡の様な左の文句を口ずさむ。<lb />
 </p>
  <lg type="free">
