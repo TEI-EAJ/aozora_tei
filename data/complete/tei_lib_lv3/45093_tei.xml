@@ -1,0 +1,56 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>乳母車</title>
+        <author>新美南吉</author>
+        <respStmt>
+          <resp>Aozora Transcription</resp>
+          <name>菅野朋子</name>
+        </respStmt>
+        <respStmt>
+          <resp>Aozora Proofreading</resp>
+          <name>noriko saito</name>
+        </respStmt>
+        <respStmt>
+          <resp rend="2010年12月9日">作成</resp>
+          <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+          <note>
+            <lb/>底本：「日本児童文学大系　第二八巻」ほるぷ出版 <lb/>1978（昭和53）年11月30日初刷発行 <lb/>底本の親本：「赤い鳥」赤い鳥社
+            <lb/>1932（昭和7）年7月 <lb/>初出：「赤い鳥」赤い鳥社 <lb/>1932（昭和7）年7月 <lb/>入力：菅野朋子 <lb/>校正：noriko saito
+            <lb/>2010年12月9日作成
+            <lb/>青空文庫作成ファイル：このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。
+          </note>
+        </respStmt>
+        <respStmt>
+          <resp>TEI Encoding</resp>
+          <name>Masao Takaku</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>SIG for East Asian/Japanese, TEI Consortium</distributor>
+        <date when="2019-04-02"> 2019年4月2日</date>
+        <availability>
+          <licence target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal
+            (CC0 1.0) Public Domain Dedication</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>新美南吉</author><title>乳母車</title><publisher>ほるぷ出版</publisher>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p><lb/>坊やがせがむと<lb/>乳母車、<lb/>つばきの花をつけられる。</p>
+      <p><lb/>そしてくる／＼<lb/>くる／＼と、<lb/>ご門のとこまでひかれてく。</p>
+      <p><lb/>坊やがねないと<lb/>乳母車、<lb/>ねんねこようをきかされる。</p>
+      <p><lb/>そしてゆら／＼<lb/>ゆら／＼と、<lb/>ぶらんこみたいに<span type="ruby"><span type="rb">揺</span><span
+            type="rp">（</span><span type="rt">ゆす</span><span type="rp">）</span></span>られる。</p>
+      <p><lb/>坊やがねちやうと<lb/>乳母車、<lb/>日かげにそつといれられる。</p>
+      <p><lb/>そしてふんはり<lb/>ふんはりと、<lb/>もひとつ毛布をのせられる。 </p>
+    </body>
+  </text>
+</TEI>
