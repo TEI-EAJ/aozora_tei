@@ -70,7 +70,7 @@
   <persName corresp="#C">Ｃ子</persName>は青い毛糸。<lb />
 編棒を動かしながら二人は気が落ついて居るらしい口調で話して居る。<lb />
 </p>
-        <sp who="#B"><speaker>Ｂ</speaker><p>ねえ<persName corresp="#C">Ｃちゃん</persName>、今日は私一度も<persName corresp="#A">Ａちゃん</persName>に会わないのよ。</p>
+        <sp who="#B"><speaker>Ｂ</speaker><p>ねえ<persName corresp="#C">Ｃちゃん</persName>、今日は<persName corresp="#B">私</persName>一度も<persName corresp="#A">Ａちゃん</persName>に会わないのよ。</p>
   <p>どうしたんでしょう。</p></sp>
 <sp who="#C"><speaker>Ｃ</speaker><p>ほんとにねえ。</p>
 <p>若しかひょっとしたら病気なんじゃあないの？</p></sp>
@@ -209,25 +209,25 @@
   <persName corresp="#旅人">旅人</persName>を中にはさんで三人の子供は歩き出す。<lb />
 そして順番にやわらかく、民謡の様な左の文句を口ずさむ。<lb />
 </p>
- <lg type="free">
+    <sp who="#A"><lg type="free">
    <l>雪の降る日に小兎は</l>
    <l>あかい木の実のたべたさに</l>
    <l>親の寝た間に山を出で</l>
-   <l>城の門まで来は来たが<stage>（ここまでＡ）</stage></l>
- </lg>
- <lg type="free">
+   <l>城の門まで来は来たが<stage>（ここまで<persName corresp="#A">Ａ</persName>）</stage></l>
+        </lg></sp>
+    <sp who="#B"><lg type="free">
    <l>赤い木の実は見えもせず</l>
    <l>路は分らず日は暮れる</l>
    <l>長い廊下のまどの下</l>
-   <l>何やら赤いものがある、<stage>（Ｂここまで）</stage></l>
- </lg>
-<lg type="free">   
+   <l>何やら赤いものがある、<stage>（<persName corresp="#B">Ｂ</persName>ここまで）</stage></l>
+    </lg></sp>
+        <sp who="#C"><lg type="free">   
   <l>そっとしのむで来て見れば</l>
   <l>こは姫君のかんざしか</l>
   <l>珊瑚の玉か恥かしや</l>
   <l>たべてよいやら悪いやら</l>
-  <l>兎は悲しくなりました。<stage>（Ｃここまで）</stage></l>
- </lg>
+  <l>兎は悲しくなりました。<stage>（<persName corresp="#C">Ｃ</persName>ここまで）</stage></l>
+        </lg></sp>
 </div>
 </body>
   </text>
