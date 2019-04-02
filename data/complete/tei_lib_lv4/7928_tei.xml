@@ -209,19 +209,19 @@
   <persName corresp="#旅人">旅人</persName>を中にはさんで三人の子供は歩き出す。<lb />
 そして順番にやわらかく、民謡の様な左の文句を口ずさむ。<lb />
 </p>
-    <sp who="#A"><lg type="free">
+        <sp who="#A"><speaker>Ａ</speaker><lg type="free">
    <l>雪の降る日に小兎は</l>
    <l>あかい木の実のたべたさに</l>
    <l>親の寝た間に山を出で</l>
    <l>城の門まで来は来たが<stage>（ここまで<persName corresp="#A">Ａ</persName>）</stage></l>
         </lg></sp>
-    <sp who="#B"><lg type="free">
+        <sp who="#B"><speaker>Ｂ</speaker><lg type="free">
    <l>赤い木の実は見えもせず</l>
    <l>路は分らず日は暮れる</l>
    <l>長い廊下のまどの下</l>
    <l>何やら赤いものがある、<stage>（<persName corresp="#B">Ｂ</persName>ここまで）</stage></l>
     </lg></sp>
-        <sp who="#C"><lg type="free">   
+        <sp who="#C"><speaker>Ｃ</speaker><lg type="free">   
   <l>そっとしのむで来て見れば</l>
   <l>こは姫君のかんざしか</l>
   <l>珊瑚の玉か恥かしや</l>
