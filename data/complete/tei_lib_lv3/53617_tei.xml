@@ -1,0 +1,94 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>巡禮紀行</title>
+        <author>萩原朔太郎</author>
+        <respStmt>
+          <resp>Aozora Transcription</resp>
+          <name>kompass</name>
+        </respStmt>
+        <respStmt>
+          <resp>Aozora Proofreading</resp>
+          <name>小林繁雄</name>
+        </respStmt>
+        <respStmt>
+          <resp rend="2011年6月25日">作成</resp>
+          <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+          <note>
+            <lb/> 底本：「萩原朔太郎全集　第三卷」筑摩書房 <lb/> 1977（昭和52）年5月30日初版第1刷発行 <lb/> 1986（昭和62）年12月10日補訂版第1刷発行
+            <lb/> 入力：kompass <lb/> 校正：小林繁雄 <lb/> 2011年6月25日作成 <lb/> 青空文庫作成ファイル：<lb/> このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。<lb/>
+            <lb/>
+            <lb/>
+          </note>
+        </respStmt>
+        <respStmt>
+          <resp>TEI Encoding</resp>
+          <name>Takayuki Ako</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+        <date when="2019-04-02"> 2019年4月2日</date>
+        <availability>
+          <p>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0
+              1.0) Public Domain Dedication</ref></p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>萩原朔太郎</author><title>巡禮紀行</title></bibl>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p>
+        <lb/> きびしく凍りて、<lb/> 指ちぎれむとすれども、<lb/> 杖は<span type="ruby">
+          <span type="rb">絶頂</span>
+          <span type="rp">（</span>
+          <span type="rt">いただき</span>
+          <span type="rp">）</span>
+        </span>にするどく光る、<lb/> 七重の氷雪、<lb/> 山路ふかみ、<lb/> わがともがらは一列に、<lb/> いためる心<span type="ruby">
+          <span type="rb">山峽</span>
+          <span type="rp">（</span>
+          <span type="rt">はざま</span>
+          <span type="rp">）</span>
+        </span>たどる。<lb/>
+        <lb/> しだいに<span type="ruby">
+          <span type="rb">四方</span>
+          <span type="rp">（</span>
+          <span type="rt">よも</span>
+          <span type="rp">）</span>
+        </span>を眺むれば、<lb/> 遠き地平を超え、<lb/> 黒き眞冬を超えて叫びしんりつす、<lb/> ああ聖地靈感の狼ら、<lb/> かなしみ<span type="ruby">
+          <span type="rb">切齒</span>
+          <span type="rp">（</span>
+          <span type="rt">はがみ</span>
+          <span type="rp">）</span>
+        </span>なし、<lb/> にくしんを研ぎてもとむるものを、<lb/> 息絶えんとしてかつはしる。<lb/>
+        <lb/>
+        <span type="ruby">
+          <span type="rb">疾走</span>
+          <span type="rp">（</span>
+          <span type="rt">はし</span>
+          <span type="rp">）</span>
+        </span>れるものを見るなかれ、<lb/> いまともがらは一列に、<lb/> 手に手に銀の鈴ふりて、<lb/> 雪ふる空に鳥を薫じ、<lb/> 涙ぐましき<span
+          type="ruby">
+          <span type="rb">夕餐</span>
+          <span type="rp">（</span>
+          <span type="rt">ゆふげ</span>
+          <span type="rp">）</span>
+        </span>とはなる。<lb/>
+        <lb/>
+        <lb/>
+        <lb/>
+      </p>
+    </body>
+    <back>
+      <div type="note">
+        <p><date when="1914-10">—一九一四、一〇—</date></p>
+      </div>
+    </back>
+  </text>
+</TEI>
