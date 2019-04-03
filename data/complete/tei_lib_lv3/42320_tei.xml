@@ -1,0 +1,66 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>西洋にはない</title>
+        <author>夏目漱石</author>
+        <respStmt>
+          <resp>Aozora Transcription</resp>
+          <name>川向直樹</name>
+        </respStmt>
+        <respStmt>
+          <resp>Aozora Proofreading</resp>
+          <name>土屋隆</name>
+        </respStmt>
+        <respStmt>
+          <resp rend="2005年9月24日">作成</resp>
+          <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+          <note>
+            <lb/>底本：「漱石全集　第三十四巻」岩波書店 <lb/> 　　　1957（昭和32）年10月12日第1刷発行<lb/>
+            　　　1960（昭和35）年7月30日第3刷発行<lb/> 初出：「俳味」文教社<lb/> 　　　1911（明治44）年6月1日号<lb/> 青空文庫作成ファイル：<lb/> このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。<lb/>
+            <lb/>
+            <lb/>
+          </note>
+        </respStmt>
+        <respStmt>
+          <resp>TEI Encoding</resp>
+          <name>Yuka Egusa</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+        <date when="2019-04-02"> 2019年4月2日</date>
+        <availability>
+          <p>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0
+              1.0) Public Domain Dedication</ref></p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl> 「漱石全集　第三十四巻」<publisher>岩波書店</publisher>
+          <date when="1957-10-12">1957（昭和32）年10月12日</date>第1刷発行
+            <author>夏目漱石</author><title>西洋にはない</title>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p>俳諧の趣味ですか、西洋には有りませんな。川柳といふやうなものは西洋の詩の中にもありますが、俳句趣味のものは詩の中にもないし、又それが詩の本質を形作つても居ない。日本獨特と言つていゝでせう。<lb/></p>
+        <p>一體日本と西洋とは家屋の建築裝飾なぞからして違つて居るので、日本では短冊のやうな小さなものを掛けて置いても一の裝飾になるが、西洋のやうな大きな構造ではあんな<span
+            type="ruby">
+            <span type="rb">小</span>
+            <span type="rp">（</span>
+            <span type="rt">ちひ</span>
+            <span type="rp">）</span></span> ぽけなものを置いても一向目に立たない。<lb/></p>
+        <p>俳句に進歩はないでせう、唯變化するだけでせう。イクラ複雜にしたつて勸工場のやうにゴタ／＼並べたてたつて仕樣がない。日本の衣服が簡便である如く、日本の家屋が簡便である如く、俳句も亦簡便なものである。<lb/></p>
+      </div>
+    </body>
+    <back>
+      <div type="note">
+        <p>—<date when="1911-06-01">明治四四、六、一</date>『俳味』—</p>
+      </div>
+    </back>
+  </text>
+</TEI>
