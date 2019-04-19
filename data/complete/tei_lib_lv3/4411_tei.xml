@@ -1,0 +1,95 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>岩波茂雄宛書簡</title>
+        <author>野呂栄太郎</author>
+        <respStmt>
+          <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+          <resp when="2005-03-19">作成</resp>
+          <note>
+            <lb/> 底本：「野呂栄太郎全集　下」新日本出版社 <lb/> 　　　1994（平成6）年12月5日初版<lb/>
+            ※作品名は、便宜を考慮して、入力時に新たに付したものです。<lb/> 入力：山田剛<lb/> 校正：土屋隆<lb/>
+            <date when="2005-03-19">2005年3月19日</date>作成<lb/> 青空文庫作成ファイル：<lb/>
+            このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。</note>
+        </respStmt>
+        <respStmt>
+          <resp>Aozora Transcription</resp>
+          <name>山田剛</name>
+        </respStmt>
+        <respStmt>
+          <resp>Aozora Proofreading</resp>
+          <name>土屋隆</name>
+        </respStmt>
+        <respStmt>
+          <resp when="2019-04-16">TEI Encoding</resp>
+          <name>Satoru Nakamura</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+        <availability>
+          <p>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0
+              1.0) Public Domain Dedication</ref></p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl><title>岩波茂雄宛書簡</title><author>野呂栄太郎</author>
+          <publisher>新日本出版社</publisher>「野呂栄太郎全集　下」 　　　<date when="1994-12-05"
+          >1994（平成6）年12月5日</date>初版</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <!-- The proposed correspDesc element starts here -->
+      <correspDesc>
+        <correspAction type="sent">
+          <persName>野呂栄太郎</persName>
+          <date when="1931-08-17">一九三一年八月十七日</date>
+        </correspAction>
+        <correspAction type="received">
+          <persName>岩波茂雄</persName>
+        </correspAction>
+      </correspDesc>
+      <!-- The proposed correspDesc element ends here -->
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <p>
+        <listPerson>
+          <person xml:id="野呂栄太郎">
+            <persName>野呂栄太郎</persName>
+          </person>
+          <person xml:id="岩波茂雄">
+            <persName>岩波茂雄</persName>
+          </person>
+        </listPerson>
+      </p>
+    </front>
+    <body>
+      <opener>
+        <salute>拝啓</salute> 残暑かえって厳しき折柄いよいよ御清健のことと拝察<seg type="ruby"><seg type="rb">賀</seg><seg
+            type="rp">（</seg><seg type="rt">よろこ</seg><seg type="rp">）</seg></seg>び<seg type="ruby"
+            ><seg type="rb">奉</seg><seg type="rp">（</seg><seg type="rt">たてまつ</seg><seg type="rp"
+            >）</seg></seg>り候。</opener>
+      <p>さて、「日本資本主義発達史講座」の件に関し、昨日編輯会議を開き、先日差上げたる私案及び貴店編輯部案を<seg type="ruby"><seg type="rb"
+            >参酌</seg><seg type="rp">（</seg><seg type="rt">さんしゃく</seg><seg type="rp"
+          >）</seg></seg>して大体のことを決定<seg type="ruby"><seg type="rb">仕</seg><seg type="rp">（</seg><seg
+            type="rt">つかまつ</seg><seg type="rp">）</seg></seg>り候間諸種の点に関し御懇談仕りたく、御多忙中恐縮に存じ<seg
+          type="ruby"><seg type="rb">候得共</seg><seg type="rp">（</seg><seg type="rt">そうらえども</seg><seg
+            type="rp">）</seg></seg>、<seg type="ruby"><seg type="rb">御序</seg><seg type="rp"
+            >（</seg><seg type="rt">おついで</seg><seg type="rp"
+          >）</seg></seg>の節にでも御来駕を煩わし得れば幸甚に御座候処御都合如何に御座候也。もっとも問題は主として編輯及び出版の技術に関することと存じ候間御都合にて御多忙中<seg
+          type="ruby"><seg type="rb">態々</seg><seg type="rp">（</seg><seg type="rt">わざわざ</seg><seg
+            type="rp">）</seg></seg>御足労煩わさずとも、<seg type="ruby"><seg type="rb">永</seg><seg type="rp"
+            >（</seg><seg type="rt">ママ</seg><seg type="rp">）</seg></seg>田氏を煩わし下されば事足りることとも存じ候。</p>
+      <p>まずは<seg type="ruby"><seg type="rb">不取敢</seg><seg type="rp">（</seg><seg type="rt"
+            >とりあえず</seg><seg type="rp">）</seg></seg>御都合御伺いまで。</p>
+
+      <closer><salute>敬具</salute> 　　　<date when="1931-08-17">八月十七日</date><lb/>
+        <seg><persName corresp="#野呂栄太郎">栄太郎</persName>拝</seg> 　　<persName corresp="#岩波茂雄"
+          >岩波</persName>様<lb/> 　　　　御侍史 </closer>
+    </body>
+  </text>
+</TEI>
