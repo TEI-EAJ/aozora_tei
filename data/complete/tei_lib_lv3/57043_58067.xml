@@ -1,0 +1,71 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>書簡　大杉栄宛</title>
+        <author>伊藤野枝</author>
+        <respStmt>
+          <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+        <resp when="2016-01-04">作成</resp><resp/><note>
+<lb/>
+底本：「定本　伊藤野枝全集　第二巻　評論・随筆・書簡1――『青鞜』の時代」學藝書林<lb/>
+　　　2000（平成12）年5月31日初版発行<lb/>
+底本の親本：「大杉栄全集　第四巻」大杉栄全集刊行会<lb/>
+　　　1926（大正15）年9月8日<lb/>
+入力：酒井裕二<lb/>
+校正：雪森<lb/>
+<date when="2016-01-04">2016年1月4日</date>作成<lb/>
+青空文庫作成ファイル：<lb/>
+このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。</note></respStmt>
+      <respStmt><resp>Aozora Transcription</resp><name>酒井裕二</name></respStmt><respStmt><resp>Aozora Proofreading</resp><name>雪森</name></respStmt><respStmt><resp when="2019-01-01">TEI Encoding</resp><name>Input Your Name</name></respStmt></titleStmt>
+      <publicationStmt>
+        <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+        <availability>
+          <p>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0
+              1.0) Public Domain Dedication</ref></p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Input by your self<title>書簡　大杉栄宛</title><author>伊藤野枝</author></bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <correspDesc>
+        <correspAction type="sent"><persName>伊藤野枝</persName>
+        <date when="1916-06-22">一九一六年六月二十二日</date>
+        <location>
+          <placeName>千葉県夷隅郡御宿　上野屋旅館</placeName>
+          <geo>35.191944,140.348611</geo>
+        </location></correspAction>
+        <correspAction type="received"><persName>大杉栄</persName>
+          <location>
+            <placeName>東京市麹町区三番町六四　第一福四萬館</placeName>
+            <geo>35.684444,139.742777</geo>
+        </location>
+        </correspAction>
+        
+      </correspDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body><p><span rend="main_text" rendition="div"><lb/>
+<span rend="chitsuki_1" rendition="div" style="text-align:right; margin-right: 1em">宛先　東京市麹町区三番町六四　第一福四萬館</span>
+<span rend="chitsuki_5" rendition="div" style="text-align:right; margin-right: 5em">発信地　千葉県夷隅郡御宿　上野屋旅館</span>
+<lb/>
+<lb/>
+　ゆふべ、また、二階の<span type="ruby"><span type="rb">室</span><span type="rp">（</span><span type="rt">へや</span><span type="rp">）</span></span>に行つて、ひとりであの広い<span type="ruby"><span type="rb">蚊帳</span><span type="rp">（</span><span type="rt">かや</span><span type="rp">）</span></span>のなかにすはつて手紙を書き続けようとしましたけれども、いろんな事を考へ始めましたら、苦しくなつてとても続けられませんでしたから止めて、ぢつと眼をつぶつて一時頃まで考へてゐました。<lb/>
+　四五日すれば会へる事が分つてゐながら、こんなにかなしい思ひをするなんて、どうした事でせう。これで二た月も会はずにゐられるでせうか。私はもう何処へも行きたくない。矢張り東京であなたの傍にゐたい。かぢりついてゐたい。ただ私は何時でも<span type="ruby"><span type="rb">暫</span><span type="rp">（</span><span type="rt">しばら</span><span type="rp">）</span></span>く東京から離れてゐたいと云ふのは、私の腹立ちむしが、東京にゐて、あなたに会ひたい時に会へなかつたり、お留守にぶつかつたり、来て下さらなかつたりした時に、直ぐに騒ぎ出しさうなのですもの。だから、もう少し離れてゐたいと思ふのです。そんな事は何んでもないのですね。もう少しの間やはりあなたと一緒でなくては、私はちつともおちつきませんの。それに昨日は、神近さんの手紙をあなたが読んで聞かして下すつてから、余計に気がふさいだんです。私だつてあの人がどんなに苦しんでゐるかは解りますけれど、ああして他の人に聞いたりすればそれが強く来ますもの。<lb/>
+　そして私の一番心配になるのは子供なのです。あの人（辻潤）が何時でもそのやうでゐれば、本当にあの子が可哀さうなのですもの。今まで本当に大事にして来たのですから、他家の厄介になんかなつてゐると思ひますと<span type="ruby"><span type="rb">堪</span><span type="rp">（</span><span type="rt">た</span><span type="rp">）</span></span>まりません。<lb/>
+　私は預けた子供よりも、残して来た子供を思ひ出す度びに気が狂ひさうです。あの子供の為めに、幾夜泣いたでせう。私の馬鹿を笑つて下さい。こんな愚痴を何んだつてあなたになんか書いたのでせう、御免なさい。本当に、あなたは馬鹿々々しくお思ひになるかも知れませんけれど。今まで、あんな、これ以上の貧しさはないやうなみぢめな生活に四年も五年もかぢりついてゐたのだつて、皆んなあの子の為めだつたのですもの。そしてそのみぢめな中から自分だけぬけて、子供をその中に置いて来たのですもの。こんな無慈悲な母親があるでせうか。でも、私がどんなにあの子を大事にして来たかを知つてゐるあの人は、私がゐなくなつてからの子供の可哀さうな様子を見たら、少しは考へてくれるだらうと思つたのは、私のいい考へだつたのでせうか。忘れようとする程あの子の為めには泣かされます。ああもうこんなつまらない愚痴は止しませう。<lb/>
+　あなたに、もう前から云はうとして云ひ得ないでゐる事があります。それはお金の事です。私ははじめつから、ああして厄介をかける事が苦しくて仕方がないのです。それにあなただつて余裕がおありになるのでもないのに、本当にすみません。何卒々々お許し下さい。神近さんからまで、ああして下さる事は、本当に申訳けがなくて仕方がありません。大阪に行きましたら、直ぐ叔父に話してどうかする積りではありますけれど。私は本当につらくてたまりません。あなたもどんなにかお困りになるのでせうに、本当にすみません。<lb/>
+　一緒にゐるのは本当にいけませんね、別れる時にいやですものね。もうこれから甘へない事にしませうか。あなたはちつとも私を叱らないからいけないのですよ。此後甘へたら叱つてね。神近さんは怒つてらつしやりはしませんでしたか。もしか、今度会つたら私がおわびします。よろしく。<span type="ruby"><span type="rb">左様</span><span type="rp">（</span><span type="rt">さよう</span><span type="rp">）</span></span>なら。<lb/>
+　こんな手紙を書くつもりではなかつたのですけれど妙な手紙になりました。怒らないで下さいね。あ1916とでまた書きます。<lb/>
+<span rend="chitsuki_0" rendition="div" style="text-align:right; margin-right: 0em">［『大杉栄全集』第四巻、大杉栄全集刊行会、一九二六年九月］</span>
+<lb/>
+<lb/>
+<lb/>
+</span></p></body>
+  </text>
+</TEI>
