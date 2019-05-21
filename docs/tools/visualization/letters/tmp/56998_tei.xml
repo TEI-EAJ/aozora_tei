@@ -1,0 +1,99 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>書簡　大杉栄宛</title>
+        <author>伊藤野枝</author>
+        <respStmt>
+          <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+          <resp when="2016-01-04">作成</resp>
+          <resp/>
+          <note>
+            <lb/> 底本：「定本　伊藤野枝全集　第二巻　評論・随筆・書簡1――『青鞜』の時代」學藝書林<lb/> 　　　2000（平成12）年5月31日初版発行<lb/>
+            底本の親本：「大杉栄全集　第四巻」大杉栄全集刊行会<lb/> 　　　1926（大正15）年9月8日<lb/>
+            ※ルビは新仮名とする底本の扱いにそって、ルビの拗音、促音は小書きしました。<lb/> 入力：酒井裕二<lb/> 校正：雪森<lb/>
+            <date when="2016-01-04">2016年1月4日</date>作成<lb/> 青空文庫作成ファイル：<lb/>
+            このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。</note>
+        </respStmt>
+        <respStmt>
+          <resp>Aozora Transcription</resp>
+          <name>酒井裕二</name>
+        </respStmt>
+        <respStmt>
+          <resp>Aozora Proofreading</resp>
+          <name>雪森</name>
+        </respStmt>
+        <respStmt>
+          <resp when="2019-05-21">TEI Encoding</resp>
+          <name>Satoru Nakamura</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+        <availability>
+          <p>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0
+              1.0) Public Domain Dedication</ref></p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl><title>書簡　大杉栄宛</title><author>伊藤野枝</author></bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <correspDesc>
+        <correspAction type="sent">
+          <persName>伊藤野枝</persName>
+          <date when="1916-05-01">一九一六年五月一日</date>
+          <location>
+            <placeName>千葉県夷隅郡御宿　上野屋旅館</placeName>
+            <geo>35.196084 140.341386</geo>
+          </location>
+        </correspAction>
+        <correspAction type="received">
+          <persName>大杉栄</persName>
+          <location>
+            <placeName>東京市麹町区三番町六四　第一福四萬館</placeName>
+            <geo>35.692729 139.745317</geo>
+          </location>
+        </correspAction>
+      </correspDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p><span rend="main_text" rendition="div"><lb/>
+          <span rend="chitsuki_1" rendition="div" style="text-align:right; margin-right: 1em"
+            >宛先　東京市麹町区三番町六四　第一福四萬館</span>
+          <span rend="chitsuki_5" rendition="div" style="text-align:right; margin-right: 5em"
+            >発信地　千葉県夷隅郡御宿　上野屋旅館</span>
+          <lb/>
+          <lb/> 　今日あなたからお手紙を頂けようとは思へませんでしたのに、本当にうれしうございました。<lb/> 　今頃はあなたは何をしてゐらつしやるのでせう。お<span
+            type="ruby"><span type="rb">午</span><span type="rp">（</span><span type="rt"
+              >ひる</span><span type="rp"
+            >）</span></span>の御飯をすまして、また書物にかぢりついてゐました処に、あなたのお手紙が来たのです。また少し会ひたいと云ふ気持が起つて来ました。女中たちが、旦那様はお出でにならないのですかつて<span
+            type="ruby"><span type="rb">頻</span><span type="rp">（</span><span type="rt"
+              >しき</span><span type="rp"
+          >）</span></span>りに聞きますの。今にゐらつしやるよつて云ひましたら、何時です／＼つてうるさいんです。皆なが見たがつてゐるんですよ。私も見たいから、早くゐらして下さい。<lb/>
+            　中央公論の方、駄目では困りますね。もつと他の書店に、いつぞやあなたが云つてゐらした処に『雑音』をお聞き下さいな。孤月氏は来ませんか。<span type="ruby"
+              ><span type="rb">若</span><span type="rp">（</span><span type="rt">も</span><span
+              type="rp">）</span></span>し見えたら、文章世界に書く約束で西村（渚山）氏に聞いて頂けないかつて、お聞きになつて御覧なさいな。駄目でせうか。<lb/>
+          　大阪朝日に出たのですつて。叔父や叔母たちが定めてびつくりしてゐる事でせう。他で何か書きましたかしら。此処には東京朝日しか来ません。何にも書きませんのね。<lb/>
+          　保子さんが私の事を狐ですつて、有がたい名を頂いたのね。はじめてです、そんな名を貰つたのは。私は保子さんには好意を持たない代りに悪意も持つてはゐませんから、何を云はれても何ともありませんわ。ただ、私のあなたと、保子さんのあなたは違ふと云ふことだけを思つてゐます。そして保子さんに対するあなたは認めて尊敬しますけれども、私は保子さんがあなたに対する自分をもう少し確かにしてあなたを理解して下されば、私は心から保子さんを尊敬する事が出来るだらうと思ひます。けれども、それが保子さんに出来ないからと云つて、私は保子さんを馬鹿にしたり軽蔑したりする程、あなたを無理解ではゐない事を申してをきます。<lb/>
+            　何卒保子さんに出来るだけよくして上げて下さいと云ふ私の言葉を、真直ぐに受け入れて下さい。これは、何の感情をもまじえない、私の本当の言葉である事を、あなたは認めて下さるでせう。そして、私が自身でさへも驚くほどの処までも進み得たと云ふ事を、私と一緒に<span
+            type="ruby"><span type="rb">屹度</span><span type="rp">（</span><span type="rt"
+              >きっと</span><span type="rp"
+          >）</span></span>よろこんで下さると信じます。この気持は、しかし多分私とあなた以外の誰れにも本当には理解の出来ない気持ではないでせうか。<lb/>
+            　本当に私は、あなたに、この強情な盲目な私をこんな処にまで引つぱつて来て頂いた事を何んと感謝（いやな言葉ですけれども）していいか分りません。何んだか、私のこれからの道が明るく、はつきり開けて来たやうに思へます。私の今のたつた一つの望み――あなたに会ひたいと云ふ――それさへ叶へて下されば、私は直ぐおちついて気持よく仕事が出来さうに思はれます。そして、これから書く、私の本当の意味での処女作を、あなたにデヂケエトしようと思つてゐます。もう少し書きたいのですけれど、今婆やが出かけますから、<span
+            type="ruby"><span type="rb">序</span><span type="rp">（</span><span type="rt"
+              >つい</span><span type="rp">）</span></span>でに出して貰ふので、これで止めます。本当に早くゐらして下さいね。お願ひですから。<lb/>
+          <span rend="chitsuki_0" rendition="div" style="text-align:right; margin-right: 0em"
+            >［『大杉栄全集』第四巻、大杉栄全集刊行会、一九二六年九月］</span>
+          <lb/>
+          <lb/>
+          <lb/>
+        </span></p>
+    </body>
+  </text>
+</TEI>
