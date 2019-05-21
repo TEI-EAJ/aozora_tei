@@ -37,12 +37,12 @@
         <date when="1916-06-22">一九一六年六月二十二日</date>
         <location>
           <placeName>千葉県夷隅郡御宿　上野屋旅館</placeName>
-          <geo>35.191944,140.348611</geo>
+          <geo>35.191944 140.348611</geo>
         </location></correspAction>
         <correspAction type="received"><persName>大杉栄</persName>
           <location>
             <placeName>東京市麹町区三番町六四　第一福四萬館</placeName>
-            <geo>35.684444,139.742777</geo>
+            <geo>35.684444 139.742777</geo>
         </location>
         </correspAction>
         
