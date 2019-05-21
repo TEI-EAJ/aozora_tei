@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>書簡　武部ツタ宛</title>
+                <author>伊藤野枝</author>
+                <respStmt>
+                    <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+                    <resp when="2016-06-10">作成</resp>
+                    <resp/>
+                    <note>
+                        <lb/>
+                        底本：「定本　伊藤野枝全集　第二巻　評論・随筆・書簡1――『青鞜』の時代」學藝書林
+                        <lb/>
+                        　　　2000（平成12）年5月31日初版発行
+                        <lb/>
+                        入力：酒井裕二
+                        <lb/>
+                        校正：雪森
+                        <lb/>
+                        <date when="2016-06-10">2016年6月10日</date>
+                        作成
+                        <lb/>
+                        青空文庫作成ファイル：
+                        <lb/>
+                        このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。
+                    </note>
+                </respStmt>
+                <respStmt>
+                    <resp>Aozora Transcription</resp>
+                    <name>酒井裕二</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Aozora Proofreading</resp>
+                    <name>雪森</name>
+                </respStmt>
+                <respStmt>
+                    <resp when="2019-05-21">TEI Encoding</resp>
+                    <name>Boyoung Kim</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+                <availability>
+                    <p>
+                        <ref target="https://creativecommons.org/publicdomain/zero/1.0/">
+                            CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+                        </ref>
+                    </p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    「定本　伊藤野枝全集　第二巻　評論・随筆・書簡1――『青鞜』の時代」學藝書林 2000（平成12）年5月31日初版発行
+                    <title>書簡　武部ツタ宛</title>
+                    <author>伊藤野枝</author>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName>伊藤野枝</persName>
+                    <date when="1917-10-01">一九一七年一〇月一日</date>
+                    <location>
+                        <placeName>東京市外巣鴨村宮仲二五八三</placeName>
+                        <geo>35.735172 139.724704</geo>
+                    </location>
+                </correspAction>
+                <correspAction type="received">
+                    <persName>武部ツタ</persName>
+                    <location>
+                        <placeName>大坂市西区松島十返町　武部種吉様方</placeName>
+                        <geo>34.676892 135.480521</geo>
+                    </location>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <span rend="main_text" rendition="div">
+                    <lb/>
+                    <span rend="sho1" rendition="div" style="font-size: small;">
+                        <span rend="chitsuki_2" rendition="div" style="text-align:right; margin-right: 2em">宛先　　大坂市西区松島十返町　武部種吉様方</span>
+                        <span rend="chitsuki_6" rendition="div" style="text-align:right; margin-right: 6em">発信地　東京市外巣鴨村宮仲二五八三</span>
+                    </span>
+                    <lb/>
+                    <lb/>
+                    　前略　おかはりはありませんか、
+                    <lb/>
+                    私も元気でゐます故御安心下さい。
+                    <lb/>
+                    先日廿五日に女児出産
+                    <span type="ruby">
+                        <span type="rb">魔子</span>
+                        <span type="rp">（</span>
+                        <span type="rt">まこ</span>
+                        <span type="rp">）</span>
+                    </span>
+                    と名づけました。
+                    <lb/>
+                    そちらではもう松茸が出てゐるやうですが、こちらではまだ手に入りません。少々でよろしいが送つて貰へませんか、その代りへは何なりとそちらでおのぞみのものを、こちらからもお送りします。
+                    <lb/>
+                    　何卒よろしくお願いします。
+                    <lb/>
+                    <span rend="chitsuki_1" rendition="div" style="text-align:right; margin-right: 1em">野枝</span>
+                    <span rend="jisage_2" rendition="div" style="margin-left: 2em">津た子様</span>
+                    <lb/>
+                    <lb/>
+                    <lb/>
+                </span>
+            </p>
+        </body>
+    </text>
+</TEI>
