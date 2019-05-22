@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <!DOCTYPE html>
 <html>
 
@@ -9,43 +13,127 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="./assets/thirdparty/CETEI/js/CETEI.js"></script>
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./assets/js/leaflet.polylineDecorator.js"></script>
     <script>
 
 
         var CETEIcean = new CETEI()
+        var map;
+
+        function main(url) {
+
+            CETEIcean.getHTML5(url, function (data) {
+                var roadlatlons = []
+
+                var obj = {}
+
+                var correspactions = $(data).find("tei-correspaction")
+                for (var j = 0; j < correspactions.length; j++) {
+                    var correspaction = correspactions[j]
+                    var persName = null;
+                    if ($(correspaction).find("tei-persname") != null) {
+                        persName = $(correspaction).find("tei-persname")[0]
+                        persName = $(persName).text()
+                    }
+
+                    var placeName = null;
+                    if ($(correspaction).find("tei-placename") != null) {
+                        placeName = $(correspaction).find("tei-placename")[0]
+                        placeName = $(placeName).text()
+                    }
+
+                    var date = null;
+                    if ($(correspaction).find("tei-date") != null) {
+                        date = $(correspaction).find("tei-date")[0]
+                        date = $(date).attr("when")
+                    }
+
+                    var type = $(correspaction).attr("type")
+
+                    var tmp = {}
+                    tmp.persname = persName
+                    tmp.placename = placeName
+                    tmp.date = date
+
+                    obj[type] = tmp
+
+                    var geo = $(correspaction).find("tei-geo")[0]
+                    var latlng = $(geo).text().split(" ")
+                    roadlatlons.push([Number(latlng[0]), Number(latlng[1])])
+                }
+
+                //polylineオブジェクトを作成して地図に追加
+                var arrow = L.polyline(roadlatlons, { color: 'blue', weight: 5, "opacity": 0.6 }).addTo(map);
+                var arrowHead = L.polylineDecorator(arrow, {
+                    patterns: [
+                        { offset: '100%', repeat: 0, symbol: L.Symbol.arrowHead({ pixelSize: 15, polygon: false, pathOptions: { stroke: true, color: 'blue', weight: 5, "opacity": 0.6 } }) }
+                    ]
+                }).addTo(map);
+
+                var tr = $("<tr>")
+                $("#tbody").append(tr)
+
+                var td = $("<td>")
+                tr.append(td)
+                td.append(obj.sent.persname)
+
+                td = $("<td>")
+                tr.append(td)
+                td.append(obj.sent.placename)
+
+                td = $("<td>")
+                tr.append(td)
+                td.append(obj.sent.date)
+
+                //----------
+
+                td = $("<td>")
+                tr.append(td)
+                td.append(obj.received.persname)
+
+                td = $("<td>")
+                tr.append(td)
+                td.append(obj.received.placename)
+
+                td = $("<td>")
+                tr.append(td)
+                td.append(obj.received.date)
+
+                //---------
+
+                td = $("<td>")
+                tr.append(td)
+
+                var a = $("<a>")
+                td.append(a)
+                a.attr("href", url.replace("raw.githubusercontent.com", "github.com").replace("/master/", "/blob/master/"))
+                a.attr("target", "_blank")
+
+                var img = $("<img>")
+                a.append(img)
+                img.attr("src", "https://tei-c.org/Vault/MembersMeetings/2013/wp-content/themes/atahualpa/images/header/TEIlogo.png")
+                img.attr("width", "45px")
+
+            })
+
+        }
 
         function init() {
-            var map = L.map('mapcontainer', { zoomControl: false });
+            map = L.map('mapcontainer', { zoomControl: false });
 
             var mpoint = [35.8627, 139.6072];
-            map.setView(mpoint, 8);
+            map.setView(mpoint, 7);
 
             L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
                 attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
             }).addTo(map);
 
-            $.getJSON("config.json", function (data) {
-                var urls = data
-
+            $.getJSON("https://tei-eaj.github.io/aozora_tei/tools/visualization/letters/config.json", function (data) {
+                var urls = data;
                 for (var i = 0; i < urls.length; i++) {
                     var url = urls[i]
-
-                    CETEIcean.getHTML5(url, function (data) {
-                        var roadlatlons = []
-
-                        var correspactions = $(data).find("tei-correspaction")
-                        for (var j = 0; j < correspactions.length; j++) {
-                            var correspaction = correspactions[j]
-                            var geo = $(correspaction).find("tei-geo")[0]
-                            var latlng = $(geo).text().split(" ")
-                            roadlatlons.push([Number(latlng[0]), Number(latlng[1])])
-                        }
-
-                        //polylineオブジェクトを作成して地図に追加
-                        L.polyline(roadlatlons, { color: 'blue', weight: 1 * 5 }).addTo(map);
-                    })
-
-
+                    main(url)
                 }
             })
         }
@@ -53,7 +141,25 @@
 </head>
 
 <body onload="init()">
-    <div id="mapcontainer" style="position:absolute;top:0;left:0;right:0;bottom:0;"></div>
+    <div class="container my-5">
+        <h2>書簡の送受信の可視化</h2>
+        <div id="mapcontainer" class="mt-5" style="width: 100%; height: 600px;"></div>
+        <table class="table mt-5" style="background-color: white;">
+            <thead>
+                <tr>
+                    <th>送信者</th>
+                    <th>送信場所</th>
+                    <th>送信日時</th>
+                    <th>受信者</th>
+                    <th>受信場所</th>
+                    <th>受信日時</th>
+                    <th>リンク</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
