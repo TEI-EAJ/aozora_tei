@@ -4,8 +4,9 @@ layout: default
 
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel='stylesheet' href='../assets/css/style.css' type='text/css' media='all' />
   <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,24 +16,25 @@ layout: default
   <title>TEI Applications</title>
 
   <style>
-  tei-persname {
-    color:green;
-  }
+    tei-persname {
+      color: green;
+    }
 
-  tei-placename {
-    color:green;
-  }
+    tei-placename {
+      color: green;
+    }
 
-  tei-stage {
-    color:gray;
-  }
+    tei-stage {
+      color: gray;
+    }
 
-  tei-sp tei-p {
-    color:brown;
-  }
+    tei-sp tei-p {
+      color: brown;
+    }
   </style>
 
 </head>
+
 <body>
 
   <div id="input" style="display : none;">
@@ -42,14 +44,21 @@ layout: default
         <h1>戯曲の発話内容を表示する</h1>
         <p class="lead">発話&lt;sp who=""&gt;と固有名詞&lt;persName corresp=""&gt;を抽出して表示する.</p>
         <p class="lead">例：<a href="https://www.aozora.gr.jp/cards/000879/card86.html">芥川竜之介 二人小町 - 青空文庫</a></p>
-        <a class="btn btn btn-primary" href="?url=https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/data/complete/tei_lib_lv3/86_tei.xml" role="button">可視化例を見る</a>
-        <a class="btn btn btn-primary" href="https://github.com/TEI-EAJ/aozora_tei/blob/master/data/complete/tei_lib_lv3/86_tei.xml" role="button">サンプルデータを見る</a>
+        <a class="btn btn btn-primary"
+          href="?url=https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/data/complete/tei_lib_lv3/86_tei.xml"
+          role="button">可視化例を見る</a>
+        <a class="btn btn btn-primary"
+          href="https://github.com/TEI-EAJ/aozora_tei/blob/master/data/complete/tei_lib_lv3/86_tei.xml"
+          role="button">サンプルデータを見る</a>
       </div>
 
       <p>References</p>
       <ul>
-        <li>青空文庫の『走れメロス』をTEIで - digitalnagasakiのブログ, <a href="http://digitalnagasaki.hatenablog.com/entry/2017/08/01/035811">http://digitalnagasaki.hatenablog.com/entry/2017/08/01/035811</a></li>
-        <li>TEIC/CETEIcean: TEI in HTML5 Custom Elements, <a href="https://github.com/TEIC/CETEIcean">https://github.com/TEIC/CETEIcean</a></li>
+        <li>青空文庫の『走れメロス』をTEIで - digitalnagasakiのブログ, <a
+            href="http://digitalnagasaki.hatenablog.com/entry/2017/08/01/035811">http://digitalnagasaki.hatenablog.com/entry/2017/08/01/035811</a>
+        </li>
+        <li>TEIC/CETEIcean: TEI in HTML5 Custom Elements, <a
+            href="https://github.com/TEIC/CETEIcean">https://github.com/TEIC/CETEIcean</a></li>
       </ul>
 
       <div class="card mt-5">
@@ -77,7 +86,7 @@ layout: default
 
   </div>
 
-  <div style="display: none;" id="main">
+  <div style="display: none;" id="result">
 
     <!-- As a heading -->
     <nav class="navbar navbar-light bg-light">
@@ -117,141 +126,140 @@ layout: default
     </div>
   </div>
 
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="../assets/thirdparty/CETEI/js/CETEI.js"></script>
   <script src="../assets/js/common.js"></script>
 
   <script type="text/javascript" language="javascript">
 
-  //パラメータの取得
-  var vars = getParam();
+    //パラメータの取得
+    var vars = getParam();
 
-  //XMLファイルのURL
-  var resourceUri = vars["url"]
+    //XMLファイルのURL
+    var resourceUri = vars["url"]
 
-  $(function(){
+    $(function () {
 
-    if(resourceUri != "" && resourceUri != null){
-      resourceUri = decodeURIComponent(resourceUri)
+      if (resourceUri != "" && resourceUri != null) {
+        resourceUri = decodeURIComponent(resourceUri)
 
-      showxml(resourceUri, false)
+        showxml(resourceUri, false)
 
-    } else {
+      } else {
 
-      //入力フォームの表示
-      $("#input").show()
-      //入力フォーム関連の処理
-      file_input()
-    }
-  });
-
-  //xmlの表示処理
-  function showxml(param, make_flg){
-
-    $("#main").show()
-    $("#input").hide()
-
-    var CETEIcean = new CETEI()
-
-    //console.log(param)
-
-    var data;
-
-    if(make_flg){
-      CETEIcean.makeHTML5(param, function(data) {
-        show_content(data)
-      })
-      //makeHTML5メソッドを利用した場合、behaviourがうまく動作しないため
-      var tei_speakers = $("tei-speaker")
-      for(var i = 0; i < tei_speakers.length; i++){
-        var tei_speaker = $(tei_speakers[i])
-        tei_speaker.attr("onclick", "show(this); return false;")
-        tei_speaker.attr("style", "cursor: pointer;")
+        //入力フォームの表示
+        $("#input").show()
+        //入力フォーム関連の処理
+        file_input()
       }
+    });
 
-    } else {
-      CETEIcean.getHTML5(param, function(data) {
-        show_content(data)
-      })
+    //xmlの表示処理
+    function showxml(param, make_flg) {
 
-      CETEIcean.addBehaviors({
-        handlers: {
-          "speaker": function(el) {
-            $(el).attr("onclick", "show(this); return false;")
-            $(el).attr("style", "cursor: pointer;")
-          }
+      $("#result").show()
+      $("#input").hide()
+
+      var CETEIcean = new CETEI()
+
+      //console.log(param)
+
+      var data;
+
+      if (make_flg) {
+        CETEIcean.makeHTML5(param, function (data) {
+          show_content(data)
+        })
+        //makeHTML5メソッドを利用した場合、behaviourがうまく動作しないため
+        var tei_speakers = $("tei-speaker")
+        for (var i = 0; i < tei_speakers.length; i++) {
+          var tei_speaker = $(tei_speakers[i])
+          tei_speaker.attr("onclick", "show(this); return false;")
+          tei_speaker.attr("style", "cursor: pointer;")
         }
-      })
-    }
 
-  }
+      } else {
+        CETEIcean.getHTML5(param, function (data) {
+          show_content(data)
+        })
 
-  //初期表示
-  function show_content(data){
-    document.getElementById("TEI").appendChild(data)
-
-    var title = $($(data).find("tei-title")[0]).text()
-    var author = $($(data).find("tei-author")[0]).text()
-    //タイトル
-    $("#head").text(author+" "+title)
-  }
-
-  function show(data){
-
-    var said_list = $("#said_list")
-    said_list.empty()
-
-    var name_arr = []
-    var name_list = $("#name_list")
-    name_list.empty()
-
-    //speakerタグの値の取得
-    var speaker = $(data).parent().attr("who").split("#")[1]
-
-    //属性whoの値がspeakerのタグ一覧
-    var sp_list = $("[who='#" + speaker +"']")
-    for(var i = 0; i < sp_list.length; i++){
-      var sp = sp_list[i]
-
-      var p_list = $(sp).find("tei-p")
-      var li = $("<li>")
-      for(var j = 0; j < p_list.length; j++){
-        var p = $("<p>").append($(p_list[j]).html())
-        li.append(p)
-      }
-      said_list.append(li)
-
-      var name = $($(sp).find("tei-speaker")[0]).html().trim()
-
-      if(name_arr.indexOf(name) == -1){
-        name_arr.push(name)
-        var li = $("<li>").append(name).clone()
-        name_list.append(li)
+        CETEIcean.addBehaviors({
+          handlers: {
+            "speaker": function (el) {
+              $(el).attr("onclick", "show(this); return false;")
+              $(el).attr("style", "cursor: pointer;")
+            }
+          }
+        })
       }
 
     }
 
-    // correspもひろうように設定
-    var sp_list = $("[corresp='#" + speaker +"']")
-    for(var i = 0; i < sp_list.length; i++){
-      var sp = sp_list[i]
+    //初期表示
+    function show_content(data) {
+      document.getElementById("TEI").appendChild(data)
 
-      name = $(sp).html()
+      var title = $($(data).find("tei-title")[0]).text()
+      var author = $($(data).find("tei-author")[0]).text()
+      //タイトル
+      $("#head").text(author + " " + title)
+    }
 
-      if(name_arr.indexOf(name) == -1){
-        var li = $("<li>").append(name).clone()
-        name_list.append(li)
+    function show(data) {
 
-        name_arr.push(name)
+      var said_list = $("#said_list")
+      said_list.empty()
+
+      var name_arr = []
+      var name_list = $("#name_list")
+      name_list.empty()
+
+      //speakerタグの値の取得
+      var speaker = $(data).parent().attr("who").split("#")[1]
+
+      //属性whoの値がspeakerのタグ一覧
+      var sp_list = $("[who='#" + speaker + "']")
+      for (var i = 0; i < sp_list.length; i++) {
+        var sp = sp_list[i]
+
+        var p_list = $(sp).find("tei-p")
+        var li = $("<li>")
+        for (var j = 0; j < p_list.length; j++) {
+          var p = $("<p>").append($(p_list[j]).html())
+          li.append(p)
+        }
+        said_list.append(li)
+
+        var name = $($(sp).find("tei-speaker")[0]).html().trim()
+
+        if (name_arr.indexOf(name) == -1) {
+          name_arr.push(name)
+          var li = $("<li>").append(name).clone()
+          name_list.append(li)
+        }
+
       }
 
-    }
-  };
+      // correspもひろうように設定
+      var sp_list = $("[corresp='#" + speaker + "']")
+      for (var i = 0; i < sp_list.length; i++) {
+        var sp = sp_list[i]
+
+        name = $(sp).html()
+
+        if (name_arr.indexOf(name) == -1) {
+          var li = $("<li>").append(name).clone()
+          name_list.append(li)
+
+          name_arr.push(name)
+        }
+
+      }
+    };
 
 
-</script>
+  </script>
 </body>
+
 </html>
