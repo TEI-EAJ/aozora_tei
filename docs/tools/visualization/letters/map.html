@@ -61,6 +61,9 @@ layout: default
                     var geo = $(correspaction).find("tei-geo")[0]
                     var latlng = $(geo).text().split(" ")
                     roadlatlons.push([Number(latlng[0]), Number(latlng[1])])
+
+                    var popup = L.popup().setContent(placeName);
+                    L.marker([Number(latlng[0]), Number(latlng[1])]).bindPopup(popup).bindTooltip(placeName).addTo(map);
                 }
 
                 //polylineオブジェクトを作成して地図に追加
@@ -125,9 +128,10 @@ layout: default
             var mpoint = [35.8627, 139.6072];
             map.setView(mpoint, 7);
 
-            L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
-                attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
-            }).addTo(map);
+
+            L.tileLayer('http://tile.openstreetmap.jp/{z}/{x}/{y}.png',
+                { attribution: "<a href='http://osm.org/copyright' target='_blank'>OpenStreetMap</a> contributors" }).addTo(map);
+
 
             $.getJSON("https://tei-eaj.github.io/aozora_tei/tools/visualization/letters/config.json", function (data) {
                 var urls = data;
