@@ -1,0 +1,388 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" type="text/css" href="mirador/css/mirador-combined.css">
+  <!-- <link rel="stylesheet" type="text/css" href="mirador/plugins/mirador-dragndrop-link-plugin/dragndrop-link.css">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">-->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="CETEI/css/CETEIcean.css">
+  <link rel="stylesheet" type="text/css" href="CETEI/css/style.css">
+
+  <title>TEI & IIIF Viewer</title>
+
+  <style type="text/css">
+    #viewer {
+      display: block;
+      width: 99%;
+      height: 600px;
+      position: relative;
+    }
+
+    .vertical {
+      -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+    }
+
+    tei-persname {
+      color: green;
+    }
+  </style>
+
+</head>
+
+<body style="background-color: #eee;">
+
+  <header>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light scrolling-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./">TEI & IIIF Viewer</a>
+      </div>
+    </nav>
+    <!--/.Navbar-->
+
+  </header>
+
+  <div class="container my-5" id="input">
+    <div class="jumbotron mt-3">
+      <h1>TEI & IIIF Viewer</h1>
+      <p class="lead">
+        Reference
+        <ul>
+          <li>
+            Nicholas Laiacona, Ben Brumfield, Naoki Kokaze, Kiyonori Nagasaki, Makoto Goto：Connecting TEI and
+            IIIF, 2018 IIIF Conference
+          </li>
+          <li>
+            GitHub - TEIC/CETEIcean: TEI in HTML5 Custom Elements, <a
+              href="https://github.com/TEIC/CETEIcean">https://github.com/TEIC/CETEIcean</a>
+          </li>
+        </ul>
+
+      </p>
+    </div>
+
+    <div class="card mt-5">
+      <h5 class="card-header">TEI/XMLファイルのURLを入力して表示する</h5>
+      <div class="card-body">
+        <form>
+          <p class="card-text">
+            <input type="text" class="form-control" name="url" placeholder="https://.../abc.xml">
+          </p>
+          <button type="submit" class="btn btn-primary">表示</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="card mt-5">
+      <h5 class="card-header">TEI/XMLファイルを選択して表示する</h5>
+      <div class="card-body">
+        <p class="card-text">
+          <input type="file" class="form-control-file" id="getfile">
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="container-fluid mb-5" id="result" style="display : none;">
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h3 id="title"></h3>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-5">
+
+        <div class="card" style="height:600px; overflow-y:scroll;">
+          <div class="card-body">
+
+            <div id="TEI">
+              <span id="dest_pos">&nbsp;</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <div id="viewer"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="//code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+  <script src="mirador/mirador.min.js"></script>
+
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script src="CETEI/js/CETEI.js"></script>
+
+  <script type="text/javascript" language="javascript">
+
+    var zones = {}
+    var miradorInstance;
+    var ratio = 1
+    var canvases = {}
+
+    var CETEIcean = new CETEI()
+
+    //パラメータの取得
+    var vars = getParam();
+    //XMLファイルのURL
+    var resourceUri = vars["url"]
+
+    var vertical_flg = false
+    if (vars["textDirection"] == "vertical") {
+      vertical_flg = true
+      $("#TEI").addClass("vertical")
+    }
+
+    if (vars["ratio"]) {
+      ratio = Number(vars["ratio"])
+    }
+
+    $(function () {
+
+      if (resourceUri != "" && resourceUri != null) {
+        resourceUri = decodeURIComponent(resourceUri)
+        CETEIcean.getHTML5(resourceUri, function (data) {
+          showxml(data)
+        })
+      } else {
+
+        //入力フォーム関連の処理
+        file_input()
+      }
+
+    });
+
+    //入力フォーム関連の処理
+    function file_input() {
+      var file = $('#getfile')[0]
+      file.onchange = function () {
+        const fileList = file.files
+        var reader = new FileReader()
+        reader.readAsText(fileList[0])
+
+        reader.onload = function () {
+          var data = $.parseXML(reader.result);
+
+          CETEIcean.makeHTML5(reader.result, function (data) {
+            showxml(data)
+          })
+
+        }
+      }
+    }
+
+    //xmlの表示処理
+    function showxml(data) {
+
+      $("#input").hide();
+      $("#result").show();
+
+      document.getElementById("TEI").appendChild(data)
+
+      if (vertical_flg) {
+        //右に移動
+        location.href = "#dest_pos";
+      }
+
+      xml = data
+
+      //IIIF Manifestを取得して、Miradorを表示
+      var manifest = $(xml).find("tei-surfacegrp").attr("facs")
+      getCanvases(manifest)
+      initMirador(manifest)
+
+      var title = $($(xml).find("tei-title")[0]).text()
+      $("#title").text(title)
+
+      //facsimileに関する情報を取得
+      getZones(xml)
+
+      //ほんぶん
+      var body = $($(xml).find("tei-body")[0])
+
+      $(xml).find("tei-body").find("[facs^='#zone']").each(function () {
+        var s = $(this);
+
+        var pid = s.attr("facs").replace("#", "")
+
+        var selector = body.find("[facs='#" + pid + "']")
+
+        var span = $("<span>");
+
+        var tagName = selector.prop("tagName")
+        if (tagName == "tei-lb") {
+          selector.append(span)
+        } else {
+          selector.before(span)
+        }
+        span.append(' <i class="fas fa-camera text-primary"></i> ')
+
+        //クリックしたらmove関数を実行
+        span.attr('onClick', 'move("' + pid + '");');
+      })
+
+      body = body.html()
+      body = body.replace(/<lb/g, '<br')
+      $("#target").append(body)
+
+      $('[data-toggle="tooltip"]').tooltip()
+
+    }
+
+    function getParam() {
+      var vars = {};
+      var param = location.search.substring(1).split('&');
+      for (var i = 0; i < param.length; i++) {
+        var keySearch = param[i].search(/=/);
+        var key = '';
+        if (keySearch != -1) key = param[i].slice(0, keySearch);
+        var val = param[i].slice(param[i].indexOf('=', 0) + 1);
+        if (key != '') vars[key] = decodeURI(val);
+      }
+      return vars;
+    }
+
+    function initMirador(manifest) {
+      miradorInstance = Mirador(
+        {
+          "id": "viewer",
+          "layout": "1x1",
+          buildPath: "mirador/",
+          "data": [
+            { "manifestUri": manifest, "location": "" }
+          ],
+          "windowSettings": {
+            "sidePanel": true,
+            "canvasControls": {
+              "annotations": {
+                "annotationState": "on",
+                "annotationCreation": false
+              }
+            }
+          },
+          "windowObjects": [{
+            loadedManifest: manifest,
+            viewType: "ImageView",
+            bottomPanelVisible: false
+          }],
+          "annotationEndpoint": { "name": "Local Storage", "module": "LocalStorageEndpoint" }
+        }
+      );
+    }
+
+    function getCanvases(manifest) {
+      $.ajax({
+        url: manifest,
+        type: 'GET',
+        async: false,
+        dataType: 'json',
+        timeout: 1000,
+        error: function () {
+          alert("ロード失敗");
+          return {}
+        },
+        success: function (data) {
+          data = data.sequences[0].canvases
+          for (var i = 0; i < data.length; i++) {
+            var obj = data[i]
+            canvases[obj["@id"]] = obj
+          }
+        }
+      });
+    }
+
+    function getZones(xml) {
+      $(xml).find("tei-surface").each(function () {
+        surface = $(this);
+        canvasID = surface.find("tei-graphic").attr("n")
+        url = surface.find("tei-graphic").attr("url")
+
+        surface.find("tei-zone").each(function () {
+          zone = $(this)
+
+          //拡大率の取得
+          var scale = getScale(url, canvasID)
+
+          id = zone.attr("xml:id")
+          lry = Number(zone.attr("lry")) * scale
+          lrx = Number(zone.attr("lrx")) * scale
+          uly = Number(zone.attr("uly")) * scale
+          ulx = Number(zone.attr("ulx")) * scale
+
+          //IIIF Image APIで使用する情報に変換する
+          var tmp = {}
+          zones[id] = tmp
+          tmp.x = ulx
+          tmp.y = uly
+          tmp.dx = (lrx - ulx)
+          tmp.dy = (lry - uly) * ratio
+          tmp.canvasID = canvasID
+
+        })
+      });
+    }
+
+    //拡大率の取得
+    function getScale(url, canvasID) {
+      var scale = 1
+      if (url.indexOf("/full/") != -1 && url.indexOf("/0/default.jpg") != -1) {
+        var canvas_dict = canvases[canvasID]
+        area = url.replace("/0/default.jpg", "")
+        area = area.split("/full/")[1]
+        if (area.indexOf(",") != -1) {
+          area = area.split(",")
+          width = area[0]
+          height = area[1]
+          if (width != "") {
+            scale = canvas_dict.width / Number(width)
+          } else if (height != "") {
+            scale = canvas_dict.height / Number(height)
+          }
+        }
+      }
+      return scale;
+    }
+
+    //canvasIDと領域を指定して移動
+    function move(id) {
+      var zone = zones[id]
+      miradorInstance.eventEmitter.publish('SET_CURRENT_CANVAS_ID', zone.canvasID);
+      miradorInstance.eventEmitter.publish('fitBounds', { 'x': zone.x, 'y': zone.y, 'width': zone.dx, 'height': zone.dy });
+    }
+  </script>
+</body>
+
+</html>

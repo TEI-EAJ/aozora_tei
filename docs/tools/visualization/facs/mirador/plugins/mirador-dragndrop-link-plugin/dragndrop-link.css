@@ -1,0 +1,44 @@
+/* 
+ * Mirador Drag and Drop Link Plugin
+ * https://github.com/2sc1815j/mirador-dragndrop-link-plugin
+ * 
+ * Released under the MIT License
+ * Copyright (c) 2018 2SC1815J
+ * 
+ * A Mirador plugin that adds the IIIF drag and drop link to every window.
+ * The most of this source code is owed to "ManifestButton."
+ */
+/* 
+ * Mirador plugins - ManifestButton
+ * https://github.com/dbmdz/mirador-plugins/tree/master/ManifestButton
+ * 
+ * The MIT License (MIT)
+ * Copyright (c) 2016 Digital Library/Munich Digitization Center at Bavarian State Library
+ */
+.window-manifest-navigation > .mirador-btn.mirador-icon-drag-and-drop-link {
+  color: #929191;
+  margin-right: 5px;
+}
+
+.window-manifest-navigation > .mirador-btn.mirador-icon-drag-and-drop-link:hover {
+  color: black;
+}
+
+@font-face {
+  font-family: 'iiif';
+  src: url('iiif.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-IIIF-logo:before {
+  font-family: 'iiif' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\e900';
+}
