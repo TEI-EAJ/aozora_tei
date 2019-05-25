@@ -76,23 +76,33 @@ crossorigin="anonymous"></script>
 
     var vars = getParam();
 
-    var lv = vars["lv"] ? vars["lv"] : 3
+    var lv = vars["lv"] ? vars["lv"] : -1
     var status = vars["status"] ? vars["status"] : "complete"
 
-    $("#lv").append("Level "+lv+"   "+status)
+    var url = "https://api.github.com/search/code?q=in:file+extension:xml+path:data+repo:TEI-EAJ/aozora_tei"
 
-    $.getJSON("https://api.github.com/search/code?q=in:file+extension:xml+path:data/"+status+"/tei_lib_lv"+lv+"+repo:TEI-EAJ/aozora_tei" , function(data) {
+    if(lv != -1){
+      $("#lv").append("Level " + lv + "   " + status)
+      url = "https://api.github.com/search/code?q=in:file+extension:xml+path:data/" + status + "/tei_lib_lv" + lv + "+repo:TEI-EAJ/aozora_tei"
+    }
+
+    
+
+    $.getJSON(url , function(data) {
       var items = data.items
 
       for(var i = 0; i < items.length; i++){
         var item = items[i]
         var id = item.name.split("_")[0]
-        sparql(id, item["html_url"])
+        var path = item.path.split("/")
+        var lv = path[2].split("_")[2]
+        var status = path[1]
+        sparql(id, item["html_url"], lv, status)
       }
     });
   });
 
-  function sparql(id, url){
+  function sparql(id, url, lv, status){
 
     var query = " SELECT DISTINCT ?title ?creator_uri ?name ?authorID ?subject ";
     query += " WHERE { ";
@@ -137,7 +147,7 @@ crossorigin="anonymous"></script>
 
             var a = $('<a class="list-group-item list-group-item-action">')
               $("#p"+authorID).append(a)
-              a.append(obj.title.value+" [ "+obj.subject.value+" ] ")
+              a.append(obj.title.value+" [ "+obj.subject.value+" ] - "+lv+" - "+status)
               a.attr("href", url)
             } else {
               var a = $('<a class="list-group-item list-group-item-action">')
