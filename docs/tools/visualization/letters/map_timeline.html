@@ -230,7 +230,7 @@ layout: default
                 { attribution: "<a href='http://osm.org/copyright' target='_blank'>OpenStreetMap</a> contributors" }).addTo(map);
 
 
-            $.getJSON("https://tei-eaj.github.io/aozora_tei/tools/visualization/letters/config.json", function (data) {
+            $.getJSON("https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/docs/tools/visualization/letters/config.json", function (data) {
                 var urls = data;
                 for (var i = 0; i < urls.length; i++) {
                     var url = urls[i]
