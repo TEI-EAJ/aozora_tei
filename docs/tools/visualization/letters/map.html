@@ -9,147 +9,172 @@ layout: default
     <meta charset="UTF-8">
     <title>Sample</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.0/dist/leaflet.css" />
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+</head>
 
+<body onload="init()">
+
+    <div id="input" style="display : none;">
+
+        <div class="container my-5">
+            <div class="jumbotron mt-3">
+                <h1>書簡の送受信の可視化</h1>
+                <p class="lead mt-4">例1：<a href="https://www.aozora.gr.jp/index_pages/person416.html">伊藤野枝 書簡- 青空文庫</a></p>
+                <a class="btn btn btn-primary"
+                    href="?url=https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/docs/tools/visualization/letters/config.json"
+                    role="button">可視化例を見る</a>
+                <p class="lead mt-4">例2：<a href="http://vangoghletters.org/vg/">Vincent van Gogh The Letters</a>（一部：19／922通）</p>
+                <a class="btn btn btn-primary"
+                    href="?url=https://tei-eaj.github.io/vangoghxml/config.json"
+                    role="button">可視化例を見る</a>
+            </div>
+
+            <div class="card mt-5">
+                <h5 class="card-header">TEI/XMLファイルリスト（.json）のURLを入力して表示する</h5>
+                <div class="card-body">
+                    <form>
+                        <p class="card-text">
+                            <input type="text" class="form-control" name="url" placeholder="https://.../abc.xml">
+                        </p>
+                        <button type="submit" class="btn btn-primary">表示</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card mt-5">
+                <h5 class="card-header">TEI/XMLファイルを選択して表示する</h5>
+                <div class="card-body">
+                    <p class="card-text">
+                        <input type="file" class="form-control-file" id="getfile" multiple="multiple" />
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container my-5" style="display: none;" id="line">
+        <h2>書簡の送受信の可視化</h2>
+        <div id="mapcontainer" class="mt-5" style="width: 100%; height: 600px;"></div>
+
+        <div class="my-5">
+            <div id="my-timeline"></div>
+        </div>
+
+        <table class="table mt-5" style="background-color: white;" id="table">
+            <thead>
+                <tr>
+                    <th>送信者</th>
+                    <th>送信場所</th>
+                    <th>送信日時</th>
+                    <th>受信者</th>
+                    <th>受信場所</th>
+                    <th>受信日時</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
 
     <script src="https://unpkg.com/leaflet@1.3.0/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="./assets/js/leaflet.polylineDecorator.js"></script>
-
     <script type="text/javascript" src="assets/thirdparty/TimelineJS/js/storyjs-embed.js"></script>
-
     <script type="text/javascript" src="assets/thirdparty/TimelineJS/js/site.js"></script>
-
-    <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
     <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script>
 
-        var map;
+        //パラメータの取得
+        var vars = getParam();
+        //XMLファイルのURL
+        var resourceUri = vars["url"]
 
-        var data_timeline = []
+        function getParam() {
+            var vars = {};
+            var param = location.search.substring(1).split('&');
+            for (var i = 0; i < param.length; i++) {
+                var keySearch = param[i].search(/=/);
+                var key = '';
+                if (keySearch != -1) key = param[i].slice(0, keySearch);
+                var val = param[i].slice(param[i].indexOf('=', 0) + 1);
+                if (key != '') vars[key] = decodeURI(val);
+            }
+            return vars;
+        }
 
-        function main(url) {
+        //入力フォーム関連の処理
+        function file_input() {
+            $('#getfile').change(function () {
 
-            // Load the xml file using ajax 
-            $.ajax({
-                async: false,
-                type: "GET",
-                url: url,
-                dataType: "xml",
-                success: function (data) {
-
-                    var roadlatlons = []
-
-                    var obj = {}
-
-                    var correspactions = $(data).find("correspAction")
-                    for (var j = 0; j < correspactions.length; j++) {
-                        var correspaction = correspactions[j]
-                        var persName = null;
-                        if ($(correspaction).find("persName") != null) {
-                            persName = $(correspaction).find("persName")[0]
-                            persName = $(persName).text()
-                        }
-
-                        var placeName = null;
-                        if ($(correspaction).find("placeName") != null) {
-                            placeName = $(correspaction).find("placeName")[0]
-                            placeName = $(placeName).text()
-                        }
-
-                        var date = null;
-                        if ($(correspaction).find("date") != null) {
-                            date = $(correspaction).find("date")[0]
-                            date = $(date).attr("when")
-                        }
-
-                        var type = $(correspaction).attr("type")
-
-                        var tmp = {}
-                        tmp.persname = persName
-                        tmp.placename = placeName
-                        tmp.date = date
-
-                        obj[type] = tmp
-
-                        var geo = $(correspaction).find("geo")[0]
-                        var latlng = $(geo).text().split(" ")
-                        roadlatlons.push([Number(latlng[0]), Number(latlng[1])])
-
-                        var popup = L.popup().setContent(placeName);
-                        L.marker([Number(latlng[0]), Number(latlng[1])]).bindPopup(popup).bindTooltip(placeName).addTo(map);
-                    }
-
-                    //polylineオブジェクトを作成して地図に追加
-                    var arrow = L.polyline(roadlatlons, { color: 'blue', weight: 5, "opacity": 0.6 }).addTo(map);
-                    var arrowHead = L.polylineDecorator(arrow, {
-                        patterns: [
-                            { offset: '100%', repeat: 0, symbol: L.Symbol.arrowHead({ pixelSize: 15, polygon: false, pathOptions: { stroke: true, color: 'blue', weight: 5, "opacity": 0.6 } }) }
-                        ]
-                    }).addTo(map);
-
-                    var tr = $("<tr>")
-                    $("#tbody").append(tr)
-
-                    var td = $("<td>")
-                    tr.append(td)
-                    td.append(obj.sent.persname)
-
-                    td = $("<td>")
-                    tr.append(td)
-                    td.append(obj.sent.placename)
-
-                    td = $("<td>")
-                    tr.append(td)
-                    td.append(obj.sent.date)
-
-                    //----------
-
-                    td = $("<td>")
-                    tr.append(td)
-                    td.append(obj.received.persname)
-
-                    td = $("<td>")
-                    tr.append(td)
-                    td.append(obj.received.placename)
-
-                    td = $("<td>")
-                    tr.append(td)
-                    td.append(obj.received.date)
-
-                    //---------
-
-                    td = $("<td>")
-                    tr.append(td)
-
-                    var a = $("<a>")
-                    td.append(a)
-                    a.attr("href", url.replace("raw.githubusercontent.com", "github.com").replace("/master/", "/blob/master/"))
-                    a.attr("target", "_blank")
-
-                    var img = $("<img>")
-                    a.append(img)
-                    img.attr("src", "https://tei-c.org/Vault/MembersMeetings/2013/wp-content/themes/atahualpa/images/header/TEIlogo.png")
-                    img.attr("width", "45px")
-
-                    if (obj.sent.date) {
-                        var obj_timeline = {}
-                        obj_timeline.date = obj.sent.date
-                        obj_timeline.title = "送信者: " + obj.sent.persname + ", 受信者: " + obj.received.persname
-                        data_timeline.push(obj_timeline)
-                    }
-
-                },
-                error: function (jqXHR, textStatus, errorThrown) {
-                    console.log(url);
+                let promises = [];
+                for (let file of this.files) {
+                    let filePromise = new Promise(resolve => {
+                        let reader = new FileReader();
+                        reader.readAsText(file);
+                        reader.onload = () => resolve(reader.result);
+                    });
+                    promises.push(filePromise);
                 }
+                Promise.all(promises).then(fileContents => {
+                    showxml(fileContents)
+                });
+
             });
 
         }
 
         function init() {
-            map = L.map('mapcontainer', { zoomControl: false });
+
+            if (resourceUri != "" && resourceUri != null) {
+                resourceUri = decodeURIComponent(resourceUri)
+
+                $.getJSON(resourceUri, function (data) {
+                    var urls = data;
+                    var xml_arr = []
+
+                    for (var i = 0; i < urls.length; i++) {
+                        var url = urls[i]
+
+                        $.ajax({
+                            async: false,
+                            type: "GET",
+                            url: url,
+                            dataType: "xml",
+                            success: function (data) {
+                                xml_arr.push(data)
+
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.log(url);
+                            }
+                        });
+                    }
+
+                    showxml(xml_arr)
+
+                })
+            } else {
+
+                //入力フォームの表示
+                $("#input").show()
+                file_input()
+
+            }
+        }
+
+        //xmlの表示処理
+        function showxml(xml_arr) {
+
+            var data_timeline = []
+
+            $("#line").show()
+            $("#input").hide()
+
+            var map = L.map('mapcontainer', { zoomControl: false });
 
             var mpoint = [35.8627, 139.6072];
             map.setView(mpoint, 7);
@@ -158,31 +183,137 @@ layout: default
             L.tileLayer('http://tile.openstreetmap.jp/{z}/{x}/{y}.png',
                 { attribution: "<a href='http://osm.org/copyright' target='_blank'>OpenStreetMap</a> contributors" }).addTo(map);
 
+            var mlat = 0
+            var mlong = 0
+            var count = 0
 
-            $.getJSON("https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/docs/tools/visualization/letters/config.json", function (data) {
-                var urls = data;
-                for (var i = 0; i < urls.length; i++) {
-                    var url = urls[i]
-                    main(url)
+            for (var i = 0; i < xml_arr.length; i++) {
+
+                var data = xml_arr[i]
+
+                var roadlatlons = []
+
+                var obj = {}
+
+                var correspactions = $(data).find("correspAction")
+                for (var j = 0; j < correspactions.length; j++) {
+                    var correspaction = correspactions[j]
+                    var persName = null;
+                    if ($(correspaction).find("persName") != null) {
+                        persName = $(correspaction).find("persName")[0]
+                        persName = $(persName).text()
+                    }
+
+                    var placeName = null;
+                    if ($(correspaction).find("placeName") != null) {
+                        placeName = $(correspaction).find("placeName")[0]
+                        placeName = $(placeName).text()
+                    }
+
+                    var date = null;
+                    if ($(correspaction).find("date") != null) {
+                        date = $(correspaction).find("date")[0]
+                        date = $(date).attr("when")
+                    }
+
+                    var type = $(correspaction).attr("type")
+
+                    var tmp = {}
+                    tmp.persname = persName
+                    tmp.placename = placeName
+                    tmp.date = date
+
+                    obj[type] = tmp
+
+                    if ($(correspaction).find("geo") != null) {
+
+                        var geo = $(correspaction).find("geo")[0]
+                        var latlng = $(geo).text().split(" ")
+                        
+                        if(latlng.length != 2){
+                            continue
+                        }
+
+                        roadlatlons.push([Number(latlng[0]), Number(latlng[1])])
+
+                        mlat += Number(latlng[0])
+                        mlong += Number(latlng[1])
+                        count += 1
+
+                        var popup = L.popup().setContent(placeName);
+                        L.marker([Number(latlng[0]), Number(latlng[1])]).bindPopup(popup).bindTooltip(placeName).addTo(map);
+
+                    }
+
+
                 }
 
-                $('#table').DataTable();
 
-                var dataObject = arrangeJson4Timeline2(data_timeline);
 
-                //空じゃなければ
-                if (dataObject.timeline.date.length != 0) {
-                    createStoryJS({
-                        type: 'timeline',
-                        width: '100%',
-                        height: '600',
-                        source: dataObject,
-                        embed_id: 'my-timeline',
-                        lang: 'ja'
-                    });
+                //polylineオブジェクトを作成して地図に追加
+                var arrow = L.polyline(roadlatlons, { color: 'blue', weight: 5, "opacity": 0.6 }).addTo(map);
+                var arrowHead = L.polylineDecorator(arrow, {
+                    patterns: [
+                        { offset: '100%', repeat: 0, symbol: L.Symbol.arrowHead({ pixelSize: 15, polygon: false, pathOptions: { stroke: true, color: 'blue', weight: 5, "opacity": 0.6 } }) }
+                    ]
+                }).addTo(map);
+
+                var tr = $("<tr>")
+                $("#tbody").append(tr)
+
+                var td = $("<td>")
+                tr.append(td)
+                td.append(obj.sent.persname)
+
+                td = $("<td>")
+                tr.append(td)
+                td.append(obj.sent.placename)
+
+                td = $("<td>")
+                tr.append(td)
+                td.append(obj.sent.date)
+
+                //----------
+
+                td = $("<td>")
+                tr.append(td)
+                td.append(obj.received.persname)
+
+                td = $("<td>")
+                tr.append(td)
+                td.append(obj.received.placename)
+
+                td = $("<td>")
+                tr.append(td)
+                td.append(obj.received.date)
+
+                if (obj.sent.date) {
+                    var obj_timeline = {}
+                    obj_timeline.date = obj.sent.date
+                    obj_timeline.title = "送信者: " + obj.sent.persname + ", 受信者: " + obj.received.persname
+                    data_timeline.push(obj_timeline)
                 }
 
-            })
+            }
+
+            mpoint = [mlat / count, mlong / count];
+            map.setView(mpoint, 7);
+
+            $('#table').DataTable();
+
+            var dataObject = arrangeJson4Timeline2(data_timeline);
+
+            //空じゃなければ
+            if (dataObject.timeline.date.length != 0) {
+                createStoryJS({
+                    type: 'timeline',
+                    width: '100%',
+                    height: '600',
+                    source: dataObject,
+                    embed_id: 'my-timeline',
+                    lang: 'ja'
+                });
+            }
         }
 
         function arrangeJson4Timeline2(data) {
@@ -255,33 +386,7 @@ layout: default
         }
 
     </script>
-</head>
 
-<body onload="init()">
-    <div class="container my-5">
-        <h2>書簡の送受信の可視化</h2>
-        <div id="mapcontainer" class="mt-5" style="width: 100%; height: 600px;"></div>
-
-        <div class="my-5">
-            <div id="my-timeline"></div>
-        </div>
-
-        <table class="table mt-5" style="background-color: white;" id="table">
-            <thead>
-                <tr>
-                    <th>送信者</th>
-                    <th>送信場所</th>
-                    <th>送信日時</th>
-                    <th>受信者</th>
-                    <th>受信場所</th>
-                    <th>受信日時</th>
-                    <th>リンク</th>
-                </tr>
-            </thead>
-            <tbody id="tbody">
-            </tbody>
-        </table>
-    </div>
 </body>
 
 </html>
