@@ -50,7 +50,8 @@
         <profileDesc>
             <correspDesc>
                 <correspAction type="sent">
-                    <persName>伊藤野枝</persName>
+                    <persName>伊藤野枝</persName> 
+                    <date when="1916-05-07">一九一六年五月七日　二信</date>
                     <location>
                         <placeName>千葉県夷隅郡御宿　上野屋旅館</placeName>
                         <geo cert="medium" corresp="歴史地名データ">35.191944 140.348611</geo>
