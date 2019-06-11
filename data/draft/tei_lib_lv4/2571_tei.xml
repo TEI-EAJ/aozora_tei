@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">鈴木三重吉宛書簡―明治三十九年</title>
+            <author>夏目漱石</author>
+            <respStmt>
+               <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+               <resp when="2016-06-18">作成</resp>
+               <note><lb />
+                  底本：「漱石全集　第十八卷」漱石全集刊行会<lb />
+                  　　　1928（昭和3）年9月5日発行<lb />
+                  ※底本（書簡集）から、明治39年の鈴木三重吉宛書簡のみを抜き出しました。<lb />
+                  ※各書簡冒頭の番号は、底本に振られた通し番号です。<lb />
+                  ※句点の有無は、底本通りとしました。<lb />
+                  ※「［］」付きで添えられた底本の注は、そのまま入力しました。<lb />
+                  ※底本で対象文字の右に添えられた、「原文通り」を意味する「原」と、「〔〕」付きで示された正しいと推定される表記を、XHTML版では、組み版通りに再現しました。<lb />
+                  ※「漱」と「［＃「漱」の「欠」に代えて「攵」］」の混在は底本通りです。<lb />
+                  ※欠落を、「漱石全集　第十八巻」19368（昭和11）年12月10日発行を参照して、補いました。<lb />
+                  入力：石塚一郎<lb />
+                  校正：柳沢成雄<lb />
+                  作成
+                  
+                  <date when="2016-06-18">2002年10月12日</date>作成<lb />
+                  <date when="2006-06-30">2006年6月30日</date>修正
+                  青空文庫作成ファイル：<lb />
+                  このファイルは、インターネットの図書館、<ref target="http://www.aozora.gr.jp/">青空文庫（http://www.aozora.gr.jp/）</ref>で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。<lb />
+               </note>
+            </respStmt>
+            <respStmt>
+               <resp>Aozora Transcription</resp>
+               <name>石塚一郎</name>
+            </respStmt>
+            <respStmt>
+               <resp>Aozora Proofreading</resp>
+               <name>柳沢成雄</name>
+            </respStmt>
+            <respStmt>
+               <resp when="2019-06-11">TEI Encoding</resp>
+               <name>Kazuhiro Okada</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+            <availability>
+               <p>
+                  <ref target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0
+                     1.0) Public Domain Dedication</ref></p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title type="main">鈴木三重吉宛書簡―明治三十九年</title>
+               <author>夏目漱石</author>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <correspDesc xml:id="corresp305">
+            <correspAction type="sent">
+               <persName>夏目漱石</persName>
+               <date notBefore="1906-01-01T00:00:00+09:00" notAfter="1906-01-01T05:00:00+09:00">明治三十九年一月一日午前零時―五時</date>
+               <location>
+                  <placeName>本郷區駒込千駄木町五十七番地</placeName>
+                  <geo>35.721874 139.758257</geo>
+               </location>
+            </correspAction>
+            <correspAction type="received">
+               <persName>鈴木三重吉</persName>
+               <location>
+                  <placeName>廣島市猿樂町</placeName>
+                  <geo>34.395265 132.456591</geo>
+               </location>
+            </correspAction>
+         </correspDesc>
+      </profileDesc>
+  </teiHeader>
+  <text>
+<body>
+   <div type="letter" decls="corresp305">
+      <div type="envelope">
+      <head>三〇五</head>
+            <dateline><date>明治三十九年一月一日　午前零時―五時</date>　<placeName>本郷區駒込千駄木町五十七番地</placeName>より<placeName>廣島市猿樂町</placeName><name>鈴木三重吉</name>へ</dateline>
+         <p><lb/>加計君の所へいつか手紙をやりたい。宿所を教へ玉へ</p>
+         </div>
+      <div type="contents">
+            <opener><salute>拜啓</salute></opener>
+            <p><lb/>御通知の柿昨三十日着直ちに一個試みた處非常にうまかつた。コロ柿は堅過ぎるがあれは丁度好加減です。小供にもやりました。君の神經衰弱は段々全快のよし結構小生の胃病も當分生命に別條はなささうです。君が芝居をやる抔は頗る見ものだらうと思ひます。全體何の役をやる積りか一寸御一報にあづかりたい。今日は大晦日だが至つて平穩借金とりも參らず炬燵で小説を讀んで居ます。ホトヽギスを見ましたか。裏の學校から抗議でもくれば又材料が出來て面白いと思つて居る。此學校の寄宿舍がそばにあつて其生徒が夜に入ると四隣の迷惑になる樣に騷動する。今夜も盛にやつて居る。此次は是でも生捕つてやりませう。仕舞には校長が何とか云つてくればいいと思ふ。喧嘩でもないと猫の材料が拂底でいかん。伊藤左千夫の野菊の墓といふのをよんだですか。あれは面白い。美くしい感じする。一昨日から雪今日も曇中々寒い。昨日は中川が來ました。
+            <lb/>君が芝居をやる所を猫にかきたい。多々良三平と自認せる俣野義郎なるもの五六度も親展至急で大學へむけ猫中の取消を申し來る。新聞で廣告して取り消してやらうかと云つたら御免と云ふてきました。當人は人格を傷けられたとか何とか不平をいふて居る。呑氣なものである。人身攻撃も文學的滑稽も區別が出來ないで自ら大豪傑を以て任じて居るのは餘程氣丈の至りだと思ふ。
+            <lb/>君早く出て來給へ
+               <lb/>早稻田文學が出る。上田敏君抔が藝苑を出す。鴎外も何かするだらう。ゴチや／＼メヤや／＼其間に猫が浮きつ沈みつして居る。中々面白い。猫が出なくなると僕は片腕もがれた樣な氣がする。書齋で一人で力味んで居るより大に大天下に屁の樣な氣燄をふき出す方が面白い。來學年から是非出て來給へ
+            <lb/>明日丸山通一といふ獨乙語の先生の所へ午飯に呼ばれた。何の因縁か分らないがまづ御馳走になる方が得策だと思つて承引した。
+            <lb/>うれしきも悲しきも眼前の現象　月も花も刻下の風流。定業は何十年か知らないが、御駄佛となる迄はまづ／＼此の如くであらうと思ふ</p>
+            <closer>
+               <salute>珍重</salute>
+               <lb/>　　　　　　　<date when="1905-12-31">三十八年大晦日の夜</date>
+            <lb/><signed>金</signed>
+               　　　　　<persName type="addressee">三重吉樣</persName></closer>
+            <postscript><p>今日野村傳四と上野を散歩したら、耶蘇教の戸外演説があつた。聞き手は一人もない。大晦日である。人間は衣食の爲めには狂氣じみた事も眞面目にやるものですな。其例澤山あり。</p></postscript>
+      </div>
+   </div>
+</body>
+  </text>
+</TEI>
