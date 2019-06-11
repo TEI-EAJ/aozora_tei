@@ -11,6 +11,10 @@ layout: default
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.0/dist/leaflet.css" />
     <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.markercluster/dist/MarkerCluster.Default.css" />
+
 </head>
 
 <body onload="init()">
@@ -20,13 +24,14 @@ layout: default
         <div class="container my-5">
             <div class="jumbotron mt-3">
                 <h1>書簡の送受信の可視化</h1>
-                <p class="lead mt-4">例1：<a href="https://www.aozora.gr.jp/index_pages/person416.html">伊藤野枝 書簡- 青空文庫</a></p>
+                <p class="lead mt-4">例1：<a href="https://www.aozora.gr.jp/index_pages/person416.html">伊藤野枝 書簡- 青空文庫</a>
+                </p>
                 <a class="btn btn btn-primary"
                     href="?url=https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/docs/tools/visualization/letters/config.json"
                     role="button">可視化例を見る</a>
-                <p class="lead mt-4">例2：<a href="http://vangoghletters.org/vg/">Vincent van Gogh The Letters</a>（一部：19／922通）</p>
-                <a class="btn btn btn-primary"
-                    href="?url=https://tei-eaj.github.io/vangoghxml/config.json"
+                <p class="lead mt-4">例2：<a href="http://vangoghletters.org/vg/">Vincent van Gogh The
+                        Letters</a>（一部：19／922通）</p>
+                <a class="btn btn btn-primary" href="?url=https://tei-eaj.github.io/vangoghxml/config.json"
                     role="button">可視化例を見る</a>
             </div>
 
@@ -72,6 +77,7 @@ layout: default
                     <th>受信者</th>
                     <th>受信場所</th>
                     <th>受信日時</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody id="tbody">
@@ -86,12 +92,19 @@ layout: default
     <script type="text/javascript" src="assets/thirdparty/TimelineJS/js/storyjs-embed.js"></script>
     <script type="text/javascript" src="assets/thirdparty/TimelineJS/js/site.js"></script>
     <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+    <script src="https://leaflet.github.io/Leaflet.markercluster/dist/leaflet.markercluster-src.js"></script>
+    <script src="https://leaflet.github.io/Leaflet.markercluster/example/realworld.388.js"></script>
+
     <script>
 
         //パラメータの取得
         var vars = getParam();
         //XMLファイルのURL
         var resourceUri = vars["url"]
+
+        //arr for github links
+        var git_url_arr = []
 
         function getParam() {
             var vars = {};
@@ -146,7 +159,7 @@ layout: default
                             dataType: "xml",
                             success: function (data) {
                                 xml_arr.push(data)
-
+                                git_url_arr.push(url)
                             },
                             error: function (jqXHR, textStatus, errorThrown) {
                                 console.log(url);
@@ -187,11 +200,15 @@ layout: default
             var mlong = 0
             var count = 0
 
+            var markers = L.markerClusterGroup();
+
+            var types = ["sent", "received"]
+
             for (var i = 0; i < xml_arr.length; i++) {
 
                 var data = xml_arr[i]
 
-                var roadlatlons = []
+                var roadlatlonsMap = {}
 
                 var obj = {}
 
@@ -229,25 +246,34 @@ layout: default
 
                         var geo = $(correspaction).find("geo")[0]
                         var latlng = $(geo).text().split(" ")
-                        
-                        if(latlng.length != 2){
+
+                        if (latlng.length != 2) {
                             continue
                         }
 
-                        roadlatlons.push([Number(latlng[0]), Number(latlng[1])])
+                        //roadlatlons.push([Number(latlng[0]), Number(latlng[1])])
+                        roadlatlonsMap[type] = [Number(latlng[0]), Number(latlng[1])]
 
                         mlat += Number(latlng[0])
                         mlong += Number(latlng[1])
                         count += 1
 
                         var popup = L.popup().setContent(placeName);
-                        L.marker([Number(latlng[0]), Number(latlng[1])]).bindPopup(popup).bindTooltip(placeName).addTo(map);
-
+                        var marker = L.marker([Number(latlng[0]), Number(latlng[1])]).bindPopup(popup).bindTooltip(placeName)
+                        markers.addLayer(marker)
                     }
-
-
                 }
 
+                var roadlatlons = []
+
+                for (var j = 0; j < types.length; j++) {
+                    var type = types[j]
+                    if (roadlatlonsMap[type]) {
+                        roadlatlons.push(roadlatlonsMap[type])
+                    }
+                }
+
+                map.addLayer(markers);
 
 
                 //polylineオブジェクトを作成して地図に追加
@@ -286,6 +312,27 @@ layout: default
                 td = $("<td>")
                 tr.append(td)
                 td.append(obj.received.date)
+
+                //-----------
+
+                td = $("<td>")
+                tr.append(td)
+
+                if (git_url_arr.length > 0) {
+                    var url = git_url_arr[i]
+
+                    var a = $("<a>")
+                    td.append(a)
+                    a.attr("href", url.replace("raw.githubusercontent.com", "github.com").replace("/master/", "/blob/master/"))
+                    a.attr("target", "_blank")
+
+                    var img = $("<img>")
+                    a.append(img)
+                    img.attr("src", "https://tei-c.org/Vault/MembersMeetings/2013/wp-content/themes/atahualpa/images/header/TEIlogo.png")
+                    img.attr("width", "45px")
+                }
+
+                //---------
 
                 if (obj.sent.date) {
                     var obj_timeline = {}

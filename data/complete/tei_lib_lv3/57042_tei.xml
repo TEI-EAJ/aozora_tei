@@ -1,0 +1,116 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>書簡　大杉栄宛</title>
+                <author>伊藤野枝</author>
+                <respStmt>
+                    <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+                    <resp when="2016-01-04">作成</resp>
+                    <resp/>
+                    <note>
+                        <lb/> 底本：「定本　伊藤野枝全集　第二巻　評論・随筆・書簡1――『青鞜』の時代」學藝書林 <lb/>
+                        　　　2000（平成12）年5月31日初版発行 <lb/> 底本の親本：「大杉栄全集　第四巻」大杉栄全集刊行会 <lb/>
+                        　　　1926（大正15）年9月8日 <lb/> 入力：酒井裕二 <lb/> 校正：雪森 <lb/>
+                        <date when="2016-01-04">2016年1月4日</date> 作成 <lb/> 青空文庫作成ファイル： <lb/>
+                        このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。
+                    </note>
+                </respStmt>
+                <respStmt>
+                    <resp>Aozora Transcription</resp>
+                    <name>酒井裕二</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Aozora Proofreading</resp>
+                    <name>雪森</name>
+                </respStmt>
+                <respStmt>
+                    <resp when="2019-06-10">TEI Encoding</resp>
+                    <name>N. Kamiya</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+                <availability>
+                    <p>
+                        <ref target="https://creativecommons.org/publicdomain/zero/1.0/"> CC0 1.0
+                            Universal (CC0 1.0) Public Domain Dedication </ref>
+                    </p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <title>書簡　大杉栄宛</title>
+                    <author>伊藤野枝</author>
+                    <publisher>學藝書林</publisher>「定本　伊藤野枝全集　第二巻　評論・随筆・書簡1――『青鞜』の時代」 <date
+                        when="2000-05-31">2000（平成12）年5月31日</date>初版発行 
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName>伊藤野枝</persName>
+                    <date when="1916-06-01">一九一六年六月一日</date>
+                    <location>
+                        <placeName>千葉県夷隅郡御宿　上野屋旅館</placeName>
+                        <geo cert="medium" corresp="歴史地名データ">35.191944 140.348611</geo>
+                    </location>
+                </correspAction>
+                <correspAction type="received">
+                    <persName>大杉栄</persName>
+                    <location>
+                        <placeName>東京市麹町区三番町六四　第一福四萬館</placeName>
+                        <geo cert="medium" corresp="歴史地名データ">35.684444 139.742777</geo>
+                    </location>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <span rend="main_text" rendition="div">
+                    <lb/>
+                    <span rend="chitsuki_1" rendition="div"
+                        style="text-align:right; margin-right: 1em">宛先　東京市麹町区三番町六四　第一福四萬館</span>
+                    <span rend="chitsuki_5" rendition="div"
+                        style="text-align:right; margin-right: 5em">発信地　千葉県夷隅郡御宿　上野屋旅館</span>
+                    <lb/>
+                    <lb/>
+                    　今日は朝からちつとも仕事が出来ないので困つてゐましたの。昨日お手紙が来たので、今日はもう頂けないものと思つてあきらめて待たないでゐましたのに、来ましたので本当に嬉しうございました。本当にいろ／＼御心配をかけて済みません。
+                    <lb/>
+                    　女の世界もとうたうやられましたか。すると、もう私達は何も云ふ事が出来なくなつた訳でせうか。しかし、他の人に云へる事が何故私達が云つてはいけないのでせうね。
+                    <lb/> 　着物の心配までして下さつてありがとう。もうお天気の今日には暑くてセルも着られませんから、直ぐと <span type="ruby">
+                        <span type="rb">単衣</span>
+                        <span type="rp">（</span>
+                        <span type="rt">ひとえ</span>
+                        <span type="rp">）</span>
+                    </span>
+                    でゐられます。従妹から湯上りに着るのを二反送つてくれました。それを仕立てて着てゐればよろしうございますから。それと、羽織を、私は東京にあると思つてゐましたら、田舎に置いてあるさうですから、それを送つて貰ひます。いい単衣が一枚あればそれでいいのです。九州へ行けば、着るもの位はどうにかなりますから。単衣も出せばあるのですから、急がないでもいいのです。
+                    <lb/>
+                    　子供は預つてくれさうです。上野屋の親類の人で、鉄道院へ出てゐた人の妻君で、子供二人をかかへてゐる、まだ若い人です。その人は預りたがつてゐます。ただ親類の同意がありさへすればいいのです。主人はなくなつたのださうです。
+                    <lb/>
+                    　お清さん（遠藤清子）が保子さんの処に行つたのは面白いですね。けれど、保子さんがあなたによくなつたのはうれしい。それだけでも充分です。私達にまで好意を持つて頂くやうには決して願ひません。ただ、あなたにさへいやみや皮肉をおつしやりさへしなければ。
+                    <lb/>
+                    　静かでいい気持かいなんて、そんな事を云つて本当にひどいのね。ええ、いい気持ですよ。だつて、さびしいと思つたつてあなたが来て下さる訳でもないし、我慢するより仕方がないんですもの。思ひ出させるようになんて、私があなたを思はないでゐる時があると、あなたは思つてゐらつしやるの。本当にそれだからあなたは、人をさん／″＼さびしい目に合はせて置いて、静かでいい気持かいなんて笑つてゐられるのですよ。
+                    <lb/>
+                    　今日は本当にいいお天気ですよ。東京もさうでせうか。あなたがゐらつしやらなくなつてから仕事が出来たのは、あなたの事を思ひ出すたびに、苦しまぎれに仕事にかぢりついたからです。邪魔だつたのぢやありませんよ。いくら書いても
+                        <span type="ruby">
+                        <span type="rb">限</span>
+                        <span type="rp">（</span>
+                        <span type="rt">き</span>
+                        <span type="rp">）</span>
+                    </span> りはありません。止します。今夜はまた少し長く起きてゐて仕事をします。あなたも今夜は懸命にしてゐらつしやるのでせうね。 <lb/>
+                    　麦がもうすつかり刈られて仕舞ひました。毎晩お星さまが綺麗ですね。私は相変らず、あすこに出ては歌つてゐます。 <lb/>
+                    <span rend="chitsuki_0" rendition="div"
+                        style="text-align:right; margin-right: 0em"
+                        >［『大杉栄全集』第四巻、大杉栄全集刊行会、一九二六年九月］</span>
+                    <lb/>
+                    <lb/>
+                    <lb/>
+                </span>
+            </p>
+        </body>
+    </text>
+</TEI>
