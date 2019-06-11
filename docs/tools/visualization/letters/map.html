@@ -202,11 +202,13 @@ layout: default
 
             var markers = L.markerClusterGroup();
 
+            var types = ["sent", "received"]
+
             for (var i = 0; i < xml_arr.length; i++) {
 
                 var data = xml_arr[i]
 
-                var roadlatlons = []
+                var roadlatlonsMap = {}
 
                 var obj = {}
 
@@ -249,7 +251,8 @@ layout: default
                             continue
                         }
 
-                        roadlatlons.push([Number(latlng[0]), Number(latlng[1])])
+                        //roadlatlons.push([Number(latlng[0]), Number(latlng[1])])
+                        roadlatlonsMap[type] = [Number(latlng[0]), Number(latlng[1])]
 
                         mlat += Number(latlng[0])
                         mlong += Number(latlng[1])
@@ -258,6 +261,15 @@ layout: default
                         var popup = L.popup().setContent(placeName);
                         var marker = L.marker([Number(latlng[0]), Number(latlng[1])]).bindPopup(popup).bindTooltip(placeName)
                         markers.addLayer(marker)
+                    }
+                }
+
+                var roadlatlons = []
+
+                for (var j = 0; j < types.length; j++) {
+                    var type = types[j]
+                    if (roadlatlonsMap[type]) {
+                        roadlatlons.push(roadlatlonsMap[type])
                     }
                 }
 
@@ -306,7 +318,7 @@ layout: default
                 td = $("<td>")
                 tr.append(td)
 
-                if(git_url_arr.length > 0){
+                if (git_url_arr.length > 0) {
                     var url = git_url_arr[i]
 
                     var a = $("<a>")
@@ -318,7 +330,7 @@ layout: default
                     a.append(img)
                     img.attr("src", "https://tei-c.org/Vault/MembersMeetings/2013/wp-content/themes/atahualpa/images/header/TEIlogo.png")
                     img.attr("width", "45px")
-                } 
+                }
 
                 //---------
 
