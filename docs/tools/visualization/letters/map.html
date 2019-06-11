@@ -284,34 +284,52 @@ layout: default
                     ]
                 }).addTo(map);
 
+                if (!obj.sent && !obj.received) {
+                    continue
+                }
+
                 var tr = $("<tr>")
                 $("#tbody").append(tr)
 
                 var td = $("<td>")
                 tr.append(td)
-                td.append(obj.sent.persname)
+                if (obj.sent) {
+                    td.append(obj.sent.persname)
+                }
 
                 td = $("<td>")
                 tr.append(td)
-                td.append(obj.sent.placename)
+                if (obj.sent) {
+                    td.append(obj.sent.placename)
+                }
 
                 td = $("<td>")
                 tr.append(td)
-                td.append(obj.sent.date)
+                if (obj.sent) {
+                    td.append(obj.sent.date)
+                }
 
                 //----------
 
                 td = $("<td>")
                 tr.append(td)
-                td.append(obj.received.persname)
+                if (obj.received) {
+                    td.append(obj.received.persname)
+                }
+
 
                 td = $("<td>")
                 tr.append(td)
-                td.append(obj.received.placename)
+                if (obj.received) {
+                    td.append(obj.received.placename)
+                }
+
 
                 td = $("<td>")
                 tr.append(td)
-                td.append(obj.received.date)
+                if (obj.received) {
+                    td.append(obj.received.date)
+                }
 
                 //-----------
 
@@ -334,7 +352,7 @@ layout: default
 
                 //---------
 
-                if (obj.sent.date) {
+                if (obj.sent && obj.sent.date) {
                     var obj_timeline = {}
                     obj_timeline.date = obj.sent.date
                     obj_timeline.title = "送信者: " + obj.sent.persname + ", 受信者: " + obj.received.persname
