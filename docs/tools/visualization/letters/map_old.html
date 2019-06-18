@@ -15,30 +15,6 @@ layout: default
     <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.markercluster/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.markercluster/dist/MarkerCluster.Default.css" />
 
-    <link rel="stylesheet" type="text/css" href="../assets/thirdparty/CETEI/css/CETEIcean.css">
-
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css">
-
-
-
-    <style>
-        tei-persname {
-            color: blue;
-        }
-
-        tei-placename {
-            color: green;
-        }
-
-        tei-said {
-            color: brown;
-        }
-
-        tei-name {
-            color: blue;
-        }
-    </style>
-
 </head>
 
 <body onload="init()">
@@ -95,7 +71,6 @@ layout: default
         <table class="table mt-5" style="background-color: white;" id="table">
             <thead>
                 <tr>
-                    <th>タイトル</th>
                     <th>送信者</th>
                     <th>送信場所</th>
                     <th>送信日時</th>
@@ -110,48 +85,16 @@ layout: default
         </table>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body" id="test">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script src="https://unpkg.com/leaflet@1.3.0/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="./assets/js/leaflet.polylineDecorator.js"></script>
-
+    <script type="text/javascript" src="assets/thirdparty/TimelineJS/js/storyjs-embed.js"></script>
+    <script type="text/javascript" src="assets/thirdparty/TimelineJS/js/site.js"></script>
     <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
     <script src="https://leaflet.github.io/Leaflet.markercluster/dist/leaflet.markercluster-src.js"></script>
     <script src="https://leaflet.github.io/Leaflet.markercluster/example/realworld.388.js"></script>
-
-    <script src="../assets/thirdparty/CETEI/js/CETEI.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
-
-
 
     <script>
 
@@ -162,14 +105,6 @@ layout: default
 
         //arr for github links
         var git_url_arr = []
-
-        var map;
-        var timeline;
-        var markers;
-
-        var xml_arr;
-
-        var CETEIcean = new CETEI()
 
         function getParam() {
             var vars = {};
@@ -198,8 +133,7 @@ layout: default
                     promises.push(filePromise);
                 }
                 Promise.all(promises).then(fileContents => {
-                    xml_arr = fileContents
-                    showxml(xml_arr)
+                    showxml(fileContents)
                 });
 
             });
@@ -213,7 +147,7 @@ layout: default
 
                 $.getJSON(resourceUri, function (data) {
                     var urls = data;
-                    xml_arr = []
+                    var xml_arr = []
 
                     for (var i = 0; i < urls.length; i++) {
                         var url = urls[i]
@@ -247,15 +181,36 @@ layout: default
 
         //xmlの表示処理
         function showxml(xml_arr) {
-            var result = []
+
+            var data_timeline = []
+
+            $("#line").show()
+            $("#input").hide()
+
+            var map = L.map('mapcontainer', { zoomControl: false });
+
+            var mpoint = [35.8627, 139.6072];
+            map.setView(mpoint, 7);
+
+
+            L.tileLayer('http://tile.openstreetmap.jp/{z}/{x}/{y}.png',
+                { attribution: "<a href='http://osm.org/copyright' target='_blank'>OpenStreetMap</a> contributors" }).addTo(map);
+
+            var mlat = 0
+            var mlong = 0
+            var count = 0
+
+            var markers = L.markerClusterGroup();
+
             var types = ["sent", "received"]
 
             for (var i = 0; i < xml_arr.length; i++) {
 
                 var data = xml_arr[i]
 
+                var roadlatlonsMap = {}
+
                 var obj = {}
-                obj.title = $($(data).find("title")[0]).text()
 
                 var correspactions = $(data).find("correspAction")
                 for (var j = 0; j < correspactions.length; j++) {
@@ -290,127 +245,35 @@ layout: default
                     if ($(correspaction).find("geo") != null) {
 
                         var geo = $(correspaction).find("geo")[0]
-                        if (geo != null) {
-                            var latlng = $(geo).text().split(" ")
-                            tmp.latlng = [Number(latlng[0]), Number(latlng[1])]
+                        var latlng = $(geo).text().split(" ")
+
+                        if (latlng.length != 2) {
+                            continue
                         }
+
+                        //roadlatlons.push([Number(latlng[0]), Number(latlng[1])])
+                        roadlatlonsMap[type] = [Number(latlng[0]), Number(latlng[1])]
+
+                        mlat += Number(latlng[0])
+                        mlong += Number(latlng[1])
+                        count += 1
+
+                        var popup = L.popup().setContent(placeName);
+                        var marker = L.marker([Number(latlng[0]), Number(latlng[1])]).bindPopup(popup).bindTooltip(placeName)
+                        markers.addLayer(marker)
                     }
                 }
-
-                result.push(obj)
-            }
-
-            console.log(result)
-
-            $("#line").show()
-            $("#input").hide()
-
-            createMap(result)
-            createTimeline(result)
-            createTable(result)
-
-        }
-
-        //クリックイベントで発火する関数
-        function clickEvt(e) {
-            var latlng = e.target._latlng
-            map.setView([latlng.lat, latlng.lng]);
-            var content = e.sourceTarget._popup._content
-            var index = Number(content.split("(")[1].split(")")[0])
-            timeline.setSelection([index], { focus: focus.checked });
-        }
-
-        function show(index) {
-            var xml = xml_arr[index]
-
-            if ($.type(xml) != "string") {
-                xml = xmlToString(xml)
-            }
-
-            CETEIcean.makeHTML5(xml, function (data) {
-                showxml_2(data)
-            })
-        }
-
-        function xmlToString(xmlData) {
-
-            var xmlString;
-            //IE
-            if (window.ActiveXObject) {
-                xmlString = xmlData.xml;
-            }
-            // code for Mozilla, Firefox, Opera, etc.
-            else {
-                xmlString = (new XMLSerializer()).serializeToString(xmlData);
-            }
-            return xmlString;
-        }
-
-        function showxml_2(data) {
-            document.getElementById("test").appendChild(data)
-            var title = $($(data).find("tei-title")[0]).text()
-            $("#exampleModalLongTitle").text(title)
-            $("#exampleModalLong").modal('show')
-        }
-
-        var markers_map = {}
-
-        function createMap(data) {
-
-            map = L.map('mapcontainer', { zoomControl: false });
-
-            var mpoint = [35.8627, 139.6072];
-            map.setView(mpoint, 7);
-
-
-            L.tileLayer('http://tile.openstreetmap.jp/{z}/{x}/{y}.png',
-                { attribution: "<a href='http://osm.org/copyright' target='_blank'>OpenStreetMap</a> contributors" }).addTo(map);
-
-            var mlat = 0
-            var mlong = 0
-            var count = 0
-
-            markers = L.markerClusterGroup();
-
-            var types = ["sent", "received"]
-
-            for (var i = 0; i < data.length; i++) {
-                var obj = data[i]
 
                 var roadlatlons = []
 
                 for (var j = 0; j < types.length; j++) {
                     var type = types[j]
-
-                    var tmp = obj[type]
-                    if (!tmp) {
-                        continue
+                    if (roadlatlonsMap[type]) {
+                        roadlatlons.push(roadlatlonsMap[type])
                     }
-                    if (tmp.latlng) {
-
-                        roadlatlons.push(tmp.latlng)
-
-                        var lat = tmp.latlng[0]
-                        var lng = tmp.latlng[1]
-
-                        mlat += lat
-                        mlong += lng
-                        count += 1
-
-                        var a = '<a href="#" onclick="show(' + i + '); return false;">' + obj.title + '</a>'
-                        var popup = L.popup().setContent(a);
-                        var marker = L.marker([lat, lng]).bindPopup(popup).bindTooltip(tmp.placename).on('click', function (e) { clickEvt(e); });
-                        markers.addLayer(marker)
-
-                        if (type == "sent") {
-                            markers_map[i] = marker
-                        }
-
-                    }
-
                 }
 
-                map.addLayer(markers)
+                map.addLayer(markers);
 
 
                 //polylineオブジェクトを作成して地図に追加
@@ -419,55 +282,7 @@ layout: default
                     patterns: [
                         { offset: '100%', repeat: 0, symbol: L.Symbol.arrowHead({ pixelSize: 15, polygon: false, pathOptions: { stroke: true, color: 'blue', weight: 5, "opacity": 0.6 } }) }
                     ]
-                }).addTo(map)
-            }
-
-            mpoint = [mlat / count, mlong / count];
-            map.setView(mpoint, 7);
-
-        }
-
-        function createTimeline(data) {
-
-            var container = document.getElementById('my-timeline');
-
-            var arr = []
-
-            for (var i = 0; i < data.length; i++) {
-                var obj = data[i]
-
-                if (obj.sent && obj.sent.date) {
-                    var obj_timeline = {}
-                    obj_timeline.start = obj.sent.date
-                    obj_timeline.content = obj.title
-                    obj_timeline.id = i
-
-                    arr.push(obj_timeline)
-                }
-            }
-
-            // Create a DataSet (allows two way data-binding)
-            var items = new vis.DataSet(arr);
-
-            var options = {
-                maxHeight: 600
-            };
-
-            // Create a Timeline
-            timeline = new vis.Timeline(container, items, options);
-
-            timeline.on('click', function (properties) {
-                if (markers_map[properties.item]) {
-                    markers_map[properties.item].fire("click")
-                }
-            });
-
-        }
-
-        function createTable(data) {
-            for (var i = 0; i < data.length; i++) {
-
-                var obj = data[i]
+                }).addTo(map);
 
                 if (!obj.sent && !obj.received) {
                     continue
@@ -475,12 +290,6 @@ layout: default
 
                 var tr = $("<tr>")
                 $("#tbody").append(tr)
-
-                td = $("<td>")
-                tr.append(td)
-                if (obj.title) {
-                    td.append(obj.title)
-                }
 
                 var td = $("<td>")
                 tr.append(td)
@@ -540,11 +349,113 @@ layout: default
                     img.attr("src", "https://tei-c.org/Vault/MembersMeetings/2013/wp-content/themes/atahualpa/images/header/TEIlogo.png")
                     img.attr("width", "45px")
                 }
+
+                //---------
+
+                if (obj.sent && obj.sent.date) {
+                    var obj_timeline = {}
+                    obj_timeline.date = obj.sent.date
+                    title = ""
+                    if(obj.sent){
+                        title += "送信者: " + obj.sent.persname
+                    }
+                    if (obj.received) {
+                        title += "受信者: " + obj.received.persname
+                    }
+                    obj_timeline.title = title
+                    data_timeline.push(obj_timeline)
+                }
+
             }
 
+            mpoint = [mlat / count, mlong / count];
+            map.setView(mpoint, 7);
+
             $('#table').DataTable();
+
+            var dataObject = arrangeJson4Timeline2(data_timeline);
+
+            //空じゃなければ
+            if (dataObject.timeline.date.length != 0) {
+                createStoryJS({
+                    type: 'timeline',
+                    width: '100%',
+                    height: '600',
+                    source: dataObject,
+                    embed_id: 'my-timeline',
+                    lang: 'ja'
+                });
+            }
         }
 
+        function arrangeJson4Timeline2(data) {
+
+            var result = new Object();
+
+            var timeline = new Object();
+            result["timeline"] = timeline;
+
+            timeline["headline"] = "";
+            timeline["type"] = "default";
+            timeline["text"] = "";
+
+            var array = new Array();
+            timeline["date"] = array;
+
+            for (var i = 0; i < data.length; i++) {
+
+                var obj = data[i];
+
+                var title = obj.title
+
+                var bd = obj.date
+                var dd = obj.date
+
+                //--------------------------------
+
+                var event = new Object();//一要素
+                array.push(event);
+
+                //--------------------------------
+
+                event["startDate"] = bd.replace(/-/g, ",");
+                event["endDate"] = dd.replace(/-/g, ",");
+
+                //---------------------------------
+
+                event["headline"] = title;
+
+                //----------------------------------
+
+                //表示情報
+                var div = $("<div>");
+
+                //----------------------------------
+
+                var thumb = obj.pthumbnail;
+                if (thumb != null) {
+
+                    //ASSET
+
+                    var thumb = thumb.value;
+
+                    var asset = new Object();
+
+
+                    asset.media = thumb;
+                    asset.thumbnail = thumb;
+
+                    event["asset"] = asset;
+
+                }
+
+                var spanStr = $('<div>').append(div.clone()).html();
+                event["text"] = spanStr;
+
+            }
+
+            return result;
+        }
 
     </script>
 
