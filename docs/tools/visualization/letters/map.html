@@ -1002,7 +1002,7 @@ layout: default
                     content: function () {
                         return $("<p><b>" + Names[d.source.index] +
                             "</b> and <b>" + Names[d.target.index] +
-                            "</b> exchanged <b>" + d.source.value + "</b> letters </p>")
+                            "</b> exchanged <b>" + (d.source.value + d.target.value) + "</b> letters </p>")
                     }
                 });
 
