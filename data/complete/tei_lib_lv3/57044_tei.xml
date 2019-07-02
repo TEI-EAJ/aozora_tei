@@ -58,14 +58,14 @@
               <date when="1916-06-06">一九一六年六月六日</date>
               <persName>伊藤野枝</persName>
               <location><placeName>千葉県夷隅郡御宿　上野屋旅館</placeName>
-                 <geo cert="medium" corresp="歴史地名データ">35.191944,140.348611</geo>
+                 <geo cert="medium" corresp="歴史地名データ">35.191944 140.348611</geo>
               </location>
               
            </correspAction>
            <correspAction type="received">
               <persName>大杉栄</persName>
               <location><placeName>東京市麹町区三番町六四　第一福四萬館</placeName>
-                 <geo>35.6911446,139.7432795</geo>
+                 <geo>35.6911446 139.7432795</geo>
               </location>                              
            </correspAction>
         </correspDesc>
