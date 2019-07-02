@@ -36,8 +36,8 @@
     <profileDesc>
       <correspDesc>
         <correspAction type="sent"><persName>伊藤野枝</persName>
-          <location><placeName>東京代々木</placeName><geo corresp="歴史地名データ" cert="medium">35.681398,139.691227</geo></location></correspAction>
-        <correspAction type="received"><persName>山田邦子</persName><location><placeName>小石川区指ヶ谷町　青鞜社</placeName><geo corresp="歴史地名データ" cert="medium">35.716944,139.751388</geo></location></correspAction>
+          <location><placeName>東京代々木</placeName><geo corresp="歴史地名データ" cert="medium">35.681398 139.691227</geo></location></correspAction>
+        <correspAction type="received"><persName>山田邦子</persName><location><placeName>小石川区指ヶ谷町　青鞜社</placeName><geo corresp="歴史地名データ" cert="medium">35.716944 139.751388</geo></location></correspAction>
       </correspDesc>
     </profileDesc>
   </teiHeader>
