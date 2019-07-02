@@ -20,7 +20,7 @@
 <date when="2016-06-10">2016年6月10日</date>作成<lb/>
 青空文庫作成ファイル：<lb/>
 このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。</note></respStmt>
-      <respStmt><resp>Aozora Transcription</resp><name>酒井裕二</name></respStmt><respStmt><resp>Aozora Proofreading</resp><name>雪森</name></respStmt><respStmt><resp when="2019-01-01">TEI Encoding</resp><name>Yuna Murata</name></respStmt></titleStmt>
+      <respStmt><resp>Aozora Transcription</resp><name>酒井裕二</name></respStmt><respStmt><resp>Aozora Proofreading</resp><name>雪森</name></respStmt><respStmt><resp when="2019-07-02">TEI Encoding</resp><name>Yuna Murata</name></respStmt></titleStmt>
       <publicationStmt>
         <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
         <availability>
