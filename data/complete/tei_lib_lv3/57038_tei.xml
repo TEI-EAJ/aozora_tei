@@ -47,6 +47,7 @@
                         when="2000-05-31">2000（平成12）年5月31日</date>初版発行 
                 </bibl>
             </sourceDesc>
+            </fileDesc>
             <profileDesc>
                 <correspDesc>
                     <correspAction type="sent">
@@ -65,8 +66,7 @@
                         </location>
                     </correspAction>
                 </correspDesc>
-            </profileDesc>     
-        </fileDesc>
+            </profileDesc>            
     </teiHeader>
     <text>
         <body>
