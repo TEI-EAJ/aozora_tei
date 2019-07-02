@@ -1,0 +1,117 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>書簡　大杉栄宛</title>
+                <author>伊藤野枝</author>
+                <respStmt>
+                    <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+                    <resp when="2016-01-04">作成</resp>
+                    <resp/>
+                    <note>
+                        <lb/> 底本：「定本　伊藤野枝全集　第二巻　評論・随筆・書簡1――『青鞜』の時代」學藝書林 <lb/>
+                        　　　2000（平成12）年5月31日初版発行 <lb/> 底本の親本：「大杉栄全集　第四巻」大杉栄全集刊行会 <lb/>
+                        　　　1926（大正15）年9月8日 <lb/> ※ルビは新仮名とする底本の扱いにそって、ルビの拗音、促音は小書きしました。 <lb/> 入力：酒井裕二
+                        <lb/> 校正：雪森 <lb/>
+                        <date when="2016-01-04">2016年1月4日</date> 作成 <lb/> 青空文庫作成ファイル： <lb/>
+                        このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。
+                    </note>
+                </respStmt>
+                <respStmt>
+                    <resp>Aozora Transcription</resp>
+                    <name>酒井裕二</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Aozora Proofreading</resp>
+                    <name>雪森</name>
+                </respStmt>
+                <respStmt>
+                    <resp when="2019-07-02">TEI Encoding</resp>
+                    <name>N. Kamiya</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+                <availability>
+                    <p>
+                        <ref target="https://creativecommons.org/publicdomain/zero/1.0/"> CC0 1.0
+                            Universal (CC0 1.0) Public Domain Dedication </ref>
+                    </p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <title>書簡　大杉栄宛</title>
+                    <author>伊藤野枝</author>
+                    publisher>學藝書林</publisher>「定本　伊藤野枝全集　第二巻　評論・随筆・書簡1――『青鞜』の時代」 <date
+                        when="2000-05-31">2000（平成12）年5月31日</date>初版発行 
+                </bibl>
+            </sourceDesc>
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName>伊藤野枝</persName>
+                        <date when="1916-04-30">一九一六年四月三〇日</date>
+                        <location>
+                            <placeName>千葉県夷隅郡御宿　上野屋旅館</placeName>
+                            <geo cert="medium" corresp="歴史地名データ">35.284722 140.246111</geo>
+                        </location>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName>木村荘太</persName>
+                        <location>
+                            <placeName>東京市麹町区三番町六四　第一福四萬館</placeName>
+                            <geo cert="medium" corresp="歴史地名データ">35.685274 139.739344</geo>
+                        </location>
+                    </correspAction>
+                </correspDesc>
+            </profileDesc>     
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>
+                <span rend="main_text" rendition="div">
+                    <lb/>
+                    <span rend="chitsuki_1" rendition="div"
+                        style="text-align:right; margin-right: 1em"> 宛先　東京市麹町区三番町六四　第一 <span
+                            type="ruby">
+                            <span type="rb">福四萬</span>
+                            <span type="rp">（</span>
+                            <span type="rt">ふくしま</span>
+                            <span type="rp">）</span>
+                        </span> 館 </span>
+                    <span rend="chitsuki_5" rendition="div"
+                        style="text-align:right; margin-right: 5em">発信地　千葉県夷隅郡御宿　上野屋旅館</span>
+                    <lb/>
+                    <lb/>
+                    　ゆふべ、つくと直ぐに手紙を書き出しましたけれど、腰が痛んで気持が悪いので止めました。つきますと直ぐに雨が降り出して、風がひどいので外には出られません。真暗な風の強いさびしい晩でした。停車場から此処まで歩いてくるうちに、泣きたくなつて仕舞ひました。停車場の直ぐ前ときいてゐましたけれども、少し離れてゐます。海の近くです。かなり広い家です。家のまはりはあんまり感じがよくありませんが、そんなに悪くもありません。
+                    <lb/> 　私の今ゐる <span type="ruby">
+                        <span type="rb">室</span>
+                        <span type="rp">（</span>
+                        <span type="rt">へや</span>
+                        <span type="rp">）</span>
+                    </span>
+                    は一番奥の中二階みたいな室です。かけ離れてゐて、宿屋にゐるやうないやな気はしませんが、そして大変仕事をするにはいい室ですが、押入れがないので他に移りたいと思つてゐます。四畳半ですから本当にいいのですけれども。今朝は私の気持がすつかりおちついてゐます。汽車の中も随分さびしうございました。千葉からは二人きりになりました。
+                    <lb/>
+                    　かうやつて手紙を書いてゐますと、本当に遠くに離れてゐるのだと云ふ気がします。あなたは昨日別れるときに、ふり返りもしないで行つてお仕舞ひになつたのですね。ひどいのね。私はひとりきりになつてすつかり
+                        <span type="ruby">
+                        <span type="rb">悄気</span>
+                        <span type="rp">（</span>
+                        <span type="rt">しょげ</span>
+                        <span type="rp">）</span>
+                    </span>
+                    てゐます。早くゐらつしやれませんか。それだと私はどうしたらいいのでせう。こんなに遠くに離れてゐる事が、そんなに長く出来るでせうか。お仕事の邪魔はしませんから、早くゐらして下さいね。
+                    <lb/>
+                    　こんな事を書いてゐますと、また頭が変になつて来ますから、もう止します。四時間汽車でがまんをすれば来られるのですもの、本当に来て下さいね。五日も六日も私にこんな気持を続けさせる方は――本当にひどいわ。私はひとりぽつちですからね。この手紙だつて今日のうちには着かないと思ひますと、いやになつて仕舞ひます。 <lb/>
+                    <span rend="chitsuki_0" rendition="div"
+                        style="text-align:right; margin-right: 0em"
+                        >［『大杉栄全集』第四巻、大杉栄全集刊行会、一九二六年九月］</span>
+                    <lb/>
+                    <lb/>
+                    <lb/>
+                </span>
+            </p>
+        </body>
+    </text>
+</TEI>
