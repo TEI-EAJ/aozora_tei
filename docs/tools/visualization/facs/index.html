@@ -48,7 +48,7 @@ layout: default
     }
 
     tei-date {
-      background-color: rgba(0, 255, 0, 0.3)
+      background-color: rgba(255, 255, 0, 0.3)
     }
   </style>
 
@@ -56,7 +56,7 @@ layout: default
 
 <body>
 
-  <div class="container my-5" id="input">
+  <div class="container my-5" id="input" style="display : none;">
     <div class="jumbotron mt-3">
       <h1>TEI & IIIF Viewer</h1>
       <p class="lead">
@@ -111,7 +111,7 @@ layout: default
   <div class="container-fluid mb-5" id="result" style="display : none;">
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h3>TEI & IIIF Viewer&nbsp;&nbsp;&nbsp;<span id="title"></span></h3>
+      <h3><span id="title"></span>&nbsp;&nbsp;&nbsp;<small>TEI & IIIF Viewer</small></h3>
     </div>
 
     <div class="row">
@@ -182,7 +182,7 @@ layout: default
           showxml(data)
         })
       } else {
-
+        $("#input").show()
         //入力フォーム関連の処理
         file_input()
       }
@@ -255,7 +255,7 @@ layout: default
         } else {
           selector.before(span)
         }
-        span.append(' <i class="fas fa-camera text-primary"></i> ')
+        span.append(' <i class="fas fa-camera text-success"></i> ')
 
         //クリックしたらmove関数を実行
         span.attr('onClick', 'move("' + pid + '");');
