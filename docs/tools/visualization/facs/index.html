@@ -282,6 +282,15 @@ layout: default
       return vars;
     }
 
+    var sidePanelOptions = {}
+      if (vars["sidePanelOptions"] == "on") {
+        sidePanelOptions = {
+          "tocTabAvailable": true,
+          "layersTabAvailable": true,
+          "searchTabAvailable": true
+        }
+      }
+
     function initMirador(manifest) {
       miradorInstance = Mirador(
         {
@@ -305,6 +314,7 @@ layout: default
             viewType: "ImageView",
             bottomPanelVisible: false
           }],
+          "sidePanelOptions": sidePanelOptions,
           "annotationEndpoint": { "name": "Local Storage", "module": "LocalStorageEndpoint" }
         }
       );
