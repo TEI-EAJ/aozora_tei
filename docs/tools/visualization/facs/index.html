@@ -282,13 +282,10 @@ layout: default
       return vars;
     }
 
-    var sidePanelOptions = {}
-      if (vars["sidePanelOptions"] == "on") {
-        sidePanelOptions = {
-          "tocTabAvailable": true,
-          "layersTabAvailable": true,
-          "searchTabAvailable": true
-        }
+    var sidePanelOptions = {
+        "tocTabAvailable": true,
+        "layersTabAvailable": true,
+        "searchTabAvailable": true
       }
 
     function initMirador(manifest) {

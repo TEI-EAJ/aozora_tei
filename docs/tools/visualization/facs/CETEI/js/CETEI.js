@@ -10,10 +10,12 @@ var CETEI = function () {
       eg: ["<pre>", "</pre>"],
       ptr: ['<a href="$rw@target">$@target</a>'],
       ref: ['<a href="$rw@target">', "</a>"],
+      /*
       graphic: function (e) {
         let t = new Image;
         return t.src = this.rw(e.getAttribute("url")), e.hasAttribute("width") && t.setAttribute("width", e.getAttribute("width")), e.hasAttribute("height") && t.setAttribute("height", e.getAttribute("height")), t
       },
+      */
       list: [
         ["[type=gloss]", function (e) {
           let t = document.createElement("dl");
