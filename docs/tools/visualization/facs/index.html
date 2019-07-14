@@ -130,6 +130,9 @@ layout: default
       </div>
       <div class="col-md-6">
         <div id="viewer"></div>
+        <div class="text-center">
+          <button onclick="moveTEI()" class="mt-2 btn btn-primary"><i class="fas fa-sync"></i> Sync</button>
+        </div>
       </div>
     </div>
 
@@ -157,6 +160,7 @@ layout: default
     var ratio = 1
     var canvases = {}
     var preset_canvas = null
+    var current_canvas = null
 
     var CETEIcean = new CETEI()
 
@@ -224,12 +228,15 @@ layout: default
 
       document.getElementById("TEI").appendChild(data)
 
-      if (vertical_flg) {
+      if (vertical_flg && !preset_canvas) {
         //右に移動
         location.href = "#dest_pos";
       }
 
       xml = data
+
+      //facsimileに関する情報を取得
+      getZones(xml)
 
       //IIIF Manifestを取得して、Miradorを表示
       var manifest = $(xml).find("tei-surfacegrp").attr("facs")
@@ -241,9 +248,6 @@ layout: default
       $("#title").append(a)
       a.attr("href", resourceUri)
       a.append(title)
-
-      //facsimileに関する情報を取得
-      getZones(xml)
 
       //ほんぶん
       var body = $($(xml).find("tei-body")[0])
@@ -328,13 +332,19 @@ layout: default
         }
       );
 
+      moveTEI(preset_canvas)
+
       miradorInstance.eventEmitter.subscribe('windowUpdated', function (event, params) {
         //console.log(params.canvasID)
-        moveTEI(params.canvasID)
+        //moveTEI(params.canvasID)
+        current_canvas = params.canvasID
       });
     }
 
     function moveTEI(canvasID) {
+      if(!canvasID){
+        canvasID = current_canvas
+      }
       hash = canvasID_zone_map[canvasID]
       if (hash) {
         location.href = "#" + hash + "_";
