@@ -276,6 +276,27 @@ layout: default
         span.attr('onClick', 'move("' + pid + '");');
       })
 
+      // Tooltips
+      arr = ["tei-persname", "tei-placename", "tei-date"]
+      for(var k = 0; k < arr.length; k++){
+        $(xml).find("tei-body").find(arr[k]).each(function () {
+          var s = $(this);
+          s.attr("data-toggle", "tooltip")
+          s.attr("data-placement", "top")
+          attrs = s[0].attributes
+          info = {}
+          for(var key in attrs){
+            var obj = attrs[key]
+            var name = obj.name
+            var value = obj.value
+            if(value && name != "data-origname" && name != "data-toggle" && name != "data-placement"){
+              info[name] = value
+            } 
+          }
+          s.attr("title", JSON.stringify(info))
+        })
+      }
+
       body = body.html()
       body = body.replace(/<lb/g, '<br')
       $("#target").append(body)
