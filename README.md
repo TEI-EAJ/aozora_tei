@@ -1,4 +1,4 @@
-# aozora_tei
+# 青空文庫でTEIプロジェクト
 
 Welcome to the aozora_tei wiki!
 
