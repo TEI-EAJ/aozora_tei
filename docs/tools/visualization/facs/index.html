@@ -235,12 +235,13 @@ layout: default
 
       xml = data
 
-      //facsimileに関する情報を取得
-      getZones(xml)
-
       //IIIF Manifestを取得して、Miradorを表示
       var manifest = $(xml).find("tei-surfacegrp").attr("facs")
       getCanvases(manifest)
+
+      //facsimileに関する情報を取得
+      getZones(xml)
+
       initMirador(manifest)
 
       var title = $($(xml).find("tei-title")[0]).text()
