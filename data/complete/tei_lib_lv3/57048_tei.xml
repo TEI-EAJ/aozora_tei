@@ -3,7 +3,7 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
             <title type="main">書簡　武部ツタ宛</title>
@@ -12,17 +12,13 @@
             <respStmt>
                <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
                <resp when="2016-06-18">作成</resp>
-               <note>
-                  底本：「定本　伊藤野枝全集　第二巻　評論・随筆・書簡1――『青鞜』の時代」學藝書林<lb />
-                  　　　2000（平成12）年5月31日初版発行<lb />
-                  ※底本は、物を数える際や地名などに用いる「ヶ」（区点番号5-86）を、大振りにつくっています。<lb />
-                  ※ルビは新仮名とする底本の扱いにそって、ルビの拗音、促音は小書きしました。<lb />
-                  ※「大坂」と「大阪」の混在は、底本通りです。<lb />
-                  入力：酒井裕二<lb />
-                  校正：雪森<lb />
-                  <date when="2016-06-18">2016年6月18日</date>作成<lb />
-                  青空文庫作成ファイル：<lb />
-                  このファイルは、インターネットの図書館、<ref target="http://www.aozora.gr.jp/">青空文庫（http://www.aozora.gr.jp/）</ref>で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。<lb />
+               <note> 底本：「定本　伊藤野枝全集　第二巻　評論・随筆・書簡1――『青鞜』の時代」學藝書林<lb/> 　　　2000（平成12）年5月31日初版発行<lb/>
+                  ※底本は、物を数える際や地名などに用いる「ヶ」（区点番号5-86）を、大振りにつくっています。<lb/>
+                  ※ルビは新仮名とする底本の扱いにそって、ルビの拗音、促音は小書きしました。<lb/> ※「大坂」と「大阪」の混在は、底本通りです。<lb/>
+                  入力：酒井裕二<lb/> 校正：雪森<lb/>
+                  <date when="2016-06-18">2016年6月18日</date>作成<lb/> 青空文庫作成ファイル：<lb/>
+                     このファイルは、インターネットの図書館、<ref target="http://www.aozora.gr.jp/"
+                     >青空文庫（http://www.aozora.gr.jp/）</ref>で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。<lb/>
                </note>
             </respStmt>
             <respStmt>
@@ -42,8 +38,8 @@
             <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
             <availability>
                <p>
-                  <ref target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0
-                     1.0) Public Domain Dedication</ref></p>
+                  <ref target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal
+                     (CC0 1.0) Public Domain Dedication</ref></p>
             </availability>
          </publicationStmt>
          <sourceDesc>
@@ -73,23 +69,33 @@
             </correspAction>
          </correspDesc>
       </profileDesc>
-  </teiHeader>
-  <text>
+   </teiHeader>
+   <text>
       <body>
-         <p><span rendition="div" rend="main_text"><lb />
-            <span rendition="div" rend="sho1" style="font-size: small;">
-               <span rendition="div" rend="chitsuki_2" style="text-align:right; margin-right: 2em">宛先　　大坂市西区松島十返町　武部種吉様方</span>
-               <span rendition="div" rend="chitsuki_6" style="text-align:right; margin-right: 6em">発信地　東京市外巣鴨村宮仲二五八三</span>
-            </span>
-            <lb />
-            <lb />
-            　お手紙拝見。大坂に来てゐると云ふことはやつと半月ばかり前にききました。東京に来たのだつたら尋ねて来ればよかつたのに。本郷の<location><placeName>菊富士ホテル</placeName><geo>35.7097208 139.7576139</geo></location>と云ふことは<span type="ruby"><span type="rb">今宿</span><span type="rp">（</span><span type="rt">いまじゅく</span><span type="rp">）</span></span>のうちでも<span type="ruby"><span type="rb">代</span><span type="rp">（</span><span type="rt">だい</span><span type="rp">）</span></span>のうちでも知つてゐる筈、<span type="ruby"><span type="rb">一寸</span><span type="rp">（</span><span type="rt">ちょっと</span><span type="rp">）</span></span>きいてから来ればよかつた。うちからは四五日前たよりがあつた。突然に、盆前に金を送つてくれるやうにとの事だつたけれど、もう日数がないから、とりあえず手許にあつた拾円だけ送つて置きました。私も毎月でも送りたいと思ふが、流二を他所に預けて、その方に毎月十円近くとられるので、三十円や四十円とつた所でどうすることも出来ないのに、この二三ヶ月は体の具合がわるくて少しも仕事をしないで遊んでゐるので一層困ります。出来さえすればどうにでもするつもり。今宿へは今年一杯はかへれないと思ふ。来年になつたら早々にかへります。大阪には、もうよほどお馴れか、少しは知つた人が出来ましたか。私も時々はたよりをするから、そちらでも時々はハガキ位は書いて欲しい。こちらに用があつたら、面倒な事でなかつたら足してあげる。入用なものでもあつたら、とゝのへて送つてあげる。大阪では、国とも大分遠いから、体を大切にして病気になんかならぬやうになさい。私のことは心配しなくても大丈夫だから。そのうち大阪にでも行つたら会ひませう。大坂は特にあついから本当に体を大事におしなさい。<lb />
-            <span rendition="div" rend="chitsuki_1" style="text-align:right; margin-right: 1em">野枝</span>
-            <span rendition="div" rend="jisage_2" style="margin-left: 2em">津た子どの</span>
-            <lb />
-            <lb />
-            <lb />
-         </span></p>
+         <p><span rendition="div" rend="main_text"><lb/>
+               <span rendition="div" rend="sho1" style="font-size: small;">
+                  <span rendition="div" rend="chitsuki_2"
+                     style="text-align:right; margin-right: 2em">宛先　　大坂市西区松島十返町　武部種吉様方</span>
+                  <span rendition="div" rend="chitsuki_6"
+                     style="text-align:right; margin-right: 6em">発信地　東京市外巣鴨村宮仲二五八三</span>
+               </span>
+               <lb/>
+               <lb/> 　お手紙拝見。大坂に来てゐると云ふことはやつと半月ばかり前にききました。東京に来たのだつたら尋ねて来ればよかつたのに。本郷の<location>
+                  <placeName>菊富士ホテル</placeName>
+                  <geo>35.7097208 139.7576139</geo>
+               </location>と云ふことは<span type="ruby"><span type="rb">今宿</span><span type="rp"
+                     >（</span><span type="rt">いまじゅく</span><span type="rp">）</span></span>のうちでも<span
+                  type="ruby"><span type="rb">代</span><span type="rp">（</span><span type="rt"
+                     >だい</span><span type="rp">）</span></span>のうちでも知つてゐる筈、<span type="ruby"><span
+                     type="rb">一寸</span><span type="rp">（</span><span type="rt">ちょっと</span><span
+                     type="rp">）</span></span>きいてから来ればよかつた。うちからは四五日前たよりがあつた。突然に、盆前に金を送つてくれるやうにとの事だつたけれど、もう日数がないから、とりあえず手許にあつた拾円だけ送つて置きました。私も毎月でも送りたいと思ふが、流二を他所に預けて、その方に毎月十円近くとられるので、三十円や四十円とつた所でどうすることも出来ないのに、この二三ヶ月は体の具合がわるくて少しも仕事をしないで遊んでゐるので一層困ります。出来さえすればどうにでもするつもり。今宿へは今年一杯はかへれないと思ふ。来年になつたら早々にかへります。大阪には、もうよほどお馴れか、少しは知つた人が出来ましたか。私も時々はたよりをするから、そちらでも時々はハガキ位は書いて欲しい。こちらに用があつたら、面倒な事でなかつたら足してあげる。入用なものでもあつたら、とゝのへて送つてあげる。大阪では、国とも大分遠いから、体を大切にして病気になんかならぬやうになさい。私のことは心配しなくても大丈夫だから。そのうち大阪にでも行つたら会ひませう。大坂は特にあついから本当に体を大事におしなさい。<lb/>
+               <span rendition="div" rend="chitsuki_1" style="text-align:right; margin-right: 1em"
+                  >野枝</span>
+               <span rendition="div" rend="jisage_2" style="margin-left: 2em">津た子どの</span>
+               <lb/>
+               <lb/>
+               <lb/>
+            </span></p>
       </body>
-  </text>
+   </text>
 </TEI>

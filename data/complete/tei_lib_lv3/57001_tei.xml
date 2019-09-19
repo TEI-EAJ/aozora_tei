@@ -9,26 +9,10 @@
                <resp when="2016-01-04">作成</resp>
                <resp/>
                <note>
-                  <lb/>
-                  底本：「定本　伊藤野枝全集　第二巻　評論・随筆・書簡1――『青鞜』の時代」學藝書林
-                  <lb/>
-                  　　　2000（平成12）年5月31日初版発行
-                  <lb/>
-                  底本の親本：「大杉栄全集　第四巻」大杉栄全集刊行会
-                  <lb/>
-                  　　　1926（大正15）年9月8日
-                  <lb/>
-                  ※ルビは新仮名とする底本の扱いにそって、ルビの拗音、促音は小書きしました。
-                  <lb/>
-                  入力：酒井裕二
-                  <lb/>
-                  校正：雪森
-                  <lb/>
-                  <date when="2016-01-04">2016年1月4日</date>
-                  作成
-                  <lb/>
-                  青空文庫作成ファイル：
-                  <lb/>
+                  <lb/> 底本：「定本　伊藤野枝全集　第二巻　評論・随筆・書簡1――『青鞜』の時代」學藝書林 <lb/> 　　　2000（平成12）年5月31日初版発行
+                  <lb/> 底本の親本：「大杉栄全集　第四巻」大杉栄全集刊行会 <lb/> 　　　1926（大正15）年9月8日 <lb/>
+                  ※ルビは新仮名とする底本の扱いにそって、ルビの拗音、促音は小書きしました。 <lb/> 入力：酒井裕二 <lb/> 校正：雪森 <lb/>
+                  <date when="2016-01-04">2016年1月4日</date> 作成 <lb/> 青空文庫作成ファイル： <lb/>
                   このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。
                </note>
             </respStmt>
@@ -49,9 +33,8 @@
             <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
             <availability>
                <p>
-                  <ref target="https://creativecommons.org/publicdomain/zero/1.0/">
-                     CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
-                  </ref>
+                  <ref target="https://creativecommons.org/publicdomain/zero/1.0/"> CC0 1.0
+                     Universal (CC0 1.0) Public Domain Dedication </ref>
                </p>
             </availability>
          </publicationStmt>
@@ -60,8 +43,7 @@
                <title>書簡　大杉栄宛</title>
                <author>伊藤野枝</author>
                <publisher>學藝書林</publisher>「定本　伊藤野枝全集　第二巻　評論・随筆・書簡1――『青鞜』の時代」 <date when="2000-05-31"
-                  >2000（平成12）年5月31日</date>初版発行
-            </bibl>
+                  >2000（平成12）年5月31日</date>初版発行 </bibl>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
@@ -71,7 +53,7 @@
                <date when="1916-05-31">一九一六年五月三一日</date>
                <location>
                   <placeName>千葉県夷隅郡御宿　上野屋旅館</placeName>
-                  <geo>35.284722 140.246111</geo>
+                  <geo cert="medium" corresp="歴史地名データ">35.191944 140.348611</geo>
                </location>
             </correspAction>
             <correspAction type="received">
@@ -82,39 +64,37 @@
                </location>
             </correspAction>
          </correspDesc>
-      </profileDesc>        
+      </profileDesc>
    </teiHeader>
    <text>
       <body>
          <p>
             <span rend="main_text" rendition="div">
                <lb/>
-               <span rend="chitsuki_1" rendition="div" style="text-align:right; margin-right: 1em">宛先　東京市麹町区三番町六四　第一福四萬館</span>
-               <span rend="chitsuki_5" rendition="div" style="text-align:right; margin-right: 5em">発信地　千葉県夷隅郡御宿　上野屋旅館</span>
+               <span rend="chitsuki_1" rendition="div" style="text-align:right; margin-right: 1em"
+                  >宛先　東京市麹町区三番町六四　第一福四萬館</span>
+               <span rend="chitsuki_5" rendition="div" style="text-align:right; margin-right: 5em"
+                  >発信地　千葉県夷隅郡御宿　上野屋旅館</span>
                <lb/>
                <lb/>
                　今朝も、あなたからのおたよりを待つてゐましたのに来ないで、長い／＼お八重さんからの手紙が来ました。そして、私の今度の事に就いて可なりはつきりと意見を述べてくれました。しかし私は、もう到底理解を望む事は出来ないと断念しかかつてゐます。ひよつとしたら、私の説明が丁寧に詳しかつたら、或は解るかも知れません。けれども、
-               <span type="ruby">
+                  <span type="ruby">
                   <span type="rb">彼</span>
                   <span type="rp">（</span>
                   <span type="rt">あ</span>
                   <span type="rp">）</span>
                </span>
                の人には、恋愛と云ふ事が何んであるか解つてゐないのです。あの人の恋愛観は、皆な書物の上のそれです。外のいろ／＼の理屈は分るとしても、その心持が本当に解らない人には説明のしようはないと思ひます。しかし、私は出来るだけ説明してみるつもりではありますけれど。
-               <lb/>
-               　私の一番親しい友達が、私をどのやうに見てゐたかを、少しお知らせしませうか。
-               <lb/>
-               『あなたの心霊がこの二三年、無意識にも有意識にも
-               <span rend="sesame_dot" rendition="em">あこがれ</span>
-               を感じ、渇きを覚えてゐる強い力――殊に異性の雄々しい圧力――これを
-               <span type="ruby">
+               <lb/> 　私の一番親しい友達が、私をどのやうに見てゐたかを、少しお知らせしませうか。 <lb/> 『あなたの心霊がこの二三年、無意識にも有意識にも <span
+                  rend="sesame_dot" rendition="em">あこがれ</span> を感じ、渇きを覚えてゐる強い力――殊に異性の雄々しい圧力――これを
+                  <span type="ruby">
                   <span type="rb">提</span>
                   <span type="rp">（</span>
                   <span type="rt">さ</span>
                   <span type="rp">）</span>
                </span>
                げてあなたに迫るものがあつたとしたら、それは必ず大杉氏であつた事を要しない。誰れでもよかつたのではありませんか。これは、あなたの無定見な恋――盲目的な憧憬を意味するのぢやありません。
-               <span type="ruby">
+                  <span type="ruby">
                   <span type="rb">寧</span>
                   <span type="rp">（</span>
                   <span type="rt">むし</span>
@@ -123,18 +103,14 @@
                ろ、それほど必然的な危機があなたの周囲に生じてゐたと云ふ事を示すのです。それほど重大なワナがあなたに投げかけられてゐたのです。ですから、その強い魅力のある圧力の具体化として大杉氏が現はれたとき、どこまでも慎重にならなければならなかつたのです。これは逆説のやうですけれど、決してさうぢやありませんよ。それが本統に自分の要する力か、自分に適した力か、純粋のものかをぢつと／＼凝視する時間を、多く長く持つ程がいいのだつたと思ひます。』
                <lb/>
                　本当に、私はあなたでなくてもよかつたでせうか。私はさうは思ひません。私が、どんなに長くあなたを拒まうとして苦しんだかを、お八重さんは知らないのです。私は慎重でなかつたのでせうか。慎重ではなかつたかも知れませんね。けれども、私達は始めからそのやうな処を超えてゐたのではないでせうか。慎重と云ふやうな言葉の必要を感ずるよりも、もつとずつと近い所にゐたのだと云ふ気がします。ですから、お八重さんが『かう苦しまねばならない』と想像してゐるのと、私が苦しんだ事との間には、可なりの距離があるやうに思ひます。
-               <lb/>
-               　そして又お八重さんは、私が第二の恋愛にはいつたのは、第一の牢から第二の牢にはいるのと同じだと云ひます。私が今日までの
-               <span type="ruby">
+               <lb/> 　そして又お八重さんは、私が第二の恋愛にはいつたのは、第一の牢から第二の牢にはいるのと同じだと云ひます。私が今日までの <span type="ruby">
                   <span type="rb">謂</span>
                   <span type="rp">（</span>
                   <span type="rt">い</span>
                   <span type="rp">）</span>
                </span>
                はゆる第一の牢で何にを苦しんだのでせう。同じ苦しみをした同じ処にはいつて行くほどの、私は馬鹿ではないと信じます。第二の牢と第一の牢とが同じものならば、第二とか第一とか呼ぶ必要はない。同じ処に帰つてゆくのだと云へばよろしい。私は同じ処に二度はいつて、違つた処にはいつてゐると云ふ程の盲ではないつもり。
-               <lb/>
-               　同じ処に何時までもちぢこまつて、出たりはいつたりするものを
-               <span type="ruby">
+               <lb/> 　同じ処に何時までもちぢこまつて、出たりはいつたりするものを <span type="ruby">
                   <span type="rb">嘲笑</span>
                   <span type="rp">（</span>
                   <span type="rt">あざわら</span>
@@ -149,17 +125,15 @@
                　お分りになりました？　ねえ、私のお友達は本当に聡明ですね。私の本当の事を知つてゐて下さるのは、あなただけね。どうせ、私はもうあのサアクル（青鞜社）におさまつてはゐられないのですもの。私は血のめぐりの悪い、殿堂におさまつた冷いミネルヴアはいやです。
                <lb/>
                　私が、これからどのやうな道を歩かうとしてゐるか、それもあの人には分つてゐないのです。私は本当に勉強します。今どんなに説明しても分りはしないでせう。五年先きか十年先きになれば、
-               <span type="ruby">
+                  <span type="ruby">
                   <span type="rb">屹度</span>
                   <span type="rp">（</span>
                   <span type="rt">きっと</span>
                   <span type="rp">）</span>
-               </span>
-               半分位は分るかも知れませんね。私が恋に眩惑されてゐるのかさうでないかが。眩惑されてゐるとしても、その恋がどんなものであるかが。
-               <lb/>
-               　何んだか、私はまるであなたに怒りつけてゐるやうね。御免なさい。でも、なんだかあなたに話をして見たかつたんですもの。
-               <lb/>
-               <span rend="chitsuki_0" rendition="div" style="text-align:right; margin-right: 0em">［『大杉栄全集』第四巻、大杉栄全集刊行会、一九二六年九月］</span>
+               </span> 半分位は分るかも知れませんね。私が恋に眩惑されてゐるのかさうでないかが。眩惑されてゐるとしても、その恋がどんなものであるかが。 <lb/>
+               　何んだか、私はまるであなたに怒りつけてゐるやうね。御免なさい。でも、なんだかあなたに話をして見たかつたんですもの。 <lb/>
+               <span rend="chitsuki_0" rendition="div" style="text-align:right; margin-right: 0em"
+                  >［『大杉栄全集』第四巻、大杉栄全集刊行会、一九二六年九月］</span>
                <lb/>
                <lb/>
                <lb/>

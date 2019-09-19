@@ -1,0 +1,1031 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sample</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.0/dist/leaflet.css" />
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://leaflet.github.io/Leaflet.markercluster/dist/MarkerCluster.Default.css" />
+
+    <link rel="stylesheet" type="text/css" href="../assets/thirdparty/CETEI/css/CETEIcean.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css">
+
+    <style>
+        body {
+            font-size: 14px;
+            font-family: 'Lato', sans-serif;
+            text-align: left;
+            color: #757575;
+            cursor: default;
+        }
+
+        .title {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            font-size: 32px;
+            font-family: 'Oswald', sans-serif;
+            color: #2B2B2B;
+        }
+
+        .texts {
+            margin-left: 20px;
+            margin-right: 20px;
+            line-height: 140%;
+        }
+
+        .credit {
+            color: #9E9E9E;
+            font-size: 10px;
+            margin-bottom: 0.5em;
+        }
+
+        .notes {
+            color: #9E9E9E;
+            font-size: 10px;
+        }
+
+        .popover {
+            pointer-events: none;
+        }
+
+        #chart {
+            font-size: 16px;
+            font-family: 'Bangers', sans-serif;
+            text-align: center;
+            fill: #2B2B2B;
+        }
+
+        @media (min-width: 600px) {
+            #chart {
+                font-size: 20px;
+            }
+        }
+
+        tei-persname {
+            color: blue;
+        }
+
+        tei-placename {
+            color: green;
+        }
+
+        tei-said {
+            color: brown;
+        }
+
+        tei-name {
+            color: blue;
+        }
+    </style>
+
+</head>
+
+<body onload="init()">
+
+    <div id="input" style="display : none;">
+
+        <div class="container my-5">
+            <div class="jumbotron mt-3">
+                <h1>書簡の送受信の可視化</h1>
+                <p class="lead mt-4">例1：<a href="https://www.aozora.gr.jp/index_pages/person416.html">伊藤野枝 書簡- 青空文庫</a>
+                </p>
+                <a class="btn btn btn-primary"
+                    href="?url=https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/docs/tools/visualization/letters/config.json"
+                    role="button">可視化例を見る</a>
+                <p class="lead mt-4">例2：<a href="http://vangoghletters.org/vg/">Vincent van Gogh The
+                        Letters</a>（一部：19／922通）</p>
+                <a class="btn btn btn-primary" href="?url=https://tei-eaj.github.io/vangoghxml/config.json"
+                    role="button">可視化例を見る</a>
+
+                <p class="lead mt-4">タイムライン版は<a href="map_timeline">こちら</a></p>
+            </div>
+
+            <div class="card mt-5">
+                <h5 class="card-header">TEI/XMLファイルリスト（.json）のURLを入力して表示する</h5>
+                <div class="card-body">
+                    <form>
+                        <p class="card-text">
+                            <input type="text" class="form-control" name="url" placeholder="https://.../abc.xml">
+                        </p>
+                        <button type="submit" class="btn btn-primary">表示</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card mt-5">
+                <h5 class="card-header">TEI/XMLファイルを選択して表示する</h5>
+                <div class="card-body">
+                    <p class="card-text">
+                        <input type="file" class="form-control-file" id="getfile" multiple="multiple" />
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container my-5" style="display: none;" id="line">
+        <h2>書簡の送受信の可視化</h2>
+        <div id="mapcontainer" class="mt-5" style="width: 100%; height: 600px;"></div>
+
+        <div class="my-5">
+            <div id="my-timeline"></div>
+        </div>
+
+        <div id="visualization" class="my-5"></div>
+
+        <div id="chart"></div>
+
+        <table class="table mt-5" style="background-color: white;" id="table">
+            <thead>
+                <tr>
+                    <th>タイトル</th>
+                    <th>送信者</th>
+                    <th>送信場所</th>
+                    <th>送信日時</th>
+                    <th>受信者</th>
+                    <th>受信場所</th>
+                    <th>受信日時</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="test">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.3.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./assets/js/leaflet.polylineDecorator.js"></script>
+
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+    <script src="https://leaflet.github.io/Leaflet.markercluster/dist/leaflet.markercluster-src.js"></script>
+    <script src="https://leaflet.github.io/Leaflet.markercluster/example/realworld.388.js"></script>
+
+    <script src="../assets/thirdparty/CETEI/js/CETEI.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://nakamura196.github.io/portal_pro/assets/thirdparty/vis/4.15.1/vis.min.js"></script>
+
+    <!-- D3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+
+    <script src="assets/js/d3.layout.chord.sort.js"></script>
+
+    <script>
+
+        //パラメータの取得
+        var vars = getParam();
+        //XMLファイルのURL
+        var resourceUri = vars["url"]
+
+        //arr for github links
+        var git_url_arr = []
+
+        var map;
+        var timeline;
+        var markers;
+        var graph2d;
+
+        var xml_arr;
+
+        var CETEIcean = new CETEI()
+
+        function getParam() {
+            var vars = {};
+            var param = location.search.substring(1).split('&');
+            for (var i = 0; i < param.length; i++) {
+                var keySearch = param[i].search(/=/);
+                var key = '';
+                if (keySearch != -1) key = param[i].slice(0, keySearch);
+                var val = param[i].slice(param[i].indexOf('=', 0) + 1);
+                if (key != '') vars[key] = decodeURI(val);
+            }
+            return vars;
+        }
+
+        //入力フォーム関連の処理
+        function file_input() {
+            $('#getfile').change(function () {
+
+                let promises = [];
+                for (let file of this.files) {
+                    let filePromise = new Promise(resolve => {
+                        let reader = new FileReader();
+                        reader.readAsText(file);
+                        reader.onload = () => resolve(reader.result);
+                    });
+                    promises.push(filePromise);
+                }
+                Promise.all(promises).then(fileContents => {
+                    xml_arr = fileContents
+                    showxml(xml_arr)
+                });
+
+            });
+
+        }
+
+        function init() {
+
+            if (resourceUri != "" && resourceUri != null) {
+                resourceUri = decodeURIComponent(resourceUri)
+
+                $.getJSON(resourceUri, function (data) {
+                    var urls = data;
+                    xml_arr = []
+
+                    for (var i = 0; i < urls.length; i++) {
+                        var url = urls[i]
+
+                        $.ajax({
+                            async: false,
+                            type: "GET",
+                            url: url,
+                            dataType: "xml",
+                            success: function (data) {
+                                xml_arr.push(data)
+                                git_url_arr.push(url)
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.log(url);
+                            }
+                        });
+                    }
+
+                    showxml(xml_arr)
+
+                })
+            } else {
+
+                //入力フォームの表示
+                $("#input").show()
+                file_input()
+
+            }
+        }
+
+        //xmlの表示処理
+        function showxml(xml_arr) {
+            var result = []
+            var types = ["sent", "received"]
+
+            for (var i = 0; i < xml_arr.length; i++) {
+
+                var data = xml_arr[i]
+
+                var obj = {}
+                obj.title = $($(data).find("title")[0]).text()
+
+                var correspactions = $(data).find("correspAction")
+                for (var j = 0; j < correspactions.length; j++) {
+                    var correspaction = correspactions[j]
+                    var persName = null;
+                    if ($(correspaction).find("persName") != null) {
+                        persName = $(correspaction).find("persName")[0]
+                        persName = $(persName).text()
+                    }
+
+                    var placeName = null;
+                    if ($(correspaction).find("placeName") != null) {
+                        placeName = $(correspaction).find("placeName")[0]
+                        placeName = $(placeName).text()
+                    }
+
+                    var date = null;
+                    if ($(correspaction).find("date") != null) {
+                        date = $(correspaction).find("date")[0]
+                        date = $(date).attr("when")
+                    }
+
+                    var type = $(correspaction).attr("type")
+
+                    var tmp = {}
+                    tmp.persname = persName
+                    tmp.placename = placeName
+                    tmp.date = date
+
+                    obj[type] = tmp
+
+                    if ($(correspaction).find("geo") != null) {
+
+                        var geo = $(correspaction).find("geo")[0]
+                        if (geo != null) {
+                            var latlng = $(geo).text().split(" ")
+                            tmp.latlng = [Number(latlng[0]), Number(latlng[1])]
+                        }
+                    }
+                }
+
+                result.push(obj)
+            }
+
+            console.log(result)
+
+            $("#line").show()
+            $("#input").hide()
+
+            createMap(result)
+            createTimeline(result)
+            createTable(result)
+            createGraph2d(result)
+            createChord(result)
+
+        }
+
+        //クリックイベントで発火する関数
+        function clickEvt(e) {
+            var latlng = e.target._latlng
+            map.setView([latlng.lat, latlng.lng]);
+            var content = e.sourceTarget._popup._content
+            var index = Number(content.split("(")[1].split(")")[0])
+            timeline.setSelection([index], { focus: focus.checked });
+        }
+
+        function show(index) {
+            var xml = xml_arr[index]
+
+            if ($.type(xml) != "string") {
+                xml = xmlToString(xml)
+            }
+
+            CETEIcean.makeHTML5(xml, function (data) {
+                showxml_2(data)
+            })
+        }
+
+        function xmlToString(xmlData) {
+
+            var xmlString;
+            //IE
+            if (window.ActiveXObject) {
+                xmlString = xmlData.xml;
+            }
+            // code for Mozilla, Firefox, Opera, etc.
+            else {
+                xmlString = (new XMLSerializer()).serializeToString(xmlData);
+            }
+            return xmlString;
+        }
+
+        function showxml_2(data) {
+            document.getElementById("test").appendChild(data)
+            var title = $($(data).find("tei-title")[0]).text()
+            $("#exampleModalLongTitle").text(title)
+            $("#exampleModalLong").modal('show')
+        }
+
+        var markers_map = {}
+
+        function createMap(data) {
+
+            map = L.map('mapcontainer', { zoomControl: false });
+
+            var mpoint = [35.8627, 139.6072];
+            map.setView(mpoint, 7);
+
+
+            L.tileLayer('http://tile.openstreetmap.jp/{z}/{x}/{y}.png',
+                { attribution: "<a href='http://osm.org/copyright' target='_blank'>OpenStreetMap</a> contributors" }).addTo(map);
+
+            var mlat = 0
+            var mlong = 0
+            var count = 0
+
+            markers = L.markerClusterGroup();
+
+            var types = ["sent", "received"]
+
+            for (var i = 0; i < data.length; i++) {
+                var obj = data[i]
+
+                var roadlatlons = []
+
+                for (var j = 0; j < types.length; j++) {
+                    var type = types[j]
+
+                    var tmp = obj[type]
+                    if (!tmp) {
+                        continue
+                    }
+                    if (tmp.latlng) {
+
+                        roadlatlons.push(tmp.latlng)
+
+                        var lat = tmp.latlng[0]
+                        var lng = tmp.latlng[1]
+
+                        mlat += lat
+                        mlong += lng
+                        count += 1
+
+                        var a = '<a href="#" onclick="show(' + i + '); return false;">' + obj.title + '</a>'
+                        var popup = L.popup().setContent(a);
+                        var marker = L.marker([lat, lng]).bindPopup(popup).bindTooltip(tmp.placename).on('click', function (e) { clickEvt(e); });
+                        markers.addLayer(marker)
+
+                        if (type == "sent") {
+                            markers_map[i] = marker
+                        }
+
+                    }
+
+                }
+
+                map.addLayer(markers)
+
+
+                //polylineオブジェクトを作成して地図に追加
+                var arrow = L.polyline(roadlatlons, { color: 'blue', weight: 5, "opacity": 0.6 }).addTo(map);
+                var arrowHead = L.polylineDecorator(arrow, {
+                    patterns: [
+                        { offset: '100%', repeat: 0, symbol: L.Symbol.arrowHead({ pixelSize: 15, polygon: false, pathOptions: { stroke: true, color: 'blue', weight: 5, "opacity": 0.6 } }) }
+                    ]
+                }).addTo(map)
+            }
+
+            mpoint = [mlat / count, mlong / count];
+            map.setView(mpoint, 7);
+
+        }
+
+        function createTimeline(data) {
+
+            var container = document.getElementById('my-timeline');
+
+            var arr = []
+
+            var start = "9999-99-99"
+            var end = "0000-00-00"
+
+            for (var i = 0; i < data.length; i++) {
+                var obj = data[i]
+
+                if (obj.sent && obj.sent.date) {
+                    var obj_timeline = {}
+                    obj_timeline.start = obj.sent.date
+                    obj_timeline.content = obj.title
+                    obj_timeline.id = i
+                    obj_timeline.group = "1"
+
+                    arr.push(obj_timeline)
+
+                    date = obj.sent.date
+
+                    tmp = date.split("-")
+                    //Month
+                    date = tmp[0] + "-" + tmp[1] + "-01"
+
+                    if (start > date) {
+                        start = date
+                    }
+
+                    if (end < date) {
+                        end = date
+                    }
+                }
+            }
+
+            // Create a DataSet (allows two way data-binding)
+            var items = new vis.DataSet(arr);
+
+            var options = {
+                maxHeight: 600,
+                start: start,
+                end: end
+            };
+
+            // Create a Timeline
+            timeline = new vis.Timeline(container, items, options);
+            var groups = new vis.DataSet();
+            groups.add({
+                id: "1",
+                content: "Timeline"
+            })
+            timeline.setGroups(groups);
+
+            timeline.on('click', function (properties) {
+                if (markers_map[properties.item]) {
+                    markers_map[properties.item].fire("click")
+                }
+            });
+
+            timeline.on('select', function (properties) {
+                var selection = timeline.getSelection();
+                timeline.focus(selection);
+            });
+
+            // add event listener
+            timeline.on('rangechanged', onChange);
+
+        }
+
+        function onChange(properties) {
+            timeline.setWindow(properties.start, properties.end);
+            graph2d.setWindow(properties.start, properties.end);
+        }
+
+        function createTable(data) {
+            for (var i = 0; i < data.length; i++) {
+
+                var obj = data[i]
+
+                if (!obj.sent && !obj.received) {
+                    continue
+                }
+
+                var tr = $("<tr>")
+                $("#tbody").append(tr)
+
+                td = $("<td>")
+                tr.append(td)
+                if (obj.title) {
+                    td.append(obj.title)
+                }
+
+                var td = $("<td>")
+                tr.append(td)
+                if (obj.sent) {
+                    td.append(obj.sent.persname)
+                }
+
+                td = $("<td>")
+                tr.append(td)
+                if (obj.sent) {
+                    td.append(obj.sent.placename)
+                }
+
+                td = $("<td>")
+                tr.append(td)
+                if (obj.sent) {
+                    td.append(obj.sent.date)
+                }
+
+                //----------
+
+                td = $("<td>")
+                tr.append(td)
+                if (obj.received) {
+                    td.append(obj.received.persname)
+                }
+
+
+                td = $("<td>")
+                tr.append(td)
+                if (obj.received) {
+                    td.append(obj.received.placename)
+                }
+
+
+                td = $("<td>")
+                tr.append(td)
+                if (obj.received) {
+                    td.append(obj.received.date)
+                }
+
+                //-----------
+
+                td = $("<td>")
+                tr.append(td)
+
+                if (git_url_arr.length > 0) {
+                    var url = git_url_arr[i]
+
+                    var a = $("<a>")
+                    td.append(a)
+                    a.attr("href", url.replace("raw.githubusercontent.com", "github.com").replace("/master/", "/blob/master/"))
+                    a.attr("target", "_blank")
+
+                    var img = $("<img>")
+                    a.append(img)
+                    img.attr("src", "https://tei-c.org/Vault/MembersMeetings/2013/wp-content/themes/atahualpa/images/header/TEIlogo.png")
+                    img.attr("width", "45px")
+                }
+            }
+
+            $('#table').DataTable();
+        }
+
+        function createGraph2d(data) {
+            var container = document.getElementById('visualization');
+
+            var map = {}
+
+            var start = "9999-99-99"
+            var end = "0000-00-00"
+
+            for (var i = 0; i < data.length; i++) {
+                var obj = data[i]
+
+                if (obj.sent && obj.sent.date) {
+                    date = obj.sent.date
+
+                    tmp = date.split("-")
+                    //Month
+                    date = tmp[0] + "-" + tmp[1] + "-01"
+
+                    if (start > date) {
+                        start = date
+                    }
+
+                    if (end < date) {
+                        end = date
+                    }
+
+                    if (!map[date]) {
+                        map[date] = 0
+                    }
+
+                    map[date] += 1
+                }
+            }
+
+            var items = []
+
+            for (var date in map) {
+                items.push({
+                    x: date,
+                    y: map[date]
+                })
+            }
+
+            var dataset = new vis.DataSet(items);
+            var options = {
+                style: 'bar',
+                barChart: { width: 5, align: 'right' }, // align: left, center, right
+                drawPoints: false,
+                dataAxis: {
+                    icons: true
+                },
+                //legend: true,
+                orientation: 'top',
+                start: start,
+                end: end
+            };
+            graph2d = new vis.Graph2d(container, items, options);
+            graph2d.on('rangechanged', onChange);
+        }
+
+        function arrange(arr, map) {
+            var map2 = {}
+            var arr2 = []
+
+            for (var i = 0; i < arr.length; i++) {
+                var persname = arr[i]
+                if (Object.keys(map[persname]).length != 0) {
+                    //Names.push()
+                    map2[persname] = map[persname]
+                    arr2.push(persname)
+                } else {
+                    for (var j = 0; j < i; j++) {
+                        var persname2 = arr[j]
+                        var tmp_arr = map2[persname2]
+                        if (tmp_arr != null) {
+                            delete tmp_arr[persname];
+                            arr2.slice(i, 1)
+                        }
+                    }
+                }
+            }
+            return [arr2, map2]
+        }
+
+
+
+        function createChord(data) {
+
+            var types = ["sent", "received"]
+
+            var arr = []
+            var map = {}
+
+            for (var i = 0; i < data.length; i++) {
+                var obj = data[i]
+
+                if (obj.sent && obj.sent.persname && obj.received && obj.received.persname) {
+                    var sent = obj.sent.persname
+                    var received = obj.received.persname
+
+
+                    if (arr.indexOf(sent) == -1) {
+                        arr.push(sent)
+                        map[sent] = {}
+                    }
+
+                    if (arr.indexOf(received) == -1) {
+                        arr.push(received)
+                        map[received] = {}
+                    }
+
+                    var tmp = map[sent]
+                    if (tmp != null && !tmp[received]) {
+                        tmp[received] = 0
+                    }
+
+                    tmp[received] += 1
+                }
+
+
+            }
+
+
+            var result = arrange(arr, map)
+            var arr2 = result[0]
+            var map2 = result[1]
+
+            result = arrange(arr2, map2)
+            arr2 = result[0]
+            map2 = result[1]
+
+            var Names = []
+            var colors = []
+            var matrix = []
+
+            if (arr2.length > 1) {
+
+                Names = arr2
+
+                for (var i = 0; i < Names.length; i++) {
+
+                    var color = (Math.random() * 0xFFFFFF | 0).toString(16);
+                    var randomColor = "#" + ("000000" + color).slice(-6);
+                    colors.push(randomColor)
+
+                    var sent = Names[i]
+
+                    var tmp_arr = []
+                    var tmp = map2[sent]
+
+                    for (var j = 0; j < Names.length; j++) {
+                        var received = Names[j]
+                        var value = 0
+                        if (tmp != null && tmp[received]) {
+                            value = tmp[received]
+                        }
+                        tmp_arr.push(value)
+                    }
+
+                    matrix.push(tmp_arr)
+
+                }
+
+                chord_main(Names, colors, matrix)
+            }
+
+
+
+        }
+
+        function chord_main(Names, colors, matrix) {
+            var margin = { left: 20, top: 20, right: 20, bottom: 20 },
+                width = Math.min(window.innerWidth, 700) - margin.left - margin.right,
+                height = Math.min(window.innerWidth, 700) - margin.top - margin.bottom,
+                innerRadius = Math.min(width, height) * .39,
+                outerRadius = innerRadius * 1.1;
+
+            //var Names = ["Vincent van Gogh", "Theo van Gogh", "Anthon van Rappard", "John Peter Russell", "Anna van Gogh", "Arnold Koning", "Willemien van Gogh", "Theo van Gogh and Jo van Gogh-Bonger", "Joseph Ginoux", "Jo van Gogh-Bonger", "Paul Gauguin", "Paul Gachet sr.", "Théophile Peyron", "Marie Ginoux-Julien", "Joseph Roulin", "Octave Maus", "Hendrik Bonger, Hermine Bonger-Weismann and Anna van Gogh-Carbentus", "Paul Signac", "Frédéric Salles", "Christian Mourier-Petersen", "Henriette Lamblot-Gardin", "Paul-Eugène Milliet"],
+            //    colors = ["#e4e9ca", "#8e3cb0", "#263b20", "#784acd", "#c039ba", "#aba7c7", "#80649b", "#7f1826", "#de3d4b", "#84702d", "#878cd3", "#a1d6a4", "#323409", "#0b46b5", "#c0d5e1", "#c4b8d1", "#3f7cb0", "#d64909", "#653e5a", "#68bb7b", "#0d2231", "#4d7284"],
+            var opacityDefault = 0.8;
+
+            //var matrix = [[0, 659, 58, 4, 1, 2, 22, 9, 2, 1, 6, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0], [39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
+
+            ////////////////////////////////////////////////////////////
+            /////////// Create scale and layout functions //////////////
+            ////////////////////////////////////////////////////////////
+
+            var colors = d3.scale.ordinal()
+                .domain(d3.range(Names.length))
+                .range(colors);
+
+            //A "custom" d3 chord function that automatically sorts the order of the chords in such a manner to reduce overlap	
+            var chord = customChordLayout()
+                .padding(.15)
+                .sortChords(d3.descending) //which chord should be shown on top when chords cross. Now the biggest chord is at the bottom
+                .matrix(matrix);
+
+            var arc = d3.svg.arc()
+                .innerRadius(innerRadius * 1.01)
+                .outerRadius(outerRadius);
+
+            var path = d3.svg.chord()
+                .radius(innerRadius);
+
+            ////////////////////////////////////////////////////////////
+            ////////////////////// Create SVG //////////////////////////
+            ////////////////////////////////////////////////////////////
+
+            var svg = d3.select("#chart").append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + (width / 2 + margin.left) + "," + (height / 2 + margin.top) + ")");
+
+            ////////////////////////////////////////////////////////////
+            /////////////// Create the gradient fills //////////////////
+            ////////////////////////////////////////////////////////////
+
+            //Function to create the id for each chord gradient
+            function getGradID(d) { return "linkGrad-" + d.source.index + "-" + d.target.index; }
+
+            //Create the gradients definitions for each chord
+            var grads = svg.append("defs").selectAll("linearGradient")
+                .data(chord.chords())
+                .enter().append("linearGradient")
+                .attr("id", getGradID)
+                .attr("gradientUnits", "userSpaceOnUse")
+                .attr("x1", function (d, i) { return innerRadius * Math.cos((d.source.endAngle - d.source.startAngle) / 2 + d.source.startAngle - Math.PI / 2); })
+                .attr("y1", function (d, i) { return innerRadius * Math.sin((d.source.endAngle - d.source.startAngle) / 2 + d.source.startAngle - Math.PI / 2); })
+                .attr("x2", function (d, i) { return innerRadius * Math.cos((d.target.endAngle - d.target.startAngle) / 2 + d.target.startAngle - Math.PI / 2); })
+                .attr("y2", function (d, i) { return innerRadius * Math.sin((d.target.endAngle - d.target.startAngle) / 2 + d.target.startAngle - Math.PI / 2); })
+
+            //Set the starting color (at 0%)
+            grads.append("stop")
+                .attr("offset", "0%")
+                .attr("stop-color", function (d) { return colors(d.source.index); });
+
+            //Set the ending color (at 100%)
+            grads.append("stop")
+                .attr("offset", "100%")
+                .attr("stop-color", function (d) { return colors(d.target.index); });
+
+            ////////////////////////////////////////////////////////////
+            ////////////////// Draw outer Arcs /////////////////////////
+            ////////////////////////////////////////////////////////////
+
+            var outerArcs = svg.selectAll("g.group")
+                .data(chord.groups)
+                .enter().append("g")
+                .attr("class", "group")
+                .on("mouseover", fade(.1))
+                .on("mouseout", fade(opacityDefault));
+
+            outerArcs.append("path")
+                .style("fill", function (d) { return colors(d.index); })
+                .attr("d", arc)
+                .each(function (d, i) {
+                    //Search pattern for everything between the start and the first capital L
+                    var firstArcSection = /(^.+?)L/;
+
+                    //Grab everything up to the first Line statement
+                    var newArc = firstArcSection.exec(d3.select(this).attr("d"))[1];
+                    //Replace all the comma's so that IE can handle it
+                    newArc = newArc.replace(/,/g, " ");
+
+                    //If the end angle lies beyond a quarter of a circle (90 degrees or pi/2) 
+                    //flip the end and start position
+                    if (d.endAngle > 90 * Math.PI / 180 & d.startAngle < 270 * Math.PI / 180) {
+                        var startLoc = /M(.*?)A/,		//Everything between the first capital M and first capital A
+                            middleLoc = /A(.*?)0 0 1/,	//Everything between the first capital A and 0 0 1
+                            endLoc = /0 0 1 (.*?)$/;	//Everything between the first 0 0 1 and the end of the string (denoted by $)
+                        //Flip the direction of the arc by switching the start en end point (and sweep flag)
+                        //of those elements that are below the horizontal line
+
+                        if (endLoc.exec(newArc)) {
+                            var newStart = endLoc.exec(newArc)[1];
+
+                            var newEnd = startLoc.exec(newArc)[1];
+                            var middleSec = middleLoc.exec(newArc)[1];
+
+                            //Build up the new arc notation, set the sweep-flag to 0
+                            newArc = "M" + newStart + "A" + middleSec + "0 0 0 " + newEnd;
+                        }
+
+
+                    }//if
+
+                    //Create a new invisible arc that the text can flow along
+                    svg.append("path")
+                        .attr("class", "hiddenArcs")
+                        .attr("id", "arc" + i)
+                        .attr("d", newArc)
+                        .style("fill", "none");
+                });
+
+            ////////////////////////////////////////////////////////////
+            ////////////////// Append Names ////////////////////////////
+            ////////////////////////////////////////////////////////////
+
+            //Append the label names on the outside
+            outerArcs.append("text")
+                .attr("class", "titles")
+                .attr("dy", function (d, i) { return (d.endAngle > 90 * Math.PI / 180 & d.startAngle < 270 * Math.PI / 180 ? 25 : -16); })
+                .append("textPath")
+                .attr("startOffset", "50%")
+                .style("text-anchor", "middle")
+                .attr("xlink:href", function (d, i) { return "#arc" + i; })
+                .text(function (d, i) { return Names[i]; });
+
+            ////////////////////////////////////////////////////////////
+            ////////////////// Draw inner chords ///////////////////////
+            ////////////////////////////////////////////////////////////
+
+            svg.selectAll("path.chord")
+                .data(chord.chords)
+                .enter().append("path")
+                .attr("class", "chord")
+                .style("fill", function (d) { return "url(#" + getGradID(d) + ")"; })
+                .style("opacity", opacityDefault)
+                .attr("d", path)
+                .on("mouseover", mouseoverChord)
+                .on("mouseout", mouseoutChord);
+
+            ////////////////////////////////////////////////////////////
+            ////////////////// Extra Functions /////////////////////////
+            ////////////////////////////////////////////////////////////
+
+            //Returns an event handler for fading a given chord group.
+            function fade(opacity) {
+                return function (d, i) {
+                    svg.selectAll("path.chord")
+                        .filter(function (d) { return d.source.index !== i && d.target.index !== i; })
+                        .transition()
+                        .style("opacity", opacity);
+                };
+            }//fade
+
+            //Highlight hovered over chord
+            function mouseoverChord(d, i) {
+
+                //Decrease opacity to all
+                svg.selectAll("path.chord")
+                    .transition()
+                    .style("opacity", 0.1);
+                //Show hovered over chord with full opacity
+                d3.select(this)
+                    .transition()
+                    .style("opacity", 1);
+
+                //Define and show the tooltip over the mouse location
+                $(this).popover({
+                    container: 'body',
+                    trigger: 'hover',
+                    html: true,
+                    content: function () {
+                        return $("<p><b>" + Names[d.source.index] +
+                            "</b> and <b>" + Names[d.target.index] +
+                            "</b> exchanged <b>" + (d.source.value + d.target.value) + "</b> letters </p>")
+                    }
+                });
+
+                $(this).popover('show');
+
+            }//mouseoverChord
+
+            //Bring all chords back to default opacity
+            function mouseoutChord(d) {
+                //Hide the tooltip
+                $('.popover').each(function () {
+                    $(this).remove();
+                });
+                //Set opacity back to default for all
+                svg.selectAll("path.chord")
+                    .transition()
+                    .style("opacity", opacityDefault);
+            }//function mouseoutChord
+        }
+
+
+    </script>
+
+</body>
+
+</html>

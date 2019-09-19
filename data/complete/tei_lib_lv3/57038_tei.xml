@@ -44,29 +44,28 @@
                     <title>書簡　大杉栄宛</title>
                     <author>伊藤野枝</author>
                     <publisher>學藝書林</publisher>「定本　伊藤野枝全集　第二巻　評論・随筆・書簡1――『青鞜』の時代」 <date
-                        when="2000-05-31">2000（平成12）年5月31日</date>初版発行 
-                </bibl>
+                        when="2000-05-31">2000（平成12）年5月31日</date>初版発行 </bibl>
             </sourceDesc>
-            </fileDesc>
-            <profileDesc>
-                <correspDesc>
-                    <correspAction type="sent">
-                        <persName>伊藤野枝</persName>
-                        <date when="1916-04-30">一九一六年四月三〇日</date>
-                        <location>
-                            <placeName>千葉県夷隅郡御宿　上野屋旅館</placeName>
-                            <geo cert="medium" corresp="歴史地名データ">35.284722 140.246111</geo>
-                        </location>
-                    </correspAction>
-                    <correspAction type="received">
-                        <persName>木村荘太</persName>
-                        <location>
-                            <placeName>東京市麹町区三番町六四　第一福四萬館</placeName>
-                            <geo cert="medium" corresp="歴史地名データ">35.685274 139.739344</geo>
-                        </location>
-                    </correspAction>
-                </correspDesc>
-            </profileDesc>            
+        </fileDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName>伊藤野枝</persName>
+                    <date when="1916-04-30">一九一六年四月三〇日</date>
+                    <location>
+                        <placeName>千葉県夷隅郡御宿　上野屋旅館</placeName>
+                        <geo cert="medium" corresp="歴史地名データ">35.191944 140.348611</geo>
+                    </location>
+                </correspAction>
+                <correspAction type="received">
+                    <persName>木村荘太</persName>
+                    <location>
+                        <placeName>東京市麹町区三番町六四　第一福四萬館</placeName>
+                        <geo cert="medium" corresp="歴史地名データ">35.684444 139.742777</geo>
+                    </location>
+                </correspAction>
+            </correspDesc>
+        </profileDesc>
     </teiHeader>
     <text>
         <body>
