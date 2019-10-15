@@ -20,6 +20,7 @@ p{padding:10}
 <script>
 $(function() {
 $('.file_input').change(function(){
+  $(".explanation").hide();
   var arPersName = {};
   for (var i = 0; i < this.files.length; ++i){
 //		      alert(this.files[i].type);
@@ -144,6 +145,7 @@ Upload one or more TEI/ XML files. / TEI/XMLファイルをアップロードし
     </div>
 </div>
 <div class="result">
+<div class="explanation">
 <b>このページの説明:</b>
 <ul>
 <li>&lt;eaj:ruby&gt;でルビタグをつけたり&lt;said&gt;で発話にタグを付けたり
@@ -163,6 +165,7 @@ Upload one or more TEI/ XML files. / TEI/XMLファイルをアップロードし
 <li>「ファイル選択」のところから、上記のタグを用いてマークアップしたTEI/XMLファイルを読み込ませてください。
 例としては<a href="https://www.dhii.jp/nagasaki/dazai_all_20191012.xml">『走れメロス』</a>をご利用ください。
 </ul>
+</div>
 </div>
 <div class="resultb" style="display:none"></div>
  <div id="dia1" title="">
