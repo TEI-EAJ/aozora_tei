@@ -125,7 +125,7 @@ $("body").on("click",".prsName", function(){
 
 </script>
 </head><body>
-TEI/XMLファイルを選択してください。:<div style="padding:10px">
+Upload one or more TEI/ XML files. / TEI/XMLファイルをアップロードしてください。:<div style="padding:10px">
 <input class="file_input" type="file" multiple="" class="btn btn-default">
 <p><hr><p>
 <div id="leftwin" style="width:70%;display:inline-block;padding:20">
@@ -149,14 +149,19 @@ TEI/XMLファイルを選択してください。:<div style="padding:10px">
 <li>&lt;eaj:ruby&gt;でルビタグをつけたり&lt;said&gt;で発話にタグを付けたり
 &lt;persName&gt; や &lt;rs&gt; で @ref や @correspによりxml:idを付けたり
 したものを色を変えて表示したり会話や名前を取りだしてリストしたりします。
-
+<li>「検証(visualization)」をしながら&lt;eaj:ruby&gt;等を使ってルビをTEIでマークアップをしたい場合は、<a href="https://www.dhii.jp/nagasaki/tei_all_ja_20191012_4.rnc">こちらのカスタマイズされたスキーマファイル</a>を
+ご利用ください。構造は以下のようになります。なお、このようにTEIをカスタマイズする場合は namespace も追加する必要がありますが、詳しくは以下にリンクされている『走れメロス』のマークアップ（特に&lt;TEI&gt;タグのxmlns:eaj=のところ）を参考にしてください。
+<blockquote>
+&lt;eaj:ruby&gt;&lt;eaj:rb&gt;本文&lt;/eaj:rb&gt;&lt;eaj:rt&gt;ほんぶん&lt;/eaj:rt&gt;&lt;/eaj:ruby&gt;
+</blockquote>
 <li>&lt;persName&gt; や &lt;rs&gt; で @ref や @correspを用いてxml:idを与えたテキストを集計して
 グラフ表示します。
+
 </ul>
 <b>このページの使い方</b>
 <ul>
 <li>「ファイル選択」のところから、上記のタグを用いてマークアップしたTEI/XMLファイルを読み込ませてください。
-例としては<a href="http://www.dhii.jp/nagasaki/dazai_all_20191012.xml">こちらの走れメロス</a>をご利用ください。
+例としては<a href="https://www.dhii.jp/nagasaki/dazai_all_20191012.xml">『走れメロス』</a>をご利用ください。
 </ul>
 </div>
 <div class="resultb" style="display:none"></div>
