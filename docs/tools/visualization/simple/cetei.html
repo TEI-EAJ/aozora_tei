@@ -1,0 +1,168 @@
+---
+layout: default
+---
+
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../assets/thirdparty/CETEI/css/CETEIcean.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <style>
+    tei-persname {
+      color: blue;
+    }
+
+    tei-placename {
+      color: green;
+    }
+
+    tei-said {
+      color: brown;
+    }
+
+    tei-name {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container my-5" id="input">
+    <div class="jumbotron mt-3">
+      <h1>CETEIceanでTEIを表示する（本文テキストのみ表示）</h1>
+      <p class="lead"><a href="https://github.com/TEIC/CETEIcean">CETEIcean</a>: TEI in HTML5 Custom Elements</p>
+      <p class="lead">例：<a href="https://www.aozora.gr.jp/cards/000879/card86.html">芥川竜之介 二人小町 - 青空文庫</a></p>
+      <a class="btn btn btn-primary"
+        href="?url=https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/data/complete/tei_lib_lv3/86_tei.xml"
+        role="button">可視化例を見る</a>
+      <a class="btn btn btn-primary"
+        href="https://github.com/TEI-EAJ/aozora_tei/blob/master/data/complete/tei_lib_lv3/86_tei.xml"
+        role="button">サンプルデータを見る</a>
+    </div>
+
+    <div class="card mt-5">
+      <h5 class="card-header">TEI/XMLファイルのURLを入力して表示する</h5>
+      <div class="card-body">
+        <form>
+          <p class="card-text">
+            <input type="text" class="form-control" name="url" placeholder="https://.../abc.xml">
+          </p>
+          <button type="submit" class="btn btn-primary">表示</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="card mt-5">
+      <h5 class="card-header">TEI/XMLファイルを選択して表示する</h5>
+      <div class="card-body">
+        <p class="card-text">
+          <input type="file" class="form-control-file" id="getfile">
+        </p>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div class="container my-5" id="result" style="display : none;">
+    <div class="card mt-5">
+      <div class="card-body">
+        <h1 id="title"></h1>
+        <div id="TEI"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="../assets/thirdparty/CETEI/js/CETEI.js"></script>
+<script>
+
+  //パラメータの取得
+  var vars = getParam();
+
+  //XMLファイルのURL
+  var resourceUri = vars["url"]
+
+  var CETEIcean = new CETEI()
+
+  CETEIcean.addBehaviors({
+    "handlers": {
+      // Overrides the default seg/corresp behavior, displaying a short link
+      "seg": function (elt) {
+        var link = document.createElement("a");
+        link.innerHTML = "<i class='fas fa-link'></i>";
+        link.href = elt.getAttribute("corresp");
+
+        var span = document.createElement("span");
+        span.innerHTML = link.outerHTML + " " + elt.innerHTML;
+        return span;
+      }
+    }
+  });
+
+  $(function () {
+
+    if (resourceUri != "" && resourceUri != null) {
+      resourceUri = decodeURIComponent(resourceUri)
+      CETEIcean.getHTML5(resourceUri, function (data) {
+        showxml(data)
+      })
+    } else {
+
+      //入力フォーム関連の処理
+      file_input()
+    }
+
+  });
+
+  //入力フォーム関連の処理
+  function file_input() {
+    var file = $('#getfile')[0]
+    file.onchange = function () {
+      const fileList = file.files
+      var reader = new FileReader()
+      reader.readAsText(fileList[0])
+
+      reader.onload = function () {
+        var data = $.parseXML(reader.result);
+
+        CETEIcean.makeHTML5(reader.result, function (data) {
+          showxml(data)
+        })
+
+      }
+    }
+  }
+
+  //xmlの表示処理
+  function showxml(data) {
+    $("#result").show()
+    $("#input").hide()
+    $("#title").html($(data).find("tei-title")[0])
+    document.getElementById("TEI").appendChild($(data).find("tei-text")[0])
+  }
+
+  function getParam() {
+    var vars = {};
+    var param = location.search.substring(1).split('&');
+    for (var i = 0; i < param.length; i++) {
+      var keySearch = param[i].search(/=/);
+      var key = '';
+      if (keySearch != -1) key = param[i].slice(0, keySearch);
+      var val = param[i].slice(param[i].indexOf('=', 0) + 1);
+      if (key != '') vars[key] = decodeURI(val);
+    }
+    return vars;
+  }
+
+</script>
+
+</html>
