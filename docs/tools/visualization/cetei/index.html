@@ -99,7 +99,16 @@ layout: default
       "seg": function (elt) {
         var link = document.createElement("a");
         link.innerHTML = "<i class='fas fa-link'></i>";
-        link.href = elt.getAttribute("corresp");
+        link.href = elt.getAttribute("corresp")
+
+        var span = document.createElement("span");
+        span.innerHTML = link.outerHTML + " " + elt.innerHTML;
+        return span;
+      },
+      "span": function (elt) {
+        var link = document.createElement("span");
+        link.innerHTML = elt.getAttribute("xml:id");
+        link.classList.add('text-info');
 
         var span = document.createElement("span");
         span.innerHTML = link.outerHTML + " " + elt.innerHTML;
