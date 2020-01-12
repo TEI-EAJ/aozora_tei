@@ -1,0 +1,84 @@
+{
+	"id": "https://api.myjson.com/bins/dmdla",
+	"type": "Manifest",
+	"label": "芥川竜之介 三つの宝",
+	"sequences": [
+		{
+			"id": "https://api.myjson.com/bins/dmdla/sequence/1",
+			"type": "Sequence",
+			"canvases": [
+				{
+					"id": "https://api.myjson.com/bins/dmdla/canvas/1",
+					"type": "Canvas",
+					"label": "芥川竜之介 三つの宝",
+					"height": 360,
+					"width": 480,
+					"duration": 937,
+					"content": [
+						{
+							"id": "...",
+							"type": "AnnotationPage",
+							"items": [
+								{
+									"id": "...",
+									"type": "Annotation",
+									"motivation": "painting",
+									"body": [
+										{
+											"type": "Choice",
+											"choiceHint": "user",
+											"items": [
+												{
+													"id": "https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/src/text2speech/data/1126_tei.mp3",
+													"type": "Audio",
+													"label": "High",
+													"format": "audio/mp3"
+												}
+											]
+										}
+									],
+									"target": "https://api.myjson.com/bins/dmdla/canvas/1"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"structures": [
+		{
+			"id": "https://api.myjson.com/bins/dmdla/range/1",
+			"type": "Range",
+			"label": "一",
+			"members": [
+				{
+					"id": "https://api.myjson.com/bins/dmdla/canvas/1#t=0,205",
+					"type": "Canvas"
+				}
+			]
+		},
+		{
+			"id": "https://api.myjson.com/bins/dmdla/range/2",
+			"type": "Range",
+			"label": "二",
+			"members": [
+				{
+					"id": "https://api.myjson.com/bins/dmdla/canvas/1#t=205,450",
+					"type": "Canvas"
+				}
+			]
+		},
+		{
+			"id": "https://api.myjson.com/bins/dmdla/range/3",
+			"type": "Range",
+			"label": "三",
+			"members": [
+				{
+					"id": "https://api.myjson.com/bins/dmdla/canvas/1#t=450,937",
+					"type": "Canvas"
+				}
+			]
+		}
+	]
+}
