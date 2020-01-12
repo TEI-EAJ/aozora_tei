@@ -3,8 +3,9 @@ layout: default
 ---
 
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <title>LINE風チャット画面 │ TEIで青空文庫</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel='stylesheet' href='../assets/css/style.css' type='text/css' media='all' />
@@ -20,8 +21,12 @@ layout: default
         <h1>戯曲をLINE風チャット画面で表示する</h1>
         <p class="lead">台詞&lt;sp who=""&gt;と固有名詞&lt;persName corresp=""&gt;を抽出して戯曲をLINE風チャット画面で表示する.</p>
         <p class="lead">例1：<a href="https://www.aozora.gr.jp/cards/000879/card1126.html">芥川竜之介 三つの宝 - 青空文庫</a></p>
-        <a class="btn btn btn-primary" href="?url=https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/data/complete/tei_lib_lv3/1126_tei.xml" role="button">可視化例を見る</a>
-        <a class="btn btn btn-info" href="https://github.com/TEI-EAJ/aozora_tei/blob/master/data/complete/tei_lib_lv3/1126_tei.xml" role="button">サンプルデータを見る</a>
+        <a class="btn btn btn-primary"
+          href="?url=https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/data/complete/tei_lib_lv3/1126_tei.xml"
+          role="button">可視化例を見る</a>
+        <a class="btn btn btn-info"
+          href="https://github.com/TEI-EAJ/aozora_tei/blob/master/data/complete/tei_lib_lv3/1126_tei.xml"
+          role="button">サンプルデータを見る</a>
         <p class="lead mt-4">例2：<a href="https://www.aozora.gr.jp/cards/000026/card55783.html">中原中也 夢 - 青空文庫</a></p>
         <a class="btn btn btn-primary"
           href="?url=https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/data/complete/tei_lib_lv3/55783_tei.xml"
@@ -60,7 +65,9 @@ layout: default
   <div class="line__container" style="display: none;" id="line">
     <!-- タイトル -->
     <div class="line__title">
-
+      <span id="line__title"></span><button id="play" class="ml-5 btn btn-info" style="display : none;">音声の再生</button>
+      <!-- audioタグを設置　src属性に再生した音声ファイルのパスを指定　 -->
+      <audio id='sound' preload="auto" type="audio/mp3"></audio>
     </div>
 
     <!-- ▼会話エリア scrollを外すと高さ固定解除 -->
@@ -71,181 +78,197 @@ layout: default
 
 </body>
 
-<script
-src="https://code.jquery.com/jquery-3.3.1.min.js"
-integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="../assets/thirdparty/CETEI/js/CETEI.js"></script>
 <script>
 
-var icon_map = {}
-icon_map["第一の盗人"] = "https://1.bp.blogspot.com/-x1TYmvuJ0fk/WtRy4O60tbI/AAAAAAABLiU/gkNqSBKD-tEmPOwkilATzE_ukevNfWcdQCLcBGAs/s180-c/dorobou_money_kasoutsuuka_coin.png"
-icon_map["第二の盗人"] = "http://4.bp.blogspot.com/-fZJOyp9YgVE/VaTecGZrx9I/AAAAAAAAvlU/xijx0sebcVU/s180-c/jiko_dorobou_window.png"
-icon_map["第三の盗人"] = "https://1.bp.blogspot.com/-23ye7Zu2zCw/V1z81BHbTeI/AAAAAAAA7Mk/bC2stOuNICozcNoaMo1jhPu4LDvNS_PaACLcB/s180-c/character_kaitou_dorobou.png"
-icon_map["王子"] = "https://3.bp.blogspot.com/-C57p_2yscjM/WaOeM1LuPzI/AAAAAAABGLA/woikMEJKIcYVxLgWbvsq660NcP3PiaMwACLcBGAs/s180-c/royal_prince.png"
-icon_map["黒ん坊の王"] = "https://3.bp.blogspot.com/-8YetE9SnMGE/Wc8f4VngjUI/AAAAAAABHI0/UhnriN66HAgou3Y_MFCQVkIq-pUq8awAACLcBGAs/s180-c/royal_king_gyokuza.png"
-icon_map["王女"] = "https://1.bp.blogspot.com/-dQHPshzm_tY/WaOePIs3e9I/AAAAAAABGLI/bvasBK5wZPIVPskCglfUp5itLsFfJJRGQCLcBGAs/s180-c/royal_princess.png"
-icon_map["宿屋の主人"] = "https://3.bp.blogspot.com/-89ED7hk_-UQ/Wi4gIDiVXpI/AAAAAAABItw/sEue9RlJBqs4L4gFmBggSN9qBJ_DmtoPgCLcBGAs/s180-c/hair_usuge_middle.png"
-icon_map["第二の農夫"] = "https://2.bp.blogspot.com/-kMbdxwET8Go/Wn1VcZ9oGBI/AAAAAAABKCY/7dL-doSO7EgkxvT97_5W7VPiy0_lsPRAgCLcBGAs/s180-c/agura_kutsurogu3_ojisan.png"
-icon_map["第一の農夫"] = "https://2.bp.blogspot.com/-PyFAYWpdoFE/W_UF64ZLkBI/AAAAAAABQTs/QblG0MDt0AkGF5UZwhXxURI01rtUQOj0wCLcBGAs/s180-c/biyou_hige_busyohige.png"
+  $(function () {
+    $('#play').on('click', function () {
+      $("#sound")[0].play();
+    });
+  });
 
-//パラメータの取得
-var vars = getParam();
-//発話者
-var speaker = vars["speaker"] ? vars["speaker"] : "王子"
-//XMLファイルのURL
-var resourceUri = vars["url"]
+  var icon_map = {}
+  icon_map["第一の盗人"] = "https://1.bp.blogspot.com/-x1TYmvuJ0fk/WtRy4O60tbI/AAAAAAABLiU/gkNqSBKD-tEmPOwkilATzE_ukevNfWcdQCLcBGAs/s180-c/dorobou_money_kasoutsuuka_coin.png"
+  icon_map["第二の盗人"] = "http://4.bp.blogspot.com/-fZJOyp9YgVE/VaTecGZrx9I/AAAAAAAAvlU/xijx0sebcVU/s180-c/jiko_dorobou_window.png"
+  icon_map["第三の盗人"] = "https://1.bp.blogspot.com/-23ye7Zu2zCw/V1z81BHbTeI/AAAAAAAA7Mk/bC2stOuNICozcNoaMo1jhPu4LDvNS_PaACLcB/s180-c/character_kaitou_dorobou.png"
+  icon_map["王子"] = "https://3.bp.blogspot.com/-C57p_2yscjM/WaOeM1LuPzI/AAAAAAABGLA/woikMEJKIcYVxLgWbvsq660NcP3PiaMwACLcBGAs/s180-c/royal_prince.png"
+  icon_map["黒ん坊の王"] = "https://3.bp.blogspot.com/-8YetE9SnMGE/Wc8f4VngjUI/AAAAAAABHI0/UhnriN66HAgou3Y_MFCQVkIq-pUq8awAACLcBGAs/s180-c/royal_king_gyokuza.png"
+  icon_map["王女"] = "https://1.bp.blogspot.com/-dQHPshzm_tY/WaOePIs3e9I/AAAAAAABGLI/bvasBK5wZPIVPskCglfUp5itLsFfJJRGQCLcBGAs/s180-c/royal_princess.png"
+  icon_map["宿屋の主人"] = "https://3.bp.blogspot.com/-89ED7hk_-UQ/Wi4gIDiVXpI/AAAAAAABItw/sEue9RlJBqs4L4gFmBggSN9qBJ_DmtoPgCLcBGAs/s180-c/hair_usuge_middle.png"
+  icon_map["第二の農夫"] = "https://2.bp.blogspot.com/-kMbdxwET8Go/Wn1VcZ9oGBI/AAAAAAABKCY/7dL-doSO7EgkxvT97_5W7VPiy0_lsPRAgCLcBGAs/s180-c/agura_kutsurogu3_ojisan.png"
+  icon_map["第一の農夫"] = "https://2.bp.blogspot.com/-PyFAYWpdoFE/W_UF64ZLkBI/AAAAAAABQTs/QblG0MDt0AkGF5UZwhXxURI01rtUQOj0wCLcBGAs/s180-c/biyou_hige_busyohige.png"
 
-var CETEIcean = new CETEI()
+  //パラメータの取得
+  var vars = getParam();
+  //発話者
+  var speaker = vars["speaker"] ? vars["speaker"] : "王子"
+  //XMLファイルのURL
+  var resourceUri = vars["url"]
 
-$(function(){
+  var CETEIcean = new CETEI()
 
-  if(resourceUri != "" && resourceUri != null){
-    resourceUri = decodeURIComponent(resourceUri)
-    CETEIcean.getHTML5(resourceUri, function(data) {
-      showxml(data)
-    })
-  } else {
+  $(function () {
 
-    //入力フォームの表示
-    $("#input").show()
-    //入力フォーム関連の処理
-    file_input()
-  }
+    if (resourceUri != "" && resourceUri != null) {
+      resourceUri = decodeURIComponent(resourceUri)
 
-});
+      let tmp = resourceUri.split("/")
+      let filename = tmp[tmp.length - 1].split(".")[0]
+      let mp3 = "https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/src/text2speech/data/" + filename + ".mp3"
 
-//入力フォーム関連の処理
-function file_input(){
-  var file = $('#getfile')[0]
-  file.onchange = function ()
-  {
-    const fileList = file.files
-    var reader = new FileReader()
-    reader.readAsText(fileList[0])
+      $.get(mp3)
+        .done(function () {
+          $("#sound").attr("src", mp3)
+          $("#play").show()
+        }).fail(function () {
+          console.log("not exists")
+        })
 
-    reader.onload = function ()
-    {
-      var data = $.parseXML(reader.result);
-
-      CETEIcean.makeHTML5(reader.result, function(data) {
+      CETEIcean.getHTML5(resourceUri, function (data) {
         showxml(data)
       })
-
-    }
-  }
-}
-
-//xmlの表示処理
-function showxml(data){
-
-  $("#line").show()
-  $("#input").hide()
-
-
-  var title = $($(data).find("tei-title")[0]).text()
-  var author = $($(data).find("tei-author")[0]).text()
-
-  //タイトル
-  $(".line__title").text(author+" "+title)
-
-  //発話者の一覧を取得
-  var speakers = []
-  var target_tags = ["tei-person", "tei-persName"]
-  for(var j = 0; j < target_tags.length; j++){
-    var person_list = $(data).find(target_tags[j])
-    for(var i = 0; i < person_list.length; i++){
-      var person = $(person_list[i]).attr("id")
-      speakers.push(person)
-    }
-  }
-
-  //メインの発話者を取得
-  var subject_speaker;
-  if(speakers.indexOf(speaker) != -1){
-    subject_speaker = speaker
-  } else {
-    subject_speaker = speakers[0]
-  }
-
-  var count = 1
-
-  //spのタグ一覧
-  var sp_list = $(data).find("tei-sp")
-  for(var i = 0; i < sp_list.length; i++){
-    var sp = sp_list[i]
-
-    if($(sp).attr("who") == null){
-      continue
-    }
-
-    //who属性値の取得
-    var name = $(sp).attr("who").split("#")[1]
-
-    var text = $("<div>")
-
-    var p_list = $(sp).find("tei-p")
-    var li = $("<li>")
-    for(var j = 0; j < p_list.length; j++){
-      var value = $(p_list[j]).html()
-      value = value.replace(/<tei-span type="ruby" data-origname="span"><tei-span type="rb" data-origname="span">(.*?)<\/tei-span>(.*?)<\/tei-span><\/tei-span>/g, '$1')
-      value = value.replace("――", "")
-      value = value.replace("――", "")
-      var p = $("<p>").append(value)
-      text.append(p)
-    }
-
-    var line = $('<div>')
-    if(name == subject_speaker){
-      line.attr("class", "line__right")
-
-      var dt = $('<div class="text">').append(text)
-      line.append(dt)
-
-      count += 1
-      var date = $('<span class="date">既読<br>0:'+('0' + count).slice(-2)+'</span>')
-      line.append(date)
-
     } else {
-      line.attr("class", "line__left")
 
-      var figure = $("<figure>")
-      line.append(figure)
-
-      var img = $('<img>')
-      figure.append(img)
-      var url = "https://img.icons8.com/ios/1600/user-male-circle-filled.png"
-      if(icon_map[name]){
-        url = icon_map[name]
-      }
-      img.attr("src", url)
-
-      var div = $('<div class="line__left-text">')
-      line.append(div)
-
-      var dn = $('<div class="name">').append(name)
-      div.append(dn)
-
-      var dt = $('<div class="text">').append(text)
-      div.append(dt)
+      //入力フォームの表示
+      $("#input").show()
+      //入力フォーム関連の処理
+      file_input()
     }
 
-    $("#main").append(line)
-  }
-}
+  });
 
-function getParam(){
-  var vars = {};
-  var param = location.search.substring(1).split('&');
-  for(var i = 0; i < param.length; i++) {
-    var keySearch = param[i].search(/=/);
-    var key = '';
-    if(keySearch != -1) key = param[i].slice(0, keySearch);
-    var val = param[i].slice(param[i].indexOf('=', 0) + 1);
-    if(key != '') vars[key] = decodeURI(val);
+  //入力フォーム関連の処理
+  function file_input() {
+    var file = $('#getfile')[0]
+    file.onchange = function () {
+      const fileList = file.files
+      var reader = new FileReader()
+      reader.readAsText(fileList[0])
+
+      reader.onload = function () {
+        var data = $.parseXML(reader.result);
+
+        CETEIcean.makeHTML5(reader.result, function (data) {
+          showxml(data)
+        })
+
+      }
+    }
   }
-  return vars;
-}
+
+  //xmlの表示処理
+  function showxml(data) {
+
+    $("#line").show()
+    $("#input").hide()
+
+
+    var title = $($(data).find("tei-title")[0]).text()
+    var author = $($(data).find("tei-author")[0]).text()
+
+    //タイトル
+    $("#line__title").text(author + " " + title)
+
+    //発話者の一覧を取得
+    var speakers = []
+    var target_tags = ["tei-person", "tei-persName"]
+    for (var j = 0; j < target_tags.length; j++) {
+      var person_list = $(data).find(target_tags[j])
+      for (var i = 0; i < person_list.length; i++) {
+        var person = $(person_list[i]).attr("id")
+        speakers.push(person)
+      }
+    }
+
+    //メインの発話者を取得
+    var subject_speaker;
+    if (speakers.indexOf(speaker) != -1) {
+      subject_speaker = speaker
+    } else {
+      subject_speaker = speakers[0]
+    }
+
+    var count = 1
+
+    //spのタグ一覧
+    var sp_list = $(data).find("tei-sp")
+    for (var i = 0; i < sp_list.length; i++) {
+      var sp = sp_list[i]
+
+      if ($(sp).attr("who") == null) {
+        continue
+      }
+
+      //who属性値の取得
+      var name = $(sp).attr("who").split("#")[1]
+
+      var text = $("<div>")
+
+      var p_list = $(sp).find("tei-p")
+      var li = $("<li>")
+      for (var j = 0; j < p_list.length; j++) {
+        var value = $(p_list[j]).html()
+        value = value.replace(/<tei-span type="ruby" data-origname="span"><tei-span type="rb" data-origname="span">(.*?)<\/tei-span>(.*?)<\/tei-span><\/tei-span>/g, '$1')
+        value = value.replace("――", "")
+        value = value.replace("――", "")
+        var p = $("<p>").append(value)
+        text.append(p)
+      }
+
+      var line = $('<div>')
+      if (name == subject_speaker) {
+        line.attr("class", "line__right")
+
+        var dt = $('<div class="text">').append(text)
+        line.append(dt)
+
+        count += 1
+        var date = $('<span class="date">既読<br>0:' + ('0' + count).slice(-2) + '</span>')
+        line.append(date)
+
+      } else {
+        line.attr("class", "line__left")
+
+        var figure = $("<figure>")
+        line.append(figure)
+
+        var img = $('<img>')
+        figure.append(img)
+        var url = "https://img.icons8.com/ios/1600/user-male-circle-filled.png"
+        if (icon_map[name]) {
+          url = icon_map[name]
+        }
+        img.attr("src", url)
+
+        var div = $('<div class="line__left-text">')
+        line.append(div)
+
+        var dn = $('<div class="name">').append(name)
+        div.append(dn)
+
+        var dt = $('<div class="text">').append(text)
+        div.append(dt)
+      }
+
+      $("#main").append(line)
+    }
+  }
+
+  function getParam() {
+    var vars = {};
+    var param = location.search.substring(1).split('&');
+    for (var i = 0; i < param.length; i++) {
+      var keySearch = param[i].search(/=/);
+      var key = '';
+      if (keySearch != -1) key = param[i].slice(0, keySearch);
+      var val = param[i].slice(param[i].indexOf('=', 0) + 1);
+      if (key != '') vars[key] = decodeURI(val);
+    }
+    return vars;
+  }
 
 </script>
+
 </html>
