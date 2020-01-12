@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>春</title>
+            <author>竹久夢二</author>
+            <respStmt>
+               <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+               <resp when="2006-07-02">作成</resp>
+               <resp/>
+               <note><lb/> 底本：「童話集　春」小学館文庫、小学館<lb/> 　　　2004（平成16）年8月1日初版第1刷発行<lb/>
+                  底本の親本：「童話　春」研究社<lb/> 　　　1926（大正15）年12月<lb/> 入力：noir<lb/> 校正：noriko saito<lb/><date
+                     when="2006-07-02">2006年7月2日</date>作成<lb/> 青空文庫作成ファイル：<lb/>
+                  このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。</note>
+            </respStmt>
+            <respStmt>
+               <resp>Aozora Transcription</resp>
+               <name>noir</name>
+            </respStmt>
+            <respStmt>
+               <resp>Aozora Proofreading</resp>
+               <name>noriko saito</name>
+            </respStmt>
+            <respStmt>
+               <resp when="2019-11-28">TEI Encoding</resp>
+               <name>Kano Yasuyuki</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+            <date when="2019-03-04">2019-03-04</date>
+            <availability>
+               <p><ref target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal
+                     (CC0 1.0) Public Domain Dedication</ref></p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>底本：「<title>童話集　春</title>」小学館文庫、<publisher>小学館</publisher> 　　　<date
+                  when="2004-08-01">2004（平成16）年8月1日</date>初版第1刷発行 本の親本：「童話　春」研究社
+               　　　1926（大正15）年12月</bibl>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <front>
+         <lb/>
+         <lb/>
+         <lb/>
+         <head> 　時</head>
+         <lb/>
+         <p> ある春の晴れた朝</p>
+         <lb/>
+         <head> 　所</head>
+         <lb/>
+         <p> 花咲ける丘</p>
+         <lb/>
+         <head> 　人物</head>
+         <lb/>
+         <castList>
+            <castItem>
+               <role xml:id="少年">少年　　　（十三歳位）</role></castItem>
+            <lb/>
+            <castItem>
+               <role xml:id="少女">少女　　　（十一二歳）</role></castItem>
+            <lb/>
+            <castItem>
+               <role xml:id="先生">先生　　　（小学教師）</role></castItem>
+            <lb/>
+            <castItem>
+               <role xml:id="猟人">猟人　　　（若き遊猟家）</role></castItem>
+            <lb/>
+            <castItem>
+               <role xml:id="兎">兎　　　　（十二三歳少女扮装）</role></castItem>
+         </castList>
+         <lb/>
+         <lb/>
+         <set>
+            <p>舞台は、桜の花など咲いた野外が好ましいが、室内で装置する場合には、緑色の布を額縁として<span type="ruby"><span type="rb"
+                     >画</span><span type="rp">（</span><span type="rt">くぎ</span><span type="rp"
+                     >）</span></span>り、地は、春の土を思わせるような、黄土色の布か、<span type="ruby"><span type="rb"
+                     >緋毛氈</span><span type="rp">（</span><span type="rt">ひもうせん</span><span type="rp"
+                     >）</span></span>を敷きつめる。背景は、神経質な電気の反射を避けるため、空も山も花も草も、それぞれの色の布を<span type="ruby"
+                     ><span type="rb">貼</span><span type="rp">（</span><span type="rt">は</span><span
+                     type="rp"
+                  >）</span></span>りつけたものを用う。すべて舞台の装置も、演出も、神経的でなく、子供の本能と情操とが想像した、愛らしい<span
+                  type="ruby"><span type="rb">朗</span><span type="rp">（</span><span type="rt"
+                     >ほがら</span><span type="rp">）</span></span>かな春そのものの創造であること。<lb/> 　<span
+                  type="ruby"><span type="rb">扮装</span><span type="rp">（</span><span type="rt"
+                     >ふんそう</span><span type="rp">）</span></span>は、少年少女は<span type="ruby"><span
+                     type="rb">平常着</span><span type="rp">（</span><span type="rt">ふだんぎ</span><span
+                     type="rp">）</span></span>のままでも<span type="ruby"><span type="rb">好</span><span
+                     type="rp">（</span><span type="rt">よ</span><span type="rp"
+                  >）</span></span>い、その<span type="ruby"><span type="rb">他</span><span type="rp"
+                     >（</span><span type="rt">ほか</span><span type="rp"
+                  >）</span></span>は子供の空想の産物で好いが、先生は威厳を損じない程度にのどかな人物であること、<span type="ruby"><span
+                     type="rb">猟人</span><span type="rp">（</span><span type="rt">かりうど</span><span
+                     type="rp">）</span></span>はずんぐりしていて意気なあわてもの、<span type="ruby"><span type="rb"
+                     >兎</span><span type="rp">（</span><span type="rt">うさぎ</span><span type="rp"
+                     >）</span></span>はフランネルのマスクを<span type="ruby"><span type="rb">被</span><span
+                     type="rp">（</span><span type="rt">かぶ</span><span type="rp"
+               >）</span></span>る。<lb/></p>
+         </set>
+
+         <span rend="notes">［＃改ページ］</span>
+
+      </front>
+      <body>
+         <div type="act" n="第一景">
+            <head>第一景</head>
+            <stage>幕があくと、舞台裏から<span type="ruby"><span type="rb">左</span><span type="rp"
+                     >（</span><span type="rt">さ</span><span type="rp"
+               >）</span></span>の唱歌が、だんだん近づき、舞台下手から少年少女が歌いながら登場。</stage>
+            <sp who="#少年 #少女">
+               <p>さくら　　さくら<lb/> やよいの　そらは<lb/> みわたす　かぎり<lb/> かすみか　くもか<lb/></p>
+            </sp>
+            <stage>少年少女が登場すると、舞台裏でもその唱歌を少し遅らせて、<span type="ruby"><span type="rb">山彦</span><span
+                     type="rp">（</span><span type="rt">やまびこ</span><span type="rp"
+               >）</span></span>の心持で歌う。<lb/></stage>
+            <sp who="#少女">
+               <speaker>少女</speaker>
+               <p>「おや！　兄さん、<span type="ruby"><span type="rb">誰</span><span type="rp">（</span><span
+                        type="rt">だれ</span><span type="rp">）</span></span>か山の向うでも歌っていてよ」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「うそだよ、きっと<span type="ruby"><span type="rb">夏</span><span type="rp">（</span><span
+                        type="rt">なっ</span><span type="rp">）</span></span>ちゃんの空耳だろう」</p>
+            </sp>
+            <stage> 少年歌いつづける。少女耳をすます。<lb/> においぞ　　いずる<lb/> いざや　　いざや<lb/> みに　　　ゆかん<lb/></stage>
+            <sp who="#少女">
+               <speaker>少女</speaker>
+               <p>「いいえ兄さん、よく聞いて御覧なさい……ほらね」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「ああ、ほんとだ、<span type="ruby"><span type="rb">誰</span><span type="rp">（</span><span
+                        type="rt">だれ</span><span type="rp">）</span></span>だろう」</p>
+            </sp>
+            <sp who="#少女">
+               <speaker>少女</speaker>
+               <p>「ね、兄さんもっと何か言って御覧なさい」</p>
+            </sp>
+
+            <stage>さくら　　　さくら<lb/> やよいの　　そらは<lb/> 少年歌いながら首を<span type="ruby"><span type="rb"
+                     >傾</span><span type="rp">（</span><span type="rt">かたむ</span><span type="rp"
+                     >）</span></span>、舞台裏でも歌を<span type="ruby"><span type="rb">真似</span><span
+                     type="rp">（</span><span type="rt">まね</span><span type="rp"
+               >）</span></span>る。<lb/></stage>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「誰だ！」</p>
+            </sp>
+            <sp who="#山彦">
+               <speaker>山彦</speaker>
+               <p>「誰だ！」</p>
+            </sp>
+
+            <stage>少女おどおどと少年に寄添う。</stage>
+            <lb/>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「真似をするのは誰だい」</p>
+            </sp>
+            <sp who="#山彦">
+               <speaker>山彦</speaker>
+               <p>「真似をするのは誰だい」</p>
+            </sp>
+            <sp who="#少女">
+               <speaker>少女</speaker>
+               <p>「兄さん、あたし怖くなったわ」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「怖かあないよ。誰かきっと<span type="ruby"><span type="rb">悪戯</span><span type="rp"
+                        >（</span><span type="rt">いたずら</span><span type="rp"
+                  >）</span></span>をしているんだ」</p>
+            </sp>
+            <span rend="jisage_3" rendition="div" style="margin-left: 3em"> 少年勇敢に力みながら<lb/></span>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「人の真似をするのは失敬だぞ！」</p>
+            </sp>
+            <sp who="#山彦">
+               <speaker>山彦</speaker>
+               <p>「人の真似をするのは失敬だぞ！」</p>
+            </sp>
+            <sp who="#少女">
+               <speaker>少女</speaker>
+               <p>「大丈夫兄さん？」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「大丈夫だよ」山に向い「<span type="ruby"><span type="rb">馬鹿</span><span type="rp"
+                        >（</span><span type="rt">ばか</span><span type="rp">）</span></span>野郎」</p>
+            </sp>
+            <sp who="#山彦">
+               <speaker>山彦</speaker>
+               <p>「馬鹿野郎」</p>
+            </sp>
+            <sp who="#少女">
+               <speaker>少女</speaker>
+               <p>「兄さん。向うの人きっと怒ったのよ」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「そうかなあ」</p>
+            </sp>
+            <stage><span rend="jisage_3" rendition="div" style="margin-left: 3em"> 少年も<span
+                     type="ruby"><span type="rb">怖気</span><span type="rp">（</span><span type="rt"
+                        >おじけ</span><span type="rp">）</span></span>づき、妹をかばう。<lb/> 上手より<span
+                     type="ruby"><span type="rb">吉野</span><span type="rp">（</span><span type="rt"
+                        >よしの</span><span type="rp">）</span></span>先生登場。<lb/></span></stage>
+
+            <sp who="#少女">
+               <speaker>少女</speaker>
+               <p>「あら先生よ」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「あ、吉野先生、こんちは」</p>
+            </sp>
+            <sp who="#先生">
+               <speaker>先生</speaker>
+               <p>「今日は」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「先生、先生は<span type="ruby"><span type="rb">先刻</span><span type="rp">（</span><span
+                        type="rt">さっき</span><span type="rp">）</span></span>、山の方で唱歌をお歌いになりましたか」</p>
+            </sp>
+            <sp who="#先生">
+               <speaker>先生</speaker>
+               <p>「いや、歌いませんぞ」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「でも、先生、ぼくたちが唱歌を歌っていたら向うの山でも唱歌を歌いましたよ」</p>
+            </sp>
+            <sp who="#先生">
+               <speaker>先生</speaker>
+               <p>「なるほど」</p>
+            </sp>
+            <sp who="#少女">
+               <speaker>少女</speaker>
+               <p>「それからねえ先生、あんまり<span type="ruby"><span type="rb">真似</span><span type="rp"
+                        >（</span><span type="rt">まね</span><span type="rp"
+                     >）</span></span>をするからお兄さんが<span type="ruby"><span type="rb">誰</span><span
+                        type="rp">（</span><span type="rt">だれ</span><span type="rp"
+                     >）</span></span>だって<span type="ruby"><span type="rb">仰言</span><span type="rp"
+                        >（</span><span type="rt">おっしゃ</span><span type="rp"
+                  >）</span></span>ると、向うでも誰だって言いましてよ」</p>
+            </sp>
+            <sp who="#先生">
+               <speaker>先生</speaker>
+               <p>「なるほどね」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「あれは山の<span type="ruby"><span type="rb">婆</span><span type="rp">（</span><span
+                        type="rt">ばばあ</span><span type="rp">）</span></span>が歌ったんですか」</p>
+            </sp>
+            <sp who="#先生">
+               <speaker>先生</speaker>
+               <p>「ははは、それはね山のお<span type="ruby"><span type="rb">婆</span><span type="rp"
+                        >（</span><span type="rt">ばあ</span><span type="rp"
+                     >）</span></span>さんでも神様でもない。<span type="ruby"><span type="rb">山彦</span><span
+                        type="rp">（</span><span type="rt">やまびこ</span><span type="rp"
+                  >）</span></span>というものじゃ」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「山彦がものを言うんですか」</p>
+            </sp>
+            <sp who="#先生">
+               <speaker>先生</speaker>
+               <p>「そうじゃ、こちらの声が向うの山へ響くと、向うの山がそれを返してくるのじゃ、だからこちらの言う通りに向うでも答えるのだ」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「だから僕が<span type="ruby"><span type="rb">馬鹿</span><span type="rp">（</span><span
+                        type="rt">ばか</span><span type="rp"
+                  >）</span></span>野郎って言ったら向うでも馬鹿野郎って言いましたよ」</p>
+            </sp>
+            <sp who="#先生">
+               <speaker>先生</speaker>
+               <p>「そうだろう。だからこちらで何かやさしい事を言ってやれば、向うでもやさしい事を返してくるのじゃ」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「おもしろいなあ」</p>
+            </sp>
+            <sp who="#少女">
+               <speaker>少女</speaker>
+               <p>「兄さん、何かやさしい事を言って御覧なさい」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>（山に向い）「こんちは、ごきげんはいかがですか」</p>
+            </sp>
+            <sp who="#山彦">
+               <speaker>山彦</speaker>
+               <p>「こんちは、ごきげんはいかがですか」</p>
+            </sp>
+            <span rend="jisage_3" rendition="div" style="margin-left: 3em">
+               少年少女顔を見合せて笑う。<lb/></span>
+            <sp who="#少年 #少女">
+               <speaker>少年少女</speaker>
+               <p>「あなたは<span type="ruby"><span type="rb">好</span><span type="rp">（</span><span
+                        type="rt">い</span><span type="rp">）</span></span>い方ですね」</p>
+            </sp>
+            <sp who="#山彦">
+               <speaker>山彦</speaker>
+               <p>「あなたは好い方ですね」</p>
+            </sp>
+            <sp who="#先生">
+               <speaker>先生</speaker>
+               <p>「どうだね、山彦は正直だろう。どれ私は行こう、仲よく遊んでおいで」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「先生、さよなら」</p>
+            </sp>
+            <sp who="#少女">
+               <speaker>少年少女</speaker>
+               <p>「さようなら」</p>
+            </sp>
+            <stage>
+               <span rend="jisage_3" rendition="div" style="margin-left: 3em"> 先生下手へ去る。<lb/></span>
+               <span rend="notes">［＃改ページ］</span>
+            </stage>
+            <lb/>
+            <lb/>
+         </div>
+         <div type="act" n="第二景">
+            <head>第二景</head>
+            <lb/>
+            <lb/>
+            <stage>舞台は前景のまま、少年は木の枝など振りて歩きまわる。<lb/> 少女摘草などする。<lb/> この時舞台裏から<span type="ruby"><span
+                     type="rb">左</span><span type="rp">（</span><span type="rt">さ</span><span
+                     type="rp">）</span></span>の歌が聞える。</stage>
+            <lb/>
+            <span rend="jisage_2" rendition="div" style="margin-left: 2em"> ころ　ころ　小山の　<span
+                  type="ruby"><span type="rb">小兎</span><span type="rp">（</span><span type="rt"
+                     >こうさぎ</span><span type="rp">）</span></span>は<lb/> なぜに　ころ　ころ　お泣きだえ<lb/>
+               お母さんがないか<lb/> 実がないか<lb/> お母さんは　そばに　いなさるし<lb/> 木の実は　お山に　あるけれど<lb/> 九十九人の<span
+                  type="ruby"><span type="rb">猟人</span><span type="rp">（</span><span type="rt"
+                     >かりうど</span><span type="rp">）</span></span>が<lb/> 九十九谷をとりまいて<lb/><span
+                  type="ruby"><span type="rb">母子</span><span type="rp">（</span><span type="rt"
+                     >おやこ</span><span type="rp">）</span></span>もろとも打つわいな。<lb/></span>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「<span type="ruby"><span type="rb">山彦</span><span type="rp">（</span><span
+                        type="rt">やまびこ</span><span type="rp">）</span></span>がまた歌い出したよ」</p>
+            </sp>
+            <sp who="#少女">
+               <speaker>少女</speaker>
+               <p>「そうね」（耳をすます）</p>
+            </sp>
+            <stage><span rend="jisage_3" rendition="div" style="margin-left: 3em">
+                     歌が終ると、下手から一匹の兎が<span type="ruby"><span type="rb">呼吸</span><span type="rp"
+                        >（</span><span type="rt">いき</span><span type="rp"
+                  >）</span></span>をきらしながら走って出る。<lb/></span></stage>
+            <sp who="#兎">
+               <speaker>兎</speaker>
+               <p>「助けて下さい。怖い猟人がわたしを撃ちにくるんです」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「その猟人はどこにいるの」</p>
+            </sp>
+            <sp who="#兎">
+               <speaker>兎</speaker>
+               <p>「あれあの坂をいま上ってます。もうじきここへ来るでしょう。どうぞわたしを助けて下さい。」</p>
+            </sp>
+            <sp who="#少女">
+               <speaker>少女</speaker>
+               <p>「まあ、<span type="ruby"><span type="rb">可哀</span><span type="rp">（</span><span
+                        type="rt">かあい</span><span type="rp">）</span></span>そうね。兄さんどうしたら<span
+                     type="ruby"><span type="rb">好</span><span type="rp">（</span><span type="rt"
+                        >い</span><span type="rp">）</span></span>いでしょう」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「よし、きっとぼくが助けてあげるよ」</p>
+            </sp>
+            <sp who="#兎">
+               <speaker>兎</speaker>
+               <p>「ほんとに、坊ちゃんありがとう」</p>
+            </sp>
+            <stage><span rend="jisage_3" rendition="div" style="margin-left: 3em">
+                  猟人撃方の構えに銃を持って、下手より急ぎ登場。<lb/></span></stage>
+
+            <sp who="#少女">
+               <speaker>少女</speaker>
+               <p>「あら兄さん」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「あ、来たな」鋭く少女に「はやく、かくして、かくして」</p>
+            </sp>
+            <sp who="#猟人">
+               <speaker>猟人</speaker>
+               <p>「坊ちゃん、<span type="ruby"><span type="rb">兎</span><span type="rp">（</span><span
+                        type="rt">うさぎ</span><span type="rp">）</span></span>を知りませんか」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「なんですか」</p>
+            </sp>
+            <sp who="#猟人">
+               <speaker>猟人</speaker>
+               <p>「兎を知りませんか」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「知っていますよ、おじさん」</p>
+            </sp>
+            <stage><span rend="jisage_3" rendition="div" style="margin-left: 3em">
+                     この対話の間に、少女は兎をほどよき<span type="ruby"><span type="rb">叢</span><span type="rp"
+                        >（</span><span type="rt">くさむら</span><span type="rp"
+                  >）</span></span>にかくす。<lb/></span></stage>
+            <sp who="#猟人">
+               <speaker>猟人</speaker>
+               <p>「たしかこの辺へ逃込んだがなあ」（<span type="ruby"><span type="rb">独語</span><span type="rp"
+                        >（</span><span type="rt">ひとりごと</span><span type="rp"
+                     >）</span></span>をしながら<span type="ruby"><span type="rb">四辺</span><span type="rp"
+                        >（</span><span type="rt">あたり</span><span type="rp">）</span></span>を<span
+                     type="ruby"><span type="rb">見廻</span><span type="rp">（</span><span type="rt"
+                        >みまわ</span><span type="rp">）</span></span>す）</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>（<span type="ruby"><span type="rb">猟人</span><span type="rp">（</span><span
+                        type="rt">かりうど</span><span type="rp"
+                  >）</span></span>の注意を自分の方へ向けるようにあせりながら）「おじさん兎の毛は白いんでしょう」</p>
+            </sp>
+            <sp who="#猟人">
+               <speaker>猟人</speaker>
+               <p>「ああ、その白兎、白兎」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「耳が長いでしょう、おじさん」</p>
+            </sp>
+            <sp who="#猟人">
+               <speaker>猟人</speaker>
+               <p>「そうそう耳が長いね」</p>
+            </sp>
+            <stage><span rend="jisage_3" rendition="div" style="margin-left: 3em"> 猟人、銃を<span
+                     type="ruby"><span type="rb">杖</span><span type="rp">（</span><span type="rt"
+                        >つえ</span><span type="rp">）</span></span>にして話し出す。<lb/></span></stage>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「ね、おじさん、兎の<span type="ruby"><span type="rb">尻尾</span><span type="rp">（</span><span
+                        type="rt">しっぽ</span><span type="rp">）</span></span>は短いでしょう」</p>
+            </sp>
+            <sp who="#猟人">
+               <speaker>猟人</speaker>
+               <p>「短いとも、これんばかりさ」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「それから、前脚が短くて、後脚が長いでしょう」</p>
+            </sp>
+            <sp who="#猟人">
+               <speaker>猟人</speaker>
+               <p>「短くって、長くって」猟人は、自分が何をしているかを<span type="ruby"><span type="rb">思出</span><span
+                        type="rp">（</span><span type="rt">おもいだ</span><span type="rp"
+                  >）</span></span>して、「坊ちゃん、ぼくはその兎を探しているのだよ」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「おじさん、その兎はやっぱり赤い<span type="ruby"><span type="rb">眼</span><span type="rp"
+                        >（</span><span type="rt">め</span><span type="rp"
+                  >）</span></span>を持っているでしょう」</p>
+            </sp>
+            <sp who="#猟人">
+               <speaker>猟人</speaker>
+               <p>「ぼくは、坊ちゃんの博物の<span type="ruby"><span type="rb">復習</span><span type="rp"
+                        >（</span><span type="rt">おさらい</span><span type="rp"
+                  >）</span></span>をしているんじゃないよ。一体その兎は……」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「白兎ですね。おじさん」</p>
+            </sp>
+            <sp who="#猟人">
+               <speaker>猟人</speaker>
+               <p>「白兎ですよ。何遍それを言えば<span type="ruby"><span type="rb">好</span><span type="rp"
+                        >（</span><span type="rt">い</span><span type="rp"
+                     >）</span></span>いんだ。そんなこと言っているうちに、気の利いた兎は、穴の中へもぐって昼寝をするだろう」独語のように「この子は、よっぽど<span
+                     type="ruby"><span type="rb">呑込</span><span type="rp">（</span><span type="rt"
+                        >のみこみ</span><span type="rp">）</span></span>のわるい子だな」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「なあんだ、おじさんは、その<span type="ruby"><span type="rb">白兎</span><span type="rp"
+                        >（</span><span type="rt">しろうさぎ</span><span type="rp"
+                  >）</span></span>を撃ちにきたの」</p>
+            </sp>
+            <sp who="#猟人">
+               <speaker>猟人</speaker>
+               <p>「そうさ」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「だっておじさんは、いきなり兎を知らないかって言うんだもの、だからぼく、学校の<span type="ruby"><span type="rb"
+                        >復習</span><span type="rp">（</span><span type="rt">おさらい</span><span type="rp"
+                        >）</span></span>をしちゃったのさ」</p>
+            </sp>
+            <sp who="#猟人">
+               <speaker>猟人</speaker>
+               <p>「<span type="ruby"><span type="rb">眼</span><span type="rp">（</span><span type="rt"
+                        >め</span><span type="rp">）</span></span>をぱちくりやっている」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「ああ、その兎なの」</p>
+            </sp>
+            <sp who="#猟人">
+               <speaker>猟人</speaker>
+               <p>「そうさ」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「その兎なら、もうよっぽど遠くへ逃げました。あの道の先の、ほら左側に赤松があるでしょう」</p>
+            </sp>
+            <sp who="#猟人">
+               <speaker>猟人</speaker>
+               <p>「あるある」</p>
+            </sp>
+            <stage><span rend="jisage_3" rendition="div" style="margin-left: 3em"> 少女は<span
+                     type="ruby"><span type="rb">猟人</span><span type="rp">（</span><span type="rt"
+                        >かりうど</span><span type="rp"
+                  >）</span></span>の方を見て笑っている。兎も出て来て見ている。<lb/></span></stage>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「あすこを左へ曲って、桜の木が見えるでしょう」</p>
+            </sp>
+            <sp who="#猟人">
+               <speaker>猟人</speaker>
+               <p>「ああ、見えるね」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「あの木から、一本、二本、三本、四本、五本、六本、十三本目の桜の下へかくれましたよ」</p>
+            </sp>
+            <sp who="#猟人">
+               <speaker>猟人</speaker>
+               <p>「いや、どうもありがとう」</p>
+            </sp>
+            <stage><span rend="jisage_3" rendition="div" style="margin-left: 3em">
+                  猟人はあたふたと、上手へ走ってゆく。<lb/></span></stage>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「おじさん、早く走らないと、また兎が逃げますよ」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>兎に近づきながら、「万歳、万歳。兎さんもう出ても<span type="ruby"><span type="rb">好</span><span type="rp"
+                        >（</span><span type="rt">い</span><span type="rp">）</span></span>いよ」</p>
+            </sp>
+            <sp who="#少女">
+               <speaker>少女</speaker>
+               <p>「ずいぶん心配したわ」</p>
+            </sp>
+            <sp who="#兎">
+               <speaker>兎</speaker>
+               <p>「やれやれ、ほんとに<span type="ruby"><span type="rb">危</span><span type="rp">（</span><span
+                        type="rt">あぶな</span><span type="rp"
+                  >）</span></span>い所を助かりました。どうもありがとうございます。」</p>
+            </sp>
+            <sp who="#少女">
+               <speaker>少女</speaker>
+               <p>「よかったわね」</p>
+            </sp>
+            <sp who="#少年">
+               <speaker>少年</speaker>
+               <p>「うまくいったね」</p>
+            </sp>
+
+            <stage><span rend="jisage_3" rendition="div" style="margin-left: 3em">
+                  少年を上手に、兎をまん中に、三人手をつなぎ舞台の前へ進み。<lb/></span></stage>
+            <lb/>
+         </div>
+
+         <div type="act" n="兎の挨拶">
+            <head>兎の挨拶</head>
+            <lb/>
+            <lb/>
+            <sp who="#兎">
+               <p>御見物のお嬢様坊ちゃまがた、わたしはまあ何と言って皆様にお礼を申して<span type="ruby"><span type="rb">好</span><span
+                        type="rp">（</span><span type="rt">い</span><span type="rp"
+                     >）</span></span>いやら、あんまり<span type="ruby"><span type="rb">嬉</span><span
+                        type="rp">（</span><span type="rt">うれ</span><span type="rp"
+                  >）</span></span>しくて、申上げる言葉も知りません。<lb/> 　これはみんな、この賢いお坊ちゃまの勇気と、親切なお嬢さまのお<span
+                     type="ruby"><span type="rb">蔭</span><span type="rp">（</span><span type="rt"
+                        >かげ</span><span type="rp"
+                     >）</span></span>です。けれどあの草むらの蔭にかくれている時、皆様はほんとうにうまくわたしをかばって下さいました。もしも皆様のうちの<span
+                     type="ruby"><span type="rb">誰</span><span type="rp">（</span><span type="rt"
+                        >だれ</span><span type="rp">）</span></span>かが「<span type="ruby"><span
+                        type="rb">兎</span><span type="rp">（</span><span type="rt">うさぎ</span><span
+                        type="rp">）</span></span>はあそこにかくれているよ」とでも<span type="ruby"><span type="rb"
+                        >仰言</span><span type="rp">（</span><span type="rt">おっしゃ</span><span type="rp"
+                        >）</span></span>ろうものなら、わたしはまあどうなっていたのでしょう。お蔭様でわたしはこれから懐しい親や兄たちの<span
+                     type="ruby"><span type="rb">許</span><span type="rp">（</span><span type="rt"
+                        >とこ</span><span type="rp"
+                  >）</span></span>へ帰ってまいります。皆様もどうか御機嫌よろしく、ではさようなら。<lb/></p>
+            </sp>
+            <stage><span rend="jisage_2" rendition="div" style="margin-left: 2em"> かすみか　くもか<lb/>
+                     はたゆきか…………舞台裏の<span type="ruby"><span type="rb">賑</span><span type="rp"
+                        >（</span><span type="rt">にぎ</span><span type="rp"
+                  >）</span></span>やかな合唱だんだん細りゆきながら<lb/></span><span rend="chitsuki_0"
+                  rendition="div" style="text-align:right; margin-right: 0em">（幕）</span>
+            </stage>
+            <lb/>
+            <lb/>
+            <lb/>
+         </div>
+      </body>
+   </text>
+</TEI>
