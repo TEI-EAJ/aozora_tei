@@ -65,9 +65,7 @@ layout: default
   <div class="line__container" style="display: none;" id="line">
     <!-- タイトル -->
     <div class="line__title">
-      <span id="line__title"></span><button id="play" class="ml-5 btn btn-info" style="display : none;">音声の再生</button>
-      <!-- audioタグを設置　src属性に再生した音声ファイルのパスを指定　 -->
-      <audio id='sound' preload="auto" type="audio/mp3"></audio>
+      <span id="line__title"></span><a id="play" target="_blank" class="ml-5 btn btn-info" style="display : none;">音声の再生</a href="">
     </div>
 
     <!-- ▼会話エリア scrollを外すと高さ固定解除 -->
@@ -115,12 +113,12 @@ layout: default
       resourceUri = decodeURIComponent(resourceUri)
 
       let tmp = resourceUri.split("/")
-      let filename = tmp[tmp.length - 1].split(".")[0]
-      let mp3 = "https://raw.githubusercontent.com/TEI-EAJ/aozora_tei/master/src/text2speech/data/" + filename + ".mp3"
+      let filename = tmp[tmp.length - 1].split("_")[0]
+      let manifest = "https://tei-eaj.github.io/aozora_tei/tools/visualization/performance_texts/data/" + filename + ".json"
 
-      $.get(mp3)
+      $.get(manifest)
         .done(function () {
-          $("#sound").attr("src", mp3)
+          $("#play").attr("href", "http://universalviewer.io/examples/uv/uv.html#?manifest="+manifest)
           $("#play").show()
         }).fail(function () {
           console.log("not exists")
