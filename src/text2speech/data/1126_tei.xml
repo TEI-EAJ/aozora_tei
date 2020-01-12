@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>三つの宝</title>
+        <author>芥川竜之介</author>
+
+        <respStmt>
+          <resp>Aozora Transcription</resp>
+          <name>j.utiyama</name>
+        </respStmt>
+        <respStmt>
+          <resp>Aozora Proofreading</resp>
+          <name>多羅尾伴内</name>
+        </respStmt>
+
+        <respStmt>
+          <resp when="2010-11-04">作成</resp>
+          <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+          <note>
+            <lb/>底本：「芥川龍之介全集5」ちくま文庫、筑摩書房 <lb/>1987（昭和62）年2月24日第1刷発行 <lb/>1995（平成7）年4月10日第6刷発行
+            <lb/>底本の親本：「筑摩全集類聚版芥川龍之介全集」筑摩書房 <lb/>1971（昭和46）年3月～11月刊行 <lb/>入力：j.utiyama <lb/>校正：多羅尾伴内
+            <lb/>2004年1月5日作成 <lb/>2010年11月4日修正 <lb/>青空文庫作成ファイル：
+            <lb/>このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。</note>
+        </respStmt>
+        <respStmt>
+          <resp when="2019-01-11">TEI Encoding</resp>
+          <name>中村覚</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+        <date when="2019-01-11"> 2019年1月11日</date>
+        <availability>
+          <p>
+            <ref target="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal (CC0
+              1.0) Public Domain Dedication</ref></p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>
+          <author>芥川龍之介</author>
+          <title>三つの宝</title>
+          <publisher>筑摩書房</publisher>「芥川龍之介全集5」ちくま文庫、 <date when="1987-02-24"
+            >1987（昭和62）年2月24日</date>第1刷発行 <date when="1995-04-10">1995（平成7）年4月10日</date>第6刷発行
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc>
+      <list>
+        <item>
+          <date when="2010-11-04">2010年11月4日</date>修正 </item>
+        <item> 入力<persName>j.utiyama</persName> 校正<persName>多羅尾伴内</persName>
+          <date when="2004-01-05"> 2004年1月5日</date>作成 </item>
+      </list>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front>
+      <p>
+        <listPerson>
+          <person xml:id="第一の盗人" sex="0">
+            <persName>第一の盗人</persName>
+            <occupation>盗人</occupation>
+          </person>
+           <person xml:id="第二の盗人" sex="0">
+            <persName>第二の盗人</persName>
+            <occupation>盗人</occupation>
+          </person>
+           <person xml:id="第三の盗人" sex="0">
+            <persName>第三の盗人</persName>
+            <occupation>盗人</occupation>
+          </person>
+           <person xml:id="王子" sex="1">
+            <persName>王子</persName>
+            <occupation>王子</occupation>
+          </person>
+           <person xml:id="宿屋の主人" sex="0">
+            <persName>宿屋の主人</persName>
+            <occupation>宿屋の主人</occupation>
+          </person>
+           <person xml:id="第一の農夫" sex="1">
+            <persName>第一の農夫</persName>
+            <occupation>農夫</occupation>
+          </person>
+           <person xml:id="第二の農夫" sex="1">
+            <persName>第二の農夫</persName>
+            <occupation>農夫</occupation>
+          </person>
+           <person xml:id="王女" sex="2">
+            <persName>王女</persName>
+            <occupation>王女</occupation>
+          </person>
+           <person xml:id="黒ん坊の王" sex="1">
+            <persName>黒ん坊の王</persName>
+            <occupation>黒ん坊の王</occupation>
+          </person>
+        </listPerson>
+      </p>
+    </front>
+    <body>
+      <div n="一" type="act">
+        <head>一</head>
+        <stage type="setting"
+          >森の中。三人の盗人ぬすびとが宝を争っている。宝とは一飛びに千里飛ぶ長靴ながぐつ、着れば姿の隠れるマントル、鉄でもまっ二ぷたつに切れる剣けん――ただしいずれも見たところは、古道具らしい物ばかりである。</stage>
+        <sp who="#第一の盗人">
+          <speaker>第一の盗人</speaker>
+          <p>そのマントルをこっちへよこせ。</p>
+        </sp>
+        <sp who="#第二の盗人">
+          <speaker>第二の盗人</speaker>
+          <p><span type="ruby"><span type="rb">余計</span><span type="rp">（</span><span type="rt"
+                >よけい</span><span type="rp">）</span></span>な事を云うな。その剣こそこっちへよこせ。――おや、おれの長靴を盗んだな。</p>
+        </sp>
+        <sp who="#第三の盗人">
+          <speaker>第三の盗人</speaker>
+          <p>この長靴はおれの物じゃないか？　貴様こそおれの物を盗んだのだ。</p>
+        </sp>
+        <sp who="#第一の盗人">
+          <speaker>第一の盗人</speaker>
+          <p>よしよし、ではこのマントルはおれが貰って置こう。</p>
+        </sp>
+        <sp who="#第二の盗人">
+          <speaker>第二の盗人</speaker>
+          <p>こん<span type="ruby"><span type="rb">畜生</span><span type="rp">（</span><span type="rt"
+                >ちくしょう</span><span type="rp">）</span></span>！　貴様なぞに渡してたまるものか。</p>
+        </sp>
+        <sp who="#第一の盗人">
+          <speaker>第一の盗人</speaker>
+          <p>よくもおれを<span type="ruby"><span type="rb">撲</span><span type="rp">（</span><span type="rt"
+                >なぐ</span><span type="rp">）</span></span>ったな。――おや、またおれの剣も盗んだな？</p>
+        </sp>
+        <sp who="#第三の盗人">
+          <speaker>第三の盗人</speaker>
+          <p>何だ、このマントル泥坊め！</p>
+        </sp>
+        <p> 三人の者が<span type="ruby"><span type="rb">大喧嘩</span><span type="rp">（</span><span type="rt"
+              >おおげんか</span><span type="rp">）</span></span>になる。そこへ馬に<span type="ruby"><span type="rb"
+              >跨</span><span type="rp">（</span><span type="rt">またが</span><span type="rp"
+            >）</span></span>った王子が一人、森の中の路を通りかかる。<lb/>
+        </p>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>おいおい、お前たちは何をしているのだ？</p>
+          <stage>（馬から下りる）</stage>
+        </sp>
+        <sp who="#第一の盗人">
+          <speaker>第一の盗人</speaker>
+          <p>何、こいつが悪いのです。わたしの剣を盗んだ上、マントルさえよこせと云うものですから、――</p>
+        </sp>
+        <sp who="#第三の盗人">
+          <speaker>第三の盗人</speaker>
+          <p>いえ、そいつが悪いのです。マントルはわたしのを盗んだのです。</p>
+        </sp>
+        <sp who="#第二の盗人">
+          <speaker>第二の盗人</speaker>
+          <p>いえ、こいつ<span type="ruby"><span type="rb">等</span><span type="rp">（</span><span type="rt"
+                >ら</span><span type="rp">）</span></span>は二人とも大泥坊です。これは皆わたしのものなのですから、――</p>
+        </sp>
+        <sp who="#第一の盗人">
+          <speaker>第一の盗人</speaker>
+          <p>嘘をつけ！</p>
+        </sp>
+        <sp who="#第二の盗人">
+          <speaker>第二の盗人</speaker>
+          <p>この<span type="ruby"><span type="rb">大法螺吹</span><span type="rp">（</span><span type="rt"
+                >おおぼらふ</span><span type="rp">）</span></span>きめ！</p>
+        </sp>
+        <p> 三人また喧嘩をしようとする。<lb/>
+        </p>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>待て待て。たかが古いマントルや、穴のあいた長靴ぐらい、誰がとっても<span type="ruby"><span type="rb">好</span><span
+                type="rp">（</span><span type="rt">い</span><span type="rp">）</span></span>いじゃないか？</p>
+        </sp>
+        <sp who="#第二の盗人">
+          <speaker>第二の盗人</speaker>
+          <p>いえ、そうは行きません。このマントルは着たと思うと、姿の隠れるマントルなのです。</p>
+        </sp>
+        <sp who="#第一の盗人">
+          <speaker>第一の盗人</speaker>
+          <p>どんなまた鉄の<span type="ruby"><span type="rb">兜</span><span type="rp">（</span><span
+                type="rt">かぶと</span><span type="rp">）</span></span>でも、この剣で切れば切れるのです。</p>
+        </sp>
+        <sp who="#第三の盗人">
+          <speaker>第三の盗人</speaker>
+          <p>この長靴もはきさえすれば、一飛びに千里飛べるのです。</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>なるほど、そう云う宝なら、喧嘩をするのももっともな話だ。が、それならば<span type="ruby"><span type="rb">欲張</span><span
+                type="rp">（</span><span type="rt">よくば</span><span type="rp"
+              >）</span></span>らずに、一つずつ分ければ<span type="ruby"><span type="rb">好</span><span type="rp"
+                >（</span><span type="rt">い</span><span type="rp">）</span></span>いじゃないか？</p>
+        </sp>
+        <sp who="#第二の盗人">
+          <speaker>第二の盗人</speaker>
+          <p>そんな事をしてごらんなさい。わたしの首はいつ<span type="ruby"><span type="rb">何時</span><span type="rp"
+                >（</span><span type="rt">なんどき</span><span type="rp"
+            >）</span></span>、あの剣に切られるかわかりはしません。</p>
+        </sp>
+        <sp who="#第一の盗人">
+          <speaker>第一の盗人</speaker>
+          <p>いえ、それよりも困るのは、あのマントルを着られれば、何を盗まれるか知れますまい。</p>
+        </sp>
+        <sp who="#第二の盗人">
+          <speaker>第二の盗人</speaker>
+          <p>いえ、何を盗んだ所が、あの長靴をはかなければ、思うようには逃げられない<span type="ruby"><span type="rb">訣</span><span
+                type="rp">（</span><span type="rt">わけ</span><span type="rp">）</span></span>です。</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>それもなるほど<span type="ruby"><span type="rb">一理窟</span><span type="rp">（</span><span
+                type="rt">ひとりくつ</span><span type="rp"
+            >）</span></span>だな。では物は相談だが、わたしにみんな売ってくれないか？　そうすれば心配も入らないはずだから。</p>
+        </sp>
+        <sp who="#第一の盗人">
+          <speaker>第一の盗人</speaker>
+          <p>どうだい、この殿様に売ってしまうのは？</p>
+        </sp>
+        <sp who="#第三の盗人">
+          <speaker>第三の盗人</speaker>
+          <p>なるほど、それも<span type="ruby"><span type="rb">好</span><span type="rp">（</span><span
+                type="rt">い</span><span type="rp">）</span></span>いかも知れない。</p>
+        </sp>
+        <sp who="#第二の盗人">
+          <speaker>第二の盗人</speaker>
+          <p>ただ値段次第だな。</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>値段は――そうだ。そのマントルの代りには、この赤いマントルをやろう、これには<span type="ruby"><span type="rb">刺繍</span><span
+                type="rp">（</span><span type="rt">ぬいとり</span><span type="rp">）</span></span>の<span
+              type="ruby"><span type="rb">縁</span><span type="rp">（</span><span type="rt"
+                >ふち</span><span type="rp">）</span></span>もついている。それからその長靴の代りには、この宝石のはいった靴をやろう。この<span
+              type="ruby"><span type="rb">黄金細工</span><span type="rp">（</span><span type="rt"
+                >きんざいく</span><span type="rp">）</span></span>の<span type="ruby"><span type="rb"
+                >剣</span><span type="rp">（</span><span type="rt">けん</span><span type="rp"
+              >）</span></span>をやれば、その剣をくれても損はあるまい。どうだ、この値段では？</p>
+        </sp>
+        <sp who="#第二の盗人">
+          <speaker>第二の盗人</speaker>
+          <p>わたしはこのマントルの代りに、そのマントルを頂きましょう。</p>
+        </sp>
+        <sp who="#第一の盗人">
+          <speaker>第一の盗人と第三の盗人</speaker>
+          <p>わたしたちも申し分はありません。</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>そうか。では取り<span type="ruby"><span type="rb">換</span><span type="rp">（</span><span
+                type="rt">か</span><span type="rp">）</span></span>えて貰おう。</p>
+        </sp>
+        <p> 王子はマントル、剣、長靴等を取り換えた<span type="ruby"><span type="rb">後</span><span type="rp"
+              >（</span><span type="rt">のち</span><span type="rp">）</span></span>、また馬の上に<span
+            type="ruby"><span type="rb">跨</span><span type="rp">（</span><span type="rt"
+              >またが</span><span type="rp">）</span></span>りながら、森の中の路を行きかける。<lb/>
+        </p>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>この先に宿屋はないか？</p>
+        </sp>
+        <sp who="#第一の盗人">
+          <speaker>第一の盗人</speaker>
+          <p>森の外へ出さえすれば「<span type="ruby"><span type="rb">黄金</span><span type="rp">（</span><span
+                type="rt">きん</span><span type="rp">）</span></span>の<span type="ruby"><span type="rb"
+                >角笛</span><span type="rp">（</span><span type="rt">つのぶえ</span><span type="rp"
+                >）</span></span>」という宿屋があります。では御大事にいらっしゃい。</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>そうか。ではさようなら。</p>
+          <stage>（去る）</stage>
+        </sp>
+        <sp who="#第三の盗人">
+          <speaker>第三の盗人</speaker>
+          <p>うまい商売をしたな。おれはあの長靴が、こんな靴になろうとは思わなかった。見ろ。<span type="ruby"><span type="rb">止</span><span
+                type="rp">（</span><span type="rt">と</span><span type="rp">）</span></span>め<span
+              type="ruby"><span type="rb">金</span><span type="rp">（</span><span type="rt"
+                >がね</span><span type="rp">）</span></span>には<span type="ruby"><span type="rb"
+                >金剛石</span><span type="rp">（</span><span type="rt">ダイヤモンド</span><span type="rp"
+                >）</span></span>がついている。</p>
+        </sp>
+        <sp who="#第二の盗人">
+          <speaker>第二の盗人</speaker>
+          <p>おれのマントルも<span type="ruby"><span type="rb">立派</span><span type="rp">（</span><span
+                type="rt">りっぱ</span><span type="rp"
+            >）</span></span>な物じゃないか？　これをこう着た所は、殿様のように見えるだろう。</p>
+        </sp>
+        <sp who="#第一の盗人">
+          <speaker>第一の盗人</speaker>
+          <p>この剣も大した物だぜ。何しろ<span type="ruby"><span type="rb">柄</span><span type="rp">（</span><span
+                type="rt">つか</span><span type="rp">）</span></span>も<span type="ruby"><span type="rb"
+                >鞘</span><span type="rp">（</span><span type="rt">さや</span><span type="rp"
+              >）</span></span>も<span type="ruby"><span type="rb">黄金</span><span type="rp"
+                >（</span><span type="rt">きん</span><span type="rp"
+              >）</span></span>だからな。――しかしああやすやす<span type="ruby"><span type="rb">欺</span><span
+                type="rp">（</span><span type="rt">だま</span><span type="rp"
+              >）</span></span>されるとは、あの王子も<span type="ruby"><span type="rb">大莫迦</span><span type="rp"
+                >（</span><span type="rt">おおばか</span><span type="rp">）</span></span>じゃないか？</p>
+        </sp>
+        <sp who="#第二の盗人">
+          <speaker>第二の盗人</speaker>
+          <p>しっ！　壁に耳あり、<span type="ruby"><span type="rb">徳利</span><span type="rp">（</span><span
+                type="rt">とくり</span><span type="rp">）</span></span>にも口だ。まあ、どこかへ行って一杯やろう。</p>
+        </sp>
+        <p>三人の盗人は<span type="ruby"><span type="rb">嘲笑</span><span type="rp">（</span><span type="rt"
+              >あざわら</span><span type="rp">）</span></span>いながら、王子とは反対の路へ行ってしまう。<lb/>
+        </p>
+      </div>
+
+      <div n="二" type="act">
+        <head>二</head>
+        <stage>「<span type="ruby"><span type="rb">黄金</span><span type="rp">（</span><span type="rt"
+              >きん</span><span type="rp">）</span></span>の<span type="ruby"><span type="rb"
+              >角笛</span><span type="rp">（</span><span type="rt">つのぶえ</span><span type="rp"
+            >）</span></span>」と云う宿屋の酒場。酒場の<span type="ruby"><span type="rb">隅</span><span type="rp"
+              >（</span><span type="rt">すみ</span><span type="rp">）</span></span>には王子がパンを<span
+            type="ruby"><span type="rb">噛</span><span type="rp">（</span><span type="rt"
+              >か</span><span type="rp">）</span></span>じっている。王子のほかにも客が七八人、――これは皆村の農夫らしい。</stage>
+        <sp who="#宿屋の主人">
+          <speaker>宿屋の主人</speaker>
+          <p>いよいよ王女の<span type="ruby"><span type="rb">御婚礼</span><span type="rp">（</span><span
+                type="rt">ごこんれい</span><span type="rp">）</span></span>があるそうだね。</p>
+        </sp>
+        <sp who="#第一の農夫">
+          <speaker>第一の農夫</speaker>
+          <p>そう云う話だ。なんでも<span type="ruby"><span type="rb">御壻</span><span type="rp">（</span><span
+                type="rt">おむこ</span><span type="rp">）</span></span>になる人は、黒ん坊の王様だと云うじゃないか？</p>
+        </sp>
+        <sp who="#第二の農夫">
+          <speaker>第二の農夫</speaker>
+          <p>しかし王女はあの王様が<span type="ruby"><span type="rb">大嫌</span><span type="rp">（</span><span
+                type="rt">だいきら</span><span type="rp">）</span></span>いだと云う<span type="ruby"><span
+                type="rb">噂</span><span type="rp">（</span><span type="rt">うわさ</span><span type="rp"
+                >）</span></span>だぜ。</p>
+        </sp>
+        <sp who="#第一の農夫">
+          <speaker>第一の農夫</speaker>
+          <p>嫌いなればお止しなされば<span type="ruby"><span type="rb">好</span><span type="rp">（</span><span
+                type="rt">い</span><span type="rp">）</span></span>いのに。</p>
+        </sp>
+        <sp who="#宿屋の主人">
+          <speaker>主人</speaker>
+          <p>ところがその黒ん坊の王様は、三つの宝ものを持っている。第一が千里飛べる<span type="ruby"><span type="rb">長靴</span><span
+                type="rp">（</span><span type="rt">ながぐつ</span><span type="rp"
+              >）</span></span>、第二が鉄さえ切れる<span type="ruby"><span type="rb">剣</span><span type="rp"
+                >（</span><span type="rt">けん</span><span type="rp"
+              >）</span></span>、第三が姿の隠れるマントル、――それを皆<span type="ruby"><span type="rb">献上</span><span
+                type="rp">（</span><span type="rt">けんじょう</span><span type="rp"
+            >）</span></span>すると云うものだから、欲の深いこの国の王様は、王女をやるとおっしゃったのだそうだ。</p>
+        </sp>
+        <sp who="#第二の農夫">
+          <speaker>第二の農夫</speaker>
+          <p><span type="ruby"><span type="rb">御可哀</span><span type="rp">（</span><span type="rt"
+                >おかわい</span><span type="rp">）</span></span>そうなのは王女御一人だな。</p>
+        </sp>
+        <sp who="#第一の農夫">
+          <speaker>第一の農夫</speaker>
+          <p>誰か王女をお助け申すものはないだろうか？</p>
+        </sp>
+        <sp who="#宿屋の主人">
+          <speaker>主人</speaker>
+          <p>いや、いろいろの国の王子の中には、そう云う人もあるそうだが、何分あの黒ん坊の王様にはかなわないから、みんな指を<span type="ruby"><span
+                type="rb">啣</span><span type="rp">（</span><span type="rt">くわ</span><span type="rp"
+                >）</span></span>えているのだとさ。</p>
+        </sp>
+        <sp who="#第二の農夫">
+          <speaker>第二の農夫</speaker>
+          <p>おまけに欲の深い王様は、王女を人に盗まれないように、<span type="ruby"><span type="rb">竜</span><span type="rp"
+                >（</span><span type="rt">りゅう</span><span type="rp">）</span></span>の番人を置いてあるそうだ。</p>
+        </sp>
+        <sp who="#宿屋の主人">
+          <speaker>主人</speaker>
+          <p>何、竜じゃない、兵隊だそうだ。</p>
+        </sp>
+        <sp who="#第一の農夫">
+          <speaker>第一の農夫</speaker>
+          <p>わたしが<span type="ruby"><span type="rb">魔法</span><span type="rp">（</span><span type="rt"
+                >まほう</span><span type="rp">）</span></span>でも知っていれば、まっ先に御助け申すのだが、――</p>
+        </sp>
+        <sp who="#宿屋の主人">
+          <speaker>主人</speaker>
+          <p>当り前さ、わたしも魔法を知っていれば、お前さんなどに<span type="ruby"><span type="rb">任</span><span type="rp"
+                >（</span><span type="rt">まか</span><span type="rp">）</span></span>せて置きはしない。</p>
+          <stage>（一同笑い出す）</stage>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <stage>（突然一同の中へ飛び出しながら）</stage>
+          <p>よし心配するな！　きっとわたしが助けて見せる。</p>
+        </sp>
+        <sp>
+          <speaker>一同</speaker>
+          <stage>（驚いたように）</stage>
+          <p>あなたが?!</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>そうだ、黒ん坊の王などは何人でも来い。</p>
+          <stage>（腕組をしたまま、一同を見まわす）</stage>
+          <p>わたしは片っ<span type="ruby"><span type="rb">端</span><span type="rp">（</span><span type="rt"
+                >ぱし</span><span type="rp">）</span></span>から<span type="ruby"><span type="rb"
+                >退治</span><span type="rp">（</span><span type="rt">たいじ</span><span type="rp"
+              >）</span></span>して見せる。</p>
+        </sp>
+        <sp who="#宿屋の主人">
+          <speaker>主人</speaker>
+          <p>ですがあの王様には、三つの宝があるそうです。第一には千里飛ぶ長靴、第二には、――</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>鉄でも切れる剣か？　そんな物はわたしも持っている。この長靴を見ろ。この剣を見ろ。この古いマントルを見ろ。黒ん坊の王が持っているのと、<span type="ruby"
+                ><span type="rb">寸分</span><span type="rp">（</span><span type="rt">すんぶん</span><span
+                type="rp">）</span></span>も違わない宝ばかりだ。</p>
+        </sp>
+        <sp>
+          <speaker>一同</speaker>
+          <stage>（再び驚いたように）</stage>
+          <p>その靴が?!　その剣が?!　そのマントルが?!</p>
+        </sp>
+        <sp who="#宿屋の主人">
+          <speaker>主人</speaker>
+          <stage>（疑わしそうに）</stage>
+          <p>しかしその長靴には、穴があいているじゃありませんか？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>それは穴があいている。が、穴はあいていても、一飛びに千里飛ばれるのだ。</p>
+        </sp>
+        <sp who="#宿屋の主人">
+          <speaker>主人</speaker>
+          <p>ほんとうですか？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <stage>（<span type="ruby"><span type="rb">憐</span><span type="rp">（</span><span type="rt"
+                >あわれ</span><span type="rp">）</span></span>むように）</stage>
+          <p>お前には<span type="ruby"><span type="rb">嘘</span><span type="rp">（</span><span type="rt"
+                >うそ</span><span type="rp"
+              >）</span></span>だと思われるかも知れない。よし、それならば飛んで見せる。入口の戸をあけて置いてくれ。<span type="ruby"><span
+                type="rb">好</span><span type="rp">（</span><span type="rt">い</span><span type="rp"
+                >）</span></span>いか。飛び上ったと思うと見えなくなるぞ。</p>
+        </sp>
+        <sp who="#宿屋の主人">
+          <speaker>主人</speaker>
+          <p>その前に<span type="ruby"><span type="rb">御勘定</span><span type="rp">（</span><span type="rt"
+                >おかんじょう</span><span type="rp">）</span></span>を頂きましょうか？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>何、すぐに帰って来る。<span type="ruby"><span type="rb">土産</span><span type="rp">（</span><span
+                type="rt">みやげ</span><span type="rp">）</span></span>には何を持って来てやろう。イタリアの<span
+              type="ruby"><span type="rb">柘榴</span><span type="rp">（</span><span type="rt"
+                >ざくろ</span><span type="rp">）</span></span>か、イスパニアの<span type="ruby"><span type="rb"
+                >真桑瓜</span><span type="rp">（</span><span type="rt">まくわうり</span><span type="rp"
+                >）</span></span>か、それともずっと遠いアラビアの<span type="ruby"><span type="rb">無花果</span><span
+                type="rp">（</span><span type="rt">いちじく</span><span type="rp">）</span></span>か？</p>
+        </sp>
+        <sp who="#宿屋の主人">
+          <speaker>主人</speaker>
+          <p><span type="ruby"><span type="rb">御土産</span><span type="rp">（</span><span type="rt"
+                >おみやげ</span><span type="rp">）</span></span>ならば何でも結構です。まあ飛んで見せて下さい。</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>では飛ぶぞ。一、二、三！</p>
+        </sp>
+        <p> 王子は<span type="ruby"><span type="rb">勢好</span><span type="rp">（</span><span type="rt"
+              >いきおいよ</span><span type="rp">）</span></span>く飛び上る。が、戸口へも<span type="ruby"><span
+              type="rb">届</span><span type="rp">（</span><span type="rt">とど</span><span type="rp"
+              >）</span></span>かない内に、どたりと<span type="ruby"><span type="rb">尻餅</span><span type="rp"
+              >（</span><span type="rt">しりもち</span><span type="rp">）</span></span>をついてしまう。<lb/>
+          一同どっと笑い立てる。<lb/>
+        </p>
+        <sp who="#宿屋の主人">
+          <speaker>主人</speaker>
+          <p>こんな事だろうと思ったよ。</p>
+        </sp>
+        <sp who="#第一の農夫">
+          <speaker>第一の農夫</speaker>
+          <p>干里どころか、二三間も飛ばなかったぜ。</p>
+        </sp>
+        <sp who="#第二の農夫">
+          <speaker>第二の農夫</speaker>
+          <p>何、千里飛んだのさ。一度千里飛んで置いて、また千里飛び返ったから、もとの所へ来てしまったのだろう。</p>
+        </sp>
+        <sp who="#第一の農夫">
+          <speaker>第一の農夫</speaker>
+          <p><span type="ruby"><span type="rb">冗談</span><span type="rp">（</span><span type="rt"
+                >じょうだん</span><span type="rp">）</span></span>じゃない。そんな<span type="ruby"><span
+                type="rb">莫迦</span><span type="rp">（</span><span type="rt">ばか</span><span type="rp"
+                >）</span></span>な事があるものか。</p>
+        </sp>
+        <p> 一同大笑いになる。王子はすごすご起き上りながら、酒場の外へ行こうとする。<lb/>
+        </p>
+        <sp who="#宿屋の主人">
+          <speaker>主人</speaker>
+          <p>もしもし御勘定を置いて行って下さい。</p>
+        </sp>
+        <p> 王子無言のまま、<span type="ruby"><span type="rb">金</span><span type="rp">（</span><span
+              type="rt">かね</span><span type="rp">）</span></span>を投げる。<lb/>
+        </p>
+        <sp who="#第二の農夫">
+          <speaker>第二の農夫</speaker>
+          <p>御土産は？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <stage>（剣の<span type="ruby"><span type="rb">柄</span><span type="rp">（</span><span
+                type="rt">つか</span><span type="rp">）</span></span>へ手をかける）</stage>
+          <p>何だと？</p>
+        </sp>
+        <sp who="#第二の農夫">
+          <speaker>第二の農夫</speaker>
+          <stage>（尻ごみしながら）</stage>
+          <p>いえ、何とも云いはしません。</p>
+          <stage>（独り<span type="ruby"><span type="rb">語</span><span type="rp">（</span><span
+                type="rt">ごと</span><span type="rp">）</span></span>のように）</stage>
+          <p>剣だけは首くらい<span type="ruby"><span type="rb">斬</span><span type="rp">（</span><span
+                type="rt">き</span><span type="rp">）</span></span>れるかも知れない。</p>
+        </sp>
+        <sp who="#宿屋の主人">
+          <speaker>主人</speaker>
+          <stage>（なだめるように）</stage>
+          <p>まあ、あなたなどは<span type="ruby"><span type="rb">御年若</span><span type="rp">（</span><span
+                type="rt">おとしわか</span><span type="rp">）</span></span>なのですから、<span type="ruby"><span
+                type="rb">一先</span><span type="rp">（</span><span type="rt">ひとまず</span><span
+                type="rp">）</span></span><span type="ruby"><span type="rb">御父様</span><span type="rp"
+                >（</span><span type="rt">おとうさま</span><span type="rp"
+              >）</span></span>の御国へお帰りなさい。いくらあなたが<span type="ruby"><span type="rb">騒</span><span
+                type="rp">（</span><span type="rt">さわ</span><span type="rp"
+              >）</span></span>いで見たところが、とても黒ん坊の王様にはかないはしません。とかく人間と云う者は、何でも身のほどを忘れないように<span
+              type="ruby"><span type="rb">慎</span><span type="rp">（</span><span type="rt"
+                >つつし</span><span type="rp">）</span></span>み深くするのが<span type="ruby"><span type="rb"
+                >上分別</span><span type="rp">（</span><span type="rt">じょうふんべつ</span><span type="rp"
+                >）</span></span>です。</p>
+        </sp>
+        <sp>
+          <speaker>一同</speaker>
+          <p>そうなさい。そうなさい。悪い事は云いはしません。</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>わたしは何でも、――何でも出来ると思ったのに、</p>
+          <stage>（突然涙を落す）</stage>
+          <p>お前たちにも<span type="ruby"><span type="rb">恥</span><span type="rp">（</span><span type="rt"
+                >は</span><span type="rp">）</span></span>ずかしい</p>
+          <stage>（顔を隠しながら）</stage>
+          <p>ああ、このまま消えてもしまいたいようだ。</p>
+        </sp>
+        <sp who="#第一の農夫">
+          <speaker>第一の農夫</speaker>
+          <p>そのマントルを着て御覧なさい。そうすれば消えるかも知れません。</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p><span type="ruby"><span type="rb">畜生</span><span type="rp">（</span><span type="rt"
+                >ちくしょう</span><span type="rp">）</span></span>！</p>
+          <stage>（じだんだを踏む）</stage>
+          <p>よし、いくらでも<span type="ruby"><span type="rb">莫迦</span><span type="rp">（</span><span
+                type="rt">ばか</span><span type="rp"
+            >）</span></span>にしろ。わたしはきっと黒ん坊の王から可哀そうな王女を助けて見せる。長靴は千里飛ばれなかったが、まだ剣もある。マントルも、――</p>
+          <stage>（一生懸命に）</stage>
+          <p>いや、<span type="ruby"><span type="rb">空手</span><span type="rp">（</span><span type="rt"
+                >からて</span><span type="rp">）</span></span>でも助けて見せる。その時に<span type="ruby"><span
+                type="rb">後悔</span><span type="rp">（</span><span type="rt">こうかい</span><span
+                type="rp">）</span></span>しないようにしろ。</p>
+          <stage>（気違いのように酒場を飛び出してしまう。）</stage>
+        </sp>
+        <sp who="#宿屋の主人">
+          <speaker>主人</speaker>
+          <p>困ったものだ、黒ん坊の王様に殺されなければ<span type="ruby"><span type="rb">好</span><span type="rp"
+                >（</span><span type="rt">い</span><span type="rp">）</span></span>いが、――</p>
+        </sp>
+        <lb/>
+      </div>
+
+      <div n="三" type="act">
+        <head>三</head>
+        <stage> 王城の庭。<span type="ruby"><span type="rb">薔薇</span><span type="rp">（</span><span
+              type="rt">ばら</span><span type="rp">）</span></span>の花の中に<span type="ruby"><span
+              type="rb">噴水</span><span type="rp">（</span><span type="rt">ふんすい</span><span type="rp"
+              >）</span></span>が<span type="ruby"><span type="rb">上</span><span type="rp"
+              >（</span><span type="rt">あが</span><span type="rp">）</span></span>っている。<span
+            type="ruby"><span type="rb">始</span><span type="rp">（</span><span type="rt"
+              >はじめ</span><span type="rp">）</span></span>は誰もいない。しばらくの<span type="ruby"><span
+              type="rb">後</span><span type="rp">（</span><span type="rt">のち</span><span type="rp"
+              >）</span></span>、マントルを着た王子が出て来る。<lb/>
+        </stage>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>やはりこのマントルは着たと思うと、たちまち姿が隠れると見える。わたしは城の門をはいってから、兵卒にも<span type="ruby"><span type="rb"
+                >遇</span><span type="rp">（</span><span type="rt">あ</span><span type="rp"
+              >）</span></span>えば<span type="ruby"><span type="rb">腰元</span><span type="rp"
+                >（</span><span type="rt">こしもと</span><span type="rp">）</span></span>にも<span
+              type="ruby"><span type="rb">遇</span><span type="rp">（</span><span type="rt"
+                >あ</span><span type="rp">）</span></span>った。が、誰も<span type="ruby"><span type="rb"
+                >咎</span><span type="rp">（</span><span type="rt">とが</span><span type="rp"
+              >）</span></span>めたものはない。このマントルさえ着ていれば、この<span type="ruby"><span type="rb"
+                >薔薇</span><span type="rp">（</span><span type="rt">ばら</span><span type="rp"
+              >）</span></span>を吹いている風のように、王女の部屋へもはいれるだろう。――おや、あそこへ歩いて来たのは、<span type="ruby"><span
+                type="rb">噂</span><span type="rp">（</span><span type="rt">うわさ</span><span type="rp"
+                >）</span></span>に聞いた王女じゃないか？　どこかへ一時身を隠してから、――何、そんな必要はない、わたしはここに立っていても、王女の眼には見えないはずだ。</p>
+        </sp>
+        <p> 王女は噴水の<span type="ruby"><span type="rb">縁</span><span type="rp">（</span><span type="rt"
+              >ふち</span><span type="rp">）</span></span>へ来ると、悲しそうにため息をする。<lb/>
+        </p>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <p>わたしは何と云う不仕合せなのだろう。もう一週間もたたない内に、あの<span type="ruby"><span type="rb">憎</span><span
+                type="rp">（</span><span type="rt">にく</span><span type="rp"
+            >）</span></span>らしい黒ん坊の王は、わたしをアフリカへつれて行ってしまう。</p>
+
+          <p>
+            <span type="ruby"><span type="rb">獅子</span><span type="rp">（</span><span type="rt"
+                >しし</span><span type="rp">）</span></span>や<span type="ruby"><span type="rb"
+                >鰐</span><span type="rp">（</span><span type="rt">わに</span><span type="rp"
+              >）</span></span>のいるアフリカへ、</p>
+          <stage>（そこの<span type="ruby"><span type="rb">芝</span><span type="rp">（</span><span
+                type="rt">しば</span><span type="rp">）</span></span>の上に坐りながら）</stage>
+          <p>わたしはいつまでもこの城にいたい。この薔薇の花の中に、噴水の音を聞いていたい。……<lb/>
+          </p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>何と云う美しい王女だろう。わたしはたとい命を捨てても、この王女を助けて見せる。</p>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <stage>（驚いたように王子を見ながら）</stage>
+          <p>誰です、あなたは？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <stage>（独り<span type="ruby"><span type="rb">語</span><span type="rp">（</span><span
+                type="rt">ごと</span><span type="rp">）</span></span>のように）</stage>
+          <p>しまった！　声を出したのは悪かったのだ！</p>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <p>声を出したのが悪い？　<span type="ruby"><span type="rb">気違</span><span type="rp">（</span><span
+                type="rt">きちが</span><span type="rp">）</span></span>いかしら？　あんな可愛い顔をしているけれども、――</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>顔？　あなたにはわたしの顔が見えるのですか？</p>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <p>見えますわ。まあ、何を<span type="ruby"><span type="rb">不思議</span><span type="rp">（</span><span
+                type="rt">ふしぎ</span><span type="rp">）</span></span>そうに考えていらっしゃるの？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>このマントルも見えますか？</p>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <p>ええ、ずいぶん古いマントルじゃありませんか？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <stage>（<span type="ruby"><span type="rb">落胆</span><span type="rp">（</span><span type="rt"
+                >らくたん</span><span type="rp">）</span></span>したように）</stage>
+          <p>わたしの姿は見えないはずなのですがね。</p>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <stage>（驚いたように）</stage>
+          <p>どうして？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>これは一度着さえすれば、姿が隠れるマントルなのです。</p>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <p>それはあの黒ん坊の王のマントルでしょう。</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>いえ、これもそうなのです。</p>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <p>だって姿が隠れないじゃありませんか？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p><span type="ruby"><span type="rb">兵卒</span><span type="rp">（</span><span type="rt"
+                >へいそつ</span><span type="rp">）</span></span>や<span type="ruby"><span type="rb"
+                >腰元</span><span type="rp">（</span><span type="rt">こしもと</span><span type="rp"
+                >）</span></span>に<span type="ruby"><span type="rb">遇</span><span type="rp"
+                >（</span><span type="rt">あ</span><span type="rp"
+              >）</span></span>った時は、確かに姿が隠れたのですがね。その<span type="ruby"><span type="rb">証拠</span><span
+                type="rp">（</span><span type="rt">しょうこ</span><span type="rp"
+              >）</span></span>には誰に遇っても、<span type="ruby"><span type="rb">咎</span><span type="rp"
+                >（</span><span type="rt">とが</span><span type="rp"
+            >）</span></span>められた事がなかったのですから。</p>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <stage>（笑い出す）</stage>
+          <p>それはそのはずですわ。そんな古いマントルを着ていらっしゃれば<span type="ruby"><span type="rb">下男</span><span
+                type="rp">（</span><span type="rt">げなん</span><span type="rp"
+            >）</span></span>か何かと思われますもの。</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>下男！</p>
+          <stage>（落胆したように坐ってしまう）</stage>
+          <p>やはりこの長靴と同じ事だ。</p>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <p>その長靴もどうかしましたの？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>これも千里飛ぶ長靴なのです。</p>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <p>黒ん坊の王の長靴のように？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>ええ、――ところがこの<span type="ruby"><span type="rb">間</span><span type="rp">（</span><span
+                type="rt">あいだ</span><span type="rp"
+              >）</span></span>飛んで見たら、たった二三間も飛べないのです。御覧なさい。まだ<span type="ruby"><span type="rb"
+                >剣</span><span type="rp">（</span><span type="rt">けん</span><span type="rp"
+              >）</span></span>もあります。これは鉄でも切れるはずなのですが、――</p>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <p>何か切って御覧になって？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>いえ、黒ん坊の王の首を<span type="ruby"><span type="rb">斬</span><span type="rp">（</span><span
+                type="rt">き</span><span type="rp">）</span></span>るまでは、何も斬らないつもりなのです。</p>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <p>あら、あなたは黒ん坊の王と、<span type="ruby"><span type="rb">腕競</span><span type="rp">（</span><span
+                type="rt">うでくら</span><span type="rp">）</span></span>べをなさりにいらしったの？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>いえ、腕競べなどに来たのじゃありません。あなたを助けに来たのです。</p>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <p>ほんとうに？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>ほんとうです。</p>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <p>まあ、嬉しい！</p>
+        </sp>
+        <p> 突然黒ん坊の王が現れる。王子と王女とはびっくりする。<lb/>
+        </p>
+        <sp who="#黒ん坊の王">
+          <speaker>黒ん坊の王</speaker>
+          <p><span type="ruby"><span type="rb">今日</span><span type="rp">（</span><span type="rt"
+                >こんにち</span><span type="rp"
+            >）</span></span>は。わたしは今アフリカから、一飛びに飛んで来たのです。どうです、わたしの長靴の力は？</p>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <stage>（冷淡に）</stage>
+          <p>ではもう一度アフリカへ行っていらっしゃい。</p>
+        </sp>
+        <sp who="#黒ん坊の王">
+          <speaker>王</speaker>
+          <p>いや、<span type="ruby"><span type="rb">今日</span><span type="rp">（</span><span type="rt"
+                >きょう</span><span type="rp">）</span></span>はあなたと一しょに、ゆっくり御話がしたいのです。</p>
+          <stage>（王子を見る）</stage>
+          <p>誰ですか、その下男は？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>下男？</p>
+          <stage>（腹立たしそうに立ち上る）</stage>
+          <p>わたしは王子です。王女を助けに来た王子です。わたしがここにいる限りは、指一本も王女にはささせません。</p>
+        </sp>
+        <sp who="#黒ん坊の王">
+          <speaker>王</speaker>
+          <stage>（わざと<span type="ruby"><span type="rb">叮嚀</span><span type="rp">（</span><span
+                type="rt">ていねい</span><span type="rp">）</span></span>に）</stage>
+          <p>わたしは三つの宝を持っています。あなたはそれを知っていますか？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>剣と長靴とマントルですか？　なるほどわたしの長靴は一町も飛ぶ事は出来ません。しかし王女と一しょならば、この長靴をはいていても、千里や二千里は驚きません。またこのマントルを御覧なさい。わたしが下男と思われたため、王女の前へも来られたのは、やはりマントルのおかげです。これでも王子の姿だけは、隠す事が出来たじゃありませんか？</p>
+        </sp>
+        <sp who="#黒ん坊の王">
+          <speaker>王</speaker>
+          <stage>（<span type="ruby"><span type="rb">嘲笑</span><span type="rp">（</span><span type="rt"
+                >あざわら</span><span type="rp">）</span></span>う）</stage>
+          <p><span type="ruby"><span type="rb">生意気</span><span type="rp">（</span><span type="rt"
+                >なまいき</span><span type="rp">）</span></span>な！　わたしのマントルの力を見るが好い。</p>
+          <stage>（マントルを着る。同時に消え失せる）</stage>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <stage>（手を打ちながら）</stage>
+          <p>ああ、もう消えてしまいました。わたしはあの人が消えてしまうと、ほんとうに嬉しくてたまりませんわ。</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>ああ云うマントルも便利ですね。ちょうどわたしたちのために出来ているようです。</p>
+        </sp>
+        <sp who="#黒ん坊の王">
+          <speaker>王</speaker>
+          <stage>（突然また現われる。<span type="ruby"><span type="rb">忌々</span><span type="rp">（</span><span
+                type="rt">いまいま</span><span type="rp">）</span></span>しそうに）</stage>
+          <p>そうです。あなた方のために出来ているようなものです。わたしには役にも何にもたたない。</p>
+          <stage>（マントルを投げ捨てる）</stage>
+          <p>しかしわたしは剣を持っている。</p>
+          <stage>（急に王子を<span type="ruby"><span type="rb">睨</span><span type="rp">（</span><span
+                type="rt">にら</span><span type="rp">）</span></span>みながら）</stage>
+          <p>あなたはわたしの幸福を奪うものだ。さあ尋常に勝負をしよう。わたしの剣は鉄でも切れる。あなたの首位は何でもない。</p>
+          <stage>（剣を抜く）</stage>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <stage>（立ち上るが早いか、王子をかばう）</stage>
+          <p>鉄でも切れる剣ならば、わたしの胸も突けるでしょう。さあ、一突きに突いて御覧なさい。</p>
+        </sp>
+        <sp who="#黒ん坊の王">
+          <speaker>王</speaker>
+          <stage>（尻ごみをしながら）</stage>
+          <p>いや、あなたは<span type="ruby"><span type="rb">斬</span><span type="rp">（</span><span
+                type="rt">き</span><span type="rp">）</span></span>れません。</p>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <stage>（<span type="ruby"><span type="rb">嘲</span><span type="rp">（</span><span type="rt"
+                >あざけ</span><span type="rp">）</span></span>るように）</stage>
+          <p>まあ、この胸も突けないのですか？　鉄でも斬れるとおっしゃった癖に！</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>お待ちなさい。</p>
+          <stage>（王女を押し<span type="ruby"><span type="rb">止</span><span type="rp">（</span><span
+                type="rt">とど</span><span type="rp">）</span></span>めながら）</stage>
+          <p>王の云う事はもっともです。王の敵はわたしですから、尋常に勝負をしなければなりません。</p>
+          <stage>（王に）</stage>
+          <p>さあ、すぐに勝負をしよう。</p>
+          <stage>（剣を抜く）</stage>
+        </sp>
+        <sp who="#黒ん坊の王">
+          <speaker>王</speaker>
+          <p>年の若いのに感心な男だ。<span type="ruby"><span type="rb">好</span><span type="rp">（</span><span
+                type="rt">い</span><span type="rp">）</span></span>いか？　わたしの剣にさわれば命はないぞ。</p>
+        </sp>
+        <p> 王と王子と剣を打ち合せる。するとたちまち王の剣は、<span type="ruby"><span type="rb">杖</span><span type="rp"
+              >（</span><span type="rt">つえ</span><span type="rp"
+          >）</span></span>か何か切るように、王子の剣を切ってしまう。<lb/>
+        </p>
+        <sp who="#黒ん坊の王">
+          <speaker>王</speaker>
+          <p>どうだ？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>剣は切られたのに違いない。が、わたしはこの通り、あなたの前でも笑っている。</p>
+        </sp>
+        <sp who="#黒ん坊の王">
+          <speaker>王</speaker>
+          <p>ではまだ勝負を続ける気か？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>あたり前だ。さあ、来い。</p>
+        </sp>
+        <sp who="#黒ん坊の王">
+          <speaker>王</speaker>
+          <p>もう勝負などはしないでも<span type="ruby"><span type="rb">好</span><span type="rp">（</span><span
+                type="rt">い</span><span type="rp">）</span></span>い。</p>
+          <stage>（急に剣を投げ捨てる）</stage>
+          <p>勝ったのはあなただ。わたしの剣などは何にもならない。</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <stage>（不思議そうに王を見る）</stage>
+          <p>なぜ？</p>
+        </sp>
+        <sp who="#黒ん坊の王">
+          <speaker>王</speaker>
+          <p>なぜ？　わたしはあなたを殺した所が、王女にはいよいよ<span type="ruby"><span type="rb">憎</span><span type="rp"
+                >（</span><span type="rt">にく</span><span type="rp"
+            >）</span></span>まれるだけだ。あなたにはそれがわからないのか？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>いや、わたしにはわかっている。ただあなたにはそんな事も、わかっていなそうな気がしたから。</p>
+        </sp>
+        <sp who="#黒ん坊の王">
+          <speaker>王</speaker>
+          <stage>（考えに沈みながら）</stage>
+          <p>わたしには三つの宝があれば、王女も貰えると思っていた。が、それは間違いだったらしい。</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <stage>（王の肩に手をかけながら）</stage>
+          <p>わたしも三つの宝があれば、王女を助けられると思っていた。が、それも間違いだったらしい。</p>
+        </sp>
+        <sp who="#黒ん坊の王">
+          <speaker>王</speaker>
+          <p>そうだ。我々は二人とも間違っていたのだ。</p>
+          <stage>（王子の手を取る）</stage>
+          <p>さあ、<span type="ruby"><span type="rb">綺麗</span><span type="rp">（</span><span type="rt"
+                >きれい</span><span type="rp">）</span></span>に仲直りをしましょう。わたしの<span type="ruby"><span
+                type="rb">失礼</span><span type="rp">（</span><span type="rt">しつれい</span><span
+                type="rp">）</span></span>は<span type="ruby"><span type="rb">赦</span><span type="rp"
+                >（</span><span type="rt">ゆる</span><span type="rp">）</span></span>して下さい。</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>わたしの失礼も赦して下さい。今になって見ればわたしが勝ったか、あなたが勝ったかわからないようです。</p>
+        </sp>
+        <sp who="#黒ん坊の王">
+          <speaker>王</speaker>
+          <p>いや、あなたはわたしに勝った。わたしはわたし自身に勝ったのです。</p>
+          <stage>（王女に）</stage>
+          <p>わたしはアフリカへ帰ります。どうか御安心なすって下さい。王子の剣は鉄を切る代りに、鉄よりももっと堅い、わたしの心を刺したのです。わたしはあなた方の<span
+              type="ruby"><span type="rb">御婚礼</span><span type="rp">（</span><span type="rt"
+                >ごこんれい</span><span type="rp"
+              >）</span></span>のために、この剣と長靴と、それからあのマントルと、三つの宝をさし上げましょう。もうこの三つの宝があれば、あなた方二人を苦しめる敵は、世界にないと思いますが、もしまた何か悪いやつがあったら、わたしの国へ知らせて下さい。わたしはいつでもアフリカから、百万の黒ん坊の<span
+              type="ruby"><span type="rb">騎兵</span><span type="rp">（</span><span type="rt"
+                >きへい</span><span type="rp">）</span></span>と一しょに、あなた方の敵を<span type="ruby"><span
+                type="rb">征伐</span><span type="rp">（</span><span type="rt">せいばつ</span><span
+                type="rp">）</span></span>に行きます。</p>
+          <stage>（悲しそうに）</stage>
+          <p>わたしはあなたを迎えるために、アフリカの都のまん中に、大理石の御殿を建てて置きました。その御殿のまわりには、一面の<span type="ruby"><span
+                type="rb">蓮</span><span type="rp">（</span><span type="rt">はす</span><span type="rp"
+                >）</span></span>の花が咲いているのです。（王子に）どうかあなたはこの長靴をはいたら、時々遊びに来て下さい。</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>きっと<span type="ruby"><span type="rb">御馳走</span><span type="rp">（</span><span type="rt"
+                >ごちそう</span><span type="rp">）</span></span>になりに行きます。</p>
+        </sp>
+        <sp who="#王女">
+          <speaker>王女</speaker>
+          <stage>（黒ん坊の王の胸に、<span type="ruby"><span type="rb">薔薇</span><span type="rp">（</span><span
+                type="rt">ばら</span><span type="rp">）</span></span>の花をさしてやりながら）</stage>
+          <p>わたしはあなたにすまない事をしました。あなたがこんな<span type="ruby"><span type="rb">優</span><span type="rp"
+                >（</span><span type="rt">やさ</span><span type="rp"
+            >）</span></span>しい方だとは、夢にも知らずにいたのです。どうかかんにんして下さい。ほんとうにわたしはすまない事をしました。</p>
+          <stage>（王の胸にすがりながら、子供のように泣き始める）</stage>
+        </sp>
+        <sp who="#黒ん坊の王">
+          <speaker>王</speaker>
+          <stage>（王女の<span type="ruby"><span type="rb">髪</span><span type="rp">（</span><span
+                type="rt">かみ</span><span type="rp">）</span></span>を<span type="ruby"><span type="rb"
+                >撫</span><span type="rp">（</span><span type="rt">な</span><span type="rp"
+              >）</span></span>でながら）</stage>
+          <p><span type="ruby"><span type="rb">有難</span><span type="rp">（</span><span type="rt"
+                >ありがと</span><span type="rp">）</span></span>う。よくそう云ってくれました。わたしも<span type="ruby"
+                ><span type="rb">悪魔</span><span type="rp">（</span><span type="rt">あくま</span><span
+                type="rp">）</span></span>ではありません。悪魔も同様な黒ん坊の王は<span type="ruby"><span type="rb"
+                >御伽噺</span><span type="rp">（</span><span type="rt">おとぎばなし</span><span type="rp"
+                >）</span></span>にあるだけです。</p>
+          <stage>（王子に）</stage>
+          <p>そうじゃありませんか？</p>
+        </sp>
+        <sp who="#王子">
+          <speaker>王子</speaker>
+          <p>そうです。</p>
+          <stage>（見物に向いながら）</stage>
+          <p>皆さん！　我々三人は目がさめました。悪魔のような黒ん坊の王や、三つの宝を持っている王子は、御伽噺にあるだけなのです。我々はもう目がさめた以上、御伽噺の中の国には、住んでいる<span
+              type="ruby"><span type="rb">訣</span><span type="rp">（</span><span type="rt"
+                >わけ</span><span type="rp">）</span></span>には行きません。我々の前には<span type="ruby"><span
+                type="rb">霧</span><span type="rp">（</span><span type="rt">きり</span><span type="rp"
+                >）</span></span>の奥から、もっと広い世界が浮んで来ます。我々はこの薔薇と噴水との世界から、一しょにその世界へ出て行きましょう。もっと広い世界！　もっと<span
+              type="ruby"><span type="rb">醜</span><span type="rp">（</span><span type="rt"
+                >みにく</span><span type="rp"
+            >）</span></span>い、もっと美しい、――もっと大きい御伽噺の世界！　その世界に我々を待っているものは、苦しみかまたは楽しみか、我々は何も知りません。ただ我々はその世界へ、勇ましい一隊の兵卒のように、進んで行く事を知っているだけです。</p>
+        </sp>
+
+      </div>
+
+    </body>
+    <back>
+      <div type="note">
+        <p><date when="1922-12">（大正十一年十二月）</date></p>
+      </div>
+    </back>
+  </text>
+</TEI>
