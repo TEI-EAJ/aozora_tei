@@ -1,0 +1,1 @@
+convert -crop 100%x5% data/input.png data/output.jpg
