@@ -238,11 +238,25 @@ layout: default
           var li = $("<li>").append(name).clone()
           name_list.append(li)
         }
-
       }
 
       // correspもひろうように設定
       var sp_list = $("[corresp='#" + speaker + "']")
+      for (var i = 0; i < sp_list.length; i++) {
+        var sp = sp_list[i]
+
+        name = $(sp).html()
+
+        if (name_arr.indexOf(name) == -1) {
+          var li = $("<li>").append(name).clone()
+          name_list.append(li)
+
+          name_arr.push(name)
+        }
+      }
+
+      // correspもひろうように設定
+      var sp_list = $("[ref='#" + speaker + "']")
       for (var i = 0; i < sp_list.length; i++) {
         var sp = sp_list[i]
 
