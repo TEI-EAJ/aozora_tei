@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="tei_all_ja_20191012_4.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:eaj="http://www.example.org/ns/ejaTEI">
+      <teiHeader>
+            <fileDesc>
+                  <!-- 電子ファイルに関する完全な書誌情報を示す． -->
+                  <titleStmt>
+                        <title>走れメロス</title>
+                        <author ref="http://viaf.org/viaf/4940744">太宰治 (1909-1948)</author>
+                  </titleStmt>
+                  <editionStmt>
+                        <edition>TEI version</edition>
+                        <respStmt>
+                              <resp when="2004-02-23">入力</resp>
+                              <persName>金川一之</persName>
+                        </respStmt>
+
+                        <respStmt>
+                              <resp when="2004-02-23">校正</resp>
+                              <persName>高橋美奈子</persName>
+                        </respStmt>
+                        <respStmt>
+                              <resp when="2010-11-04">作成</resp>
+                              <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+                              <note>
+                                    <lb/>底本：「芥川龍之介全集5」ちくま文庫、筑摩書房 <lb/>1987（昭和62）年2月24日第1刷発行
+                                    <lb/>1995（平成7）年4月10日第6刷発行 <lb/>底本の親本：「筑摩全集類聚版芥川龍之介全集」筑摩書房
+                                    <lb/>1971（昭和46）年3月～11月刊行 <lb/>入力：j.utiyama <lb/>校正：多羅尾伴内
+                                    <lb/>2004年1月5日作成 <lb/>2010年11月4日修正 <lb/>青空文庫作成ファイル：
+                                    <lb/>このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。</note>
+                        </respStmt>
+                        <respStmt xml:id="KN">
+                              <resp when="2019-10-12">TEI encoded by</resp>
+                              <persName ref="https://researchmap.jp/knagasaki">永崎研宣</persName>
+                        </respStmt>
+                        <respStmt xml:id="SIG">
+                              <resp when="2020-10-29">TEI encoded by</resp>
+                              <!-- 以下のrespはサンプル -->
+                              <resp when="2021-10-29">TEI encoded by</resp>
+                              <name ref="https://tei-c.org/Activities/SIG/EastAsian/"
+                                    >TEI-C東アジア/日本語分科会</name>
+                        </respStmt>
+                  </editionStmt>
+                  <publicationStmt>
+                        <!-- 以下は、本TEI/XMLファイルについて -->
+                        <distributor>SIG for East Asian/ Japanese, TEI Consortium</distributor>
+                        <date when="2020-10-29">2020年10月29日</date>
+                        <availability>
+                              <licence target="https://creativecommons.org/publicdomain/zero/1.0/"
+                                    >CC0 1.0 Universal (CC0 1.0) Public Domain Dedication</licence>
+                        </availability>
+                  </publicationStmt>
+                  <notesStmt>
+                        <note>
+                              <date when="2020-10-29">2020年10月29日</date>のTEI勉強会で使用したファイルです。 </note>
+                        <note type="青空文庫_底本の親本">
+                              <biblStruct>
+                                    <monogr>
+                                          <idno type="URL"
+                                                >https://id.ndl.go.jp/bib/000001245833</idno>
+                                          <idno type="国立国会図書館書誌ID">000001245833</idno>
+                                          <idno type="日本全国書誌番号">75000564</idno>
+                                          <title>筑摩全集類聚版太宰治全集</title>
+                                          <author>太宰治</author>
+                                          <edition>初版</edition>
+                                          <imprint>
+                                                <pubPlace>東京都</pubPlace>
+                                                <publisher ref="http://viaf.org/viaf/151711118"
+                                                  >筑摩書房</publisher>
+                                                <date when="1971">1971（昭和46）年</date>
+                                          </imprint>
+                                    </monogr>
+                              </biblStruct>
+                        </note>
+                  </notesStmt>
+                  <sourceDesc>
+                        <biblStruct>
+                              <analytic>
+                                    <author>太宰治</author>
+                                    <title>走れメロス</title>
+                              </analytic>
+                              <monogr>
+                                    <idno type="ISBN">4-480-02253-8</idno>
+                                    <title>太宰治全集3</title>
+                                    <author>太宰治</author>
+                                    <edition>初版</edition>
+                                    <imprint>
+                                          <pubPlace>東京都</pubPlace>
+                                          <publisher>筑摩書房</publisher>
+                                          <date when="1988-10-25">1988（昭和63）年10月25日</date>
+                                    </imprint>
+                                    <!-- 以下のページ範囲はサンプル -->
+                                    <biblScope unit="page" from="150" to="250"
+                                          >pp.150-250</biblScope>
+                              </monogr>
+                              <monogr>
+                                    <idno type="ISBN">4-480-02253-8</idno>
+                                    <title>太宰治全集3</title>
+                                    <author>太宰治</author>
+                                    <edition>第2刷</edition>
+                                    <imprint>
+                                          <pubPlace>東京都</pubPlace>
+                                          <publisher>筑摩書房</publisher>
+                                          <date when="1998-06-15">1998（平成10）年6月15日</date>
+                                    </imprint>
+                                    <!-- 以下のページ範囲はサンプル -->
+                                    <biblScope unit="page" from="100" to="200"
+                                          >pp.100-200</biblScope>
+                              </monogr>
+                              <!-- シリーズの階層記述は要検討
+                              <series>
+                                    <title level="s">太宰治全集</title>
+                                    <biblScope unit="volume">3</biblScope>
+                              </series>
+                              -->
+                              <series>
+                                    <title level="s">ちくま文庫</title>
+                                    <biblScope unit="volume">た-12-3</biblScope>
+                              </series>
+                        </biblStruct>
+                  </sourceDesc>
+            </fileDesc>
+            <encodingDesc>
+                  <!-- 電子テキストとその元資料との関係を記述する． -->
+                  <!-- 以下の記述はprofileDesc/abstractのほうが適切か
+                  <projectDesc>
+                        <p>固有表現のマークアップの有用性を示すことを目的として、人文情報学研究所の永崎研宣氏がマークアップしたファイルです。</p>
+                        <p>その後、TEI勉強会を通じてヘッダーを充実させた。</p>
+                  </projectDesc>
+                  -->
+                  <editorialDecl>
+                        <normalization
+                              source="https://www.aozora.gr.jp/KOSAKU/MANUAL_3.html#HOUSETSU">
+                              <p> 【微妙な字体差と包摂規準】 <list>
+                                          <item>
+                                                底本で使われている漢字と入力したものとで、細部の形が微妙に異なっていることがあります。「果たしてこの字を使ってよいのか？」と、迷う場合もあるでしょう。その際、「よいか悪いか」の判断は、用いている漢字コードが「字体の揺れ幅」について定めた、約束事に従ってくだします。
+                                                青空文庫はJIS X
+                                                0208を使っていますから、その規準である「包摂規準」(１～185番）に従って、判断します。（加えて、JIS
+                                                X 0213で新たに定義された186～199番にも従います。） </item>
+                                                <item>包摂規準とは、「この差ではコードを区別しない」という約束事の集まりです。
+                                                ルールのすべては、JIS漢字コードの規格書に定められています。</item>
+                                          <item>青空文庫ではこれを、「JIS X
+                                                0208と0213規格票の包摂関連項目」として、まとめています。</item>
+                                          <item>ここに定められた包摂規準に従えば、本来、右に示す29文字のAとBのパターンは区別されなければいけません。ところが過去の規格改訂時に犯した誤りとつじつまを合わせるために、これらについては例外として「同じコードで入力する」とされています。これらに関しては、底本と表示文字にＡとＢの違いがあったとしても、その差は無視してください。</item>
+                                                <item>JIS X
+                                                0208の包摂規準では、しんにゅうの点が一つか二つか、草冠の横画が切れているか否かで、コードは区別されません。画面やプリントアウトの表示と底本にこの差があったとしても、違いは無視してください。 </item>
+                                          <item>細かな字体差を無視して入力して良いのか、それとも外字として注記すべきか判断を迫られたときは、外字注記辞書を参照するのが近道です。
+                                                ここに盛り込まれた、包摂、78互換包摂、デザイン差に関する約束事は、包摂規準にもとづいています。
+                                                【「ケ」のようにみえる文字】 </item>
+                                          <item>「ケ」のようにみえる文字には、「け」と読まれる片仮名と、「こ」「か」「が」と読み分けられる漢字があります。 </item>
+                                          <item>「ケ」にみえる文字は、前後の文章の流れを読んで、以下に示すように入力してください。
+                                                「け」と読む片仮名は、次のように、区点番号5-17の「ケ」で入れてください。 　　　ケンタッキー
+                                                「こ」「か」「が」と読む漢字は、次のように、区点番号5-86の「ヶ」で入れてください。
+                                                　　　一ヶ（「こ」） 　　　二ヶ所、六ヶしい（「か」） 　　　霞ヶ関、槍ヶ岳（「が」）
+                                                底本が「こ」「か」「が」と読むものを小書きせず、他の文字と同じ大きさにつくっている場合は、「青空文庫収録ファイルへの記載事項」にそって、ファイル末に以下のように注記してください。
+                                                ※底本は、物を数える際や地名などに用いる「ヶ」（区点番号5-86）を、大振りにつくっています。
+                                                詳しくは、「区点番号5-17と5-86の使い分け指針」を参照してください。 【旧字入力の支援ツール】 </item>
+                                          <item>旧字作品の入力ファイルには、使うべきでない新字や俗字が、しばしば紛れこみます。 </item>
+                                          <item>これらを見つけ出すために、「校閲君」と名付けたチェックツールを用意しました。詳しい使い方は、「旧字ファイルの新字・俗字を、校閲君で洗い出そう！」で説明しています。 </item>
+                                          <item>旧字作品の入力作業の途中で校閲君によるチェックをかければ、どんなものが新字、俗字になりがちか確認できます。 </item>
+                                          <item>旧字作品の入力が終わったら、青空文庫宛にファイルを送る前に、必ず校閲君でチェックしてください。
+                                                校閲君は、結城浩さんによって書かれた後、ゼファー生さんによって書き直され、維持されています。 </item>
+                                          <item>かつて旧字作品の入力、校正を体験された方は、自分の関わったファイルを校閲君でチェックし直してください。 </item>
+                                          <item>旧字、正字に置き換えるべきものが見つかったら、reception@aozora.gr.jpに、ファイルの修正を求めてくださ
+                                          </item>
+                                    </list>
+                              </p>
+                        </normalization>
+                  </editorialDecl>
+                  <classDecl>
+                        <taxonomy xml:id="unique">
+                              <bibl>
+                                    <title>中村覚の独自語彙</title>
+                                    <author>
+                                          <persName ref="https://researchmap.jp/nakamura.satoru"
+                                                >中村覚</persName>
+                                    </author>
+                                    <edition>
+                                          <date when="2020-10-29">2020年10月29日</date>
+                                    </edition>
+                              </bibl>
+                        </taxonomy>
+                  </classDecl>
+            </encodingDesc>
+            <profileDesc>
+                  <!-- 特に、使われた言語や特殊言語、作成されたときの状況、参加者や参加者の設定など、テキストの書誌情報的ではない諸側面の詳細な解説をする． -->
+                  <abstract xml:lang="ja">
+                        <p>固有表現のマークアップの有用性を示すことを目的として、人文情報学研究所の永崎研宣氏がマークアップしたファイルです。</p>
+                        <p>その後、TEI勉強会を通じてヘッダーを充実させた。</p>
+                  </abstract>
+                  <abstract xml:lang="en">
+                        <p>This file was marked up by Dr. Kiyonori Nagasaki of International
+                              Institute for Digital Humanities for the purpose of showing the
+                              usefulness of markup of named entity.</p>
+                  </abstract>
+                  <creation>
+                        <date when="2020-10-29">2020年10月29日</date>
+                        <rs type="online">Zoom</rs>
+                  </creation>
+                  <langUsage>
+                        <language ident="ja-JP" usage="100">日本語</language>
+                  </langUsage>
+                  <textClass>
+                        <!-- 文字列 -->
+                        <keywords scheme="http://jla.or.jp/data/ndc9#">
+                              <term>小説．物語 (日本文学)</term>
+                        </keywords>
+
+                        <!-- 番号 -->
+                        <classCode scheme="http://jla.or.jp/data/ndc9#">913</classCode>
+
+                        <keywords scheme="#unique">
+                              <term>短編</term>
+                        </keywords>
+
+                  </textClass>
+            </profileDesc>
+            <xenoData>
+                  <!-- RDFデータなどがあればここに書きたい -->
+            </xenoData>
+            <revisionDesc>
+                  <change when="2019-10-12" who="#KN"> ファイルを作成を作成した。 </change>
+                  <change when="2020-10-29" who="#SIG"> The description of TEI Header was updated.
+                        TEIヘッダーの記述を更新しました。 </change>
+                  <!-- 以下の記述はサンプル -->
+                  <change when="2021-10-29" who="#SIG"> The description of TEI Header was updated.
+                        TEIヘッダーの記述を更新しました。 </change>
+            </revisionDesc>
+      </teiHeader>
+      <text>
+            <front>
+                  <p>
+                        <listPerson>
+                              <person xml:id="メロス">
+                                    <persName>メロス</persName>
+                                    <occupation>牧人</occupation>
+                              </person>
+                              <person xml:id="ディオニス">
+                                    <persName>ディオニス</persName>
+                                    <occupation>王</occupation>
+                              </person>
+                              <person xml:id="セリヌンティウス">
+                                    <persName>セリヌンティウス</persName>
+                                    <occupation>石工</occupation>
+                              </person>
+                        </listPerson>
+                  </p>
+            </front>
+            <body>
+                  <p>
+                        <persName ref="#メロス">メロス</persName>は激怒した。必ず、かの<rs ref="#ディオニス"
+                                          ><eaj:ruby><eaj:rb>邪智暴虐</eaj:rb><eaj:rp>
+                                          （</eaj:rp><eaj:rt>じゃちぼうぎゃく</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>
+                              の王</rs>を除かなければならぬと決意した。<persName ref="#メロス"
+                              >メロス</persName>には政治がわからぬ。<persName ref="#メロス">メロス</persName>は、村の牧人である。
+                        笛を吹き、羊と遊んで暮して来た。けれども邪悪に対しては、人一倍に敏感であった。</p>
+                  <p> きょう未明<persName ref="#メロス">メロス</persName>は村を出発し、野を越え山越え、十里はなれた
+                                    <eaj:ruby><eaj:rb>此</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>こ</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>の<placeName>シラクス</placeName>の市にやって来た。<persName
+                              ref="#メロス">メロス</persName>には父も、母も無い。女房も無い。
+                        十六の、内気な妹と二人暮しだ。この妹は、村の或る律気な一牧人を、近々、
+                                    <eaj:ruby><eaj:rb>花婿</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>はなむこ</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>として迎える事になっていた。結婚式も間近かなのである。 <persName ref="#メロス"
+                              >メロス</persName>は、それゆえ、<rs ref="#メロスの妹"
+                        >花嫁</rs>の衣裳やら祝宴の御馳走やらを買いに、はるばる市にやって来たのだ。 先ず、その品々を買い集め、それから都の大路をぶらぶら歩いた。</p>
+                  <p>
+                        <persName ref="#メロス">メロス</persName>には竹馬の友があった。 <persName ref="#セリヌンティウス"
+                              >セリヌンティウス</persName>である。今は此の<placeName>シラクス</placeName>の市で、
+                              <roleName>石工</roleName>をしている。 その友を、これから訪ねてみるつもりなのだ。久しく逢わなかったのだから、
+                        訪ねて行くのが楽しみである。 </p>
+                  <p> 歩いているうちに<persName ref="#メロス">メロス</persName>は、まちの様子を怪しく思った。
+                        ひっそりしている。もう既に日も落ちて、まちの暗いのは当りまえだが、けれども、
+                              なんだか、夜のせいばかりでは無く、市全体が、やけに寂しい。のんきな<persName ref="#メロス">メロス</persName>も、
+                        だんだん不安になって来た。路で逢った若い衆をつかまえて、何かあったのか、 二年まえに此の市に来たときは、夜でも皆が歌をうたって、まちは賑やかであった
+                                    <eaj:ruby><eaj:rb>筈</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>はず</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>だが、と質問した。若い衆は、首を振って答えなかった。 しばらく歩いて<rs ref="#老爺"
+                                          ><eaj:ruby><eaj:rb>老爺</eaj:rb><eaj:rp>
+                                          （</eaj:rp><eaj:rt>ろうや</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby></rs>に逢い、
+                              こんどはもっと、語勢を強くして質問した。<rs ref="#老爺">老爺</rs>は答えなかった。 <persName ref="#メロス"
+                              >メロス</persName>は両手で老爺のからだをゆすぶって質問を重ねた。<rs ref="#老爺">老爺</rs>は、
+                        あたりをはばかる低声で、わずか答えた。 <said who="#老爺">「<rs ref="#ディオニス"
+                              >王様</rs>は、人を殺します。」</said>
+                        <said who="#メロス"> 「なぜ殺すのだ。」</said>
+                        <said who="#老爺">「悪心を抱いている、というのですが、誰もそんな、悪心を持っては居りませぬ。」</said>
+                        <said who="#メロス">「たくさんの人を殺したのか。」</said>
+                        <said who="#老爺">「はい、はじめは<rs ref="#ディオニス">王様</rs>の<rs ref="#ディオニスの妹婿"
+                                    >妹婿さま</rs> を。それから、<rs ref="#ディオニス">御自身</rs>の<rs ref="#ディオニスの世嗣"
+                                                ><eaj:ruby><eaj:rb>お世嗣</eaj:rb><eaj:rp>
+                                                （</eaj:rp><eaj:rt>よつぎ</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby></rs>を。
+                                    それから、<rs ref="#ディオニスの妹">妹さま</rs>を。それから、<rs ref="#ディオニスの妹"
+                                    >妹さま</rs>の <rs ref="#ディオニスの妹の御子">御子さま</rs>を。それから、<rs ref="#皇后"
+                                    >皇后さま</rs>を。 それから、<roleName>賢臣</roleName>の<persName ref="#アレキス"
+                                    >アレキス様</persName>を。」</said>
+                        <said who="#メロス">「おどろいた。<rs ref="#ディオニス">国王</rs>は乱心か。」</said>
+                        <said who="#老爺">「いいえ、乱心ではございませぬ。人を、信ずる事が出来ぬ、 というのです。このごろは、臣下の心をも、お疑いになり、
+                              少しく派手な暮しをしている者には、人質ひとりずつ差し出すことを命じて居ります。
+                              御命令を拒めば十字架にかけられて、殺されます。きょうは、六人殺されました。」</said> 聞いて、<persName ref="#メロス"
+                              >メロス</persName>は激怒した。 <said who="メロス"
+                                          >「<eaj:ruby><eaj:rb>呆</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>あき</eaj:rt><eaj:rp>）
+                                    </eaj:rp></eaj:ruby>れた<rs ref="#ディオニス">王</rs>だ。生かして置けぬ。」</said>
+                  </p>
+                  <p>
+                        <persName ref="#メロス">メロス</persName>は、 単純な男であった。買い物を、背負ったままで、
+                              のそのそ<placeName>王城</placeName>にはいって行った。たちまち彼は、
+                                    <eaj:ruby><eaj:rb>巡邏</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>じゅんら</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>の<roleName>警吏</roleName>に捕縛された。調べられて、<persName
+                              ref="#メロス">メロス</persName>の懐中からは 短剣が出て来たので、 騒ぎが大きくなってしまった。<persName
+                              ref="#メロス">メロス</persName>は、<rs ref="#ディオニス">王</rs>の前に引き出された。 <said
+                              who="#ディオニス">「この短刀で何をするつもりであったか。言え！」</said> 暴君<persName ref="#ディオニス"
+                              >ディオニス</persName>は静かに、
+                                    けれども威厳を<eaj:ruby><eaj:rb>以</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>もっ</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>て問いつめた。
+                              その<rs ref="#ディオニス"
+                                    >王</rs>の顔は<eaj:ruby><eaj:rb>蒼白</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>そうはく</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>で、<eaj:ruby><eaj:rb>眉間</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>みけん</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>の<eaj:ruby><eaj:rb>皺</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>しわ</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>は、刻み込まれたように深かった。 <said who="#メロス">「市を<rs
+                                    ref="#ディオニス">暴君</rs>の手から救うのだ。」</said>と<persName ref="#メロス"
+                              >メロス</persName>は悪びれずに答えた。 <said who="#ディオニス">「おまえがか？」</said><rs
+                              ref="#ディオニス">王</rs>は、 <eaj:ruby><eaj:rb>憫笑</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>びんしょう</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>した。<said
+                              who="#ディオニス">「仕方の無いやつじゃ。おまえには、 わしの孤独がわからぬ。」</said>
+                        <said who="#メロス">「言うな！」</said>と<persName ref="#メロス"
+                                    >メロス</persName>は、いきり立って<eaj:ruby><eaj:rb>反駁</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>はんばく</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>した。<said
+                              who="#メロス">「人の心を疑うのは、 最も恥ずべき悪徳だ。<rs ref="#ディオニス"
+                              >王</rs>は、民の忠誠をさえ疑って居られる。」</said>
+                        <said> 「疑うのが、正当の心構えなのだと、<rs ref="#ディオニス"
+                              >わし</rs>に教えてくれたのは、おまえたちだ。人の心は、あてにならない。
+                              人間は、もともと私慾のかたまりさ。信じては、ならぬ。」</said><rs ref="#ディオニス"
+                                    >暴君</rs>は落着いて<eaj:ruby><eaj:rb>呟</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>つぶや</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>き、ほっと<eaj:ruby><eaj:rb>溜息</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>ためいき</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>をついた。
+                              <said who="#ディオニス">「<rs ref="#ディオニス">わし</rs>だって、平和を望んでいるのだが。」</said>
+                        <said who="#メロス">「なんの為の平和だ。自分の地位を守る為か。」</said>こんどは<persName ref="#メロス"
+                              >メロス</persName>が嘲笑した。 <said who="#メロス">「罪の無い人を殺して、何が平和だ。」 </said>
+                        <said who="#ディオニス">「だまれ、<rs ref="#メロス"
+                                                ><eaj:ruby><eaj:rb>下賤</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>げせん</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>の者</rs>。」
+                              </said><rs ref="#ディオニス">王</rs>は、さっと顔を挙げて報いた。<said who="#ディオニス"
+                                    >「口では、どんな清らかな事でも言える。<rs ref="#ディオニス">わし</rs>には、人の腹綿の奥底が見え透いてならぬ。
+                                          おまえだって、いまに、<eaj:ruby><eaj:rb>磔</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>はりつけ</eaj:rt><eaj:rp>）
+                                    </eaj:rp></eaj:ruby>になってから、泣いて<eaj:ruby><eaj:rb>詫</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>わ</eaj:rt><eaj:rp>）
+                                    </eaj:rp></eaj:ruby>びたって聞かぬぞ。」</said>
+                        <said who="#メロス">「ああ、<rs ref="#ディオニス"
+                                          >王</rs>は<eaj:ruby><eaj:rb>悧巧</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>りこう</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>だ。
+                                          <eaj:ruby><eaj:rb>自惚</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>うぬぼ</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>れているがよい。
+                                    <rs ref="#メロス"
+                        >私</rs>は、ちゃんと死ぬる覚悟で居るのに。命乞いなど決してしない。ただ、――」</said>と言いかけて、 <persName
+                              ref="#メロス">メロス</persName>は足もとに視線を落し瞬時ためらい、 <said who="#メロス">「ただ、<rs
+                                    ref="#メロス">私</rs>に情をかけたいつもりなら、処刑までに三日間の日限を与えて下さい。 たった一人の<rs
+                                    ref="#メロスの妹">妹</rs>に、亭主を持たせてやりたいのです。三日のうちに、
+                                    私は<placeName>村</placeName>で結婚式を挙げさせ、必ず、ここへ帰って来ます。」</said>
+                        <said who="#ディオニス">「ばかな。」</said>と<rs ref="#ディオニス"
+                                    >暴君</rs>は、<eaj:ruby><eaj:rb>嗄</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>しわが</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>れた声で低く笑った。 <said who="#ディオニス"
+                                          >「とんでもない<eaj:ruby><eaj:rb>嘘</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>うそ</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>を言うわい。
+                              逃がした小鳥が帰って来るというのか。」</said>
+                        <said who="#メロス">「そうです。帰って来るのです。」</said><persName ref="#メロス"
+                        >メロス</persName>は必死で言い張った。 <said who="#メロス">「<rs ref="#メロス"
+                                    >私</rs>は約束を守ります。<rs ref="#メロス">私</rs>を、三日間だけ許して下さい。<rs
+                                    ref="#メロスの妹">妹</rs>が、私の帰りを待っているのだ。 そんなに<rs ref="#メロス"
+                                    >私</rs>を信じられないならば、よろしい、この市に<persName ref="#セリヌンティウス"
+                                    >セリヌンティウス</persName> という<roleName>石工</roleName>がいます。私の無二の<rs
+                                    ref="#セリヌンティウス">友人</rs>だ。あれを、人質としてここに置いて行こう。
+                                    私が逃げてしまって、三日目の日暮まで、ここに帰って来なかったら、あの<rs ref="#セリヌンティウス"
+                              >友人</rs>を絞め殺して下さい。 たのむ、そうして下さい。」</said> それを聞いて<rs ref="#ディオニス"
+                                    >王</rs>は、残虐な気持で、そっと<eaj:ruby><eaj:rb>北叟笑</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>ほくそえ</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>んだ。
+                              生意気なことを言うわい。どうせ帰って来ないにきまっている。この<rs ref="#メロス"
+                                    >嘘つき</rs>に<eaj:ruby><eaj:rb>騙</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>だま</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>された振りして、
+                              放してやるのも面白い。そうして<rs ref="#セリヌンティウス">身代りの男</rs>を、三日目に殺してやるのも気味がいい。人は、
+                              これだから信じられぬと、<rs ref="#ディオニス">わし</rs>は悲しい顔して、その<rs ref="#セリヌンティウス"
+                              >身代りの男</rs>を磔刑に処してやるのだ。世の中の、
+                                    正直者とかいう<eaj:ruby><eaj:rb>奴輩</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>やつばら</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>にうんと見せつけてやりたいものさ。 <said who="#ディオニス"
+                                    >「願いを、聞いた。その<rs ref="#セリヌンティウス"
+                                    >身代り</rs>を呼ぶがよい。三日目には日没までに帰って来い。おくれたら、その<rs ref="#セリヌンティウス"
+                                    >身代り</rs>を、 きっと殺すぞ。ちょっとおくれて来るがいい。<rs ref="#メロス"
+                              >おまえ</rs>の罪は、永遠にゆるしてやろうぞ。」</said> 「なに、何をおっしゃる。」 <said who="#ディオニス"
+                              >「はは。いのちが大事だったら、おくれて来い。おまえの心は、わかっているぞ。」</said>
+                        <persName ref="#メロス"
+                                    >メロス</persName>は口惜しく、<eaj:ruby><eaj:rb>地団駄</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>じだんだ</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>踏んだ。ものも言いたくなくなった。 </p>
+                  <p> 竹馬の友、<persName ref="#セリヌンティウス"
+                              >セリヌンティウス</persName>は、深夜、<placeName>王城</placeName>に召された。 <persName
+                              ref="#ディオニス">暴君ディオニス</persName>の面前で、<rs ref="#セリヌンティウス #メロス"
+                                          ><eaj:ruby><eaj:rb>佳</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>よ</eaj:rt><eaj:rp>）
+                                    </eaj:rp></eaj:ruby>き友と佳き友</rs>は、二年ぶりで相逢うた。<persName ref="#メロス"
+                              >メロス</persName>は、<rs ref="#セリヌンティウス">友</rs>に 一切の事情を語った。<persName
+                              ref="#セリヌンティウス">セリヌンティウス</persName>
+                                    は無言で<eaj:ruby><eaj:rb>首肯</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>うなず</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>き、
+                              <persName ref="#メロス">メロス</persName>をひしと抱きしめた。<rs ref="#セリヌンティウス #メロス"
+                              >友と友</rs>の間は、それでよかった。<persName ref="#セリヌンティウス">セリヌンティウス</persName>は、
+                              縄打たれた。<persName ref="#メロス">メロス</persName>は、すぐに出発した。初夏、満天の星である。</p>
+                  <p>
+                        <persName ref="#メロス"
+                              >メロス</persName>はその夜、一睡もせず十里の路を急ぎに急いで、<placeName>村</placeName>へ到着したのは、
+                                    <eaj:ruby><eaj:rb>翌</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>あく</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>る日の午前、
+                              陽は既に高く昇って、村人たちは野に出て仕事をはじめていた。<persName ref="#メロス">メロス</persName>の<rs
+                              ref="#メロスの妹">十六の妹</rs>も、 きょうは<rs ref="#メロス"
+                              >兄</rs>の代りに<roleName>羊群の番</roleName>をしていた。よろめいて歩いて来る<rs ref="#メロス"
+                              >兄</rs>の、 疲労<eaj:ruby><eaj:rb>困憊</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>こんぱい</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>の姿を見つけて驚いた。そうして、
+                              うるさく<rs ref="#メロス">兄</rs>に質問を浴びせた。 <said who="#メロス"
+                              >「なんでも無い。」</said><persName ref="#メロス">メロス</persName>は無理に笑おうと努めた。 <said
+                              who="#メロス"
+                                    >「<placeName>市</placeName>に用事を残して来た。またすぐ<placeName>市</placeName>に行かなければならぬ。
+                              あす、 <rs ref="#メロスの妹">おまえ</rs>の結婚式を挙げる。早いほうがよかろう。」</said>
+                        <rs ref="#メロスの妹">妹</rs>は頬をあからめた。 <said who="#メロス"
+                                          >「うれしいか。<eaj:ruby><eaj:rb>綺麗</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>きれい</eaj:rt><eaj:rp>）
+                                    </eaj:rp></eaj:ruby>な衣裳も買って来た。さあ、これから行って、村の人たちに知らせて来い。結婚式は、あすだと。」</said>
+                        <persName ref="#メロス"
+                        >メロス</persName>は、また、よろよろと歩き出し、<placeName>家</placeName>へ帰って神々の祭壇を飾り、祝宴の席を調え、
+                        間もなく床に倒れ伏し、呼吸もせぬくらいの深い眠りに落ちてしまった。 眼が覚めたのは夜だった。<persName ref="#メロス"
+                              >メロス</persName>は起きてすぐ、<rs ref="#メロスの妹の婿">花婿</rs>の家を訪れた。そうして、
+                              少し事情があるから、結婚式を明日にしてくれ、と頼んだ。<rs ref="#メロスの妹の婿">婿の
+                                    <roleName>牧人</roleName></rs>は驚き、
+                                    それはいけない、こちらには未だ何の仕度も出来ていない、<eaj:ruby><eaj:rb>葡萄</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>ぶどう</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>の季節まで待ってくれ、
+                              と答えた。<persName ref="#メロス"
+                        >メロス</persName>は、待つことは出来ぬ、どうか明日にしてくれ給え、と更に押してたのんだ。 <rs ref="#メロスの妹の婿"
+                                    >婿の<roleName>牧人</roleName></rs>も頑強であった。なかなか承諾してくれない。夜明けまで議論をつづけて、やっと、
+                        どうにか婿をなだめ、すかして、説き伏せた。</p>
+                  <p>結婚式は、真昼に行われた。 <rs ref="#メロスの妹の婿">新郎</rs><rs ref="#メロスの妹">新婦</rs>の、
+                        神々への宣誓が済んだころ、黒雲が空を覆い、ぽつりぽつり雨が降り出し、やがて車軸を流すような
+                        大雨となった。祝宴に列席していた村人たちは、何か不吉なものを感じたが、それでも、
+                              めいめい気持を引きたて、狭い<placeName>家</placeName>の中で、むんむん蒸し暑いのも<eaj:ruby><eaj:rb>怺</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>こら</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>え、陽気に歌をうたい、
+                                    手を<eaj:ruby><eaj:rb>拍</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>う</eaj:rt><eaj:rp>）</eaj:rp>
+                        </eaj:ruby>った。<persName ref="#メロス"
+                                    >メロス</persName>も、満面に喜色を<eaj:ruby><eaj:rb>湛</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>たた</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>え、しばらくは、
+                              <rs ref="#ディオニス">王</rs>とのあの約束をさえ忘れていた。祝宴は、夜に入っていよいよ乱れ華やかになり、人々は、
+                              外の豪雨を全く気にしなくなった。<persName ref="#メロス"
+                        >メロス</persName>は、一生このままここにいたい、と思った。
+                        この佳い人たちと生涯暮して行きたいと願ったが、いまは、自分のからだで、自分のものでは無い。 ままならぬ事である。<persName ref="#メロス"
+                              >メロス</persName>は、わが身に鞭打ち、ついに出発を決意した。あすの日没までには、
+                        まだ十分の時が在る。ちょっと一眠りして、それからすぐに出発しよう、と考えた。その頃には、
+                              雨も小降りになっていよう。少しでも永くこの家に愚図愚図とどまっていたかった。<persName ref="#メロス">メロス
+                              ほどの男</persName>にも、やはり未練の情というものは在る。今宵呆然、歓喜に酔っているらしい<rs ref="#メロスの妹"
+                              >花嫁</rs>に近寄り、 <said who="#メロス">「おめでとう。<rs ref="#メロス"
+                              >私</rs>は疲れてしまったから、ちょっとご免こうむって眠りたい。眼が覚めたら、
+                              すぐに<placeName>市</placeName>に出かける。 大切な用事があるのだ。<rs ref="#メロス"
+                                    >私</rs>がいなくても、もう<rs ref="#メロスの妹">おまえ</rs>には<rs ref="#メロスの妹の婿"
+                                    >優しい亭主</rs>があるのだから、決して寂しい事は無い。 <rs ref="#メロス"
+                              >おまえの兄</rs>の、一ばんきらいなものは、人を疑う事と、それから、 嘘をつく事だ。<rs ref="#メロスの妹"
+                                    >おまえ</rs>も、それは、知っているね。<rs ref="#メロスの妹の婿"
+                              >亭主</rs>との間に、どんな秘密でも作ってはならぬ。 <rs ref="#メロスの妹"
+                                    >おまえ</rs>に言いたいのは、それだけだ。<rs ref="#メロスの妹">おまえ</rs>の<rs ref="#メロス"
+                                    >兄</rs>は、<rs ref="#メロス">たぶん偉い男</rs>なのだから、<rs ref="#メロスの妹"
+                                    >おまえ</rs>もその誇りを 持っていろ。」</said>
+                        <rs ref="#メロスの妹">花嫁</rs>は、夢見心地で<eaj:ruby><eaj:rb>首肯</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>うなず</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>いた。
+                              <persName ref="#メロス">メロス</persName>は、それから<rs ref="#メロスの妹の婿"
+                        >花婿</rs>の肩をたたいて、 <said who="#メロス">「仕度の無いのはお互さまさ。<rs ref="#メロス"
+                                    >私</rs>の家にも、宝といっては、<rs ref="#メロスの妹">妹</rs>と羊だけだ。他には、何も無い。
+                                    全部あげよう。もう一つ、<persName ref="#メロス">メロス</persName>の<rs
+                                    ref="#メロスの妹の婿">弟</rs>になったことを誇ってくれ。」</said>
+                        <rs ref="#メロスの妹の婿"
+                                    >花婿</rs>は<eaj:ruby><eaj:rb>揉</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>も</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>み手して、てれていた。<persName ref="#メロス"
+                                    >メロス</persName>は笑って村人たちにも<eaj:ruby><eaj:rb>
+                                    会釈</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>えしゃく</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>
+                              して、宴席から立ち去り、<placeName>羊小屋</placeName>にもぐり込んで、死んだように深く眠った。</p>
+                  <p> 眼が覚めたのは翌る日の薄明の頃である。<persName ref="#メロス"
+                        >メロス</persName>は跳ね起き、南無三、寝過したか、いや、まだまだ大丈夫、
+                              これからすぐに出発すれば、約束の刻限までには十分間に合う。きょうは是非とも、あの<rs ref="#ディオニス"
+                        >王</rs>に、人の信実の存する ところを見せてやろう。そうして笑って磔の台に上ってやる。<persName ref="#メロス"
+                              >メロス</persName>は、悠々と身仕度をはじめた。雨も、 いくぶん小降りになっている様子である。身仕度は出来た。 </p>
+                  <p>さて、<persName ref="#メロス">メロス</persName>は、ぶるんと両腕を大きく振って、 雨中、矢の如く走り出た。 <rs
+                              ref="#メロス">私</rs>は、今宵、殺される。殺される為に走るのだ。<rs ref="#セリヌンティウス"
+                              >身代りの友</rs>を救う為に走るのだ。<rs ref="#ディオニス">王</rs>の
+                                    <eaj:ruby><eaj:rb>奸佞</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>かんねい</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>
+                              邪智を打ち破る為に走るのだ。走らなければならぬ。そうして、<rs ref="#メロス">私</rs>は殺される。若い時から名誉を守れ。
+                              さらば、ふるさと。若い<persName ref="#メロス">メロス</persName>は、つらかった。幾度か、立ちどまりそうになった。
+                              えい、えいと大声挙げて自身を叱りながら走った。<placeName>村</placeName>を出て、<placeName>野</placeName>
+                              を横切り、森をくぐり抜け、<placeName>隣村</placeName>に着いた頃には、
+                                    雨も<eaj:ruby><eaj:rb>止</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>や</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>み
+                              、日は高く昇って、そろそろ暑くなって来た。<persName ref="#メロス"
+                                    >メロス</persName>は<eaj:ruby><eaj:rb>額</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>ひたい</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>の汗をこぶしで払い、ここまで来れば大丈夫、
+                        もはや故郷への未練は無い。妹たちは、きっと佳い夫婦になるだろう。私には、いま、なんの気がかりも無い筈だ。
+                              まっすぐに<placeName>王城</placeName>に行き着けば、それでよいのだ。そんなに急ぐ必要も無い。
+                                    ゆっくり歩こう、と持ちまえの<eaj:ruby><eaj:rb>呑気</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>のんき</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>さを取り返し、
+                        好きな小歌をいい声で歌い出した。</p>
+                  <p>ぶらぶら歩いて二里行き三里行き、 そろそろ全里程の半ばに到達した頃、降って<eaj:ruby><eaj:rb>湧</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>わ</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>いた災難、
+                              <persName ref="#メロス"
+                              >メロス</persName>の足は、はたと、とまった。見よ、前方の<placeName>川</placeName>を。
+                              きのうの豪雨で<placeName>山の水源地</placeName>は<eaj:ruby><eaj:rb>氾濫</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>はんらん</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>し、
+                                    濁流<eaj:ruby><eaj:rb>滔々</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>とうとう</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>と下流に集り、猛勢一挙に<placeName>橋</placeName>を破壊し、どうどうと響きをあげる激流が、
+                                    <eaj:ruby><eaj:rb>木葉微塵</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>こっぱみじん</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>に<eaj:ruby><eaj:rb>橋桁</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>はしげた</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>を跳ね飛ばしていた。<rs ref="#メロス"
+                        >彼</rs>は茫然と、立ちすくんだ。あちこちと眺めまわし、
+                                    また、声を限りに呼びたててみたが、<eaj:ruby><eaj:rb>繋舟</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>けいしゅう</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>は残らず浪に<eaj:ruby>
+                              <eaj:rb>浚</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>さら</eaj:rt><eaj:rp>）</eaj:rp>
+                        </eaj:ruby>われて影なく、渡守りの姿も見えない。流れはいよいよ、ふくれ上り、 海のようになっている。<persName ref="#メロス"
+                              >メロス</persName>は川岸にうずくまり、 男泣きに泣きながら<persName ref="#ゼウス"
+                        >ゼウス</persName>に手を挙げて哀願した。 <said who="#メロス"
+                                          >「ああ、<eaj:ruby><eaj:rb>鎮</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>しず</eaj:rt><eaj:rp>）
+                                    </eaj:rp></eaj:ruby>めたまえ、荒れ狂う流れを！
+                              時は刻々に過ぎて行きます。太陽も既に真昼時です。あれが沈んでしまわぬうちに、
+                              <placeName>王城</placeName>に行き着くことが出来 なかったら、あの<rs ref="#セリヌンティウス"
+                                    >佳い友達</rs>が、私のために死ぬのです。」</said> 濁流は、<persName ref="#メロス"
+                              >メロス</persName>の叫びをせせら笑う如く、ますます激しく躍り狂う。浪は浪を呑み、捲き、
+                                    <eaj:ruby><eaj:rb>煽</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>あお</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>
+                              り立て、そうして時は、刻一刻と消えて行く。今は<persName ref="#メロス"
+                        >メロス</persName>も覚悟した。泳ぎ切るより他に無い。ああ、神々も照覧あれ！
+                              濁流にも負けぬ愛と誠の偉大な力を、いまこそ発揮して見せる。<persName ref="#メロス"
+                        >メロス</persName>は、ざんぶと流れに飛び込み、 百匹の大蛇のようにのた打ち荒れ狂う浪を相手に、必死の闘争を開始した。満身の力を腕にこめて、
+                                    押し寄せ渦巻き引きずる流れを、なんのこれしきと<eaj:ruby><eaj:rb>掻</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>か</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>きわけ掻きわけ、
+                                    めくらめっぽう獅子奮迅の人の子の姿には、神も哀れと思ったか、ついに<eaj:ruby><eaj:rb>憐愍</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>れんびん</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>を垂れてくれた。押し流されつつも、
+                              見事、対岸の樹木の幹に、すがりつく事が出来たのである。ありがたい。<persName ref="#メロス"
+                        >メロス</persName>は馬のように大きな胴震いを一つして、
+                        すぐにまた先きを急いだ。一刻といえども、むだには出来ない。陽は既に西に傾きかけている。 </p>
+                  <p>ぜいぜい荒い呼吸をしながら峠をのぼり、のぼり切って、ほっとした時、突然、目の前に一隊の<roleName>山賊</roleName>が躍り出た。
+                              <said>「待て。」</said>
+                        <said who="#メロス">「何をするのだ。私は陽の沈まぬうちに王城へ行かなければならぬ。放せ。」</said>
+                        「どっこい放さぬ。持ちもの全部を置いて行け。」 <said who="#メロス">「<rs ref="#メロス"
+                                    >私</rs>にはいのちの他には何も無い。その、たった一つの命も、これから<rs ref="#ディオニス"
+                              >王</rs>にくれてやるのだ。」 </said> 「その、いのちが欲しいのだ。」 <said who="#メロス">「さては、<rs
+                                    ref="#ディオニス">王</rs>の命令で、ここで<rs ref="#メロス"
+                              >私</rs>を待ち伏せしていたのだな。」</said>
+                        <roleName>山賊</roleName>たちは、ものも言わず一斉に<eaj:ruby><eaj:rb>棍棒</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>こんぼう</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>を振り挙げた。
+                              <persName ref="#メロス">メロス</persName>はひょいと、からだを折り曲げ、飛鳥の如く身近かの一人に襲いかかり、
+                        その棍棒を奪い取って、 <said who="#メロス">「気の毒だが正義のためだ！」</said>と猛然一撃、たちまち、三人を殴り倒し、
+                                    残る者のひるむ<eaj:ruby><eaj:rb>隙</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>すき</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>に、
+                        さっさと走って峠を下った。</p>
+                  <p>一気に峠を駈け降りたが、<eaj:ruby><eaj:rb>流石</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>さすが</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>に疲労し、
+                                    折から午後の<eaj:ruby><eaj:rb>灼熱</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>しゃくねつ</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>の太陽がまともに、かっと照って来て、<persName ref="#メロス"
+                              >メロス</persName>は幾度となく<eaj:ruby><eaj:rb>眩暈</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>めまい</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>を感じ、これではならぬ、と気を取り直しては、
+                        よろよろ二、三歩あるいて、ついに、がくりと膝を折った。立ち上る事が出来ぬのだ。天を仰いで、くやし泣きに泣き出した。
+                              ああ、あ、濁流を泳ぎ切り、<roleName>山賊</roleName>を三人も撃ち倒し<eaj:ruby><eaj:rb>韋駄天</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>いだてん</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>、ここまで突破して来た<persName
+                              ref="#メロス">メロス</persName>よ。 <rs ref="#メロス">真の勇者</rs>、<persName
+                              ref="#メロス">メロス</persName>よ。今、ここで、疲れ切って動けなくなるとは情無い。<rs ref="#セリヌンティウス"
+                              >愛する友</rs>は、<rs ref="#メロス">おまえ</rs>を信じたばかりに、 やがて殺されなければならぬ。<rs
+                              ref="#メロス">おまえ</rs>は、<eaj:ruby><eaj:rb>稀代</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>きたい</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>の不信の人間、
+                              まさしく<rs ref="#ディオニス"
+                                    >王</rs>の思う<eaj:ruby><eaj:rb>壺</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>つぼ</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>だぞ、と<rs ref="#メロス"
+                                    >自分</rs>を叱ってみるのだが、全身<eaj:ruby><eaj:rb>萎</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>な</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>えて、もはや
+                                    <eaj:ruby><eaj:rb>芋虫</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>いもむし</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>ほどにも前進かなわぬ。路傍の草原にごろりと寝ころがった。身体疲労すれば、
+                              精神も共にやられる。もう、どうでもいいという、<rs ref="#メロス"
+                                    >勇者</rs>に不似合いな<eaj:ruby><eaj:rb>不貞腐</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>ふてくさ</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>れた根性が、心の隅に巣喰った。
+                              <rs ref="#メロス">私</rs>は、これほど努力したのだ。約束を破る心は、みじんも無かった。神も照覧、<rs ref="#メロス"
+                              >私</rs>は精一ぱいに努めて来たのだ。 動けなくなるまで走って来たのだ。<rs ref="#メロス"
+                              >私</rs>は不信の徒では無い。ああ、できる事なら<rs ref="#メロス"
+                                    >私</rs>の胸を<eaj:ruby><eaj:rb>截</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>た</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>ち割って、真紅の心臓をお目に掛けたい。
+                              愛と信実の血液だけで動いているこの心臓を見せてやりたい。けれども<rs ref="#メロス"
+                        >私</rs>は、この大事な時に、精も根も尽きたのだ。 <rs ref="#メロス">私</rs>は、<rs ref="#メロス"
+                              >よくよく不幸な男</rs>だ。<rs ref="#メロス">私</rs>は、きっと笑われる。<rs ref="#メロス"
+                        >私</rs>の一家も笑われる。 <rs ref="#メロス">私</rs>は<rs ref="#セリヌンティウス"
+                                    >友</rs>を<eaj:ruby><eaj:rb>欺</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>あざむ</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>いた。中途で倒れるのは、
+                              はじめから何もしないのと同じ事だ。ああ、もう、どうでもいい。これが、<rs ref="#メロス">私</rs>の定った運命なのかも知れない。
+                              <persName ref="#セリヌンティウス">セリヌンティウス</persName>よ、ゆるしてくれ。<rs
+                              ref="#セリヌンティウス">君</rs>は、いつでも<rs ref="#メロス">私</rs> を信じた。<rs ref="#メロス"
+                              >私</rs>も<rs ref="#セリヌンティウス">君</rs>を、欺かなかった。<rs ref="#セリヌンティウス #メロス"
+                              >私たち</rs>は、 本当に佳い<rs ref="#セリヌンティウス #メロス"
+                        >友と友</rs>であったのだ。いちどだって、暗い疑惑の雲を、お互い胸に宿したことは無かった。いまだって、 <rs ref="#セリヌンティウス"
+                              >君</rs>は <rs ref="#メロス">私</rs>を無心に待っているだろう。ああ、待っているだろう。ありがとう、<persName
+                              ref="#セリヌンティウス">セリヌンティウス</persName>。よくも私を信じてくれた。 それを思えば、たまらない。<rs
+                              ref="#セリヌンティウス #メロス">友と友</rs>の間の信実は、この世で一ばん誇るべき宝なのだからな。 <persName
+                              ref="#セリヌンティウス">セリヌンティウス</persName>、 <rs ref="#メロス">私</rs>は走ったのだ。 <rs
+                              ref="#セリヌンティウス">君</rs>を欺くつもりは、みじんも無かった。信じてくれ！ <rs ref="#メロス"
+                              >私</rs>は急ぎに急いでここまで来たのだ。濁流を突破した。<roleName>山賊</roleName>の囲みからも、するりと抜けて一気に峠を駈け降りて来たのだ。
+                              <rs ref="#メロス">私</rs>だから、出来たのだよ。ああ、この上、<rs ref="#メロス"
+                        >私</rs>に望み給うな。放って置いてくれ。どうでも、いいのだ。 <rs ref="#メロス">私</rs>は負けたのだ。
+                              だらしが無い。笑ってくれ。<rs ref="#ディオニス">王</rs>は<rs ref="#メロス"
+                        >私</rs>に、ちょっとおくれて来い、と耳打ちした。おくれたら、 <rs ref="#セリヌンティウス">身代り</rs>を殺して、 <rs
+                              ref="#メロス">私</rs>を助けてくれると約束した。<rs ref="#メロス">私</rs>は<rs ref="#ディオニス"
+                              >王</rs>の卑劣を憎んだ。けれども、今になってみると、 <rs ref="#メロス">私</rs>は<rs ref="#ディオニス"
+                              >王</rs>の言うままになっている。 <rs ref="#メロス">私</rs>は、おくれて行くだろう。<rs ref="#ディオニス"
+                              >王</rs>は、ひとり合点して<rs ref="#メロス">私</rs> を笑い、そうして事も無く<rs ref="#メロス"
+                              >私</rs>を放免するだろう。そうなったら、 <rs ref="#メロス">私</rs>は、死ぬよりつらい。 <rs ref="#メロス"
+                              >私</rs>は、永遠に<rs ref="#メロス">裏切者</rs>だ。 <rs ref="#メロス"
+                              >地上で最も、不名誉の人種</rs>だ。<persName ref="#セリヌンティウス">セリヌンティウス</persName>よ、
+                              <rs ref="#メロス"
+                        >私</rs>も死ぬぞ。君と一緒に死なせてくれ。君だけは私を信じてくれるにちがい無い。いや、それも私の、ひとりよがりか？ ああ、もういっそ、<rs
+                              ref="#メロス">悪徳者</rs>として生き伸びてやろうか。<placeName>村</placeName>には私の家が在る。
+                              羊も居る。<rs ref="#メロスの妹 #メロスの妹の婿">妹夫婦</rs>は、 まさか<rs ref="#メロス"
+                              >私</rs>を<placeName>村</placeName>から追い出すような事はしないだろう。正義だの、信実だの、愛だの、考えてみれば、
+                        くだらない。人を殺して自分が生きる。それが人間世界の定法ではなかったか。ああ、何もかも、 ばかばかしい。<rs ref="#メロス"
+                              >私</rs>は、<rs ref="#メロス"
+                                    >醜い裏切り者</rs>だ。どうとも、勝手にするがよい。やんぬる<eaj:ruby><eaj:rb>哉</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>かな</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>。――四肢を投げ出して、
+                        うとうと、まどろんでしまった。</p>
+                  <p>
+                                    ふと耳に、<eaj:ruby><eaj:rb>潺々</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>せんせん</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>、水の流れる音が聞えた。そっと頭をもたげ、息を呑んで耳をすました。すぐ足もとで、
+                                    水が流れているらしい。よろよろ起き上って、見ると、岩の裂目から<eaj:ruby><eaj:rb>滾々</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>こんこん</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>と、何か小さく<eaj:ruby><eaj:rb>囁</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>ささや</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>きながら清水が湧き出ているのである。
+                              その泉に吸い込まれるように<persName ref="#メロス"
+                                    >メロス</persName>は身をかがめた。水を両手で<eaj:ruby><eaj:rb>掬</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>すく</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>って、一くち飲んだ。ほうと長い溜息が出て、
+                                    夢から覚めたような気がした。歩ける。行こう。肉体の疲労<eaj:ruby><eaj:rb>恢復</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>かいふく</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>と共に、わずかながら希望が生れた。
+                        義務遂行の希望である。わが身を殺して、名誉を守る希望である。斜陽は赤い光を、樹々の葉に投じ、
+                        葉も枝も燃えるばかりに輝いている。日没までには、まだ間がある。私を、待っている人があるのだ。
+                        少しも疑わず、静かに期待してくれている人があるのだ。私は、信じられている。私の命なぞは、
+                        問題ではない。死んでお詫び、などと気のいい事は言って居られぬ。私は、信頼に報いなければならぬ。 いまはただその一事だ。走れ！ <persName
+                              ref="#メロス">メロス</persName>。
+                        私は信頼されている。私は信頼されている。先刻の、あの悪魔の囁きは、あれは夢だ。悪い夢だ。忘れてしまえ。五臓が疲れているときは、
+                              ふいとあんな悪い夢を見るものだ。<persName ref="#メロス">メロス</persName>、おまえの恥ではない。
+                        やはり、おまえは真の勇者だ。再び立って走れるようになったではないか。ありがたい！ <rs ref="#メロス">私</rs>は、<rs
+                              ref="#メロス">正義の士</rs>として死ぬ事が出来るぞ。ああ、陽が沈む。ずんずん沈む。待ってくれ、<persName
+                              ref="#ゼウス">ゼウス</persName>よ。 <rs ref="#メロス">私</rs>は生れた時から<rs ref="#メロス"
+                              >正直な男</rs>であった。<rs ref="#メロス">正直な男</rs>のままにして死なせて下さい。</p>
+                  <p>
+                                    路行く人を押しのけ、<eaj:ruby><eaj:rb>跳</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>は</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>ねとばし、<rs ref="#メロス">メロス</rs>は黒い風のように走った。野原で酒宴の、
+                                    その宴席のまっただ中を駈け抜け、酒宴の人たちを仰天させ、犬を<eaj:ruby><eaj:rb>蹴</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>け</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>とばし、小川を飛び越え、少しずつ沈んでゆく太陽の、
+                                    十倍も早く走った。一団の旅人と<eaj:ruby><eaj:rb>颯</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>さ</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>っとすれちがった瞬間、不吉な会話を小耳にはさんだ。<said>「いまごろは、<rs
+                                    ref="#セリヌンティウス">あの男</rs>も、 磔にかかっているよ。」</said> ああ、<rs
+                              ref="#セリヌンティウス">その男</rs>、<rs ref="#セリヌンティウス">その男</rs>のために
+                              私は、いまこんなに走っているのだ。<rs ref="#セリヌンティウス">その男</rs>を死なせてはならない。急げ、<persName
+                              ref="#メロス">メロス</persName>。おくれてはならぬ。
+                              愛と誠の力を、いまこそ知らせてやるがよい。風態なんかは、どうでもいい。<persName ref="#メロス"
+                        >メロス</persName>は、いまは、ほとんど全裸体であった。
+                              呼吸も出来ず、二度、三度、口から血が噴き出た。見える。はるか向うに小さく、<placeName>シラクス</placeName>の市の塔楼が見える。
+                        塔楼は、夕陽を受けてきらきら光っている。</p>
+                  <p>
+                        <said>「ああ、<persName ref="#メロス">メロス</persName>様。」</said>うめくような声が、風と共に聞えた。
+                              <said who="#メロス">「誰だ。」</said><persName ref="#メロス"
+                        >メロス</persName>は走りながら尋ねた。 <said>「<persName ref="#フィロストラトス"
+                                    >フィロストラトス</persName>でございます。貴方のお友達 <persName ref="#セリヌンティウス"
+                                    >セリヌンティウス</persName>様の弟子でございます。」</said>
+                              その若い<roleName>石工</roleName>も、<persName ref="#メロス"
+                        >メロス</persName>の後について走りながら叫んだ。
+                                          <said>「もう、駄目でございます。むだでございます。走るのは、やめて下さい。もう、あの<eaj:ruby><eaj:rb>方</eaj:rb><eaj:rp>
+                                          （</eaj:rp><eaj:rt>かた</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>をお助けになることは出来ません。」</said>
+                        <said who="#メロス">「いや、まだ陽は沈まぬ。」</said>
+                        <said>「ちょうど今、あの方が死刑になるところです。ああ、あなたは遅かった。おうらみ申します。ほんの少し、もうちょっとでも、早かったなら！」</said>
+                        <said who="#メロス">「いや、まだ陽は沈まぬ。」</said><persName ref="#メロス"
+                        >メロス</persName>は胸の張り裂ける思いで、赤く大きい夕陽ばかりを見つめていた。走るより他は無い。
+                                    <said>「やめて下さい。走るのは、やめて下さい。いまはご自分のお命が大事です。<rs ref="#セリヌンティウス"
+                                    >あの方</rs>は、あなたを信じて居りました。 刑場に引き出されても、平気でいました。<rs ref="#ディオニス"
+                                    >王様</rs>が、さんざんあの方をからかっても、<persName ref="#メロス">メロス</persName>
+                              は来ます、とだけ答え、強い信念を持ちつづけている様子でございました。」</said>
+                        <said who="#メロス">「それだから、走るのだ。信じられているから走るのだ。間に合う、間に合わぬは問題でないのだ。
+                              人の命も問題でないのだ。私は、なんだか、もっと恐ろしく大きいものの為に走っているのだ。ついて来い！ <persName
+                                    ref="#フィロストラトス">フィロストラトス</persName>。」</said>
+                        <said who="#フィロストラトス">「ああ、あなたは気が狂ったか。それでは、うんと走るがいい。ひょっとしたら、
+                              間に合わぬものでもない。走るがいい。」</said> 言うにや及ぶ。まだ陽は沈まぬ。最後の死力を尽して、<persName
+                              ref="#メロス">メロス</persName> は走った。<persName ref="#メロス"
+                        >メロス</persName>の頭は、からっぽだ。何一つ考えていない。 ただ、わけのわからぬ大きな力にひきずられて走った。 </p>
+                  <p>陽は、ゆらゆら地平線に没し、
+                        まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く<placeName>刑場</placeName>に突入した。間に合った。 <said
+                              who="#メロス">「待て。その人を殺してはならぬ。<persName ref="#メロス">メロス</persName>が帰って来た。
+                              約束のとおり、いま、帰って来た。」</said>と大声で刑場の群衆にむかって叫んだつもりであったが、
+                                    <eaj:ruby><eaj:rb>喉</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>のど</eaj:rt><eaj:rp>）</eaj:rp>
+                        </eaj:ruby>がつぶれて<eaj:ruby><eaj:rb>嗄</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>しわが</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>れた声が<eaj:ruby><eaj:rb>幽</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>かす</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>かに出たばかり、群衆は、ひとりとして彼の到着に気がつかない。すでに磔の柱が高々と立てられ、
+                              縄を打たれた<persName ref="#セリヌンティウス"
+                              >セリヌンティウス</persName>は、徐々に釣り上げられてゆく。<persName ref="#メロス"
+                        >メロス</persName>は それを目撃して最後の勇、先刻、濁流を泳いだように群衆を掻きわけ、掻きわけ、 <said who="#メロス"
+                                    >「私だ、<roleName>刑吏</roleName>！ 殺されるのは、私だ。<persName ref="#メロス"
+                                    >メロス</persName>だ。彼を人質にした私は、ここにいる！」</said>
+                              と、かすれた声で精一ぱいに叫びながら、ついに磔台に昇り、釣り上げられてゆく<rs ref="#セリヌンティウス">友</rs>の両足に、
+                                    <eaj:ruby><eaj:rb>齧</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>かじ</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>りついた。
+                              群衆は、どよめいた。あっぱれ。ゆるせ、と口々にわめいた。<persName ref="#セリヌンティウス"
+                              >セリヌンティウス</persName>の縄は、ほどかれたのである。 <said who="#メロス">「<persName
+                                    ref="#セリヌンティウス">セリヌンティウス</persName>。」</said><persName ref="#メロス"
+                              >メロス</persName> は眼に涙を浮べて言った。<said who="#メロス">「私を殴れ。ちから一ぱいに頬を殴れ。
+                              私は、途中で一度、悪い夢を見た。
+                                          君が<eaj:ruby><eaj:rb>若</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>も</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>し
+                              私を殴ってくれなかったら、私は君と抱擁する資格さえ無いのだ。殴れ。」</said>
+                        <persName ref="#セリヌンティウス"
+                                    >セリヌンティウス</persName>は、すべてを察した様子で<eaj:ruby><eaj:rb>首肯</eaj:rb><eaj:rp>
+                                    （</eaj:rp><eaj:rt>うなず</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>き、刑場一ぱいに鳴り響くほど音高く<persName ref="#メロス"
+                              >メロス</persName>の右頬を殴った。
+                                    殴ってから優しく<eaj:ruby><eaj:rb>微笑</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>ほほえ</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>み、
+                              <said who="#セリヌンティウス">「<persName ref="#メロス">メロス</persName>、<rs
+                                    ref="#セリヌンティウス">私</rs>を殴れ。同じくらい音高く<rs ref="#セリヌンティウス"
+                              >私</rs>の頬を殴れ。私はこの三日の間、 たった一度だけ、ちらと<rs ref="#メロス"
+                                    >君</rs>を疑った。生れて、はじめて<rs ref="#メロス">君</rs>を疑った。<rs ref="#メロス"
+                                    >君</rs>が<rs ref="#セリヌンティウス">私</rs>を殴ってくれなければ、 <rs
+                                    ref="#セリヌンティウス">私</rs>は<rs ref="#メロス">君</rs>と抱擁できない。」</said>
+                        <persName ref="#メロス"
+                                    >メロス</persName>は腕に<eaj:ruby><eaj:rb>唸</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>うな</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>りをつけて<persName ref="#セリヌンティウス"
+                        >セリヌンティウス</persName>の頬を殴った。 <said who="#セリヌンティウス #メロス">「ありがとう、<rs
+                                    ref="#セリヌンティウス #メロス">友</rs>よ。」</said>
+                        二人同時に言い、ひしと抱き合い、それから嬉し泣きにおいおい声を放って泣いた。
+                                    群衆の中からも、<eaj:ruby><eaj:rb>歔欷</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>きょき</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>の声が聞えた。<persName ref="#ディオニス"
+                        >暴君ディオニス</persName>は、群衆の背後から二人の様を、 まじまじと見つめていたが、やがて静かに二人に近づき、顔をあからめて、こう言った。
+                              <said who="#セリヌンティウス #メロス">「<rs ref="#セリヌンティウス #メロス"
+                                          >おまえら</rs>の望みは<eaj:ruby><eaj:rb>叶</eaj:rb><eaj:rp>
+                                          （</eaj:rp><eaj:rt>かな</eaj:rt><eaj:rp>）</eaj:rp></eaj:ruby>ったぞ。
+                                    <rs ref="#セリヌンティウス #メロス">おまえら</rs>は、<rs ref="#ディオニス"
+                              >わし</rs>の心に勝ったのだ。信実とは、決して空虚な妄想ではなかった。 どうか、<rs ref="#ディオニス"
+                                    >わし</rs>をも仲間に入れてくれまいか。どうか、<rs ref="#ディオニス">わし</rs>の願いを聞き入れて、<rs
+                                    ref="#セリヌンティウス #メロス">おまえら</rs>の仲間の一人にしてほしい。」</said>
+                        どっと群衆の間に、歓声が起った。 <said who="#群衆">「万歳、<rs ref="#ディオニス">王様</rs>万歳。」</said>
+                        <rs ref="#ひとりの少女"
+                                    >ひとりの少女</rs>が、<eaj:ruby><eaj:rb>緋</eaj:rb><eaj:rp>（</eaj:rp><eaj:rt>ひ</eaj:rt><eaj:rp>）
+                              </eaj:rp></eaj:ruby>のマントを<persName ref="#メロス"
+                              >メロス</persName>に捧げた。<persName ref="#メロス">メロス</persName>は、まごついた。 <rs
+                              ref="#セリヌンティウス">佳き友</rs>は、気をきかせて教えてやった。 <said who="#セリヌンティウス"
+                                    >「<persName ref="#メロス">メロス</persName>、<rs ref="#メロス"
+                              >君</rs>は、まっぱだかじゃないか。 早くそのマントを着るがいい。<rs ref="#ひとりの少女">この可愛い娘さん</rs>は、
+                                    <persName ref="#メロス"
+                              >メロス</persName>の裸体を、皆に見られるのが、たまらなく口惜しいのだ。」</said>
+                        <rs ref="#メロス">勇者</rs>は、ひどく赤面した。 </p>
+            </body>
+      </text>
+</TEI>
