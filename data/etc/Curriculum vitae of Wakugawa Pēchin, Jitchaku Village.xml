@@ -2,9 +2,9 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 C:/Users/tomita/Documents/TEI/document.xsd">
   <teiHeader>
       <fileDesc>
-         <titleStmt><!-- 読みはどうしよう？　ジッチャクムラ、せりきゃくむら
+         <titleStmt><!-- 読みはどうしよう？　ジッチャクムラ、せりきゃくむら-->
             <title>勢理客村湧川親雲上勤職書 </title>
-            <author>湧川親雲上</author>-->
+            <author>湧川親雲上</author>
          </titleStmt>
          <editionStmt>
             <edition>TEI Ver.</edition>
