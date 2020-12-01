@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 C:/Users/tomita/Documents/TEI/document.xsd">
+<?xml-model href="../../../tei_al_ja_320l.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
       <fileDesc>
          <titleStmt><!-- 読みはどうしよう？　ジッチャクムラ、せりきゃくむら-->
@@ -27,11 +28,14 @@
          </publicationStmt>
          <sourceDesc>
             <biblStruct>
-               <monger>
-                  <idno type="IIIF Manifest">https://shimuchi.lib.u-ryukyu.ac.jp/collection/shimabukuro_genshichi/si01601/manifest.json</idno>
+               <monogr>
+                  <idno type="DOI">https://shimuchi.lib.u-ryukyu.ac.jp/collection/shimabukuro_genshichi/si01601/manifest.json</idno>
                   <title>勢理客村湧川親雲上勤職書</title>
                   <author>湧川親雲上</author>
-               </monger>
+                  <imprint>
+                     <biblScope></biblScope>
+                  </imprint>
+               </monogr>
             </biblStruct>
             <msDesc>
                <msIdentifier>
@@ -49,13 +53,13 @@
             </msDesc>
          </sourceDesc>
       </fileDesc>
-      <!--　入れられたら入れる。
       <encodingDesc>
          <editorialDecl>
             <normalization>   
+               <ab></ab>
             </normalization>
          </editorialDecl>
-      </encodingDesc> -->
+      </encodingDesc>
       <profileDesc>
          <abstract>
             <p>今帰仁間切勢理客村の湧川親雲上の公務に関する資料。咸豊2（1852）年から9年までを記載している。「咸豊2年子12月に石灰主取役を任命され、同4年寅11月まで首尾よく勤務」、以後惣山当足役、仮惣山当、惣山当を歴任、これらの奉公歴をもとに地頭代役への昇進を嘆願した際の「勤め書き」である。本務以外に薩摩役人や王府の山奉行らが今帰仁間切へ赴いた際の世話役を勤めたり、冠船来琉時には湧川・天底・勢理客・上運天・運天5ヶ村の「御米摺り穀下知方構え」役を兼務した記事が確認できる。また、朱書きで添削の跡が随所にある。それらを清書し正式の「勤め書き」が提出されたものと思われる。</p>
@@ -64,7 +68,7 @@
             <p>This is a document regarding the duties of Wakugawa Pēchin of Jitchaku Village, Nakijin Magiri, from 1852 to 1859. It writes "Wakugawa Pēchin was appointed to a limestone manager (sekkai nushidori yaku) in December, 1852 and served until November, 1854, the year of the Tiger." After that, he held positions as an assistant mountain manager (sō yama-atai tashi yaku), a deputy mountain manager (kari sō yama-atai) and a mountain manager (sōyama-atai).
                Based on these work experiences, he submitted this curriculum vitae (tsutomegaki) to petition for his promotion to a deputy lord (jitōdai). Other than his official duties, he attended the officials from Satsuma and yamabugyo officials from the Shuri government when they came to Nakijin Magiri. He also served as an rice polish manager (okome surigara gechihō gamae) of the five villages; Wakugawa, Amesoko, Serikyaku, Kamiunten and Unten, when Chinese ships came to Ryukyu. Many corrections in red ink are found in this document. An official copy of the tsutomegaki was probably submitted after these corrections had been made.</p>
          </abstract>
-      </profileDesc>　
+      </profileDesc>
   </teiHeader>
    <facsimile source="https://shimuchi.lib.u-ryukyu.ac.jp/collection/shimabukuro_genshichi/si01601/manifest.json">
       <surface source="https://shimuchi.lib.u-ryukyu.ac.jp/iiif/2/SI01601/pageSI016010020/canvas/1">
