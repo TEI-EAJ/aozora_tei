@@ -3,9 +3,11 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
       <fileDesc>
-         <titleStmt><!-- 読みはどうしよう？　ジッチャクムラ、せりきゃくむら-->
+         <titleStmt>
             <title>勢理客村湧川親雲上勤職書 </title>
-            <author>湧川親雲上</author>
+            <title type="alt" subtype="kana" xml:lang="ryu">ジッチャクムラ ワクガワ ペーチン</title>
+            <title type="alt" subtype="ISO15924:jpn-Latn" xml:lang="ryu">jitchakumura wakugawa pēchin tsutomeshokusho</title>
+            <author ref="#wakugawa">湧川親雲上</author>
          </titleStmt>
          <editionStmt>
             <edition>TEI Ver.</edition>
@@ -21,16 +23,37 @@
                <resp when="2020-11-30">TEI Encoding</resp>
                <name>Shuhei Otani</name>
             </respStmt>
+            <respStmt>
+               <resp when="2020-12-04">TEI Encoding</resp>
+               <name ref="https://tei-c.org/Activities/SIG/EastAsian/">TEI-C東アジア/日本語分科会</name>
+            </respStmt>
+            
          </editionStmt>
          <publicationStmt>
             <distributor>琉球大学附属図書館
             </distributor>
+            <availability>
+               <licence target="https://creativecommons.org/licenses/by/4.0/deed.ja"
+                  >©University of the Ryukyus Library Attribution 4.0 International (CC BY 4.0)</licence>
+            </availability>
          </publicationStmt>
          <sourceDesc>
+            <listPerson>
+               <person xml:id="wakugawa"><persName>
+                  <roleName>湧川親雲上</roleName></persName><birth notBefore="1810" notAfter="1820">1810年代</birth></person>
+            </listPerson>
+            <listOrg>
+               <org xml:id="uryukyu">
+                  <idno type="VIAF"></idno>
+                  <orgName>琉球大学附属図書館</orgName></org>
+            </listOrg>
+            <listPlace>
+               <place><placeName></placeName></place>
+            </listPlace>
             <biblStruct>
                <monogr>
-                  <idno type="DOI">https://shimuchi.lib.u-ryukyu.ac.jp/collection/shimabukuro_genshichi/si01601/manifest.json</idno>
-                  <title>勢理客村湧川親雲上勤職書</title>
+                  <idno type="DOI">https://doi.org/*****</idno>
+                  <ref type="IIIF">https://shimuchi.lib.u-ryukyu.ac.jp/collection/shimabukuro_genshichi/si01601/manifest.json</ref>                  <title>勢理客村湧川親雲上勤職書</title>
                   <author>湧川親雲上</author>
                   <imprint>
                      <biblScope></biblScope>
@@ -39,32 +62,55 @@
             </biblStruct>
             <msDesc>
                <msIdentifier>
-                  <institution>琉球大学</institution>
+                  <institution ref="viaf:129666718">琉球大学</institution>
                   <repository>琉球大学附属図書館</repository>
                   <collection>島袋源七文庫</collection>
                   <idno type="琉球大学附属図書館管理番号">SI016</idno>
                </msIdentifier>
+               <physDesc>
+                  <objectDesc>
+                     <supportDesc>
+                        <extent>
+                           4丁<dimensions  scope="all"  type="冊" unit = "cm"> 
+                           <height>26.4</height>
+                           <width>20.4</width>
+                           </dimensions >
+                        </extent>
+                     </supportDesc>                        
+                  </objectDesc>
+               </physDesc>
                <history>
                   <origin>  
                      <origDate>1852-1859</origDate>
                      <origPlace>今帰仁間切勢理客村</origPlace>
                   </origin>
+                  <acquisition>沖縄の土俗・民間伝承研究に大きな足跡を遺した島袋源七(1897～1953)の旧蔵資料の一部である。昭和32 (1957) 年購入・受入｡115冊。民俗学関係資料､とくに山原(沖縄本島北部)地域の資料を多く所蔵する。</acquisition>
                </history>
             </msDesc>
          </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <editorialDecl>
+       
             <normalization>   
-               <ab></ab>
+               <ab>言語コードは中央琉球（ryu）を採用しているが、便宜的なものである。実態としては方言ヨミと漢語ヨミを混在させている。</ab>
             </normalization>
          </editorialDecl>
+         <tagsDecl>
+            <rendition>タグ付け注意</rendition>
+         </tagsDecl>      
       </encodingDesc>
       <profileDesc>
-         <abstract>
+         <langUsage>
+            <language ident="ja-JP" usage="100">日本語</language>
+         </langUsage>
+         <calendarDesc>
+            <calendar xml:id="cal_CL"><p>Chinese Lunar Era</p></calendar>
+         </calendarDesc>
+         <abstract xml:lang="jpn">
             <p>今帰仁間切勢理客村の湧川親雲上の公務に関する資料。咸豊2（1852）年から9年までを記載している。「咸豊2年子12月に石灰主取役を任命され、同4年寅11月まで首尾よく勤務」、以後惣山当足役、仮惣山当、惣山当を歴任、これらの奉公歴をもとに地頭代役への昇進を嘆願した際の「勤め書き」である。本務以外に薩摩役人や王府の山奉行らが今帰仁間切へ赴いた際の世話役を勤めたり、冠船来琉時には湧川・天底・勢理客・上運天・運天5ヶ村の「御米摺り穀下知方構え」役を兼務した記事が確認できる。また、朱書きで添削の跡が随所にある。それらを清書し正式の「勤め書き」が提出されたものと思われる。</p>
          </abstract>
-         <abstract>
+         <abstract xml:lang="eng">
             <p>This is a document regarding the duties of Wakugawa Pēchin of Jitchaku Village, Nakijin Magiri, from 1852 to 1859. It writes "Wakugawa Pēchin was appointed to a limestone manager (sekkai nushidori yaku) in December, 1852 and served until November, 1854, the year of the Tiger." After that, he held positions as an assistant mountain manager (sō yama-atai tashi yaku), a deputy mountain manager (kari sō yama-atai) and a mountain manager (sōyama-atai).
                Based on these work experiences, he submitted this curriculum vitae (tsutomegaki) to petition for his promotion to a deputy lord (jitōdai). Other than his official duties, he attended the officials from Satsuma and yamabugyo officials from the Shuri government when they came to Nakijin Magiri. He also served as an rice polish manager (okome surigara gechihō gamae) of the five villages; Wakugawa, Amesoko, Serikyaku, Kamiunten and Unten, when Chinese ships came to Ryukyu. Many corrections in red ink are found in this document. An official copy of the tsutomegaki was probably submitted after these corrections had been made.</p>
          </abstract>
@@ -74,20 +120,20 @@
       <surface source="https://shimuchi.lib.u-ryukyu.ac.jp/iiif/2/SI01601/pageSI016010020/canvas/1">
          <graphic url="https://shimuchi.lib.u-ryukyu.ac.jp/iiif/2/SI016_01%2FSI016_01_001.tif/full/full/0/default.jpg"/>
       </surface>
-      <!--　中略。canvasの記述はあってる？ -->
+      <!--　中略。 -->
    </facsimile>
   <text>
       <body>
          <p>
          九
-         一<date when="1852">咸豊弐年</date>子十二月石灰主取役被仰付<date when="1854">同四年</date>寅十一月迄首尾能相勤置申候
+         一<date calendar="#cal_CL" when="1852">咸豊弐年</date>子十二月石灰主取役被仰付<date when="1854">同四年</date>寅十一月迄首尾能相勤置申候
          一<date when="1856">同六年</date>辰三月山御奉行御廻勤之時役仮惣山當足被仰付同廿一日より四月十日迄御廻勤中首尾能相勤置申候
          一<date when="1856">同六年</date>辰四月仮惣山當被仰付<date when="1859">同九年</date>未三月迄首尾能相勤置申候
          一<date when="1858">同八年</date>午三月<persName>数馬様</persName>當運天津口御見分御下之御時被成候付本職掛而諸道具構被仰付相勤置申候
          一<date when="1857">咸豊八年</date>午六月阿蘭陀船来着之筈ニ而琉御役々衆御下之御時本職掛而野理菜構被仰付相勤置申候
          一<date when="1859">同九年</date>未四月仮惣山當年季退役之筈御座候處同月勤越被仰付候<date when="1860">同拾年</date>申十二月迄首尾能相勤置申候
          一<date when="1859">同年</date>未十月阿蘭陀船漂着之時和流御役々衆御下之御時本職掛而御宿拵構被仰付相勤置申候
-         一<date when="1859">同年</date>十二月今帰仁御殿御普請御用之御財木杣取為下知方
+            一<date when="1859">同年</date>十二月<placeName>今帰仁御殿</placeName>御普請御用之御財木杣取為下知方
            同十五日より羽地間切源河村山中江差越同廿四日迄ニ而全取調
         </p>
         <p>
