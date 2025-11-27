@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>獄中への手紙</title>
+            <title type="sub">
+               第四信。
+            </title>
+            <author>宮本百合子</author>
+            <respStmt>
+               <orgName ref="http://www.aozora.gr.jp/">青空文庫</orgName>
+               <resp when="2004-07-30">作成</resp>
+               <resp/>
+               <note>
+                 底本：「宮本百合子全集　第十九巻」新日本出版社<lb/>
+                 1979（昭和54）年2月20日初版発行<lb/>
+                 1986（昭和61）年3月20日第5刷発行<lb/>
+                 ※初出情報は、「獄中への手紙　一九四五年（昭和二十）」のファイル末に、一括して記載します。<lb/>
+                 ※各手紙の冒頭の日付は、底本ではゴシック体で組まれています。<lb/>
+                 ※底本巻末の注の内、宮本百合子自身が「十二年の手紙」（筑摩書房）編集時に付けたもの、もしくは手紙自体につけたものを「自注」として、通し番号を付して入力しました。<lb/>
+                 ※「自注」は、それぞれの手紙の後に、２字下げで組み入れました。<lb/>
+                 ※底本は、物を数える際や地名などに用いる「ヶ」（区点番号5-86）を、大振りにつくっています。<lb/>
+                 入力：柴田卓治<lb/>
+                 校正：花田泰治郎<lb/>
+                 2004年7月30日作成<lb/>
+                 青空文庫作成ファイル：<lb/>
+                 このファイルは、インターネットの図書館、青空文庫（http://www.aozora.gr.jp/）で作られました。入力、校正、制作にあたったのは、ボランティアの皆さんです。<lb/>
+               </note>
+            </respStmt>
+            <respStmt>
+               <resp>Aozora Transcription</resp>
+               <name>柴田卓治</name>
+            </respStmt>
+            <respStmt>
+               <resp>Aozora Proofreading</resp>
+               <name>花田泰治郎</name>
+            </respStmt>
+            <respStmt>
+               <resp when="2025-09-18">TEI Encoding</resp>
+               <name>Natsuko Nakagawa</name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>底本：「<title>宮本百合子全集　第十九巻</title>」<publisher>新日本出版社</publisher>
+            <date type="初版" when="1979-02-20">1979（昭和54）年2月20日初版発行</date>
+            <date type="第5刷" when="1986-03-20">1986（昭和61）年3月20日第5刷発行</date>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <correspDesc>
+           <correspAction type="sent">
+              <persName>宮本百合子</persName>
+              <date when="1934-12-26">一九三四年（昭和九年）十二月二十六日</date>
+              <location>
+                 <address>
+                 <country>日本</country>
+                 <region>東京</region>
+                 <settlement>淀橋区</settlement>
+                 <street>上落合二ノ七四〇</street>
+                 </address>
+                 <geo>35.711189028247055, 139.68612284790981</geo><!-- 現在の落合駅の座標 -->
+              </location>
+           </correspAction>
+           <correspAction type="received">
+              <persName>宮本顕治</persName>
+              <location>
+                 <address>
+                    <country>日本</country>
+                    <region>東京</region>
+                    <settlement>牛込区</settlement>
+                    <street>牛込区富久町一一二 市ヶ谷刑務所</street>
+                 </address>
+                 <geo>35.4139, 139.4255</geo><!-- 出典: Wikipedia https://ja.wikipedia.org/wiki/市ヶ谷刑務所 -->
+              </location>
+           </correspAction>
+        </correspDesc>
+     </profileDesc>
+  </teiHeader>
+  <text>
+      <body><p>
+         　十二月二十六日からはじまる。今夜は火曜日の夜で、今の家に移ってから火曜日と金曜日の午後を人に会う日にきめているので、三四人来て、かえったところです。林町の父にお歳暮に母のかたみの着物でどてらを縫って貰っていたのが出来上り。</p><p>
+            　私がこれをかくのは、ゆうべも考えてね、一時に＝一晩にかいてしまおうとすると、一晩まるでつぶし、而も何だかかきたいことを落すので、時々ぽつぽつと書きためたのを、こんどはお目にかけようかと考えたのです。さっき古本やの話に、この頃ショーロホフの小説などなかなか出るようになった由。スエ子は母がなくなってから糖尿病がひどくなって来て、この頃はアコウディオンを中止で、食餌養生をして居ります。相当意志をつよくやっているのは感心ですが、可哀そうに。私は彼女の音楽について大した幻想は抱いて居りません。</p><p>
+               　これまでの手紙で忘れていたこと＝（手紙拾遺集のようになるけれども）去年の九月から、母が生前書いたものを、主として日記ですが、すっかり栄さんに読めるように書き写して貰い、一周忌までに本にして記念にする手順で居ります。実によく書いて居る。父と結婚――私もまだ生れなかった頃の日記には二人で散歩した事や毎日毎日じゃがいもを食べていたことなど、ちゃんと鵞堂流の筆蹟で書いてあって、私はその頃の生活状態、母のもっていた教養いろいろなものをおもしろく感じます。後年に至ると、もっと歴史的に興味があります。今更そのようなことがあったのかと一九三二年以後、思わず
+               <ruby>
+                  <rb>呻</rb>
+                  <rt>うな</rt>
+               </ruby>
+               るようなこともある。それはいつも滑稽さと悲痛さとの混ったものです。</p><p>
+                  　そういう仕事のために栄さんは私より私の家族の心持に通暁してしまったのも亦面白いでしょう。栄さんには伝記者としての資格がついてしまったと笑うことがあります。私の机の上には、クロームの腕時計
+                  <note type="自注" n="24">［自注24］クロームの腕時計――一九三二年の春、あのとき宮本は自分の時計が粗末で不正確でこまると言って、わたしの時計と交換した。手くびにつける紐だけはそのままで。わたしの時計であって宮本に使われていた時計は、宮本の検挙されたとき<emph rend="傍点">無くなった</emph>。</note>
+                  に小さい金の留金のついたのが、イタリー風の彫刻をした時計掛にかかってのっている。この時計は不正確なような正確なような愛嬌のある奴です。この頃は大体正確でね。日に幾度か私に挨拶をされています。夏になったらこれで又三十分もおくれる気なのかしら。――</p><p>
+                     　この家、何という
+                     <ruby>
+                        <rb>可笑</rb>
+                        <rt>おか</rt>
+                     </ruby>
+                     しな家だろう！　二階の廊下を暗い中で歩いていたら台所の灯が足の下に透いて一条に見える。何てひどい建てかた！　この話を林町の父にしたら、地震につぶれぬよう羽目にかすがいというか斜木を打ってやろうと申しました。そう云ったけれど、それなり忘れているのです。相変らずいそがしいから。この頃は国府津へ準急もとまらないから不便になりました。丹那が開通したからです。</p><p>
+                        　○鼠に顔の上を飛ばれた話。ゴトゴトいう。おや？　耳をたてていると机のある方からやって来てカサコソ枕元をかけている。シーッ！　力をこめておどかしたら、鼠はあんまりあわてて、おそらく鼻面を向けていた方へいきなり飛んだらそこには私の顔があり、こんどは鼠より私がびっくりしてしまった。鼠は夜目が見えるだろうのに！</p><p>
+                           　○ああそれから、天気の曇った日には、私がよろこんで仕事をしている恰好を御想像下さい。この家はそんなに日が当るのです。天気がいいと私の眼がつかれる位。いねちゃんのところもそうです。先の家の近所へ越して。曇。烈風、障子の鳴る音にまじり
+                           <ruby>
+                              <rb>凧</rb>
+                              <rt>たこ</rt>
+                           </ruby>
+                           のうなりの響がする。二階のゆれるような感じ。大変寒く、手が赤くて、きたない。</p><p>
+                           </p>
+      </body>
+  </text>
+</TEI>
